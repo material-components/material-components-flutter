@@ -8,7 +8,7 @@ All Material Components for Flutter can be found in the [Flutter repository](htt
 
 ## Usage
 
-Material Components is included by default in Flutter's packages. To add access MDC widgets in a file, simply import the `material.dart` file.
+Material Components is included by default in Flutter's packages. To add access to MDC widgets in a file, simply import the `material.dart` file.
 
 ``` dart
 import 'package:flutter/material.dart';
@@ -16,5 +16,7 @@ import 'package:flutter/material.dart';
 
 ## Useful Links
 
+- [Flutter.io](https://flutter.io) (external site)
+- [Flutter Repo](https://github.com/flutter/flutter)
 - [Material.io](https://www.material.io) (external site)
 - [Material Design Guidelines](https://material.io/guidelines) (external site)
