@@ -5,6 +5,6 @@ site_platform: flutter
 site_title: Material Components for Flutter
 site_short_title: Flutter
 site_description: >
-  Material Components for Flutter is a set of user interface components that help Flutter app developers build apps with material design.
+  Material Components for Flutter is a set of user interface components that help Flutter app developers build apps with Material Design.
 repo_url: https://github.com/material-components/material-components-flutter/
 repo_stable_branch: stable
