@@ -2,6 +2,9 @@
 title: "Material Components for Flutter"
 layout: "homepage"
 path: /
+
+welcome_components_url: https://flutter.io/widgets/material/
+welcome_documentation_url: https://docs.flutter.io/flutter/material/material-library.html
 ---
 
 {% contentfor benefits %}
