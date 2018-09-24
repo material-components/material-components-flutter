@@ -3,7 +3,7 @@
 
 ### What is the backdrop?
 The backdrop is a component that consists of a back layer and a front layer. The back layer may be revealed to show context and actions that are relevant to the front layer’s content. To learn more about the backdrop, take a look at the [Material Guidelines](https://material.io/design/components/backdrop.html#).
-![Backdrop in Crane Material Study]()
+![Backdrop in Crane Material Study](resources/crane-backdrop.png)
 
 ### Is there a widget for backdrop in Material Components for Flutter?
 _No._ In Flutter, the backdrop is an advanced component. Advanced components don't make great reusable components as they tend to be highly specific to your app. But you can use existing components and classes to achieve the desired interaction!
