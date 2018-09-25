@@ -40,4 +40,3 @@ _The appearance of the backdrop can change with context._
 In the Material Study [Shrine](https://material.io/design/material-studies/shrine.html#product-architecture), backdrop unveils a menu to filter the products found on the front layer.  In [Crane](https://material.io/design/material-studies/crane.html), the backdrop has multiple front layers that change content based on the selected Tab. The backdrop component has many different uses with various potential uses and doesn’t fit a one size fits all.
 
 _A backdrop is meant to be used only once per app._ You don't need to instantiate more than one for a normal experience even if you have multiple front layers.
-
