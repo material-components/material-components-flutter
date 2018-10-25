@@ -18,7 +18,7 @@ You probably want to start with a StatefulWidget that manages the content in the
 
 Handle the expansion and contraction of the collapsed view (based on its content) separately from the full open/close. Take a look at the [AnimatedSize widget](https://docs.flutter.io/flutter/widgets/AnimatedSize-class.html) for a simple implicit animation for that. If the content inside the bottom sheet is a group of similar items, like thumbnails, [AnimatedList](https://docs.flutter.io/flutter/widgets/AnimatedList-class.html) could handle the insertion and removal of them for you.
 
-If your app includes a backdrop, you may also need a third animation for the removal of the bottom sheet when the backdrop is revealed. See the Navigation Transitions section of the Material Study Shrine for a video showing how the expanding bottom sheet moves off-screen when the backdrop's back layer is exposed.
+If your app includes a backdrop, you may also need a third animation for the removal of the bottom sheet when the backdrop is revealed. See the [Navigation Transitions section](https://material.io/design/material-studies/shrine.html#product-architecture) of the Material Study Shrine for a video showing how the expanding bottom sheet moves off-screen when the backdrop's back layer is exposed.
 
 ### Example code
 Example code for building a custom expanding bottom sheet can be found in the [Flutter Samples repository on GitHub](https://github.com/flutter/samples/tree/master/shrine/lib). Feel free to use this code as a starting point for your own expanding bottom sheet.
