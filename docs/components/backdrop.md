@@ -16,7 +16,7 @@ When you break it down, backdrops are composed of 2 pieces:
 1. The front layer, a view that displays the user’s main content. It's height can change to reveal information behind it on certain events.
 1. The back layer, which contains context and actionable items. Changes here update the information shown on the front layer.
 
-To start, you can use a [StatefulWidget](https://material.io/design/components/backdrop.html#) to tie the two pieces together. This widget contains the back layer and other widgets, such as the [AppBar](https://flutter.io/catalog/samples/basic-app-bar). You will have a separate widget to build out the front layer. 
+To start, you can use a [StatefulWidget](https://material.io/design/components/backdrop.html#) to tie the two pieces together. This widget can contain the back layer and other widgets, such as the [AppBar](https://flutter.io/catalog/samples/basic-app-bar). You will have a separate widget to build out the front layer. 
 
 **Backdrop motion**
 To produce the open/close motion of the front layer, build an animation in the back layer’s parent widget. Manage that motion with an [AnimationController](https://docs.flutter.io/flutter/animation/AnimationController-class.html). To trigger the animation, implement a button on the AppBar.
