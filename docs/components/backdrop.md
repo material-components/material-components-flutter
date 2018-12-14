@@ -40,7 +40,7 @@ _The backdrop is complex._ The component uses multiple types of animations and m
 
 _The appearance of the backdrop can change with context._
 * Some apps only need a single front layer and back layer, containing the backdrop to a vertical back and forth interaction.
-* Tabs may necessitate multiple front layer widgets and may also require custom widgets, as the widgets in Flutter don’t currently support the desired interactions.
+* Tabs may necessitate multiple front layer widgets and may also require custom widgets, as the widgets in Flutter don’t currently support the desired interactions out of the box.
 
 In the Material study [Shrine](https://material.io/design/material-studies/shrine.html#product-architecture), the backdrop unveils a menu that allows users to filter products shown on the front layer.  In [Crane](https://material.io/design/material-studies/crane.html), the backdrop has multiple front layers, and each front layer changes content based on the selected Tab. The backdrop component can be used many different ways. It isn't a one-size-fits-all component.
 
