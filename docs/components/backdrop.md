@@ -30,7 +30,7 @@ The example uses existing widgets such as [PositionedTransition](https://docs.fl
 See [MDC-103 for Flutter](http://codelabs.developers.google.com/codelabs/mdc-103-flutter) for a codelab on building this example.
 
 ### Related Documentation
-To learn more about animations in Flutter, see [flutter.io/animations](flutter.io/animations).
+To learn more about animations in Flutter, see [flutter.io/animations](https://flutter.io/animations).
 
 ### From a designer’s point of view
 The backdrop gives users easy access to an important, secondary element of an app. Its back layer is persistent yet unobtrusive, giving users access to the actions and content relevant to the front layer.
