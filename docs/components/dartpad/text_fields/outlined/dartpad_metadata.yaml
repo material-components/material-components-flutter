@@ -1,4 +1,4 @@
 name: Material Outlined Text Field Demonstration
 mode: flutter
 files:
-  - name: main.test
+  - name: main.dart
