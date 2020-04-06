@@ -11,27 +11,14 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         buttonColor: Colors.blue,
       ),
-      home: MyHomePage(title: 'Flutter Demo Card Page'),
+      home: MyHomePage(),
     );
   }
 }
 
-class MyHomePage extends StatefulWidget {
-  MyHomePage({Key key, this.title}) : super(key: key);
-
-  final String title;
-
-  @override
-  _MyHomePageState createState() => _MyHomePageState();
-}
-
-class _MyHomePageState extends State<MyHomePage> {
+class MyHomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        automaticallyImplyLeading: false,
-        title: Text(widget.title),
-      ),
       body: ListView(
         children: [
           Card(
@@ -82,7 +69,7 @@ class _MyHomePageState extends State<MyHomePage> {
               children: [
                 ListTile(
                   leading: Icon(Icons.arrow_drop_down_circle),
-                  title: const Text('Card title 1'),
+                  title: const Text('Card title 2'),
                   subtitle: Text(
                     'Secondary Text',
                     style: TextStyle(color: Colors.black.withOpacity(0.6)),

@@ -9,52 +9,45 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
       theme: _buildShrineTheme(),
-      home: MyHomePage(title: 'Flutter Demo Text Page'),
+      home: MyHomePage(),
     );
   }
 }
 
-class MyHomePage extends StatefulWidget {
-  MyHomePage({Key key, this.title}) : super(key: key);
-
-  final String title;
-
-  @override
-  _MyHomePageState createState() => _MyHomePageState();
-}
-
-class _MyHomePageState extends State<MyHomePage> {
+class MyHomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(children: [
-        TextFormField(
-          cursorColor: Theme.of(context).cursorColor,
-          initialValue: 'Input text',
-          maxLength: 20,
-          decoration: InputDecoration(
-            icon: Icon(Icons.favorite),
-            labelText: 'Label text',
-            helperText: 'Helper text',
-            suffixIcon: Icon(
-              Icons.check_circle,
+      body: Column(
+        children: [
+          TextFormField(
+            cursorColor: Theme.of(context).cursorColor,
+            initialValue: 'Input text',
+            maxLength: 20,
+            decoration: InputDecoration(
+              icon: Icon(Icons.favorite),
+              labelText: 'Label text',
+              helperText: 'Helper text',
+              suffixIcon: Icon(
+                Icons.check_circle,
+              ),
             ),
           ),
-        ),
-        TextFormField(
-          cursorColor: Theme.of(context).cursorColor,
-          initialValue: 'Input text',
-          maxLength: 20,
-          decoration: InputDecoration(
-            icon: Icon(Icons.favorite),
-            labelText: 'Label text',
-            helperText: 'Helper text',
-            errorText: 'Error message',
-            suffixIcon: Icon(
-              Icons.error,
+          TextFormField(
+            cursorColor: Theme.of(context).cursorColor,
+            initialValue: 'Input text',
+            maxLength: 20,
+            decoration: InputDecoration(
+              icon: Icon(Icons.favorite),
+              labelText: 'Label text',
+              helperText: 'Helper text',
+              errorText: 'Error message',
+              suffixIcon: Icon(
+                Icons.error,
+              ),
             ),
           ),
-        ),
-      ]),
+        ],
+      ),
     );
   }
 }
@@ -89,31 +82,9 @@ ThemeData _buildShrineTheme() {
 TextTheme _buildShrineTextTheme(TextTheme base) {
   return base
       .copyWith(
-        headline: base.headline.copyWith(
-          fontWeight: FontWeight.w500,
-          letterSpacing: defaultLetterSpacing,
-        ),
-        title: base.title.copyWith(
-          fontSize: 18,
-          letterSpacing: defaultLetterSpacing,
-        ),
         caption: base.caption.copyWith(
           fontWeight: FontWeight.w400,
           fontSize: 14,
-          letterSpacing: defaultLetterSpacing,
-        ),
-        body2: base.body2.copyWith(
-          fontWeight: FontWeight.w500,
-          fontSize: 16,
-          letterSpacing: defaultLetterSpacing,
-        ),
-        body1: base.body1.copyWith(
-          letterSpacing: defaultLetterSpacing,
-        ),
-        subhead: base.subhead.copyWith(
-          letterSpacing: defaultLetterSpacing,
-        ),
-        display1: base.display1.copyWith(
           letterSpacing: defaultLetterSpacing,
         ),
         button: base.button.copyWith(

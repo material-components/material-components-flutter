@@ -9,105 +9,96 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
       theme: _buildShrineTheme(),
-      home: MyHomePage(title: 'Flutter Demo Home Page'),
+      home: MyHomePage(),
     );
   }
 }
 
-class MyHomePage extends StatefulWidget {
-  MyHomePage({Key key, this.title}) : super(key: key);
-
-  final String title;
-
-  @override
-  _MyHomePageState createState() => _MyHomePageState();
-}
-
-class _MyHomePageState extends State<MyHomePage> {
+class MyHomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: ListView(
         children: [
-            Card(
-              clipBehavior: Clip.antiAlias,
-              child: Column(
-                children: [
-                  ListTile(
-                    leading: Icon(Icons.arrow_drop_down_circle),
-                    title: const Text('Card title 1'),
-                    subtitle: Text(
-                      'Secondary Text',
-                      style: TextStyle(color: Colors.black.withOpacity(0.6)),
+          Card(
+            clipBehavior: Clip.antiAlias,
+            child: Column(
+              children: [
+                ListTile(
+                  leading: Icon(Icons.arrow_drop_down_circle),
+                  title: const Text('Card title 1'),
+                  subtitle: Text(
+                    'Secondary Text',
+                    style: TextStyle(color: Colors.black.withOpacity(0.6)),
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.all(16.0),
+                  child: Text(
+                    'Greyhound divisively hello coldly wonderfully marginally far upon excluding.',
+                    style: TextStyle(color: Colors.black.withOpacity(0.6)),
+                  ),
+                ),
+                ButtonBar(
+                  alignment: MainAxisAlignment.start,
+                  children: [
+                    FlatButton(
+                      onPressed: () {
+                        // Perform some action
+                      },
+                      child: const Text('ACTION 1'),
                     ),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.all(16.0),
-                    child: Text(
-                      'Greyhound divisively hello coldly wonderfully marginally far upon excluding.',
-                      style: TextStyle(color: Colors.black.withOpacity(0.6)),
+                    FlatButton(
+                      onPressed: () {
+                        // Perform some action
+                      },
+                      child: const Text('ACTION 2'),
                     ),
-                  ),
-                  ButtonBar(
-                    alignment: MainAxisAlignment.start,
-                    children: [
-                      FlatButton(
-                        onPressed: () {
-                          // Perform some action
-                        },
-                        child: const Text('ACTION 1'),
-                      ),
-                      FlatButton(
-                        onPressed: () {
-                          // Perform some action
-                        },
-                        child: const Text('ACTION 2'),
-                      ),
-                    ],
-                  ),
-                  Image.asset('assets/card-sample-image.jpg'),
-                ],
-              ),
+                  ],
+                ),
+                Image.asset('assets/card-sample-image.jpg'),
+              ],
             ),
-            Card(
-              clipBehavior: Clip.antiAlias,
-              child: Column(
-                children: [
-                  ListTile(
-                    leading: Icon(Icons.arrow_drop_down_circle),
-                    title: const Text('Card title 1'),
-                    subtitle: Text(
-                      'Secondary Text',
-                      style: TextStyle(color: Colors.black.withOpacity(0.6)),
+          ),
+          Card(
+            clipBehavior: Clip.antiAlias,
+            child: Column(
+              children: [
+                ListTile(
+                  leading: Icon(Icons.arrow_drop_down_circle),
+                  title: const Text('Card title 2'),
+                  subtitle: Text(
+                    'Secondary Text',
+                    style: TextStyle(color: Colors.black.withOpacity(0.6)),
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.all(16.0),
+                  child: Text(
+                    'Greyhound divisively hello coldly wonderfully marginally far upon excluding.',
+                    style: TextStyle(color: Colors.black.withOpacity(0.6)),
+                  ),
+                ),
+                ButtonBar(
+                  alignment: MainAxisAlignment.start,
+                  children: [
+                    FlatButton(
+                      onPressed: () {
+                        // Perform some action
+                      },
+                      child: const Text('ACTION 1'),
                     ),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.all(16.0),
-                    child: Text(
-                      'Greyhound divisively hello coldly wonderfully marginally far upon excluding.',
-                      style: TextStyle(color: Colors.black.withOpacity(0.6)),
+                    FlatButton(
+                      onPressed: () {
+                        // Perform some action
+                      },
+                      child: const Text('ACTION 2'),
                     ),
-                  ),
-                  ButtonBar(
-                    alignment: MainAxisAlignment.start,
-                    children: [
-                      FlatButton(
-                        onPressed: () {
-                          // Perform some action
-                        },
-                        child: const Text('ACTION 1'),
-                      ),
-                      FlatButton(
-                        onPressed: () {
-                          // Perform some action
-                        },
-                        child: const Text('ACTION 2'),
-                      ),
-                    ],
-                  ),
-                  Image.asset('assets/card-sample-image-2.jpg'),
-                ],
-              ),
+                  ],
+                ),
+                Image.asset('assets/card-sample-image-2.jpg'),
+              ],
             ),
+          ),
         ],
       ),
     );
@@ -144,44 +135,22 @@ ThemeData _buildShrineTheme() {
 TextTheme _buildShrineTextTheme(TextTheme base) {
   return base
       .copyWith(
-    headline: base.headline.copyWith(
-      fontWeight: FontWeight.w500,
-      letterSpacing: defaultLetterSpacing,
-    ),
-    title: base.title.copyWith(
-      fontSize: 18,
-      letterSpacing: defaultLetterSpacing,
-    ),
-    caption: base.caption.copyWith(
-      fontWeight: FontWeight.w400,
-      fontSize: 14,
-      letterSpacing: defaultLetterSpacing,
-    ),
-    body2: base.body2.copyWith(
-      fontWeight: FontWeight.w500,
-      fontSize: 16,
-      letterSpacing: defaultLetterSpacing,
-    ),
-    body1: base.body1.copyWith(
-      letterSpacing: defaultLetterSpacing,
-    ),
-    subhead: base.subhead.copyWith(
-      letterSpacing: defaultLetterSpacing,
-    ),
-    display1: base.display1.copyWith(
-      letterSpacing: defaultLetterSpacing,
-    ),
-    button: base.button.copyWith(
-      fontWeight: FontWeight.w500,
-      fontSize: 14,
-      letterSpacing: defaultLetterSpacing,
-    ),
-  )
+        caption: base.caption.copyWith(
+          fontWeight: FontWeight.w400,
+          fontSize: 14,
+          letterSpacing: defaultLetterSpacing,
+        ),
+        button: base.button.copyWith(
+          fontWeight: FontWeight.w500,
+          fontSize: 14,
+          letterSpacing: defaultLetterSpacing,
+        ),
+      )
       .apply(
-    fontFamily: 'Rubik',
-    displayColor: shrineBrown900,
-    bodyColor: shrineBrown900,
-  );
+        fontFamily: 'Rubik',
+        displayColor: shrineBrown900,
+        bodyColor: shrineBrown900,
+      );
 }
 
 const ColorScheme _shrineColorScheme = ColorScheme(
@@ -214,4 +183,3 @@ const Color shrineSurfaceWhite = Color(0xFFFFFBFA);
 const Color shrineBackgroundWhite = Colors.white;
 
 const defaultLetterSpacing = 0.03;
-
