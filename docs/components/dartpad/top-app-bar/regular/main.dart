@@ -17,7 +17,9 @@ class MyHomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        leading: Icon(Icons.menu,),
+        leading: Icon(
+          Icons.menu,
+        ),
         title: Text('Page title'),
         actions: [
           Icon(Icons.favorite),
