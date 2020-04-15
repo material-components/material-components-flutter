@@ -41,7 +41,7 @@ The following example shows an elevated card. The card has a title, a secondary 
 
 The example code below generates the card:
 
-```
+```dart
           Card(
             clipBehavior: Clip.antiAlias,
             child: Column(
@@ -89,7 +89,7 @@ The example code below generates the card:
 
 <!-- **Test code may eventually be replaced with dartpad link** 
 To test code copy and paste code into [dartpad.dev](https://dartpad.dev/).
-```
+```dart
 import 'package:flutter/material.dart';
 
 void main() => runApp(MyApp());
@@ -309,7 +309,7 @@ Source code API:
 <img src="assets/cards/shrine_card.png" alt="Shrine Card for Flutter">
 
 To test code copy and paste code into [dartpad.dev](https://dartpad.dev/).
-```
+```dart
 import 'package:flutter/material.dart';
 
 void main() => runApp(MyApp());

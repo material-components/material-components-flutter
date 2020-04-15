@@ -46,7 +46,7 @@ The following example shows a filled text field.
 
 <img src="assets/text_fields/filled_text_field_form.png" alt="filled text field with label, helper text, and check circle icon">
 
-```
+```dart
  TextFormField(
    cursorColor: Theme.of(context).cursorColor,
    initialValue: 'Input text',
@@ -70,7 +70,7 @@ The following example shows a filled text field.
 <!-- **Test code may eventually be replaced with dartpad link**
 To test code copy and paste code into [dartpad.dev](https://dartpad.dev/).
 
-```
+```dart
 import 'package:flutter/material.dart';
 
 void main() => runApp(MyApp());
@@ -223,7 +223,7 @@ The following examples shows an outlined text field.
 
 <img src="assets/text_fields/outline_text_field_form.png" alt="Outlined text field with label, and error message and icon">
 
-```
+```dart
 TextFormField(
   initialValue: 'Input text',
   decoration: InputDecoration(
@@ -240,7 +240,7 @@ TextFormField(
  To test code copy and paste code into [dartpad.dev](https://dartpad.dev/).
 
 
-```
+```dart
 import 'package:flutter/material.dart';
 
 void main() => runApp(MyApp());
@@ -389,7 +389,7 @@ The following example shows a filled text field with the [Material Shring Theme]
 
 
 To test code copy and paste code into [dartpad.dev](https://dartpad.dev/)
-```
+```dart
 import 'package:flutter/material.dart';
 
 void main() => runApp(MyApp());
