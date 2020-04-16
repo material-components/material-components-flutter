@@ -33,6 +33,7 @@ Source code API:
 `Card`
   * [Class definition](https://api.flutter.dev/flutter/material/Card-class.html)
   * [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/card.dart)
+  * [Dartpad demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/cards/elevated&gh_ref=develop)
 
 The following example shows an elevated card. The card has a title, a secondary title, text, and two actions: Action 1 and Action 2 in purple (#6200EE).
 
@@ -40,7 +41,7 @@ The following example shows an elevated card. The card has a title, a secondary 
 
 The example code below generates the card:
 
-```
+```dart
           Card(
             clipBehavior: Clip.antiAlias,
             child: Column(
@@ -88,7 +89,7 @@ The example code below generates the card:
 
 <!-- **Test code may eventually be replaced with dartpad link** 
 To test code copy and paste code into [dartpad.dev](https://dartpad.dev/).
-```
+```dart
 import 'package:flutter/material.dart';
 
 void main() => runApp(MyApp());
@@ -303,11 +304,12 @@ A card supports [Material Theming](https://material.io/components/cards/#theming
 
 Source code API:
   * [Class definition](https://api.flutter.dev/flutter/material/Card-class.html)
+  * [Dartpad demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/cards/theme&gh_ref=develop)
 
 <img src="assets/cards/shrine_card.png" alt="Shrine Card for Flutter">
 
 To test code copy and paste code into [dartpad.dev](https://dartpad.dev/).
-```
+```dart
 import 'package:flutter/material.dart';
 
 void main() => runApp(MyApp());

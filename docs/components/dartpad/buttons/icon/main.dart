@@ -41,6 +41,7 @@ class _MyHomePageState extends State<MyHomePage> {
               borderRadius: BorderRadius.circular(4.0),
               constraints: BoxConstraints(minHeight: 36.0),
               isSelected: isSelected,
+              highlightColor: Colors.transparent,
               onPressed: (index) {
                 // Respond to button selection
                 setState(() {
@@ -71,6 +72,7 @@ class _MyHomePageState extends State<MyHomePage> {
               hoverColor: Color(0xFF6200EE).withOpacity(0.04),
               borderRadius: BorderRadius.circular(4.0),
               isSelected: isSelected,
+              highlightColor: Colors.transparent,
               onPressed: (index) {
                 // Respond to button selection
                 setState(() {

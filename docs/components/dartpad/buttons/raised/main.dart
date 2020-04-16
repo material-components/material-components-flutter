@@ -23,6 +23,7 @@ class MyHomePage extends StatelessWidget {
             RaisedButton(
               textColor: Colors.white,
               color: Color(0xFF6200EE),
+              highlightColor: Colors.transparent,
               onPressed: () {
                 // Respond to button press
               },
@@ -31,6 +32,7 @@ class MyHomePage extends StatelessWidget {
             RaisedButton.icon(
               textColor: Colors.white,
               color: Color(0xFF6200EE),
+              highlightColor: Colors.transparent,
               onPressed: () {
                 // Respond to button press
               },
