@@ -58,23 +58,28 @@ class _MyHomePageState extends State<MyHomePage> {
               onPressed: () {
                 // Perform some action
               },
+              highlightColor: Colors.transparent,
               child: const Text('FLAT BUTTON', semanticsLabel: 'FLAT BUTTON 1'),
             ),
             FlatButton.icon(
               icon: const Icon(Icons.ac_unit),
               onPressed: () {},
+              highlightColor: Colors.transparent,
               label: const Text('ICON FLAT BUTTON'),
             ),
             OutlineButton(
               onPressed: () {},
+              highlightColor: Colors.transparent,
               child: const Text('OUTLINE BUTTON'),
             ),
             RaisedButton(
               onPressed: () {},
+              highlightColor: Colors.transparent,
               child: const Text('RAISED BUTTON'),
             ),
             ToggleButtons(
               isSelected: isSelected,
+              highlightColor: Colors.transparent,
               onPressed: (index) {
                 // Respond to button selection
                 setState(() {
@@ -98,6 +103,7 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
             IconButton(
               icon: Icon(icon),
+              highlightColor: Colors.transparent,
               onPressed: () {
                 // Respond to icon toggle
                 setState(() {

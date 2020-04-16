@@ -23,6 +23,7 @@ class MyHomePage extends StatelessWidget {
             OutlineButton(
               textColor: Color(0xFF6200EE),
               highlightedBorderColor: Colors.black.withOpacity(0.12),
+              highlightColor: Colors.transparent,
               onPressed: () {
                 // Respond to button press
               },
@@ -31,6 +32,7 @@ class MyHomePage extends StatelessWidget {
             OutlineButton.icon(
               textColor: Color(0xFF6200EE),
               highlightedBorderColor: Colors.black.withOpacity(0.12),
+              highlightColor: Colors.transparent,
               onPressed: () {
                 // Respond to button press
               },
