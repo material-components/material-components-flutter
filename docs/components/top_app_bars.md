@@ -21,7 +21,7 @@ There are two types of top app bar:
 1. [Contextual action bar](#contextual-top-app-bar)
 <br>
 
-![Regular app bar: purple background, white text and icons](assets/top_app_bars/Top-app-bars_types_side-by-side.png)
+![Regular app bar: purple background, white text and icons and Contextual action bar: black background, white text and icons](assets/top_app_bars/Top-app-bars_types_side-by-side.png)
 
 ## Using the top app bar
 
@@ -215,11 +215,6 @@ AppBar(
 | **Color** | In `action` parameter, add `IconButton` widget to the end of Widget list and set parameter `color` within `IconButton` |
 | **Size** | In `action` parameter, add `IconButton` widget to the end of Widget list and set parameter `iconSize` within `IconButton` |
 | **Padding** | In `action` parameter, add `IconButton` widget to the end of Widget list and wrap that Widget with a `Padding` widget  |
-
-#### Styles
-
-_If the component API implements multiple types, include any style information that differentiates the types in a table_
-
 
 ## Theming a top app bar
 
