@@ -16,7 +16,7 @@ The text field class consists of the following types:
 * [Filled text](#filled-text)
 * [Outlined text](#outlined-text)
 
-<img src="assets/text_fields/text-field-generic.png" alt="Text field examples, filled and outlined types, showing both inactive and focused states.">
+<img src="assets/text-field-generic.png" alt="Text field examples, filled and outlined types, showing both inactive and focused states.">
 
 ## Using text fields
 
@@ -40,12 +40,13 @@ Source code API:
 * `TextFormField` 
   * [Class definition](https://api.flutter.dev/flutter/material/TextFormField-class.html)
   * [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/text_form_field.dart)
+  * [Dartpad demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/text_fields/outlined&gh_ref=develop)
 
 The following example shows a filled text field.
 
 <img src="assets/text_fields/filled_text_field_form.png" alt="filled text field with label, helper text, and check circle icon">
 
-```
+```dart
  TextFormField(
    cursorColor: Theme.of(context).cursorColor,
    initialValue: 'Input text',
@@ -69,7 +70,7 @@ The following example shows a filled text field.
 <!-- **Test code may eventually be replaced with dartpad link**
 To test code copy and paste code into [dartpad.dev](https://dartpad.dev/).
 
-```
+```dart
 import 'package:flutter/material.dart';
 
 void main() => runApp(MyApp());
@@ -216,12 +217,13 @@ Source code API:
 * `TextFormField` 
   * [Class definition](https://api.flutter.dev/flutter/material/TextFormField-class.html)
   * [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/text_form_field.dart)
+  * [Dartpad demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/text_fields/filled&gh_ref=develop)
 
 The following examples shows an outlined text field.
 
 <img src="assets/text_fields/outline_text_field_form.png" alt="Outlined text field with label, and error message and icon">
 
-```
+```dart
 TextFormField(
   initialValue: 'Input text',
   decoration: InputDecoration(
@@ -238,7 +240,7 @@ TextFormField(
  To test code copy and paste code into [dartpad.dev](https://dartpad.dev/).
 
 
-```
+```dart
 import 'package:flutter/material.dart';
 
 void main() => runApp(MyApp());
@@ -379,6 +381,7 @@ API and source code:
 * `TextFormField` 
   * [Class definition](https://api.flutter.dev/flutter/material/TextFormField-class.html)
   * [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/text_form_field.dart)
+  * [Dartpad demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/text_fields/theme&gh_ref=develop)
     
 The following example shows a filled text field with the [Material Shring Theme](ttps://material.io/design/material-studies/shrine.html).
 
@@ -386,7 +389,7 @@ The following example shows a filled text field with the [Material Shring Theme]
 
 
 To test code copy and paste code into [dartpad.dev](https://dartpad.dev/)
-```
+```dart
 import 'package:flutter/material.dart';
 
 void main() => runApp(MyApp());
