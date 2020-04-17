@@ -7,10 +7,6 @@ iconId:
 path: /catalog/material-top-app-bar/
 -->
 
-**Instructions to authors:**
-* _Follow the instructions in each section &ndash; see the [accompanying examples](button-examples) for futher guidance._
-* _Delete these instructions before submitting your document_
-
 # Top app bar
 
 The [top app bar](https://material.io/components/app-bars-top/#) displays information and actions relating to the current screen.
@@ -62,17 +58,17 @@ The following example shows a top app bar with a page title, a navigation icon, 
 
 ```dart
 AppBar(
-    leading: Icon(Icons.menu),
-    title: Text('Page title'),
-    actions: <Widget>[
-        Icon(Icons.favorite),
-        Padding(
-            padding: EdgeInsets.symmetric(horizontal: 16),
-            child: Icon(Icons.search),
-        ),
-        Icon(Icons.more_vert),
-    ],
-    backgroundColor: Colors.purple,
+  leading: Icon(Icons.menu),
+  title: Text('Page title'),
+  actions: [
+    Icon(Icons.favorite),
+    Padding(
+      padding: EdgeInsets.symmetric(horizontal: 16),
+      child: Icon(Icons.search),
+    ),
+    Icon(Icons.more_vert),
+  ],
+  backgroundColor: Colors.purple,
 ),
 
 ```
@@ -156,17 +152,17 @@ The following example shows a contextual action bar with a contextual title, a c
 
 ```dart
 AppBar(
-    leading: Icon(Icons.close),
-    title: Text('1 selected'),
-    actions: <Widget>[
-        Icon(Icons.file_upload),
-        Padding(
-            padding: EdgeInsets.symmetric(horizontal: 16),
-            child: Icon(Icons.delete),
-        ),
-        Icon(Icons.more_vert),
-    ],
-    backgroundColor: Colors.black87,
+  leading: Icon(Icons.close),
+  title: Text('1 selected'),
+  actions: [
+    Icon(Icons.file_upload),
+    Padding(
+      padding: EdgeInsets.symmetric(horizontal: 16),
+      child: Icon(Icons.delete),
+    ),
+    Icon(Icons.more_vert),
+  ],
+  backgroundColor: Colors.black87,
 ),
 
 ```
