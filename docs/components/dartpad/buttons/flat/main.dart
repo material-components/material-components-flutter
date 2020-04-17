@@ -23,6 +23,7 @@ class MyHomePage extends StatelessWidget {
           children: [
             FlatButton(
               textColor: Color(0xFF6200EE),
+              highlightColor: Colors.transparent,
               onPressed: () {
                 // Respond to button press
               },
@@ -30,6 +31,7 @@ class MyHomePage extends StatelessWidget {
             ),
             FlatButton.icon(
               textColor: Color(0xFF6200EE),
+              highlightColor: Colors.transparent,
               onPressed: () {
                 // Respond to button press
               },

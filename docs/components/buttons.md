@@ -44,12 +44,13 @@ API and source code:
 * `FlatButton`
     * [Class description](https://api.flutter.dev/flutter/material/FlatButton-class.html)
     * [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/flat_button.dart)
+    * [Dartpad demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/buttons/flat&gh_ref=develop)
 
 The following example shows a text button with a text label.
 
 !["Text button example for Flutter with purple text 'Text button' over a white background."](assets/buttons/text-button.svg)
 
-```
+```dart
 FlatButton(
     textColor: Color(0xFF6200EE),
     onPressed: () {
@@ -64,7 +65,7 @@ The following example shows a text button with an icon.
 
 !["Text button with purple text 'Text button' and '+' icon over a white background."](assets/buttons/text-button-icon.svg)
 
-```
+```dart
 FlatButton.icon(
     textColor: Color(0xFF6200EE),
     onPressed: () {
@@ -78,7 +79,7 @@ FlatButton.icon(
 
 To test code copy and paste code into [dartpad.dev](https://dartpad.dev/).
 
-```
+```dart
 import 'package:flutter/material.dart';
 
 void main() => runApp(MyApp());
@@ -195,10 +196,11 @@ API and source code:
 * `OutlineButton`
     * [Class definition](https://api.flutter.dev/flutter/material/OutlineButton-class.html)
     * [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/outline_button.dart)
-
+    * [Dartpad demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/buttons/outline&gh_ref=develop)
+    
 !["Outlined button with purple text 'Outlined button' and grey border over a white background."](assets/buttons/outlined-button.svg)
 
-```
+```dart
 OutlineButton(
     textColor: Color(0xFF6200EE),        
     highlightedBorderColor: Colors.black.withOpacity(0.12),
@@ -213,7 +215,7 @@ The following example shows an outlined button with an icon.
 
 !["Outlined button with purple text 'Outlined button', grey border and '+' icon over a white background."](assets/buttons/outlined-button-icon.svg)
 
-```
+```dart
 OutlineButton.icon(
     textColor: Color(0xFF6200EE),
     highlightedBorderColor: Colors.black.withOpacity(0.12),
@@ -227,7 +229,7 @@ OutlineButton.icon(
 <!-- **Test code may eventually be replaced with dartpad link**
 To test code copy and paste code into [dartpad.dev](https://dartpad.dev/).
 
-```
+```dart
 import 'package:flutter/material.dart';
 
 void main() => runApp(MyApp());
@@ -343,12 +345,13 @@ API and source code:
 * `RaisedButton`
     * [Class definition](https://api.flutter.dev/flutter/material/RaisedButton-class.html)
     * [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/raised_button.dart)
+    * [Dartpad demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/buttons/raised&gh_ref=develop)
 
 The following example shows a contained button with a text label and a filled container.
 
 !["Contained button with white text 'Contained button' and purple container over a white background."](assets/buttons/contained-button.svg)
 
-```
+```dart
 RaisedButton(
     textColor: Colors.white,
     color: Color(0xFF6200EE),
@@ -363,7 +366,7 @@ The following example shows a contained button with an icon.
 
 !["Contained button with white text 'Contained button', purple container and '+' icon over a white background."](assets/buttons/contained-button-icon.svg)
 
-```
+```dart
 RaisedButton.icon(
     textColor: Colors.white,
     color: Color(0xFF6200EE),
@@ -377,7 +380,7 @@ RaisedButton.icon(
 <!-- **Test code may eventually be replaced with dartpad link**
 To test code copy and paste code into [dartpad.dev](https://dartpad.dev/).
 
-```
+```dart
 import 'package:flutter/material.dart';
 
 void main() => runApp(MyApp());
@@ -441,7 +444,7 @@ class _MyHomePageState extends State<MyHomePage> {
 A contained button has a text label, a filled container and an optional icon.
 
 
-![Contained button anatomy diagram](assets/buttonscontained_button_anatomy.png)
+![Contained button anatomy diagram](assets/buttons/contained_button_anatomy.png)
 
 1. Text label
 1. Container
@@ -503,6 +506,7 @@ API and source code:
 * `ToggleButtons`
     * [Class definition](https://api.flutter.dev/flutter/material/ToggleButtons-class.html)
     * [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/toggle_buttons.dart)
+    * [Dartpad demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/buttons/icon&gh_ref=develop)
 
 The following example shows a toggle button with three buttons that have text labels.
 
@@ -514,7 +518,7 @@ final isSelected = <bool>[false, false, false];
 ```
 
 In the widget hierarchy:
-```
+```dart
 ToggleButtons(
     color: Colors.black.withOpacity(0.60),
     selectedColor: Color(0xFF6200EE),
@@ -553,7 +557,7 @@ The following example shows a toggle button with three buttons that have icons.
 
 !["Toggle button example for Flutter with icons - heart, eye and bell - and grey/purple borders over a white background."](assets/buttons/toggle-button.svg)
 
-```
+```dart
 ToggleButtons(
     color: Colors.black.withOpacity(0.60),
     selectedColor: Color(0xFF6200EE),
@@ -579,7 +583,7 @@ ToggleButtons(
 <!-- **Test code may eventually be replaced with dartpad link**
 To test code copy and paste code into [dartpad.dev](https://dartpad.dev/).
 
-```
+```dart
 import 'package:flutter/material.dart';
 
 void main() => runApp(MyApp());
@@ -708,6 +712,7 @@ API and source code:
 * `IconButton`
     * [Class definition](https://api.flutter.dev/flutter/material/IconButton-class.html)
     * [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/icon_button.dart)
+    * [Dartpad demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/buttons/theme&gh_ref=develop)
 
 The following example shows an icon that can be used independently or in items of a `GridView`.
 
@@ -715,13 +720,13 @@ The following example shows an icon that can be used independently or in items o
 
 
 In the state:
-```
+```dart
 var isSelected = false;
 var icon = Icons.favorite_border;
 ```
 
 In the widget hierarchy:
-```
+```dart
 IconButton(
     icon: Icon(icon),
     color: Colors.white,
@@ -737,7 +742,7 @@ IconButton(
 <!-- **Test code may eventually be replaced with dartpad link**
 To test code copy and paste code into [dartpad.dev](https://dartpad.dev/).
 
-```
+```dart
 import 'package:flutter/material.dart';
 
 void main() => runApp(MyApp());
@@ -846,7 +851,7 @@ The following example shows text, outlined and contained button types with the [
 <b>Implementing button theming</b>
 
 The Material Shrine theme uses the following colors:
-```
+```dart
 const Color shrinePink50 = Color(0xFFFEEAE6);
 const Color shrinePink100 = Color(0xFFFEDBD0);
 const Color shrinePink300 = Color(0xFFFBB8AC);
@@ -862,7 +867,7 @@ const Color shrineBackgroundWhite = Colors.white;
 ```
 
 In the theme category within the `MaterialApp` class:
-```
+```dart
 theme: ThemeData(
   buttonColor: shrinePink100,
   buttonTheme: const ButtonThemeData(
@@ -887,7 +892,7 @@ theme: ThemeData(
 ```
 <!-- **Test code may eventually be replaced with dartpad link**
 To test code copy and paste code into [dartpad.dev](https://dartpad.dev/)
-```
+```dart
 import 'package:flutter/material.dart';
 
 void main() => runApp(MyApp());
