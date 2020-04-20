@@ -82,8 +82,8 @@ A regular FAB has a container and an icon.
 &nbsp;         | Property
 -------------- | -----------------------
 **Color** | `backgroundColor`
-**Stroke color** | N/A
-**Stroke width** | N/A
+**Stroke color** | `color` of `side` on a custom `shape`
+**Stroke width** | `width` of `side` on a custom `shape`
 **Shape** | `shape`
 **Elevation** | `elevation`
 **Ripple color** | `splashColor`
@@ -142,8 +142,8 @@ A mini FAB has a container and an icon.
 &nbsp;         | Property
 -------------- | -----------------------
 **Color** | `backgroundColor`
-**Stroke color** | N/A
-**Stroke width** | N/A
+**Stroke color** | `color` of `side` on a custom `shape`
+**Stroke width** | `width` of `side` on a custom `shape`
 **Shape** | `shape`
 **Elevation** | `elevation`
 **Ripple color** | `splashColor`
@@ -200,8 +200,8 @@ An extended FAB has a text label, a transparent container and an optional icon.
 &nbsp;         | Property
 -------------- | -----------------------
 **Color** | `backgroundColor`
-**Stroke color** | N/A
-**Stroke width** | N/A
+**Stroke color** | `color` of `side` on a custom `shape`
+**Stroke width** | `width` of `side` on a custom `shape`
 **Shape** | `shape`
 **Elevation** | `elevation`
 **Ripple color** | `splashColor`
