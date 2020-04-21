@@ -1,0 +1,4 @@
+name: Material Mini FAB Demonstration
+mode: flutter
+files:
+  - name: main.dart
