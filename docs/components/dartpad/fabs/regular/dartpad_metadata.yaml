@@ -1,0 +1,4 @@
+name: Material Regular FAB Demonstration
+mode: flutter
+files:
+  - name: main.dart
