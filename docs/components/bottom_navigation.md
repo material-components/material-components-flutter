@@ -94,13 +94,7 @@ The following is an anatomy diagram for the bottom navigation bar:
 | &nbsp; | Property |
 | --- | --- |
 | **Color** | `backgroundColor` |
-| **Stroke color** | N/A |
-| **Stroke width** | N/A |
-| **Shape** | N/A |
 | **Elevation** | `elevation` |
-| **Ripple color** | N/A |
-| **Disabled color** | N/A |
-| **Disabled elevation** | N/A |
 
 
 **Inactive icon attributes**
@@ -119,7 +113,6 @@ The following is an anatomy diagram for the bottom navigation bar:
 | --- | --- |
 | **Text label** | `title` |
 | **Color** | `unselectedItemColor` |
-| **Disabled Text Color** | N/A |
 | **Typography** | `unselectedLabelStyle` |
 
 **Active icon attributes**
@@ -138,7 +131,6 @@ The following is an anatomy diagram for the bottom navigation bar:
 | --- | --- |
 | **Text label** | `title`|
 | **Color** | `selectedItemColor` |
-| **Disabled Text Color** | N/A |
 | **Typography** | `selectedLabelStyle` |
 
 ## Theming a bottom nav bar
