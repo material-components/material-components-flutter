@@ -43,7 +43,7 @@ The following example shows a bottom navigation bar with four icons:
 * places
 * news
 
-![bottom navigation bar with favorites, music note, places, and news icons](assets/bottom_navigation/flutter-bottom-nav-regular.png)
+![Bottom navigation bar with favorites, music note, places, and news icons](assets/bottom_navigation/flutter-bottom-nav-regular.png)
 
 ```dart
 BottomNavigationBar(
