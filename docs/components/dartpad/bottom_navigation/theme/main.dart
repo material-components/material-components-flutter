@@ -64,48 +64,29 @@ ThemeData _buildShrineTheme() {
   final ThemeData base = ThemeData.light();
   return base.copyWith(
     colorScheme: _shrineColorScheme,
-    accentColor: shrineBrown900,
-    primaryColor: shrinePink100,
-    buttonColor: shrinePink100,
-    scaffoldBackgroundColor: shrineBackgroundWhite,
-    cardColor: shrineBackgroundWhite,
-    textSelectionColor: shrinePink100,
-    errorColor: shrineErrorRed,
-    buttonTheme: const ButtonThemeData(
-      colorScheme: _shrineColorScheme,
-      textTheme: ButtonTextTheme.normal,
-    ),
-    primaryIconTheme: _customIconTheme(base.iconTheme),
     textTheme: _buildShrineTextTheme(base.textTheme),
-    primaryTextTheme: _buildShrineTextTheme(base.primaryTextTheme),
-    accentTextTheme: _buildShrineTextTheme(base.accentTextTheme),
-    iconTheme: _customIconTheme(base.iconTheme),
   );
-}
-
-IconThemeData _customIconTheme(IconThemeData original) {
-  return original.copyWith(color: shrineBrown900);
 }
 
 TextTheme _buildShrineTextTheme(TextTheme base) {
   return base
       .copyWith(
-        caption: base.caption.copyWith(
-          fontWeight: FontWeight.w400,
-          fontSize: 14,
-          letterSpacing: defaultLetterSpacing,
-        ),
-        button: base.button.copyWith(
-          fontWeight: FontWeight.w500,
-          fontSize: 14,
-          letterSpacing: defaultLetterSpacing,
-        ),
-      )
+    caption: base.caption.copyWith(
+      fontWeight: FontWeight.w400,
+      fontSize: 14,
+      letterSpacing: defaultLetterSpacing,
+    ),
+    button: base.button.copyWith(
+      fontWeight: FontWeight.w500,
+      fontSize: 14,
+      letterSpacing: defaultLetterSpacing,
+    ),
+  )
       .apply(
-        fontFamily: 'Rubik',
-        displayColor: shrineBrown900,
-        bodyColor: shrineBrown900,
-      );
+    fontFamily: 'Rubik',
+    displayColor: shrineBrown900,
+    bodyColor: shrineBrown900,
+  );
 }
 
 const ColorScheme _shrineColorScheme = ColorScheme(

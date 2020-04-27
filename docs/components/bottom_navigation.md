@@ -2,7 +2,7 @@
 title: "Bottom navigation"
 layout: detail
 section: components
-excerpt: "Bottom navation bars allow movement between primary distinations in an app"
+excerpt: "Bottom Navigation bars allow movement between primary distinations in an app"
 iconId:
 path: /components/bottom-navigation/
 -->
@@ -43,7 +43,7 @@ The following example shows a bottom navigation bar with four icons:
 * places
 * news
 
-<img src="assets/bottom_navigation/flutter-bottom-nav-regular.png" alt="bottom navigation bar with favorites, music note, places, and news icons">
+![bottom navigation bar with favorites, music note, places, and news icons](assets/bottom_navigation/flutter-bottom-nav-regular.png)
 
 ```dart
 BottomNavigationBar(
@@ -147,7 +147,7 @@ The following example shows a bottom navigation bar with the [Material Shrine Th
 
 * [Dartpad Demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/bottom_navigation/theme)
 
-![FABs with Shrine theming](assets/bottom_navigation/flutter-bottom-nav-themed.png)
+![Bottom Navigation bar with Shrine theming](assets/bottom_navigation/flutter-bottom-nav-themed.png)
 
 ```
 import 'package:flutter/material.dart';
@@ -216,27 +216,8 @@ ThemeData _buildShrineTheme() {
   final ThemeData base = ThemeData.light();
   return base.copyWith(
     colorScheme: _shrineColorScheme,
-    accentColor: shrineBrown900,
-    primaryColor: shrinePink100,
-    buttonColor: shrinePink100,
-    scaffoldBackgroundColor: shrineBackgroundWhite,
-    cardColor: shrineBackgroundWhite,
-    textSelectionColor: shrinePink100,
-    errorColor: shrineErrorRed,
-    buttonTheme: const ButtonThemeData(
-      colorScheme: _shrineColorScheme,
-      textTheme: ButtonTextTheme.normal,
-    ),
-    primaryIconTheme: _customIconTheme(base.iconTheme),
     textTheme: _buildShrineTextTheme(base.textTheme),
-    primaryTextTheme: _buildShrineTextTheme(base.primaryTextTheme),
-    accentTextTheme: _buildShrineTextTheme(base.accentTextTheme),
-    iconTheme: _customIconTheme(base.iconTheme),
   );
-}
-
-IconThemeData _customIconTheme(IconThemeData original) {
-  return original.copyWith(color: shrineBrown900);
 }
 
 TextTheme _buildShrineTextTheme(TextTheme base) {
