@@ -16,7 +16,7 @@ There are three list types:
 1. [Two-line list](#two-line-list)
 1. [Three-line list](#three-line-list)
 
-![Composite image of the three list types](assets/lists-types.png)
+![Composite image of the three list types](assets/lists/lists-types.png)
 
 ## Using lists
 
@@ -29,11 +29,11 @@ Flutter's card component APIs support labeling for accessibility. For more guida
 
 The following anatomy diagram applies to all three list types:
 
-![List anatomy diagram showing list, row, and list item content](assets/list-content-anatomy.png)
+![List anatomy diagram showing list, row, and list item content](assets/lists/list-content-anatomy.png)
 
 The following anatomy diagrams apply  to the list item content:
 
-![List item content showing supporting visuals, primary text, metadata, and controls in two list components](assets/combined-list-content.png)
+![List item content showing supporting visuals, primary text, metadata, and controls in two list components](assets/lists/combined-list-content.png)
 
 
 A list consists of the following attributes:
@@ -59,13 +59,22 @@ Source code API:
 `ListTile`
 * [Class definition](https://api.flutter.dev/flutter/material/ListTile-class.html)
 * [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/list_tile.dart)
+* [Dartpad Demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/lists/single)
 
-**Note to developers**
-Provide a single-line list example screenshot and example code with the following:
-* List item titles for 3+ list items, starting with "List item 1"
-* Each item should have a 'label' icon as its supporting visual
-* Each item shoud have metadata numbering from '01' to '0n'
+![Single-list example](assets/lists/single-line-list-example.png)
 
+```dart
+ListView(
+  children: [
+    for (int count in List.generate(9, (index) => index + 1))
+      ListTile(
+        title: Text('List item $count'),
+        leading: Icon(Icons.local_offer),
+        trailing: Text("0$count"),
+      )
+  ],
+)
+```
 
 ### Single-line list key properties
 

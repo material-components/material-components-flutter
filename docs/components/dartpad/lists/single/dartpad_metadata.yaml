@@ -1,0 +1,4 @@
+name: Material Single-line List Demo
+mode: flutter
+files:
+  - name: main.dart
