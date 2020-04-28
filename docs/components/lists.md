@@ -66,12 +66,11 @@ Source code API:
 ```dart
 ListView(
   children: [
-    for (int count in List.generate(9, (index) => index + 1))
-      ListTile(
-        title: Text('List item $count'),
-        leading: Icon(Icons.local_offer),
-        trailing: Text("0$count"),
-      )
+    ListTile(
+      title: Text('Primary text'),
+      leading: Icon(Icons.local_offer),
+      trailing: Text('Metadata'),
+    ),
   ],
 )
 ```
