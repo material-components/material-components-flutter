@@ -1,0 +1,4 @@
+name: Bottom app bar with Theme Demonstration
+mode: flutter
+files:
+  - name: main.dart
