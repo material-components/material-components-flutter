@@ -24,27 +24,27 @@ class ListDemo extends StatefulWidget {
 }
 
 class _ListDemoState extends State<ListDemo> {
-  int groupValue = 1;
+  Map<int, bool> countToValue = <int, bool>{};
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Two-line list'),
+        title: Text('Three-line list'),
       ),
       body: ListView(
         children: [
           for (int count in List.generate(9, (index) => index + 1))
             ListTile(
               title: Text('List item $count'),
-              subtitle: Text('Secondary text'),
+              isThreeLine: true,
+              subtitle: Text('Secondary text\nTertiary text'),
               leading: Icon(Icons.label),
-              trailing: Radio(
-                value: count,
-                groupValue: groupValue,
-                onChanged: (value) {
+              trailing: Checkbox(
+                value: countToValue[count] ?? false,
+                onChanged: (bool value) {
                   setState(() {
-                    groupValue = value;
+                    countToValue[count] = value;
                   });
                 },
               ),

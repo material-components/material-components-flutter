@@ -149,20 +149,18 @@ Source code API:
 ```dart
 ListView(
   children: [
-    for (int count in List.generate(9, (index) => index + 1))
-      ListTile(
-        title: Text('List item $count'),
-        subtitle: Text('Secondary text'),
-        leading: Radio(
-          value: count,
-          groupValue: groupValue,
-          onChanged: (value) {
-            setState(() {
-              groupValue = value;
-            });
-          },
-        ),
+    ListTile(
+      title: Text('List item 1'),
+      subtitle: Text('Secondary text'),
+      leading: Icon(Icons.label),
+      trailing: Radio(
+        value: 1,
+        groupValue: groupValue,
+        onChanged: (value) {
+          // Update value.
+        },
       ),
+    ),
   ],
 )
 ```
@@ -229,15 +227,28 @@ Source code API:
 `ListTile`
 * [Class definition](https://api.flutter.dev/flutter/material/ListTile-class.html)
 * [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/list_tile.dart)
+* [Dartpad Demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/lists/three-line)
 
-**Note to developers**
-Provide a three-line list example screenshot and example code with the following:
-* List item titles for 3+ list items, starting with "List item 1"
-* Each list item should have a secondary text line that reads 'Secondary text'
-* Each list item should have a tertiary text line that reads 'Tertiary text'
-* Each item should have a 'label' icon as its supporting visual
-* Each item shoud have a checkbox
+![Three-line list example](assets/lists/three-line-list-example.png)
 
+```dart
+ListView(
+  children: [
+    ListTile(
+      title: Text('List item 1'),
+      isThreeLine: true,
+      subtitle: Text('Secondary text\nTertiary text'),
+      leading: Icon(Icons.label),
+      trailing: Checkbox(
+        value: false,
+        onChanged: (value) {
+          // Update value.
+        },
+      ),
+    ),
+  ],
+)
+```
 
 ### Three-line list key properties
 
