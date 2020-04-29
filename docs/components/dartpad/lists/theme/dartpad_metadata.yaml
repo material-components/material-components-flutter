@@ -1,0 +1,4 @@
+name: Material Three-line Theming List Demo
+mode: flutter
+files:
+  - name: main.dart
