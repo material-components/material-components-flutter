@@ -68,7 +68,7 @@ ListView(
   children: [
     ListTile(
       title: Text('Primary text'),
-      leading: Icon(Icons.local_offer),
+      leading: Icon(Icons.label),
       trailing: Text('Metadata'),
     ),
   ],
@@ -166,13 +166,6 @@ ListView(
   ],
 )
 ```
-**Note to developers**
-Provide a two-line list example screenshot and example code with the following:
-* List item titles for 3+ list items, starting with "List item 1"
-* Each list item should have a secondary text line that reads 'Secondary text'
-* Each item should have a 'label' icon as its supporting visual
-* Each item shoud have a radio control
-
 
 ### Two-line list key properties
 

@@ -30,7 +30,7 @@ class ListDemo extends StatelessWidget {
           for (int count in List.generate(9, (index) => index + 1))
             ListTile(
               title: Text('List item $count'),
-              leading: Icon(Icons.local_offer),
+              leading: Icon(Icons.label),
               trailing: Text("0$count"),
             ),
         ],
