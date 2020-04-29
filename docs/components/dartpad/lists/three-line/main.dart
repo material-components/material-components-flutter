@@ -40,6 +40,7 @@ class _ListDemoState extends State<ListDemo> {
               isThreeLine: true,
               subtitle: Text('Secondary text\nTertiary text'),
               leading: Icon(Icons.label),
+              selected: countToValue[count] ?? false,
               trailing: Checkbox(
                 value: countToValue[count] ?? false,
                 onChanged: (bool value) {
