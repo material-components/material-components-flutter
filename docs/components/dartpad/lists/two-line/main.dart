@@ -18,20 +18,35 @@ class App extends StatelessWidget {
   }
 }
 
-class ListDemo extends StatelessWidget {
+class ListDemo extends StatefulWidget {
+  @override
+  _ListDemoState createState() => _ListDemoState();
+}
+
+class _ListDemoState extends State<ListDemo> {
+  int groupValue = 1;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Single-line list'),
+        title: Text('Two-line list'),
       ),
       body: ListView(
         children: [
           for (int count in List.generate(9, (index) => index + 1))
             ListTile(
               title: Text('List item $count'),
-              leading: Icon(Icons.local_offer),
-              trailing: Text("0$count"),
+              subtitle: Text('Secondary text'),
+              leading: Radio(
+                value: count,
+                groupValue: groupValue,
+                onChanged: (value) {
+                  setState(() {
+                    groupValue = value;
+                  });
+                },
+              ),
             ),
         ],
       ),
