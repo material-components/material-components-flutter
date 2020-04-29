@@ -39,6 +39,7 @@ class _ListDemoState extends State<ListDemo> {
               title: Text('List item $count'),
               subtitle: Text('Secondary text'),
               leading: Icon(Icons.label),
+              selected: count == groupValue,
               trailing: Radio(
                 value: count,
                 groupValue: groupValue,
