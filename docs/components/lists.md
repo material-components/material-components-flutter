@@ -22,7 +22,7 @@ There are three list types:
 
 ### Making lists accessible
 
-Flutter's card component APIs support labeling for accessibility. For more guidance on writing labels, go to [our page on how to write a good accessibility label](https://material.io/design/usability/accessibility.html#writing).
+Flutter's list component APIs support labeling for accessibility. For more guidance on writing labels, go to [our page on how to write a good accessibility label](https://material.io/design/usability/accessibility.html#writing).
 
 
 ## List anatomy
@@ -82,7 +82,7 @@ ListView(
 
 | &nbsp; | Property |
 |---|---|
-| Padding between rows | `padding` on `ListView` |
+| Padding around the list | `padding` on `ListView` |
 
 #### Row properties
 
@@ -90,6 +90,7 @@ ListView(
 |---|---|
 | Enabled row | `enabled` on `ListTile` |
 | Selected row | `selected` on `ListTile` |
+| Padding on rows | `padding` on `ListTile` |
 
 
 #### List item content
@@ -108,18 +109,18 @@ The following are tables of the list item contents:
 
 | &nbsp; | Property |
 |---|---|
-| Text label | Not by default but can be made by using `ListTile()` and use property `title` |
-| Text color | Within `title` property you can customize the Text color by using the `style` property. The `style` property uses a `TextStyle` property and within that class use the `color` property |
-| Typography | Within `title` property you can customize the typography by using the `style property`. The `style` property uses a `TextStyle` property and within that class use the `fontFamily` property |
+| Text label | `title` on `ListTile` |
+| Text color | Within `title` property you can customize the Text color by using the `style` property. The `style` property uses a `TextStyle` property and within that class use the `color` property. |
+| Typography | Within `title` property you can customize the typography by using the `style property`. The `style` property uses a `TextStyle` property and within that class use the `fontFamily` property. |
 
 
 ##### Metadata
 
 | &nbsp; | Property |
 |---|---|
-| Text label | Not by default but can be made by using `ListTile()` and use property `trailing` |
-| Text color | Within `trailing` property you can customize the Text color by using the `style` property. The `style` property uses a `TextStyle` property and within that class use the `color` property |
-| Typography | Within `trailing` property you can customize the typography by using the `style property`. The `style` property uses a `TextStyle` property and within that class use the `fontFamily` property |
+| Text label | `trailing` on `ListTile` |
+| Text color | Within `trailing` property you can customize the Text color by using the `style` property. The `style` property uses a `TextStyle` property and within that class use the `color` property. |
+| Typography | Within `trailing` property you can customize the typography by using the `style property`. The `style` property uses a `TextStyle` property and within that class use the `fontFamily` property. |
 
 
 ##### Controls
@@ -187,25 +188,25 @@ The following are tables of the list item contents:
 
 | &nbsp; | Property |
 |---|---|
-| Text label | Not by default but can be made by using `ListTile()` and use property `title` |
-| Text color | Within `title` property you can customize the Text color by using the `style` property. The `style` property uses a `TextStyle` property and within that class use the `color` property |
-| Typography | Within `title` property you can customize the typography by using the `style property`. The `style` property uses a `TextStyle` property and within that class use the `fontFamily` property |
+| Text label | `title` on `ListTile` |
+| Text color | Within `title` property you can customize the Text color by using the `style` property. The `style` property uses a `TextStyle` property and within that class use the `color` property. |
+| Typography | Within `title` property you can customize the typography by using the `style property`. The `style` property uses a `TextStyle` property and within that class use the `fontFamily` property. |
 
-##### Seconary text
+##### Secondary text
 
 | &nbsp; | Property |
 |---|---|
-| Text label | Not by default but can be made by using `ListTile()` and use property `subtitle` |
-| Text color | Within `subtitle` property you can customize the Text color by using the `style` property. The `style` property uses a `TextStyle` property and within that class use the `color` property |
-| Typography | Within `subtitle` property you can customize the typography by using the `style property`. The `style` property uses a `TextStyle` property and within that class use the `fontFamily` property |
+| Text label | `subtitle` on `ListTile` |
+| Text color | Within `subtitle` property you can customize the Text color by using the `style` property. The `style` property uses a `TextStyle` property and within that class use the `color` property. |
+| Typography | Within `subtitle` property you can customize the typography by using the `style property`. The `style` property uses a `TextStyle` property and within that class use the `fontFamily` property. |
 
 ##### Metadata
 
 | &nbsp; | Property |
 |---|---|
-| Text label | Not by default but can be made by using `ListTile()` and use property `trailing` |
-| Text color | Within `trailing` property you can customize the Text color by using the `style` property. The `style` property uses a `TextStyle` property and within that class use the `color` property |
-| Typography | Within `trailing` property you can customize the typography by using the `style property`. The `style` property uses a `TextStyle` property and within that class use the `fontFamily` property |
+| Text label | `trailing` on `ListTile` |
+| Text color | Within `trailing` property you can customize the Text color by using the `style` property. The `style` property uses a `TextStyle` property and within that class use the `color` property. |
+| Typography | Within `trailing` property you can customize the typography by using the `style property`. The `style` property uses a `TextStyle` property and within that class use the `fontFamily` property. |
 
 
 ##### Controls
@@ -265,35 +266,36 @@ The following are tables of the list item contents:
 
 | &nbsp; | Property |
 |---|---|
-| Text label | Not by default but can be made by using `ListTile()` and use property `title` |
-| Text color | Within `title` property you can customize the Text color by using the `style` property. The `style` property uses a `TextStyle` property and within that class use the `color` property |
-| Typography | Within `title` property you can customize the typography by using the `style property`. The `style` property uses a `TextStyle` property and within that class use the `fontFamily` property |
+| Text label | `title` on `ListTile` |
+| Text color | Within `title` property you can customize the Text color by using the `style` property. The `style` property uses a `TextStyle` property and within that class use the `color` property. |
+| Typography | Within `title` property you can customize the typography by using the `style property`. The `style` property uses a `TextStyle` property and within that class use the `fontFamily` property. |
 
-##### Seconary text
+##### Secondary text
 
 | &nbsp; | Property |
 |---|---|
-| Text label | Not by default but can be made by using `ListTile()` and use property `subtitle` |
-| Text color | Within `subtitle` property you can customize the Text color by using the `style` property. The `style` property uses a `TextStyle` property and within that class use the `color` property |
-| Typography | Within `subtitle` property you can customize the typography by using the `style property`. The `style` property uses a `TextStyle` property and within that class use the `fontFamily` property |
+| Text label | `subtitle` on `ListTile` |
+| Text color | Within `subtitle` property you can customize the Text color by using the `style` property. The `style` property uses a `TextStyle` property and within that class use the `color` property. |
+| Typography | Within `subtitle` property you can customize the typography by using the `style property`. The `style` property uses a `TextStyle` property and within that class use the `fontFamily` property. |
 
 
 ##### Tertiary text
 
 | &nbsp; | Property |
 |---|---|
-| Text label | Not by default but can be made by using `ListTile()` and use property `subtitle` and enabling `isThreeLine` |
-| Text color | Within `subtitle` property you can customize the Text color by using the `style` property. The `style` property uses a `TextStyle` property and within that class use the `color` property |
-| Typography | Within `subtitle` property you can customize the typography by using the `style property`. The `style` property uses a `TextStyle` property and within that class use the `fontFamily` property |
+| Text label | `subtitle` on `ListTile` with `isThreeLine` set to true |
+| Text color | Within `subtitle` property you can customize the Text color by using the `style` property. The `style` property uses a `TextStyle` property and within that class use the `color` property. |
+| Typography | Within `subtitle` property you can customize the typography by using the `style property`. The `style` property uses a `TextStyle` property and within that class use the `fontFamily` property. |
 
 
 ##### Metadata
 
 | &nbsp; | Property |
 |---|---|
+| Text label | `trailing` on `ListTile` |
 | Text label | Not by default but can be made by using `ListTile()` and use property `trailing` |
-| Text color | Within `trailing` property you can customize the Text color by using the `style` property. The `style` property uses a `TextStyle` property and within that class use the `color` property |
-| Typography | Within `trailing` property you can customize the typography by using the `style property`. The `style` property uses a `TextStyle` property and within that class use the `fontFamily` property |
+| Text color | Within `trailing` property you can customize the Text color by using the `style` property. The `style` property uses a `TextStyle` property and within that class use the `color` property. |
+| Typography | Within `trailing` property you can customize the typography by using the `style property`. The `style` property uses a `TextStyle` property and within that class use the `fontFamily` property. |
 
 
 ##### Controls
@@ -305,8 +307,8 @@ The following are tables of the list item contents:
 
 ### Theming lists
 
-Lists support [Material Theming](https://material.io/components/buttons/#theming) and can be
-customized in terms of color, typography and shape.
+Lists support [Material Theming](https://material.io/components/lists/#theming) and can be
+customized in terms of color and typography.
 
 * [Dartpad Demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/lists/theme)
 
