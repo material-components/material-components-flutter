@@ -15,9 +15,7 @@ path: /catalog/material-bottom-app-bar/
 
 ## Using the bottom app bar
 
-**Note to developers: please add a link to your platform's FAB article below**
-
-Bottom app bars provide access to a bottom navigation drawer and up to four actions, including the [floating action button](link to floating action button here).
+Bottom app bars provide access to a bottom navigation drawer and up to four actions, including the [floating action button](fab.md).
 
 Before you can use Material buttons, you need to import the Material Components package for Flutter:
 ```
@@ -81,7 +79,7 @@ Scaffold(
 
 **Note to developers: please add a link to your platform's FAB article below**
 
-See [floating action button](link to floating action button here).
+See [floating action button](fab.md).
 
 ### Icons attributes
 
