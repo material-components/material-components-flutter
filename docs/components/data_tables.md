@@ -3,7 +3,7 @@ title: "Data tables"
 layout: detail
 section: components
 excerpt: "Data tables display information in a grid-like format of rows and columns."
-iconId: 
+iconId:
 path: /catalog/data-tables/
 api_doc_root: true
 -->
@@ -26,11 +26,11 @@ Data tables can contain:
 
 ### Making data tables accessible
 
-Flutter's text field component APIs supports both label text and helper text for accessibility.
+Flutter's APIs support accessibility setting for large fonts, screen readers, and sufficient contrast. For more information, go to Flutter's [accessibility](https://flutter.dev/docs/development/accessibility-and-localization/accessibility) and [internationalization](https://flutter.dev/docs/development/accessibility-and-localization/internationalization) pages.
 
 For more guidance on writing labels, go to [our page on how to write a good accessibility label](https://material.io/design/usability/accessibility.html#writing).
 
-## Data tables
+## Data tables Information
 
 * [Class description](https://api.flutter.dev/flutter/material/DataTable-class.html)
 * [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/data_table.dart)
@@ -41,14 +41,7 @@ For more guidance on writing labels, go to [our page on how to write a good acce
 
 ```dart
 
-
-class DataTableDemo extends StatefulWidget {
-  @override
-  _DataTableDemoState createState() => _DataTableDemoState();
-}
-
-class _DataTableDemoState extends State<DataTableDemo> {
-
+class DataTableDemo extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
@@ -76,16 +69,16 @@ class _DataTableDemoState extends State<DataTableDemo> {
 
 class _Row {
   _Row(
-    this.headerA,
-    this.headerB,
-    this.headerC,
-    this.headerD,
+    this.valueA,
+    this.valueB,
+    this.valueC,
+    this.valueD,
   );
 
-  final String headerA;
-  final String headerB;
-  final String headerC;
-  final int headerD;
+  final String valueA;
+  final String valueB;
+  final String valueC;
+  final int valueD;
 
   bool selected = false;
 }
@@ -122,10 +115,10 @@ class _DataSource extends DataTableSource {
         }
       },
       cells: [
-        DataCell(Text(row.headerA)),
-        DataCell(Text(row.headerB)),
-        DataCell(Text(row.headerC)),
-        DataCell(Text(row.headerD.toString())),
+        DataCell(Text(row.valueA)),
+        DataCell(Text(row.valueB)),
+        DataCell(Text(row.valueC)),
+        DataCell(Text(row.valueD.toString())),
       ],
     );
   }
@@ -162,10 +155,6 @@ A data table consists of the following properties:
 | --- | --- |
 | **Color** | style |
 | **Stroke color** | while setting `ThemeData` fill out `divideColor` parameter |
-| **Stroke width** | N/A |
-| **Shape** | N/A |
-| **Elevation** | N/A |
-| **Ripple color** | N/A |
 
 ### Column header names
 
@@ -177,9 +166,7 @@ A data table consists of the following properties:
 
 ### Sort button
 
-| &nbsp; | Property |
-| --- | --- |
-| **Icon** | N/A |
+Sorting button can't be customized.
 
 ### Row checkboxes
 
@@ -205,7 +192,7 @@ Data Table cells children are Widgets. This means that the Data table is depende
 
 [Dartpad demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/data_tables/normal)
 
-![Demo table without Theme](assets/data_tables/data_table_theme.png)
+![Demo table with Theme](assets/data_tables/data_table_theme.png)
 
 ```dart
 
@@ -225,13 +212,7 @@ class MyApp extends StatelessWidget {
   }
 }
 
-class DataTableDemo extends StatefulWidget {
-  @override
-  _DataTableDemoState createState() => _DataTableDemoState();
-}
-
-class _DataTableDemoState extends State<DataTableDemo> {
-
+class DataTableDemo extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
@@ -259,16 +240,16 @@ class _DataTableDemoState extends State<DataTableDemo> {
 
 class _Row {
   _Row(
-      this.headerA,
-      this.headerB,
-      this.headerC,
-      this.headerD,
+      this.valueA,
+      this.valueB,
+      this.valueC,
+      this.valueD,
       );
 
-  final String headerA;
-  final String headerB;
-  final String headerC;
-  final int headerD;
+  final String valueA;
+  final String valueB;
+  final String valueC;
+  final int valueD;
 
   bool selected = false;
 }
@@ -305,10 +286,10 @@ class _DataSource extends DataTableSource {
         }
       },
       cells: [
-        DataCell(Text(row.headerA)),
-        DataCell(Text(row.headerB)),
-        DataCell(Text(row.headerC)),
-        DataCell(Text(row.headerD.toString())),
+        DataCell(Text(row.valueA)),
+        DataCell(Text(row.valueB)),
+        DataCell(Text(row.valueC)),
+        DataCell(Text(row.valueD.toString())),
       ],
     );
   }
@@ -401,7 +382,5 @@ const Color shrineSurfaceWhite = Color(0xFFFFFBFA);
 const Color shrineBackgroundWhite = Colors.white;
 
 const defaultLetterSpacing = 0.03;
-
-
 
 ```

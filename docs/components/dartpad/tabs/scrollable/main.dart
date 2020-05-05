@@ -27,6 +27,7 @@ class MyApp extends StatelessWidget {
             automaticallyImplyLeading: false,
             backgroundColor: Color(0xff5808e5),
             bottom: TabBar(
+              indicatorColor: Colors.white,
               isScrollable: true,
               tabs: [
                 for (final tab in tabs) Tab(text: tab),

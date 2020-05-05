@@ -12,10 +12,11 @@ path: /catalog/tabs
 [Tabs](https://material.io/components/tabs/) organize content across different screens, data sets, and other interactions.
 
 There are two types of tabs:
+
 1. [Fixed tabs](#fixed-tabs)
 1. [Scrollable tabs](#scrollable-tabs)
 
-<br>
+\
 
 1. ![fixed tab example](assets/tabs/tabs-fixed-hero.png)
 1. ![scrollabe tab example](assets/tabs/tabs-scrollable-hero.png)
@@ -24,7 +25,8 @@ There are two types of tabs:
 
 Tabs organize and allow navigation between groups of content that are related and at the same level of hierarchy.
 
-### Installing 
+### Installing
+
 To use Tabs in Flutter you need to import the Material package \
 `import 'package:flutter/material.dart';`
 
@@ -84,7 +86,6 @@ For more guidance on writing labels, go to [our page on how to write a good acce
 **`MaterialToolbar` icon** | In widget `Tab` assign the `icon` parameter
 **`MaterialToolbar` icon color** |  In `TabBar` assign the `unselectedLabelColor` parameter
 
-
 ### Inactive text label attributes
 
 &nbsp;         | Property
@@ -106,6 +107,7 @@ Fixed tabs display all tabs on one screen, with each tab at a fixed width. The w
 ### Fixed tab example
 
 `Tabs`
+
 * [Class definition](https://api.flutter.dev/flutter/material/TabBar-class.html)
 * [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/tabs.dart)
 * [Dartpad demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/tabs/fixed)
@@ -126,6 +128,7 @@ MaterialApp(
             automaticallyImplyLeading: false,
             backgroundColor: Color(0xff5808e5),
             bottom: TabBar(
+              indicatorColor: Colors.white,
               tabs: [
                 Tab(text: 'DOGS', icon: Icon(Icons.favorite)),
                 Tab(text: 'CATS', icon: Icon(Icons.music_note)),
@@ -183,6 +186,7 @@ The following example shows a row of of scrollable tabs.
             automaticallyImplyLeading: false,
             backgroundColor: Color(0xff5808e5),
             bottom: TabBar(
+              indicatorColor: Colors.white,
               isScrollable: true,
               tabs: [
                 for (final tab in tabs) Tab(text: tab),
@@ -205,10 +209,11 @@ The following example shows a row of of scrollable tabs.
 ## Theming tabs
 
 `Tabs`
+
 * [Class definition](https://api.flutter.dev/flutter/material/TabBar-class.html)
 * [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/tabs.dart)
 * [Dartpad demo for Scrollable Theme](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/tabs/scrollable_theme)
-* [Dartpad demo for Scrollable Theme](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/tabs/theme)
+* [Dartpad demo for Fixed Theme](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/tabs/theme)
 
 The following example shows a row of of scrollable tabs.
 
@@ -285,6 +290,7 @@ ThemeData _buildShrineTheme() {
     primaryTextTheme: _buildShrineTextTheme(base.primaryTextTheme),
     accentTextTheme: _buildShrineTextTheme(base.accentTextTheme),
     iconTheme: _customIconTheme(base.iconTheme),
+    indicatorColor: shrineBrown600,
   );
 }
 
@@ -343,6 +349,5 @@ const Color shrineSurfaceWhite = Color(0xFFFFFBFA);
 const Color shrineBackgroundWhite = Colors.white;
 
 const defaultLetterSpacing = 0.03;
-
 
 ```

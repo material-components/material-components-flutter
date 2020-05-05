@@ -13,13 +13,7 @@ class MyApp extends StatelessWidget {
   }
 }
 
-class DataTableDemo extends StatefulWidget {
-  @override
-  _DataTableDemoState createState() => _DataTableDemoState();
-}
-
-class _DataTableDemoState extends State<DataTableDemo> {
-
+class DataTableDemo extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
@@ -47,16 +41,16 @@ class _DataTableDemoState extends State<DataTableDemo> {
 
 class _Row {
   _Row(
-    this.headerA,
-    this.headerB,
-    this.headerC,
-    this.headerD,
+    this.valueA,
+    this.valueB,
+    this.valueC,
+    this.valueD,
   );
 
-  final String headerA;
-  final String headerB;
-  final String headerC;
-  final int headerD;
+  final String valueA;
+  final String valueB;
+  final String valueC;
+  final int valueD;
 
   bool selected = false;
 }
@@ -93,10 +87,10 @@ class _DataSource extends DataTableSource {
         }
       },
       cells: [
-        DataCell(Text(row.headerA)),
-        DataCell(Text(row.headerB)),
-        DataCell(Text(row.headerC)),
-        DataCell(Text(row.headerD.toString())),
+        DataCell(Text(row.valueA)),
+        DataCell(Text(row.valueB)),
+        DataCell(Text(row.valueC)),
+        DataCell(Text(row.valueD.toString())),
       ],
     );
   }

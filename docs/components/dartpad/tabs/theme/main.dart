@@ -55,6 +55,7 @@ ThemeData _buildShrineTheme() {
     primaryTextTheme: _buildShrineTextTheme(base.primaryTextTheme),
     accentTextTheme: _buildShrineTextTheme(base.accentTextTheme),
     iconTheme: _customIconTheme(base.iconTheme),
+    indicatorColor: shrineBrown600,
   );
 }
 

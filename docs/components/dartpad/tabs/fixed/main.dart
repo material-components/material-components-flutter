@@ -15,6 +15,7 @@ class MyApp extends StatelessWidget {
             automaticallyImplyLeading: false,
             backgroundColor: Color(0xff5808e5),
             bottom: TabBar(
+              indicatorColor: Colors.white,
               tabs: [
                 Tab(text: 'DOGS', icon: Icon(Icons.favorite)),
                 Tab(text: 'CATS', icon: Icon(Icons.music_note)),
