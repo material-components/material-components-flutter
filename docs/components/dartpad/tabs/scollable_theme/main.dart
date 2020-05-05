@@ -5,56 +5,43 @@ void main() => runApp(MyApp());
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    final tabs = [
+      'Tab 1',
+      'Tab 2',
+      'Tab 3',
+      'Tab 4',
+      'Tab 5',
+      'Tab 6',
+      'Tab 7',
+      'Tab 8',
+      'Tab 9',
+    ];
+
     return MaterialApp(
-      theme: _buildShrineTheme(),
       title: 'Flutter Demo',
-      home: MyHomePage(),
-    );
-  }
-}
-
-class MyHomePage extends StatefulWidget {
-  @override
-  _MyHomePageState createState() => _MyHomePageState();
-}
-
-class _MyHomePageState extends State<MyHomePage> {
-  int _currentIndex = 0;
-
-  Widget build(BuildContext context) {
-    final colorScheme = Theme.of(context).colorScheme;
-    final textTheme = Theme.of(context).textTheme;
-    return Scaffold(
-      bottomNavigationBar: BottomNavigationBar(
-        type: BottomNavigationBarType.fixed,
-        currentIndex: _currentIndex,
-        backgroundColor: colorScheme.surface,
-        selectedItemColor: colorScheme.onSurface,
-        unselectedItemColor: colorScheme.onSurface.withOpacity(.60),
-        selectedLabelStyle: textTheme.caption,
-        unselectedLabelStyle: textTheme.caption,
-        onTap: (value) {
-          // Respond to item press.
-          setState(() => _currentIndex = value);
-        },
-        items: [
-          BottomNavigationBarItem(
-            title: Text('Favorites'),
-            icon: Icon(Icons.favorite),
+      theme: _buildShrineTheme(),
+      home: DefaultTabController(
+        length: tabs.length,
+        child: Scaffold(
+          appBar: AppBar(
+            title: Text('Scrollable Tabs Theme'),
+            automaticallyImplyLeading: false,
+            bottom: TabBar(
+              isScrollable: true,
+              tabs: [
+                for (final tab in tabs) Tab(text: tab),
+              ],
+            ),
           ),
-          BottomNavigationBarItem(
-            title: Text('Music'),
-            icon: Icon(Icons.music_note),
+          body: TabBarView(
+            children: [
+              for (final tab in tabs)
+                Center(
+                  child: Text(tab),
+                ),
+            ],
           ),
-          BottomNavigationBarItem(
-            title: Text('Places'),
-            icon: Icon(Icons.location_on),
-          ),
-          BottomNavigationBarItem(
-            title: Text('News'),
-            icon: Icon(Icons.library_books),
-          ),
-        ],
+        ),
       ),
     );
   }
@@ -64,8 +51,27 @@ ThemeData _buildShrineTheme() {
   final ThemeData base = ThemeData.light();
   return base.copyWith(
     colorScheme: _shrineColorScheme,
+    accentColor: shrineBrown900,
+    primaryColor: shrinePink100,
+    buttonColor: shrinePink100,
+    scaffoldBackgroundColor: shrineBackgroundWhite,
+    cardColor: shrineBackgroundWhite,
+    textSelectionColor: shrinePink100,
+    errorColor: shrineErrorRed,
+    buttonTheme: const ButtonThemeData(
+      colorScheme: _shrineColorScheme,
+      textTheme: ButtonTextTheme.normal,
+    ),
+    primaryIconTheme: _customIconTheme(base.iconTheme),
     textTheme: _buildShrineTextTheme(base.textTheme),
+    primaryTextTheme: _buildShrineTextTheme(base.primaryTextTheme),
+    accentTextTheme: _buildShrineTextTheme(base.accentTextTheme),
+    iconTheme: _customIconTheme(base.iconTheme),
   );
+}
+
+IconThemeData _customIconTheme(IconThemeData original) {
+  return original.copyWith(color: shrineBrown900);
 }
 
 TextTheme _buildShrineTextTheme(TextTheme base) {
