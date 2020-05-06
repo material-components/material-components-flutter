@@ -6,55 +6,30 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      theme: _buildShrineTheme(),
       title: 'Flutter Demo',
-      home: MyHomePage(),
-    );
-  }
-}
-
-class MyHomePage extends StatefulWidget {
-  @override
-  _MyHomePageState createState() => _MyHomePageState();
-}
-
-class _MyHomePageState extends State<MyHomePage> {
-  int _currentIndex = 0;
-
-  Widget build(BuildContext context) {
-    final colorScheme = Theme.of(context).colorScheme;
-    final textTheme = Theme.of(context).textTheme;
-    return Scaffold(
-      bottomNavigationBar: BottomNavigationBar(
-        type: BottomNavigationBarType.fixed,
-        currentIndex: _currentIndex,
-        backgroundColor: colorScheme.surface,
-        selectedItemColor: colorScheme.onSurface,
-        unselectedItemColor: colorScheme.onSurface.withOpacity(.60),
-        selectedLabelStyle: textTheme.caption,
-        unselectedLabelStyle: textTheme.caption,
-        onTap: (value) {
-          // Respond to item press.
-          setState(() => _currentIndex = value);
-        },
-        items: [
-          BottomNavigationBarItem(
-            title: Text('Favorites'),
-            icon: Icon(Icons.favorite),
+      theme: _buildShrineTheme(),
+      home: DefaultTabController(
+        length: 3,
+        child: Scaffold(
+          appBar: AppBar(
+            title: Text('Fixed Tabs'),
+            automaticallyImplyLeading: false,
+            bottom: TabBar(
+              tabs: [
+                Tab(text: 'DOGS', icon: Icon(Icons.favorite)),
+                Tab(text: 'CATS', icon: Icon(Icons.music_note)),
+                Tab(text: 'BIRDS', icon: Icon(Icons.search)),
+              ],
+            ),
           ),
-          BottomNavigationBarItem(
-            title: Text('Music'),
-            icon: Icon(Icons.music_note),
+          body: TabBarView(
+            children: [
+              Center(child: Text('DOGS')),
+              Center(child: Text('CATS')),
+              Center(child: Text('BIRDS')),
+            ],
           ),
-          BottomNavigationBarItem(
-            title: Text('Places'),
-            icon: Icon(Icons.location_on),
-          ),
-          BottomNavigationBarItem(
-            title: Text('News'),
-            icon: Icon(Icons.library_books),
-          ),
-        ],
+        ),
       ),
     );
   }
@@ -64,8 +39,28 @@ ThemeData _buildShrineTheme() {
   final ThemeData base = ThemeData.light();
   return base.copyWith(
     colorScheme: _shrineColorScheme,
+    accentColor: shrineBrown900,
+    primaryColor: shrinePink100,
+    buttonColor: shrinePink100,
+    scaffoldBackgroundColor: shrineBackgroundWhite,
+    cardColor: shrineBackgroundWhite,
+    textSelectionColor: shrinePink100,
+    errorColor: shrineErrorRed,
+    buttonTheme: const ButtonThemeData(
+      colorScheme: _shrineColorScheme,
+      textTheme: ButtonTextTheme.normal,
+    ),
+    primaryIconTheme: _customIconTheme(base.iconTheme),
     textTheme: _buildShrineTextTheme(base.textTheme),
+    primaryTextTheme: _buildShrineTextTheme(base.primaryTextTheme),
+    accentTextTheme: _buildShrineTextTheme(base.accentTextTheme),
+    iconTheme: _customIconTheme(base.iconTheme),
+    indicatorColor: shrineBrown600,
   );
+}
+
+IconThemeData _customIconTheme(IconThemeData original) {
+  return original.copyWith(color: shrineBrown900);
 }
 
 TextTheme _buildShrineTextTheme(TextTheme base) {

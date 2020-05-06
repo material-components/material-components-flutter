@@ -1,0 +1,4 @@
+name: Material Scrollable Tabs Demonstration
+mode: flutter
+files:
+  - name: main.dart

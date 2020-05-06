@@ -1,0 +1,4 @@
+name: Material Data Tables Demonstration
+mode: flutter
+files:
+  - name: main.dart
