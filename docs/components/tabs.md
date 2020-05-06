@@ -92,7 +92,7 @@ For more guidance on writing labels, go to [our page on how to write a good acce
 -------------- | ------------------------
 **Text label** | In widget `Tab` assign the `text` parameter.
 **Color**      | In `TabBar` assign the `unselectedLabelColor` parameter
-**Typography** | In `TabBar` assign the ``unselectedLabelStyle` parameter
+**Typography** | In `TabBar` assign the `unselectedLabelStyle` parameter
 
 ### Tab item attributes
 
@@ -210,6 +210,7 @@ The following example shows a row of of scrollable tabs.
 
 `Tabs`
 
+The following is an example data table using the [Shrine theme](https://material.io/design/material-studies/shrine.html).
 * [Class definition](https://api.flutter.dev/flutter/material/TabBar-class.html)
 * [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/tabs.dart)
 * [Dartpad demo for Scrollable Theme](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/tabs/scrollable_theme)

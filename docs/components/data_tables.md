@@ -149,14 +149,14 @@ A data table consists of the following properties:
 1. Row checkboxes
 1. Rows
 
-### Container
+#### Container
 
 | &nbsp; | Property |
 | --- | --- |
 | **Color** | style |
 | **Stroke color** | while setting `ThemeData` fill out `divideColor` parameter |
 
-### Column header names
+#### Column header names
 
 | &nbsp; | Property |
 | --- | --- |
@@ -164,17 +164,17 @@ A data table consists of the following properties:
 | **Typography** | Within the `Text` widget from note above fill out `style` property with `TextStyle` widget|
 | **Color** | Within the `Text` widget from note above fill out `style` property with `TextStyle` widget fill out the `color` property |
 
-### Sort button
+#### Sort button
 
 Sorting button can't be customized.
 
-### Row checkboxes
+#### Row checkboxes
 
 | &nbsp; | Property |
 | --- | --- |
 | **active Color** | while setting `ThemeData` fill out `accentColor`|
 
-### Rows
+#### Rows
 
 | &nbsp; | Property |
 | --- | --- |
@@ -186,9 +186,11 @@ Sorting button can't be customized.
 
 Data Table cells children are Widgets. This means that the Data table is dependent on the Widgets that the user puts within it. The only theme variables that affect the DataTable is:
 
-* dividerColor
-* secondaryHeaderColor
-* accentColor
+* `dividerColor`
+* `secondaryHeaderColor`
+* `accentColor`
+
+The following is an example data table using the [Shrine theme](https://material.io/design/material-studies/shrine.html).
 
 [Dartpad demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/data_tables/normal)
 
