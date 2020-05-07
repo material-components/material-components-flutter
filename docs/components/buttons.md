@@ -86,7 +86,7 @@ FlatButton.icon(
 )
 ```
 
-### Anatomy and key properties for Flat Button
+### Anatomy and key properties for flat button
 
 A text button has a text label, a transparent container and an optional icon.
 
@@ -96,7 +96,7 @@ A text button has a text label, a transparent container and an optional icon.
 1. Container
 1. Icon
 
-#### Text label for FlatButton
+#### Text label for flat button
 
 | &nbsp; | Property |
 | --- | --- |
@@ -105,7 +105,7 @@ A text button has a text label, a transparent container and an optional icon.
 | **Disabled Text Color** | `disabledTextColor` |
 | **Typography** | `style` on `child` or `label` |
 
-#### Container for FlatButton
+#### Container for flat button
 
 | &nbsp; | Property |
 | --- | --- |
@@ -118,7 +118,7 @@ A text button has a text label, a transparent container and an optional icon.
 | **Disabled color** | `disabledColor` |
 | **Disabled elevation** | `disabledElevation` |
 
-#### Icon for FlatButton
+#### Icon for flat button
 
 | &nbsp; | Property |
 | --- | --- |
@@ -126,7 +126,7 @@ A text button has a text label, a transparent container and an optional icon.
 | **Color** | `color` on `icon` |
 | **Size** | `size` on `icon` |
 
-#### Constructors for FlatButton
+#### Constructors for flat button
 
 | &nbsp; | Constructor |
 | --- | --- |
@@ -176,7 +176,7 @@ OutlineButton.icon(
 )
 ```
 
-### Anatomy and key properties for Outline Button
+### Anatomy and key properties for outline button
 
 An outlined button has a text label, a stroked container and an optional icon.
 
@@ -186,7 +186,7 @@ An outlined button has a text label, a stroked container and an optional icon.
 1. Container
 1. Icon
 
-#### Text label for Outline Button
+#### Text label for outline button
 
 | &nbsp; | Property |
 | --- | --- |
@@ -195,7 +195,7 @@ An outlined button has a text label, a stroked container and an optional icon.
 | **Disabled Text Color** | `disabledTextColor` |
 | **Typography** | `style` on `child` or `label` |
 
-#### Container for Outline Button
+#### Container for outline button
 
 | &nbsp; | Property |
 | --- | --- |
@@ -206,7 +206,7 @@ An outlined button has a text label, a stroked container and an optional icon.
 | **Elevation** | `elevation` |
 | **Ripple color** | `splashColor` |
 
-#### Icon for Outline Button
+#### Icon for outline button
 
 | &nbsp; | Property |
 | --- | --- |
@@ -214,7 +214,7 @@ An outlined button has a text label, a stroked container and an optional icon.
 | **Color** | `color` on `icon` |
 | **Size** | `size` on `icon` |
 
-#### Constructors for Outline Button
+#### Constructors for outline button
 
 | &nbsp; | Constructor |
 | --- | --- |
@@ -266,7 +266,7 @@ RaisedButton.icon(
 )
 ```
 
-### Anatomy and key properties for Raised Button
+### Anatomy and key properties for raised button
 
 A contained button has a text label, a filled container and an optional icon.
 
@@ -276,7 +276,7 @@ A contained button has a text label, a filled container and an optional icon.
 1. Container
 1. Icon
 
-#### Text label for Raised Button
+#### Text label for raised button
 
 | &nbsp; | Property |
 | --- | --- |
@@ -285,7 +285,7 @@ A contained button has a text label, a filled container and an optional icon.
 | **Disabled Text Color** | `disabledTextColor` |
 | **Typography** | `style` on `child` or `label` |
 
-#### Container for Raised Button
+#### Container for raised button
 
 | &nbsp; | Property |
 | --- | --- |
@@ -296,7 +296,7 @@ A contained button has a text label, a filled container and an optional icon.
 | **Elevation** | `elevation` |
 | **Ripple color** | `splashColor` |
 
-#### Icon for Raised Button
+#### Icon for raised button
 
 | &nbsp; | Property |
 | --- | --- |
@@ -304,7 +304,7 @@ A contained button has a text label, a filled container and an optional icon.
 | **Color** | `color` on `icon` |
 | **Size** | `size` on `icon` |
 
-#### Constructors for Raised Button
+#### Constructors for raised button
 
 | &nbsp; | Constructor |
 | --- | --- |

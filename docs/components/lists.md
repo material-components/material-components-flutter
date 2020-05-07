@@ -92,13 +92,13 @@ ListView(
 1. Primary text
 1. Metadata
 
-#### List properties for Single Line List
+#### List properties for single line list
 
 | &nbsp; | Property |
 |---|---|
 | Padding around the list | `padding` on `ListView` |
 
-#### Row properties for Single Line List
+#### Row properties for single line list
 
 | &nbsp; | Property |
 |---|---|
@@ -106,17 +106,17 @@ ListView(
 | Selected row | `selected` on `ListTile` |
 | Padding on rows | `padding` on `ListTile` |
 
-#### List item content for Single Line List
+#### List item content for single line list
 
 The following are tables of the list item contents:
 
-#### Supporting visuals for Single Line List
+#### Supporting visuals for single line list
 
 | &nbsp; | Property |
 |---|---|
 | Icon | `leading` on `ListTile` |
 
-#### Primary text for Single Line List
+#### Primary text for single line list
 
 | &nbsp; | Property |
 |---|---|
@@ -124,7 +124,7 @@ The following are tables of the list item contents:
 | Text color | Within `title` property you can customize the Text color by using the `style` property. The `style` property uses a `TextStyle` property and within that class use the `color` property. |
 | Typography | Within `title` property you can customize the typography by using the `style property`. The `style` property uses a `TextStyle` property and within that class use the `fontFamily` property. |
 
-#### Metadata for Single Line List
+#### Metadata for single line list
 
 | &nbsp; | Property |
 |---|---|
@@ -132,7 +132,7 @@ The following are tables of the list item contents:
 | Text color | Within `trailing` property you can customize the Text color by using the `style` property. The `style` property uses a `TextStyle` property and within that class use the `color` property. |
 | Typography | Within `trailing` property you can customize the typography by using the `style property`. The `style` property uses a `TextStyle` property and within that class use the `fontFamily` property. |
 
-#### Controls for Single Line List
+#### Controls for single line list
 
 | &nbsp; | Property |
 |---|---|
@@ -177,7 +177,7 @@ ListView(
 
 The following are tables of the list item contents:
 
-### List item content for Two Line List
+### List item content for two line list
 
 The following are tables of the list item contents:
 
@@ -187,13 +187,13 @@ The following are tables of the list item contents:
 1. Metadata
 1. Controls
 
-#### Supporting visuals for Two Line List
+#### Supporting visuals for two line list
 
 | &nbsp; | Property |
 |---|---|
 | Icon | `leading` on `ListTile` |
 
-#### Primary text for Two Line List
+#### Primary text for two line list
 
 | &nbsp; | Property |
 |---|---|
@@ -201,7 +201,7 @@ The following are tables of the list item contents:
 | Text color | Within `title` property you can customize the Text color by using the `style` property. The `style` property uses a `TextStyle` property and within that class use the `color` property. |
 | Typography | Within `title` property you can customize the typography by using the `style property`. The `style` property uses a `TextStyle` property and within that class use the `fontFamily` property. |
 
-#### Secondary text for Two Line List
+#### Secondary text for two line list
 
 | &nbsp; | Property |
 |---|---|
@@ -209,7 +209,7 @@ The following are tables of the list item contents:
 | Text color | Within `subtitle` property you can customize the Text color by using the `style` property. The `style` property uses a `TextStyle` property and within that class use the `color` property. |
 | Typography | Within `subtitle` property you can customize the typography by using the `style property`. The `style` property uses a `TextStyle` property and within that class use the `fontFamily` property. |
 
-#### Metadata for Two Line List
+#### Metadata for two line list
 
 | &nbsp; | Property |
 |---|---|
@@ -217,7 +217,7 @@ The following are tables of the list item contents:
 | Text color | Within `trailing` property you can customize the Text color by using the `style` property. The `style` property uses a `TextStyle` property and within that class use the `color` property. |
 | Typography | Within `trailing` property you can customize the typography by using the `style property`. The `style` property uses a `TextStyle` property and within that class use the `fontFamily` property. |
 
-#### Controls for Two Line List
+#### Controls for two line list
 
 | &nbsp; | Property |
 |---|---|
@@ -269,13 +269,13 @@ The following are tables of the list item contents:
 1. Metadata
 1. Controls
 
-#### Supporting visuals for Three Line List
+#### Supporting visuals for three line list
 
 | &nbsp; | Property |
 |---|---|
 | Icon | `leading` on `ListTile` |
 
-#### Primary text for Three Line List
+#### Primary text for three line list
 
 | &nbsp; | Property |
 |---|---|
@@ -283,7 +283,7 @@ The following are tables of the list item contents:
 | Text color | Within `title` property you can customize the Text color by using the `style` property. The `style` property uses a `TextStyle` property and within that class use the `color` property. |
 | Typography | Within `title` property you can customize the typography by using the `style property`. The `style` property uses a `TextStyle` property and within that class use the `fontFamily` property. |
 
-#### Secondary text for Three Line List
+#### Secondary text for three line list
 
 | &nbsp; | Property |
 |---|---|
@@ -291,7 +291,7 @@ The following are tables of the list item contents:
 | Text color | Within `subtitle` property you can customize the Text color by using the `style` property. The `style` property uses a `TextStyle` property and within that class use the `color` property. |
 | Typography | Within `subtitle` property you can customize the typography by using the `style property`. The `style` property uses a `TextStyle` property and within that class use the `fontFamily` property. |
 
-#### Tertiary text for Three Line List
+#### Tertiary text for three line list
 
 | &nbsp; | Property |
 |---|---|
@@ -299,7 +299,7 @@ The following are tables of the list item contents:
 | Text color | Within `subtitle` property you can customize the Text color by using the `style` property. The `style` property uses a `TextStyle` property and within that class use the `color` property. |
 | Typography | Within `subtitle` property you can customize the typography by using the `style property`. The `style` property uses a `TextStyle` property and within that class use the `fontFamily` property. |
 
-#### Metadata for Three Line List
+#### Metadata for three line list
 
 | &nbsp; | Property |
 |---|---|
@@ -308,7 +308,7 @@ The following are tables of the list item contents:
 | Text color | Within `trailing` property you can customize the Text color by using the `style` property. The `style` property uses a `TextStyle` property and within that class use the `color` property. |
 | Typography | Within `trailing` property you can customize the typography by using the `style property`. The `style` property uses a `TextStyle` property and within that class use the `fontFamily` property. |
 
-#### Controls for Three Line List
+#### Controls for three line list
 
 | &nbsp; | Property |
 |---|---|

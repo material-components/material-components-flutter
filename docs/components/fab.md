@@ -72,7 +72,7 @@ FloatingActionButton(
 )
 ```
 
-### Anatomy and key properties for Regular FAB
+### Anatomy and key properties for regular FAB
 
 ![Regular FAB anatomy diagram](assets/fabs/FAB_anatomy-long.png)
 
@@ -81,7 +81,7 @@ A regular FAB has a container and an icon.
 1. Container
 1. Icon
 
-#### Container attributes for Regular FAB
+#### Container attributes for regular FAB
 
 &nbsp;         | Property
 -------------- | -----------------------
@@ -92,7 +92,7 @@ A regular FAB has a container and an icon.
 **Elevation** | `elevation`
 **Ripple color** | `splashColor`
 
-#### Icon attributes for Regular FAB
+#### Icon attributes for regular FAB
 
 &nbsp;         | Property
 -------------- | ------------------------
@@ -130,7 +130,7 @@ FloatingActionButton(
 )
 ```
 
-### Anatomy and key properties for Mini FAB
+### Anatomy and key properties for mini FAB
 
 ![Mini FAB anatomy diagram](assets/fabs/miniFAB_anatomy-long.png)
 
@@ -139,7 +139,7 @@ A mini FAB has a container and an icon.
 1. Container
 1. Icon
 
-#### Container attributes for Mini FAB
+#### Container attributes for mini FAB
 
 &nbsp;         | Property
 -------------- | -----------------------
@@ -150,7 +150,7 @@ A mini FAB has a container and an icon.
 **Elevation** | `elevation`
 **Ripple color** | `splashColor`
 
-#### Icon attributes for Mini FAB
+#### Icon attributes for mini FAB
 
 &nbsp;         | Property
 -------------- | ------------------------
@@ -196,7 +196,7 @@ An extended FAB has a text label, a transparent container and an optional icon.
 1. Icon
 1. Text label
 
-#### Container attributes for Extended FAB
+#### Container attributes for extended FAB
 
 &nbsp;         | Property
 -------------- | -----------------------
@@ -207,7 +207,7 @@ An extended FAB has a text label, a transparent container and an optional icon.
 **Elevation** | `elevation`
 **Ripple color** | `splashColor`
 
-#### Icon attributes for Extended FAB
+#### Icon attributes for extended FAB
 
 &nbsp;         | Property
 -------------- | ------------------------
@@ -215,7 +215,7 @@ An extended FAB has a text label, a transparent container and an optional icon.
 **Color** | `foregroundColor`
 **Size** | `size` on `child` when using an `Icon`
 
-#### Text label for Extended FAB
+#### Text label for extended FAB
 
 &nbsp;         |
 -------------- | ------------------------

@@ -81,7 +81,7 @@ The following example shows a filled text field.
 
 ```
 
-### Anatomy and key properties for Filled Text
+### Anatomy and key properties for filled text
 
 ![Filled text field anatomy](assets/text_fields/textfields_filled_anatomy.png)
 
@@ -93,7 +93,7 @@ The following example shows a filled text field.
 1. Activation indicator
 1. Helper text (optional)
 
-#### Container for Filled Text
+#### Container for filled text
 
 | &nbsp; | Property |
 | --- | --- |
@@ -104,7 +104,7 @@ The following example shows a filled text field.
 | **Elevation** | N/A|
 | **Ripple color** | N/A|
 
-#### Leading icon (optional) for Filled Text
+#### Leading icon (optional) for filled text
 
 | &nbsp; | Property |
 | --- | --- |
@@ -114,7 +114,7 @@ The following example shows a filled text field.
 | **Gravity** | N/A |
 | **Padding** | N/A |
 
-#### Label text for Filled Text
+#### Label text for filled text
 
 | &nbsp; | Property |
 | --- | --- |
@@ -122,7 +122,7 @@ The following example shows a filled text field.
 | **Typography** | Use `decoration`, within `decoration` set `labelStyle` property |
 | **Color** | Use `decoration`, within `decoration` set `labelStyle` property |
 
-#### Input text for Filled Text
+#### Input text for filled text
 
 | &nbsp; | Property |
 | --- | --- |
@@ -130,7 +130,7 @@ The following example shows a filled text field.
 | **Typography** | `style` |
 | **Color** | `style` |
 
-#### Trailing icon (optional) for Filled Text
+#### Trailing icon (optional) for filled text
 
 | &nbsp; | Property |
 | --- | --- |
@@ -140,7 +140,7 @@ The following example shows a filled text field.
 | **Gravity** | N/A |
 | **Padding** | N/A |
 
-#### Activation indicator for Filled Text
+#### Activation indicator for filled text
 
 | &nbsp; | Property|
 | --- | --- |
@@ -148,7 +148,7 @@ The following example shows a filled text field.
 | **Stroke width** | Use `decoration`, within `decoration` set `FocusBorder`|
 | **Ripple color** | N/A|
 
-#### Helper text (optional) for Filled Text
+#### Helper text (optional) for filled text
 
 | &nbsp; | Property|
 | --- | --- |
@@ -156,7 +156,7 @@ The following example shows a filled text field.
 | **Typography** | Use `decoration`, within `decoration` set `helperStyle` property |
 | **Color** | Use `decoration`, within `decoration` set `helperStyle` property |
 
-#### Styles for Filled Text
+#### Styles for filled text
 
 | &nbsp; | Property |
 | --- | --- |
@@ -195,7 +195,7 @@ TextFormField(
 ),
 ```
 
-### Anatomy and key properties for Outlined Text
+### Anatomy and key properties for outlined text
 
 ![Outlined text field anatomy](assets/text_fields/textfields_outlined_anatomy.png)
 
@@ -209,7 +209,7 @@ TextFormField(
 
 Note: If ThemeData has been declared in the MaterialApp widget it will override the theme that was manually input it like the activation indicator.
 
-#### Container for Outlined Text
+#### Container for outlined text
 
 | &nbsp; | Property |
 | --- | --- |
@@ -220,7 +220,7 @@ Note: If ThemeData has been declared in the MaterialApp widget it will override 
 | **Elevation** | N/A|
 | **Ripple color** | N/A|
 
-#### Leading icon (optional) for Outlined Text
+#### Leading icon (optional) for outlined text
 
 | &nbsp; | Property |
 | --- | --- |
@@ -230,7 +230,7 @@ Note: If ThemeData has been declared in the MaterialApp widget it will override 
 | **Gravity** | N/A |
 | **Padding** | N/A |
 
-#### Label text for Outlined Text
+#### Label text for outlined text
 
 | &nbsp; | Property |
 | --- | --- |
@@ -238,7 +238,7 @@ Note: If ThemeData has been declared in the MaterialApp widget it will override 
 | **Typography** | Use `decoration`, within `decoration` set `labelStyle` property |
 | **Color** | Use `decoration`, within `decoration` set `labelStyle` property |
 
-#### Input text for Outlined Text
+#### Input text for outlined text
 
 | &nbsp; | Property |
 | --- | --- |
@@ -246,7 +246,7 @@ Note: If ThemeData has been declared in the MaterialApp widget it will override 
 | **Typography** | `style` |
 | **Color** | `style` |
 
-#### Trailing icon (optional) for Outlined Text
+#### Trailing icon (optional) for outlined text
 
 | &nbsp; | Property |
 | --- | --- |
@@ -256,7 +256,7 @@ Note: If ThemeData has been declared in the MaterialApp widget it will override 
 | **Gravity** | N/A |
 | **Padding** | N/A |
 
-#### Activation indicator for Outlined Text
+#### Activation indicator for outlined text
 
 | &nbsp; | Property |
 | --- | --- |
@@ -264,7 +264,7 @@ Note: If ThemeData has been declared in the MaterialApp widget it will override 
 | **Stroke width** | Use `decoration`, within `decoration` set `FocusBorder`|
 | **Ripple color** | N/A|
 
-#### Helper text (optional) for Outlined Text
+#### Helper text (optional) for outlined text
 
 | &nbsp; | Property |
 | --- | --- |
@@ -272,7 +272,7 @@ Note: If ThemeData has been declared in the MaterialApp widget it will override 
 | **Typography** | Use `decoration`, within `decoration` set `helperStyle` property |
 | **Color** | Use `decoration`, within `decoration` set `helperStyle` property |
 
-#### Styles for Outlined Text
+#### Styles for outlined text
 
 | &nbsp; | Property |
 | --- | --- |

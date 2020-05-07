@@ -87,7 +87,7 @@ AppBar(
 
 ```
 
-### Anatomy and Key properties for Top App Bar
+### Anatomy and Key properties for top app bar
 
 ![Regular app bar anatomy diagram](assets/top_app_bars/top_app_bar_anatomy.png)
 
@@ -97,7 +97,7 @@ AppBar(
 1. Action items (optional)
 1. Overflow menu (optional)
 
-#### Container for Top App Bar
+#### Container for top app bar
 
 | &nbsp; | Property |
 | --- | --- |
@@ -106,7 +106,7 @@ AppBar(
 | **Shape** | `shape` parameter |
 | **Elevation** | `elevation` parameter|
 
-#### Navigation icon for Top App Bar (optional)
+#### Navigation icon for top app bar (optional)
 
 | &nbsp; | Property |
 | --- | --- |
@@ -116,7 +116,7 @@ AppBar(
 | **Gravity** | `titleSpacing` parameter |
 | **Padding** | Wrap `Icon` wiget with `Padding` widget |
 
-#### Title for Top App Bar (optional)
+#### Title for top app bar (optional)
 
 | &nbsp; | Property |
 | --- | --- |
@@ -124,7 +124,7 @@ AppBar(
 | **Color** | In `title` parameter, use `Text` Widget and and set parameter `style` |
 | **Typography** | In `title` parameter, use `Text` Widget and and set parameter `style` |
 
-#### Action item for Top App Bar(optional)
+#### Action item for top app bar (optional)
 
 | &nbsp; | Property |
 | --- | --- |
@@ -133,7 +133,7 @@ AppBar(
 | **Size** | In `action` parameter, use `IconButton` widget and set parameter `iconSize` OR set `actionIconsTheme`|
 | **Padding** | Wrap `IconButton` widget with `Padding` widget |
 
-#### Overflow menu for Top App Bar(optional)
+#### Overflow menu for top app bar (optional)
 
 | &nbsp; | Property |
 | --- | --- |
@@ -183,7 +183,7 @@ AppBar(
 
 ```
 
-### Anatomy and Key properties for Contextual Action Bar
+### Anatomy and Key properties for contextual action bar
 
 ![Contextual action bar anatomy diagram](assets/top_app_bars/contextual_action_bar_anatomy.png)
 
@@ -192,7 +192,7 @@ AppBar(
 1. Contextual action items (optional)
 1. Overflow menu (optional)
 
-#### Close Button for Contextual Action Bar (optional)
+#### Close Button for contextual action bar (optional)
 
 | &nbsp; | Property |
 | --- | --- |
@@ -202,7 +202,7 @@ AppBar(
 | **Gravity** | `titleSpacing` parameter |
 | **Padding** | Wrap `Icon` wiget with `Padding` widget |
 
-#### Contextual title for Contextual Action Bar (optional)
+#### Contextual title for contextual action bar (optional)
 
 | &nbsp; | Property |
 | --- | --- |
@@ -210,7 +210,7 @@ AppBar(
 | **Color** | In `title` parameter, use `Text` Widget and and set parameter `style` |
 | **Typography** | In `title` parameter, use `Text` Widget and and set parameter `style` |
 
-#### Contextual action items for Contextual Action Bar (optional)
+#### Contextual action items for contextual action bar (optional)
 
 | &nbsp; | Property |
 | --- | --- |
@@ -219,7 +219,7 @@ AppBar(
 | **Size** | In `action` parameter, use `IconButton` widget and set parameter `iconSize` OR set `actionIconsTheme`|
 | **Padding** | Wrap `IconButton` widget with `Padding` widget |
 
-#### Overflow menu for Contextual Action Bar (optional)
+#### Overflow menu for contextual action bar (optional)
 
 | &nbsp; | Property |
 | --- | --- |

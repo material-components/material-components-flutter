@@ -36,7 +36,7 @@ Flutter's APIs support accessibility setting for large fonts, screen readers, an
 
 For more guidance on writing labels, go to [our page on how to write a good accessibility label](https://material.io/design/usability/accessibility.html#writing).
 
-## Data tables Information
+## Data tables information
 
 `PaginatedDataTable`
 
