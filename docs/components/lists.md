@@ -11,12 +11,14 @@ path: /catalog/lists/
 
 [Lists](https://material.io/components/lists/) are continuous, vertical indexes of text or images.
 
-There are three list types:
-1. [Single-line list](#single-line-list)
-1. [Two-line list](#two-line-list)
-1. [Three-line list](#three-line-list)
+## Contents
 
-![Composite image of the three list types](assets/lists/lists-types.png)
+- [Contents](#contents)
+- [Using lists](#using-lists)
+- [Single-line list](#single-line-list)
+- [Two-line list](#two-line-list)
+- [Three-line list](#three-line-list)
+- [Theming lists](#theming-lists)
 
 ## Using lists
 
@@ -24,8 +26,7 @@ There are three list types:
 
 Flutter's list component APIs support labeling for accessibility. For more guidance on writing labels, go to [our page on how to write a good accessibility label](https://material.io/design/usability/accessibility.html#writing).
 
-
-## List anatomy
+### List anatomy
 
 The following anatomy diagram applies to all three list types:
 
@@ -35,31 +36,38 @@ The following anatomy diagrams apply  to the list item content:
 
 ![List item content showing supporting visuals, primary text, metadata, and controls in two list components](assets/lists/combined-list-content.png)
 
-
 A list consists of the following attributes:
+
 1. List
-2. Row
-3. List item content
+1. Row
+1. List item content
     1. Supporting visuals
-    2. Primary text
-    3. Metadata
-    4. Controls
+    1. Primary text
+    1. Metadata
+    1. Controls
 
+### Types
 
+There are three list types:
+
+1. [Single-line list](#single-line-list)
+1. [Two-line list](#two-line-list)
+1. [Three-line list](#three-line-list)
+
+![Composite image of the three list types](assets/lists/lists-types.png)
 
 ## Single-line list
 
 Single-line list items contain a maximum of one line of text.
 
-
-
 ### Single-line list example
 
 Source code API:
 `ListTile`
-* [Class definition](https://api.flutter.dev/flutter/material/ListTile-class.html)
-* [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/list_tile.dart)
-* [Dartpad Demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/lists/single)
+
+- [Class definition](https://api.flutter.dev/flutter/material/ListTile-class.html)
+- [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/list_tile.dart)
+- [Dartpad Demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/lists/single)
 
 ![Single-line list example](assets/lists/single-line-list-example.png)
 
@@ -77,14 +85,20 @@ ListView(
 
 ### Single-line list key properties
 
+1. List
+1. Row
+1. List item
+1. Supporting visuals
+1. Primary text
+1. Metadata
 
-#### List properties
+#### List properties for single line list
 
 | &nbsp; | Property |
 |---|---|
 | Padding around the list | `padding` on `ListView` |
 
-#### Row properties
+#### Row properties for single line list
 
 | &nbsp; | Property |
 |---|---|
@@ -92,20 +106,17 @@ ListView(
 | Selected row | `selected` on `ListTile` |
 | Padding on rows | `padding` on `ListTile` |
 
-
-#### List item content
+#### List item content for single line list
 
 The following are tables of the list item contents:
 
-
-##### Supporting visuals
+#### Supporting visuals for single line list
 
 | &nbsp; | Property |
 |---|---|
 | Icon | `leading` on `ListTile` |
 
-
-##### Primary text
+#### Primary text for single line list
 
 | &nbsp; | Property |
 |---|---|
@@ -113,8 +124,7 @@ The following are tables of the list item contents:
 | Text color | Within `title` property you can customize the Text color by using the `style` property. The `style` property uses a `TextStyle` property and within that class use the `color` property. |
 | Typography | Within `title` property you can customize the typography by using the `style property`. The `style` property uses a `TextStyle` property and within that class use the `fontFamily` property. |
 
-
-##### Metadata
+#### Metadata for single line list
 
 | &nbsp; | Property |
 |---|---|
@@ -122,28 +132,25 @@ The following are tables of the list item contents:
 | Text color | Within `trailing` property you can customize the Text color by using the `style` property. The `style` property uses a `TextStyle` property and within that class use the `color` property. |
 | Typography | Within `trailing` property you can customize the typography by using the `style property`. The `style` property uses a `TextStyle` property and within that class use the `fontFamily` property. |
 
-
-##### Controls
+#### Controls for single line list
 
 | &nbsp; | Property |
 |---|---|
 | Primary action | Add interactive widget to `leading` on `ListTile` |
 | Secondary action | Add interactive widget to `trailing` on `ListTile` |
 
-
 ## Two-line list
 
 Two-line list items contain a maximum of two lines of text.
 
-
 ### Two-line list example
-
 
 Source code API:
 `ListTile`
-* [Class definition](https://api.flutter.dev/flutter/material/ListTile-class.html)
-* [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/list_tile.dart)
-* [Dartpad Demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/lists/two-line)
+
+- [Class definition](https://api.flutter.dev/flutter/material/ListTile-class.html)
+- [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/list_tile.dart)
+- [Dartpad Demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/lists/two-line)
 
 ![Two-line list example](assets/lists/two-line-list-example.png)
 
@@ -170,21 +177,23 @@ ListView(
 
 The following are tables of the list item contents:
 
-
-#### List item content
+### List item content for two line list
 
 The following are tables of the list item contents:
 
+1. Supporting visuals
+1. Primary text
+1. Secondary text
+1. Metadata
+1. Controls
 
-
-##### Supporting visuals
+#### Supporting visuals for two line list
 
 | &nbsp; | Property |
 |---|---|
 | Icon | `leading` on `ListTile` |
 
-
-##### Primary text
+#### Primary text for two line list
 
 | &nbsp; | Property |
 |---|---|
@@ -192,7 +201,7 @@ The following are tables of the list item contents:
 | Text color | Within `title` property you can customize the Text color by using the `style` property. The `style` property uses a `TextStyle` property and within that class use the `color` property. |
 | Typography | Within `title` property you can customize the typography by using the `style property`. The `style` property uses a `TextStyle` property and within that class use the `fontFamily` property. |
 
-##### Secondary text
+#### Secondary text for two line list
 
 | &nbsp; | Property |
 |---|---|
@@ -200,7 +209,7 @@ The following are tables of the list item contents:
 | Text color | Within `subtitle` property you can customize the Text color by using the `style` property. The `style` property uses a `TextStyle` property and within that class use the `color` property. |
 | Typography | Within `subtitle` property you can customize the typography by using the `style property`. The `style` property uses a `TextStyle` property and within that class use the `fontFamily` property. |
 
-##### Metadata
+#### Metadata for two line list
 
 | &nbsp; | Property |
 |---|---|
@@ -208,27 +217,25 @@ The following are tables of the list item contents:
 | Text color | Within `trailing` property you can customize the Text color by using the `style` property. The `style` property uses a `TextStyle` property and within that class use the `color` property. |
 | Typography | Within `trailing` property you can customize the typography by using the `style property`. The `style` property uses a `TextStyle` property and within that class use the `fontFamily` property. |
 
-
-##### Controls
+#### Controls for two line list
 
 | &nbsp; | Property |
 |---|---|
 | Primary action | Add interactive widget to `leading` on `ListTile` |
 | Secondary action | Add interactive widget to `trailing` on `ListTile` |
 
-### Three-line list
+## Three-line list
 
 Three-line list items contains a maximum of three lines of text.
 
-
 ### Three-line list example
-
 
 Source code API:
 `ListTile`
-* [Class definition](https://api.flutter.dev/flutter/material/ListTile-class.html)
-* [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/list_tile.dart)
-* [Dartpad Demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/lists/three-line)
+
+- [Class definition](https://api.flutter.dev/flutter/material/ListTile-class.html)
+- [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/list_tile.dart)
+- [Dartpad Demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/lists/three-line)
 
 ![Three-line list example](assets/lists/three-line-list-example.png)
 
@@ -255,14 +262,20 @@ ListView(
 
 The following are tables of the list item contents:
 
+1. Supporting visuals
+1. Primary text
+1. Secondary text
+1. Tertiary text
+1. Metadata
+1. Controls
 
-##### Supporting visuals
+#### Supporting visuals for three line list
 
 | &nbsp; | Property |
 |---|---|
 | Icon | `leading` on `ListTile` |
 
-##### Primary text
+#### Primary text for three line list
 
 | &nbsp; | Property |
 |---|---|
@@ -270,7 +283,7 @@ The following are tables of the list item contents:
 | Text color | Within `title` property you can customize the Text color by using the `style` property. The `style` property uses a `TextStyle` property and within that class use the `color` property. |
 | Typography | Within `title` property you can customize the typography by using the `style property`. The `style` property uses a `TextStyle` property and within that class use the `fontFamily` property. |
 
-##### Secondary text
+#### Secondary text for three line list
 
 | &nbsp; | Property |
 |---|---|
@@ -278,8 +291,7 @@ The following are tables of the list item contents:
 | Text color | Within `subtitle` property you can customize the Text color by using the `style` property. The `style` property uses a `TextStyle` property and within that class use the `color` property. |
 | Typography | Within `subtitle` property you can customize the typography by using the `style property`. The `style` property uses a `TextStyle` property and within that class use the `fontFamily` property. |
 
-
-##### Tertiary text
+#### Tertiary text for three line list
 
 | &nbsp; | Property |
 |---|---|
@@ -287,8 +299,7 @@ The following are tables of the list item contents:
 | Text color | Within `subtitle` property you can customize the Text color by using the `style` property. The `style` property uses a `TextStyle` property and within that class use the `color` property. |
 | Typography | Within `subtitle` property you can customize the typography by using the `style property`. The `style` property uses a `TextStyle` property and within that class use the `fontFamily` property. |
 
-
-##### Metadata
+#### Metadata for three line list
 
 | &nbsp; | Property |
 |---|---|
@@ -297,23 +308,21 @@ The following are tables of the list item contents:
 | Text color | Within `trailing` property you can customize the Text color by using the `style` property. The `style` property uses a `TextStyle` property and within that class use the `color` property. |
 | Typography | Within `trailing` property you can customize the typography by using the `style property`. The `style` property uses a `TextStyle` property and within that class use the `fontFamily` property. |
 
-
-##### Controls
+#### Controls for three line list
 
 | &nbsp; | Property |
 |---|---|
 | Primary action | Add interactive widget to `leading` on `ListTile` |
 | Secondary action | Add interactive widget to `trailing` on `ListTile` |
 
-### Theming lists
+## Theming lists
 
 Lists support [Material Theming](https://material.io/components/lists/#theming) and can be
 customized in terms of color and typography.
 
-* [Dartpad Demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/lists/theme)
+- [Dartpad Demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/lists/theme)
 
 ![Three-line list example with theming](assets/lists/three-line-list-with-theming-example.png)
-
 
 ```dart
 import 'package:flutter/material.dart';

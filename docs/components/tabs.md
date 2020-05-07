@@ -11,15 +11,16 @@ path: /catalog/tabs
 
 [Tabs](https://material.io/components/tabs/) organize content across different screens, data sets, and other interactions.
 
-There are two types of tabs:
+![fixed tab example](assets/tabs/tabs_hero.png)
 
-1. [Fixed tabs](#fixed-tabs)
-1. [Scrollable tabs](#scrollable-tabs)
+## Contents
 
-\
-
-1. ![fixed tab example](assets/tabs/tabs-fixed-hero.png)
-1. ![scrollabe tab example](assets/tabs/tabs-scrollable-hero.png)
+- [Contents](#contents)
+- [Using FABs](#using-fabs)
+- [Regular FABs](#regular-fabs)
+- [Mini FABs](#mini-fabs)
+- [Extended FABs](#extended-fabs)
+- [Theming FAB](#theming-fab)
 
 ## Using tabs
 
@@ -36,7 +37,16 @@ Flutter's APIs support accessibility setting for large fonts, screen readers, an
 
 For more guidance on writing labels, go to [our page on how to write a good accessibility label](https://material.io/design/usability/accessibility.html#writing).
 
-## Anatomy and key properties
+### Types
+
+There are two types of tabs:
+
+1. [Fixed tabs](#fixed-tabs)
+1. [Scrollable tabs](#scrollable-tabs)
+
+![scrollabe tab example](assets/tabs/tabs-scrollable-hero.png)
+
+### Anatomy and key properties
 
 ![Tabs anatomy diagram](assets/tabs/tabs-anatomy.png)
 
@@ -48,21 +58,21 @@ For more guidance on writing labels, go to [our page on how to write a good acce
 1. Inactive text label (Optional if there’s an icon)
 1. Tab item
 
-### Container attributes
+#### Container attributes
 
 &nbsp; | Property
 ------ | ---------
 **Color** | In the parent widget,`AppBar` assign the `backgroundColor` property
 **Height** |  Wrap your `TapBar` widget with a `PreferredSize` widget and assign `preferredSize` property
 
-### Active  icon attributes
+#### Active  icon attributes
 
 &nbsp; | Property
 ------ | ---------
 **`MaterialToolbar` icon** | In widget `Tab` assign the `icon` parameter
 **`MaterialToolbar` icon color** |  In `TabBar` assign the `labelColor` parameter
 
-### Active text label attributes
+#### Active text label attributes
 
 &nbsp;         | Property
 -------------- | ------------------------
@@ -70,7 +80,7 @@ For more guidance on writing labels, go to [our page on how to write a good acce
 **Color**      | In `TabBar` assign the `labelColors` and `unselectedLabelColor` parameter
 **Typography** | In `TabBar` assign the `labelStyle` and `unselectedLabelStyle` parameter
 
-### Active tab indicator attributes
+#### Active tab indicator attributes
 
 &nbsp;         | Property
 -------------- | ------------------------
@@ -79,14 +89,14 @@ For more guidance on writing labels, go to [our page on how to write a good acce
 **Indicator Size**      | In `TabBar` assign the `indicatorSize` parameter
 **Indicator Weight** | In `TabBar` assign the `indicatorWeight` parameter
 
-### Inactive  icon attributes
+#### Inactive  icon attributes
 
 &nbsp; | Property
 ------ | ---------
 **`MaterialToolbar` icon** | In widget `Tab` assign the `icon` parameter
 **`MaterialToolbar` icon color** |  In `TabBar` assign the `unselectedLabelColor` parameter
 
-### Inactive text label attributes
+#### Inactive text label attributes
 
 &nbsp;         | Property
 -------------- | ------------------------
@@ -94,7 +104,7 @@ For more guidance on writing labels, go to [our page on how to write a good acce
 **Color**      | In `TabBar` assign the `unselectedLabelColor` parameter
 **Typography** | In `TabBar` assign the `unselectedLabelStyle` parameter
 
-### Tab item attributes
+#### Tab item attributes
 
 &nbsp;         | Property
 -------------- | ------------------------
@@ -108,10 +118,10 @@ Fixed tabs display all tabs on one screen, with each tab at a fixed width. The w
 
 `Tabs`
 
-* [Class definition](https://api.flutter.dev/flutter/material/TabBar-class.html)
-* [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/tabs.dart)
-* [Dartpad demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/tabs/fixed)
-* [Demo site](https://gallery.flutter.dev/#/demo/tabs)
+- [Class definition](https://api.flutter.dev/flutter/material/TabBar-class.html)
+- [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/tabs.dart)
+- [Dartpad demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/tabs/fixed)
+- [Demo site](https://gallery.flutter.dev/#/demo/tabs)
 
 The following example shows a row of of fixed tabs.
 
@@ -154,10 +164,10 @@ Scrollable tabs are displayed without fixed widths. They are scrollable, such th
 
 `Tabs`
 
-* [Class definition](https://api.flutter.dev/flutter/material/TabBar-class.html)
-* [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/tabs.dart)
-* [Dartpad demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/tabs/scrollable)
-* [Demo site](https://gallery.flutter.dev/#/demo/tabs)
+- [Class definition](https://api.flutter.dev/flutter/material/TabBar-class.html)
+- [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/tabs.dart)
+- [Dartpad demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/tabs/scrollable)
+- [Demo site](https://gallery.flutter.dev/#/demo/tabs)
 
 The following example shows a row of of scrollable tabs.
 
@@ -211,10 +221,10 @@ The following example shows a row of of scrollable tabs.
 `Tabs`
 
 The following is an example data table using the [Shrine theme](https://material.io/design/material-studies/shrine.html).
-* [Class definition](https://api.flutter.dev/flutter/material/TabBar-class.html)
-* [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/tabs.dart)
-* [Dartpad demo for Scrollable Theme](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/tabs/scrollable_theme)
-* [Dartpad demo for Fixed Theme](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/tabs/theme)
+- [Class definition](https://api.flutter.dev/flutter/material/TabBar-class.html)
+- [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/tabs.dart)
+- [Dartpad demo for Scrollable Theme](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/tabs/scrollable_theme)
+- [Dartpad demo for Fixed Theme](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/tabs/theme)
 
 The following example shows a row of of scrollable tabs.
 

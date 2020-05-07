@@ -7,18 +7,23 @@ iconId:
 path: /components/bottom-navigation/
 -->
 
-
 # Bottom navigation
 
 [Bottom navigation](https://material.io/components/bottom-navigation/#) bars allow movement between primary destinations in an app.
 
-![Example bottom navigation bar with four icons along the bottom: favorites, music, places, and news. The music icon is selected](assets/bottom_navigation/bottom-nav-generic.png)
+![Example bottom navigation bar with four icons along the bottom: favorites, music, places, and news. The music icon is selected](assets/bottom_navigation/Bottomnavigation_hero.png)
 
+## Contents
+
+- [Contents](#contents)
+- [Using bottom navigation](#using-bottom-navigation)
+- [Bottom navigation example](#bottom-navigation-example)
+- [Theming a bottom nav bar](#theming-a-bottom-nav-bar)
 
 ## Using bottom navigation
 
-Before you can use Material `BottomNavigationBar`s, you need to import the Material Components 
-package for Flutter: 
+Before you can use Material `BottomNavigationBar`s, you need to import the Material Components package for Flutter:
+
 ```dart
 import 'package:flutter/material.dart';
 ```
@@ -31,17 +36,18 @@ For more information on getting started with the Material for Flutter, go to the
 
 Source code API:
 
-* `BottomNavigationBar`
-    * [Class description](https://api.flutter.dev/flutter/material/BottomNavigationBar-class.html)
-    * [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/bottom_navigation_bar.dart)
-    * [Demo site](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/bottom_navigation/regular) 
+`BottomNavigationBar`
+
+- [Class description](https://api.flutter.dev/flutter/material/BottomNavigationBar-class.html)
+- [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/bottom_navigation_bar.dart)
+- [Demo site](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/bottom_navigation/regular)
 
 The following example shows a bottom navigation bar with four icons:
 
-* favorites
-* music note
-* places
-* news
+- favorites
+- music note
+- places
+- news
 
 ![Bottom navigation bar with favorites, music note, places, and news icons](assets/bottom_navigation/flutter-bottom-nav-regular.png)
 
@@ -89,15 +95,14 @@ The following is an anatomy diagram for the bottom navigation bar:
 1. Active icon
 1. Active text label
 
-**Container attributes**
+### Container attributes
 
 | &nbsp; | Property |
 | --- | --- |
 | **Color** | `backgroundColor` |
 | **Elevation** | `elevation` |
 
-
-**Inactive icon attributes**
+### Inactive icon attributes
 
 | &nbsp; | Property |
 | --- | --- |
@@ -105,9 +110,7 @@ The following is an anatomy diagram for the bottom navigation bar:
 | **Color** | `unselectedItemColor` |
 | **Size** | `size` on `unselectedIconTheme` |
 
-
-
-**Inactive text label attributes**
+### Inactive text label attributes
 
 | &nbsp; | Property |
 | --- | --- |
@@ -115,7 +118,7 @@ The following is an anatomy diagram for the bottom navigation bar:
 | **Color** | `unselectedItemColor` |
 | **Typography** | `unselectedLabelStyle` |
 
-**Active icon attributes**
+### Active icon attributes
 
 | &nbsp; | Property |
 | --- | --- |
@@ -123,9 +126,7 @@ The following is an anatomy diagram for the bottom navigation bar:
 | **Color** | `selectedItemColor` |
 | **Size** | `size` on `selectedIconTheme` |
 
-
-
-**Active text label attributes**
+### Active text label attributes
 
 | &nbsp; | Property |
 | --- | --- |
@@ -141,7 +142,7 @@ The following example shows a bottom navigation bar with the [Material Shrine Th
 
 ![Bottom Navigation bar with Shrine theming](assets/bottom_navigation/flutter-bottom-nav-themed.png)
 
-```
+```dart
 import 'package:flutter/material.dart';
 
 void main() => runApp(MyApp());

@@ -13,12 +13,20 @@ path: /catalog/material-bottom-app-bar/
 
 ![Example bottom app bar with inset floating action button](assets/bottom_app_bars/bottom-app-bar-hero.png)
 
+## Contents
+
+- [Contents](#contents)
+- [Using the bottom app bar](#using-the-bottom-app-bar)
+- [Bottom app bar example](#bottom-app-bar-example)
+- [Theming](#theming)
+
 ## Using the bottom app bar
 
 Bottom app bars provide access to a bottom navigation drawer and up to four actions, including the [floating action button](fab.md).
 
 Before you can use Material buttons, you need to import the Material Components package for Flutter:
-```
+
+```dart
 package:flutter/material.dart
 ```
 
@@ -26,15 +34,15 @@ You need to use [`MaterialApp`](https://api.flutter.dev/flutter/material/Materia
 
 For more information on getting started with the Material for Flutter, go to the Flutter [Material library](https://api.flutter.dev/flutter/material/material-library.html) page.
 
-
 For more guidance using the bottom app bar, go to the [Material design page](https://material.io/components/app-bars-bottom/).
 
 ## Bottom app bar example
 
 `BottomAppBar`
-* [Class description](https://api.flutter.dev/flutter/material/BottomAppBar-class.html)
-* [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/bottom_app_bar.dart)
-* [Dartpad demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/bottom_app_bars/regular)
+
+- [Class description](https://api.flutter.dev/flutter/material/BottomAppBar-class.html)
+- [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/bottom_app_bar.dart)
+- [Dartpad demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/bottom_app_bars/regular)
 
 ![Bottom app bar with with leading navigation drawer icon, overlapping FAB with '+' icon, and trailing 'search' and overflow menu control](assets/bottom_app_bars/bottom_app_bar_example.png)
 
@@ -60,7 +68,6 @@ Scaffold(
 
 ![Bottom app bar anatomy diagram](assets/bottom_app_bars/bottom-app-bar-anatomy.png)
 
-
 1. Container
 1. Navigation drawer icon
 1. Floating action button (FAB)
@@ -77,8 +84,6 @@ Scaffold(
 
 ### FAB attributes
 
-**Note to developers: please add a link to your platform's FAB article below**
-
 See [floating action button](fab.md).
 
 ### Icons attributes
@@ -91,16 +96,13 @@ Using an [`IconButton`](https://api.flutter.dev/flutter/material/IconButton-clas
 | **Color** | `color` |
 | **Size** | `iconSize` |
 
-
-
 ## Theming
 
 ### Theming example
 
 The following example shows a bottom app bar with the [Material Shrine Theme](https://material.io/design/material-studies/shrine.html).
 
-
-* [Dartpad demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/bottom_app_bars/theme)
+- [Dartpad demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/bottom_app_bars/theme)
 
 ![Bottom app bar with Shrine theming](assets/bottom_app_bars/bottom_app_bar_example_themed.png)
 
