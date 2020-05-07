@@ -14,15 +14,21 @@ api_doc_root: true
 
 ![Data table with 5 rows: 1 header row, 4 rows, one column of checkboxes](assets/data_tables/data-table-hero.png)
 
+## Contents
+
+- [Contents](#contents)
+- [Using data tables](#using-data-tables)
+- [Theming data tables](#theming-data-tables)
+
 ## Using data tables
 
 Data tables display information in a grid-like format of rows and columns. They organize information in a way that’s easy to scan, so that users can look for patterns and insights.
 
 Data tables can contain:
 
-* Interactive components (such as chips, buttons, or menus)
-* Non-interactive elements
-* Tools to query and manipulate data
+- Interactive components (such as chips, buttons, or menus)
+- Non-interactive elements
+- Tools to query and manipulate data
 
 ### Making data tables accessible
 
@@ -32,10 +38,12 @@ For more guidance on writing labels, go to [our page on how to write a good acce
 
 ## Data tables Information
 
-* [Class description](https://api.flutter.dev/flutter/material/DataTable-class.html)
-* [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/data_table.dart)
-* [Dartpad demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/data_tables/normal)
-* [Demo site](https://gallery.flutter.dev/#/demo/data-table)
+`PaginatedDataTable`
+
+- [Class description](https://api.flutter.dev/flutter/material/DataTable-class.html)
+- [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/data_table.dart)
+- [Dartpad demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/data_tables/normal)
+- [Demo site](https://gallery.flutter.dev/#/demo/data-table)
 
 ![Demo table without Theme](assets/data_tables/data_table_no_theme.png)
 
@@ -186,9 +194,9 @@ Sorting button can't be customized.
 
 Data Table cells children are Widgets. This means that the Data table is dependent on the Widgets that the user puts within it. The only theme variables that affect the DataTable is:
 
-* `dividerColor`
-* `secondaryHeaderColor`
-* `accentColor`
+- `dividerColor`
+- `secondaryHeaderColor`
+- `accentColor`
 
 The following is an example data table using the [Shrine theme](https://material.io/design/material-studies/shrine.html).
 
