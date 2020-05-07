@@ -15,17 +15,10 @@ path: /components/bottom-navigation/
 
 ## Contents
 
-- [Bottom navigation](#bottom-navigation)
-  - [Contents](#contents)
-  - [Using bottom navigation](#using-bottom-navigation)
-  - [Bottom navigation example](#bottom-navigation-example)
-    - [Anatomy and key properties](#anatomy-and-key-properties)
-    - [Container attributes](#container-attributes)
-    - [Inactive icon attributes](#inactive-icon-attributes)
-    - [Inactive text label attributes](#inactive-text-label-attributes)
-    - [Active icon attributes](#active-icon-attributes)
-    - [Active text label attributes](#active-text-label-attributes)
-  - [Theming a bottom nav bar](#theming-a-bottom-nav-bar)
+- [Contents](#contents)
+- [Using bottom navigation](#using-bottom-navigation)
+- [Bottom navigation example](#bottom-navigation-example)
+- [Theming a bottom nav bar](#theming-a-bottom-nav-bar)
 
 ## Using bottom navigation
 

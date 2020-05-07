@@ -21,7 +21,7 @@ The [top app bar](https://material.io/components/app-bars-top/#) displays inform
 - [Contextual action bar](#contextual-action-bar)
 - [Theming a top app bar](#theming-a-top-app-bar)
 
-## Theming a top app bar](#theming-text-fields)
+## Theming a top app bar(#theming-text-fields)
 
 ## Using the top app bar
 

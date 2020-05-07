@@ -15,16 +15,10 @@ path: /catalog/material-bottom-app-bar/
 
 ## Contents
 
-- [Bottom app bars](#bottom-app-bars)
-  - [Contents](#contents)
-  - [Using the bottom app bar](#using-the-bottom-app-bar)
-  - [Bottom app bar example](#bottom-app-bar-example)
-  - [Anatomy and key properties](#anatomy-and-key-properties)
-    - [Container attributes](#container-attributes)
-    - [FAB attributes](#fab-attributes)
-    - [Icons attributes](#icons-attributes)
-  - [Theming](#theming)
-    - [Theming example](#theming-example)
+- [Contents](#contents)
+- [Using the bottom app bar](#using-the-bottom-app-bar)
+- [Bottom app bar example](#bottom-app-bar-example)
+- [Theming](#theming)
 
 ## Using the bottom app bar
 
