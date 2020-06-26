@@ -63,8 +63,8 @@ The following example shows a regular FAB.
 
 ```dart
 FloatingActionButton(
-  backgroundColor: Colors.black,
-  foregroundColor: Colors.white,
+  backgroundColor: const Color(0xff03dac6),
+  foregroundColor: Colors.black,
   onPressed: () {
     // Respond to button press
   },
@@ -120,8 +120,8 @@ The following example shows a mini FAB.
 
 ```dart
 FloatingActionButton(
-  backgroundColor: Colors.black,
-  foregroundColor: Colors.white,
+  backgroundColor: const Color(0xff03dac6),
+  foregroundColor: Colors.black,
   mini: true,
   onPressed: () {
     // Respond to button press
@@ -176,8 +176,8 @@ The following examples shows an extended FAB.
 
 ```dart
 FloatingActionButton.extended(
-  backgroundColor: Colors.black,
-  foregroundColor: Colors.white,
+  backgroundColor: const Color(0xff03dac6),
+  foregroundColor: Colors.black,
   onPressed: () {
     // Respond to button press
   },
