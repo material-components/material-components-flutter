@@ -17,8 +17,8 @@ class MyHomePage extends StatelessWidget {
     return Scaffold(
       body: Center(
         child: FloatingActionButton.extended(
-          backgroundColor: Colors.black,
-          foregroundColor: Colors.white,
+          backgroundColor: const Color(0xff03dac6),
+          foregroundColor: Colors.black,
           onPressed: () {
             // Respond to button press
           },
