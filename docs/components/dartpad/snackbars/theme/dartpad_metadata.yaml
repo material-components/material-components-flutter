@@ -1,0 +1,4 @@
+name: Material Snackbars with Shrine Theme Demonstration
+mode: flutter
+files:
+  - name: main.dart

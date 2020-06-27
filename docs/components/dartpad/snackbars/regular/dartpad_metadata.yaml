@@ -1,0 +1,4 @@
+name: Material Snackbars Demonstration
+mode: flutter
+files:
+  - name: main.dart
