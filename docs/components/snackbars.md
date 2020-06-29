@@ -52,8 +52,6 @@ The following is an anatomy diagram of a snackbar:
 ------ | --------- 
 **Color** | `backgroundColor`
 **Elevation** | `elevation`
-**Height** |  N/A
-**Overlay window** | N/A
 **Shape border** | `shape`
 
 #### Action properties
@@ -78,6 +76,7 @@ The following is an example of a snackbar with an action button:
 
 ```dart
 SnackBar(
+  behavior: SnackBarBehavior.floating,
   content: Text('Text label'),
   action: SnackBarAction(
     label: 'Action',
@@ -140,6 +139,7 @@ class SnackbarButton extends StatelessWidget {
     return RaisedButton(
       onPressed: () {
         final snackBar = SnackBar(
+          behavior: SnackBarBehavior.floating,
           content: Text('Text label'),
           action: SnackBarAction(
             label: 'Action',

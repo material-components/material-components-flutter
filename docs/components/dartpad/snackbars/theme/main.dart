@@ -39,6 +39,7 @@ class SnackbarButton extends StatelessWidget {
     return RaisedButton(
       onPressed: () {
         final snackBar = SnackBar(
+          behavior: SnackBarBehavior.floating,
           content: Text('Text label'),
           action: SnackBarAction(
             label: 'Action',
