@@ -13,19 +13,19 @@ path: /catalog/SelectionControlsRadioButtons/
 
 Use radio buttons to:
 
-* Select a single option from a list
-* Expose all available options
-* If available options can be collapsed, consider using a dropdown menu instead, as it uses less space.
+- Select a single option from a list
+- Expose all available options
+- If available options can be collapsed, consider using a dropdown menu instead, as it uses less space.
 
 ![Radio button hero example for menu options](assets/RadioButton-hero.png)
 
 ## Contents
 
-* [Using radio buttons](#using-radio-buttons)
-* [Import radio buttons](#import-radio-buttons)
-* [Making radio buttons accessible](#making-radio-buttons-accessible)
-* [Radio buttons example](#radio-buttons-example)
-* [Theming](#theming)
+- [Using radio buttons](#using-radio-buttons)
+- [Import radio buttons](#import-radio-buttons)
+- [Making radio buttons accessible](#making-radio-buttons-accessible)
+- [Radio buttons example](#radio-buttons-example)
+- [Theming](#theming)
 
 ## Using radio buttons
 
@@ -54,11 +54,11 @@ For more guidance on writing labels, go to [our page on how to write a good acce
 ### Radio buttons example
 
 'Radio'
-* [Class definition](https://api.flutter.dev/flutter/material/Radio-class.html)
-* [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/radio.dart)
-* [Dartpad Demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/radio_buttons/regular)
+- [Class definition](https://api.flutter.dev/flutter/material/Radio-class.html)
+- [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/radio.dart)
+- [Dartpad Demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/radio_buttons/regular)
 
-The following example shows a regular FAB.
+The following example shows radio buttons being used in a list with the last row disabled.
 
 !["Regular radio button example for Flutter."](assets/radio_buttons/radio-button-regular.png)
 
@@ -95,15 +95,15 @@ Radio buttons can be selected or unselected. Radio buttons have enabled, disable
 ## Theming
 
 
-* [Class definition](https://api.flutter.dev/flutter/material/Radio-class.html)
-* [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/radio.dart)
-* [Dartpad Demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/radio_buttons/theme)
+- [Class definition](https://api.flutter.dev/flutter/material/Radio-class.html)
+- [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/radio.dart)
+- [Dartpad Demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/radio_buttons/theme)
 
 
 Radio buttons support [Material Theming](https://material.io/components/buttons/#theming) and can be
 customized in terms of color.
 
-The following example shows a regular FAB.
+The following example shows radio buttons with the [Material Shrine Theme](https://material.io/design/material-studies/shrine.html).
 
 !["Radio buttons with Shrine theming."](assets/radio_buttons/radio-button-theming.png)
 
