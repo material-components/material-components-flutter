@@ -1,0 +1,4 @@
+name: Material Checkboxes Demonstration
+mode: flutter
+files:
+  - name: main.dart
