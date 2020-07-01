@@ -21,9 +21,10 @@ Use checkboxes to:
 
 ## Contents
 
+- [Contents](#contents)
 - [Using checkboxes](#using-checkboxes)
-- [Making checkboxes accessible](#making-checkboxes-accessible)
-- [Checkboxes example](#checkboxes-example)
+- [Checkboxes](#checkboxes)
+- [Checkbox key properties](#checkbox-key-properties)
 - [Theming](#theming)
 
 ## Using checkboxes
