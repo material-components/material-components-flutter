@@ -47,7 +47,10 @@ class _CheckboxesDemoState extends State<CheckboxesDemo> {
                     value: checked[i],
                     activeColor: Color(0xFF6200EE),
                   ),
-                  Text('Checkbox ${i + 1}')
+                  Text(
+                    'Checkbox ${i + 1}',
+                    style: Theme.of(context).textTheme.subtitle1.copyWith(color: i == 4 ? Colors.black38 : Colors.black),
+                  ),
                 ],
                 mainAxisAlignment: MainAxisAlignment.center,
               ),

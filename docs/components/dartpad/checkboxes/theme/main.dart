@@ -48,7 +48,10 @@ class _CheckboxesDemoState extends State<CheckboxesDemo> {
                     tristate: i == 1,
                     value: checked[i],
                   ),
-                  Text('Checkbox ${i + 1}')
+                  Text(
+                    'Checkbox ${i + 1}',
+                    style: Theme.of(context).textTheme.subtitle1.copyWith(color: i == 4 ? Colors.black38 : Colors.black),
+                  ),
                 ],
                 mainAxisAlignment: MainAxisAlignment.center,
               ),

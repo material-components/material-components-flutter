@@ -64,7 +64,10 @@ Column(
             value: checked[i],
             activeColor: Color(0xFF6200EE),
           ),
-          Text('Checkbox ${i + 1}')
+          Text(
+            'Checkbox ${i + 1}',
+            style: Theme.of(context).textTheme.subtitle1.copyWith(color: i == 4 ? Colors.black38 : Colors.black),
+          ),
         ],
         mainAxisAlignment: MainAxisAlignment.center,
       ),
@@ -152,7 +155,10 @@ class _CheckboxesDemoState extends State<CheckboxesDemo> {
                     tristate: i == 1,
                     value: checked[i],
                   ),
-                  Text('Checkbox ${i + 1}')
+                  Text(
+                    'Checkbox ${i + 1}',
+                    style: Theme.of(context).textTheme.subtitle1.copyWith(color: i == 4 ? Colors.black38 : Colors.black),
+                  ),
                 ],
                 mainAxisAlignment: MainAxisAlignment.center,
               ),
@@ -223,4 +229,5 @@ const Color shrineErrorRed = Color(0xFFC5032B);
 
 const Color shrineSurfaceWhite = Color(0xFFFFFBFA);
 const Color shrineBackgroundWhite = Colors.white;
+
 ```
