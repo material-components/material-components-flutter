@@ -15,9 +15,8 @@ A [banner](https://material.io/components/banners) displays a prominent message 
 
 ## Contents
 
+- [Contents](#contents)
 - [Using banners](#using-banners)
-- [Import banners](#import-banners)
-- [Making banners accessible](#making-banners-accessible)
 - [Banners example](#banners-example)
 - [Theming banners](#theming-banners)
 
@@ -45,7 +44,7 @@ Flutter's APIs support accessibility setting for large fonts, screen readers, an
 
 For more guidance on writing labels, go to [our page on how to write a good accessibility label](https://material.io/design/usability/accessibility.html#writing).
 
-## Anatomy and key properties
+### Anatomy and key properties
 
 ![Banners anatomy diagram](assets/banners/banners_anatomy.png)
 
@@ -57,19 +56,19 @@ Banners consist of the following:
 4. Buttons
 
 
-### Supporting illustration
+#### Supporting illustration
 
 &nbsp;         | Property
 -------------- | ------------------------ 
 **Illustration** | `leading`
 
-### Container
+#### Container
 
 &nbsp; | Property
 ------ | --------- 
 **Color** | `backgroundColor` 
 
-### Text
+#### Text
 
 &nbsp;         | Property
 -------------- | ------------------------ 
@@ -77,9 +76,7 @@ Banners consist of the following:
 **Color**      | `style` on `content` when using a `Text`
 **Typography** | `style` on `content` when using a `Text`
 
-
-
-### Buttons
+#### Buttons
 
 &nbsp;         | Property
 -------------- | ------------------------ 
