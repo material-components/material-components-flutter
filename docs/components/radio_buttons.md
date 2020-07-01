@@ -17,7 +17,7 @@ Use radio buttons to:
 - Expose all available options
 - If available options can be collapsed, consider using a dropdown menu instead, as it uses less space.
 
-![Radio button hero example for menu options](assets/RadioButton-hero.png)
+![Radio button hero example for menu options](assets/radio_buttons/RadioButton-hero.png)
 
 ## Contents
 
@@ -90,7 +90,7 @@ Column(
 
 Radio buttons can be selected or unselected. Radio buttons have enabled, disabled, hover, focused, and pressed states.
 
-![Radio button states in an array. Columns are enabled, disabled, hover, focused, pressed. Rows are selected or unselected](assets/RadioButton-states.png)
+![Radio button states in an array. Columns are enabled, disabled, hover, focused, pressed. Rows are selected or unselected](assets/radio_buttons/RadioButton-states.png)
 
 ## Theming
 
