@@ -88,7 +88,7 @@ Banners consist of the following:
 `MaterialBanner`
 - [Class definition](https://master-api.flutter.dev/flutter/material/MaterialBanner-class.html)
 - [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/banner.dart)
-- [Dartpad Demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/banners/regular)
+- [Dartpad demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/banners/regular)
 
 The following example shows a banner being used with an icon and two actions.
 
@@ -116,7 +116,7 @@ MaterialBanner(
 `MaterialBanner`
 - [Class definition](https://master-api.flutter.dev/flutter/material/MaterialBanner-class.html)
 - [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/banner.dart)
-- [[Dartpad Demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/banners/theme)
+- [[Dartpad demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/banners/theme)
 
 Banners support [Material Theming](https://material.io/components/buttons/#theming) and can be
 customized in terms of color and typography.
