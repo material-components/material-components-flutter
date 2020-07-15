@@ -21,11 +21,16 @@ Use checkboxes to:
 
 ## Contents
 
-- [Contents](#contents)
-- [Using checkboxes](#using-checkboxes)
-- [Checkboxes](#checkboxes)
-- [Checkbox key properties](#checkbox-key-properties)
-- [Theming](#theming)
+- [Selection controls: checkboxes](#selection-controls-checkboxes)
+  - [Contents](#contents)
+  - [Using checkboxes](#using-checkboxes)
+    - [Making checkboxes accessible](#making-checkboxes-accessible)
+  - [Checkboxes](#checkboxes)
+    - [Checkboxes example](#checkboxes-example)
+    - [Checkbox states](#checkbox-states)
+  - [Checkbox key properties](#checkbox-key-properties)
+    - [Checkbox attributes](#checkbox-attributes)
+  - [Theming](#theming)
 
 ## Using checkboxes
 

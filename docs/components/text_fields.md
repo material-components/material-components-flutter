@@ -15,7 +15,6 @@ path: /catalog/material-text-field/
 
 ## Contents
 
-- [Contents](#contents)
 - [Using text fields](#using-text-fields)
 - [Filled text](#filled-text)
 - [Outlined button](#outlined-button)

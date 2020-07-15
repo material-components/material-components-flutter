@@ -15,7 +15,6 @@ path: /catalog/material-card/
 
 ## Contents
 
-- [Contents](#contents)
 - [Using cards](#using-cards)
 - [Card](#card)
 - [Theming a card](#theming-a-card)

@@ -21,7 +21,6 @@ Use radio buttons to:
 
 ## Contents
 
-- [Contents](#contents)
 - [Using radio buttons](#using-radio-buttons)
 - [Import radio buttons](#import-radio-buttons)
 - [Making radio buttons accessible](#making-radio-buttons-accessible)

@@ -15,7 +15,6 @@ The [top app bar](https://material.io/components/app-bars-top/#) displays inform
 
 ## Contents
 
-- [Contents](#contents)
 - [Using the top app bar](#using-the-top-app-bar)
 - [Regular top app bar](#regular-top-app-bar)
 - [Contextual action bar](#contextual-action-bar)

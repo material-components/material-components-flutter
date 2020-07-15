@@ -15,7 +15,6 @@ path: /catalog/material-button/
 
 ## Contents
 
-- [Contents](#contents)
 - [Using buttons](#using-buttons)
 - [Text button](#text-button)
 - [Outlined button](#outlined-button)

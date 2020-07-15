@@ -3,7 +3,7 @@ title: "Material Banners"
 layout: detail
 section: components
 excerpt: "A banner displays a prominent message and related optional actions."
-iconId: 
+iconId:
 path: /catalog/material-banners/
 -->
 
@@ -15,7 +15,6 @@ A [banner](https://material.io/components/banners) displays a prominent message 
 
 ## Contents
 
-- [Contents](#contents)
 - [Using banners](#using-banners)
 - [Banners example](#banners-example)
 - [Theming banners](#theming-banners)

@@ -16,7 +16,6 @@ api_doc_root: true
 
 ## Contents
 
-- [Contents](#contents)
 - [Using data tables](#using-data-tables)
 - [Theming data tables](#theming-data-tables)
 
