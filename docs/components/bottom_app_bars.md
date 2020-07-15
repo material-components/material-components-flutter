@@ -15,7 +15,6 @@ path: /catalog/material-bottom-app-bar/
 
 ## Contents
 
-- [Contents](#contents)
 - [Using the bottom app bar](#using-the-bottom-app-bar)
 - [Bottom app bar example](#bottom-app-bar-example)
 - [Theming](#theming)

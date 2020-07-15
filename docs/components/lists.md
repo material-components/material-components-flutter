@@ -13,7 +13,6 @@ path: /catalog/lists/
 
 ## Contents
 
-- [Contents](#contents)
 - [Using lists](#using-lists)
 - [Single-line list](#single-line-list)
 - [Two-line list](#two-line-list)

@@ -15,7 +15,6 @@ path: /catalog/tabs
 
 ## Contents
 
-- [Contents](#contents)
 - [Using FABs](#using-fabs)
 - [Regular FABs](#regular-fabs)
 - [Mini FABs](#mini-fabs)

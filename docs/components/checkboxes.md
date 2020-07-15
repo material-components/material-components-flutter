@@ -21,7 +21,6 @@ Use checkboxes to:
 
 ## Contents
 
-- [Contents](#contents)
 - [Using checkboxes](#using-checkboxes)
 - [Checkboxes](#checkboxes)
 - [Checkbox key properties](#checkbox-key-properties)
@@ -40,6 +39,7 @@ Flutter's APIs support accessibility setting for large fonts, screen readers, an
 ### Checkboxes example
 
 `CheckBox`
+
 - [Class description](https://api.flutter.dev/flutter/material/Checkbox-class.html)
 - [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/checkbox.dart)
 - [Demo site](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/checkboxes/regular)

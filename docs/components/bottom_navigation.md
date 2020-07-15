@@ -15,7 +15,6 @@ path: /components/bottom-navigation/
 
 ## Contents
 
-- [Contents](#contents)
 - [Using bottom navigation](#using-bottom-navigation)
 - [Bottom navigation example](#bottom-navigation-example)
 - [Theming a bottom nav bar](#theming-a-bottom-nav-bar)

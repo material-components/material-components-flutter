@@ -15,7 +15,6 @@ path: /catalog/Snackbars/
 
 ## Contents
 
-* [Contents](#contents)
 * [Using snackbars](#using-snackbars)
 * [Snackbars example](#snackbar-example)
 * [Theming snackbars](#theming-example)
