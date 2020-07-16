@@ -214,7 +214,7 @@ An extended FAB has a text label, a transparent container and an optional icon.
 **Color** | `foregroundColor`
 **Size** | `size` on `child` when using an `Icon`
 
-#### Text label for extended FAB
+#### Text label attributes for extended FAB
 
 &nbsp;         | Property
 -------------- | ------------------------
