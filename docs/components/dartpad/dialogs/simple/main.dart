@@ -40,7 +40,7 @@ class MyHomePage extends StatelessWidget {
           color: Colors.grey,
           text: 'Add account',
           onPressed: () {
-            Navigator.pop(context, 'user02@gmail.com');
+            Navigator.pop(context, 'Add account');
           },
         ),
       ],
