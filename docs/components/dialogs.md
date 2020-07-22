@@ -33,7 +33,7 @@ There are four types of dialogs:
 - [Simple](#simple-dialog)
 - [Confirmation](#confirmation-dialog)
 - [Full-screen](#full-screen-dialog)
-- [Theming banners](#theming-banners)
+- [Dialog theming](#dialog-theming)
 
 ## Using dialogs
 
