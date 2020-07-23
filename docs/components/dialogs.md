@@ -247,12 +247,12 @@ Confirmation dialogs give users the ability to provide final confirmation of a c
 
 If the user confirms a choice, it’s carried out. Otherwise, the user can dismiss the dialog. For example, users can listen to multiple ringtones but only make a final selection upon tapping “OK.”
 
-NOTE: There is no explicit confirmation dialog in Flutter but this can be built using the `Dialog` widget as a blank slate and providing your own custom `child`.
+_**NOTE: There is no explicit confirmation dialog in Flutter but this can be built using the `Dialog` widget as a blank slate and providing your own custom `child`.**_
 
 
 ## Full-screen dialog
 
-Full-screen dialogs group a series of tasks, such as creating a calendar entry with the event title, date, location, and time. Because they take up the entire screen, full-screen dialogs are the only dialogs over which other dialogs can appear.dia
+Full-screen dialogs group a series of tasks, such as creating a calendar entry with the event title, date, location, and time. Because they take up the entire screen, full-screen dialogs are the only dialogs over which other dialogs can appear.
 
 ### Full-screen dialog example
 
