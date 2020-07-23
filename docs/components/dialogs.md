@@ -247,28 +247,7 @@ Confirmation dialogs give users the ability to provide final confirmation of a c
 
 If the user confirms a choice, it’s carried out. Otherwise, the user can dismiss the dialog. For example, users can listen to multiple ringtones but only make a final selection upon tapping “OK.”
 
-### Confirmation dialog example
-
-`Dialog`
-- [Class description](https://api.flutter.dev/flutter/material/Dialog-class.html)
-- [Github source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/dialog.dart)
-
-There is no explicit confirmation dialog in Flutter but this can be built using the `Dialog` widget as a blank slate and providing your own custom `child`.
-
-### Confirmation dialog anatomy
-
-A confirmation dialog contains the following:
-
-![confirmation dialog anatomy diagram](assets/dialogs/Dialogs_Confirmation_anatomy.png)
-
-
-1. Container
-1. Title
-1. List item
-    1. List control
-    1. Primary text
-1. Button
-1. Scrim
+NOTE: There is no explicit confirmation dialog in Flutter but this can be built using the `Dialog` widget as a blank slate and providing your own custom `child`.
 
 
 ## Full-screen dialog
