@@ -10,21 +10,11 @@ path: /catalog/dialog/
 
 # Dialogs
 
-Dialogs inform users about a task and can contain critical information, require decisions, or involve multiple tasks.
+[Dialogs](https://material.io/components/dialogs) inform users about a task and can contain critical information, require decisions, or involve multiple tasks.
 
-There are four types of dialogs:
+There are four types of dialogs: 1. [Alert](#alert-dialog), 2. [Simple](#simple-dialog), 3. [Confirmation](#confirmation-dialog), 4. [Full-screen](#full-screen-dialog)
 
-1. [Alert](#alert-dialog)
-1. [Simple](#simple-dialog)
-1. [Confirmation](#confirmation-dialog)
-1. [Full-screen](#full-screen-dialog)
-
-<br>
-
-1. <img src="assets/dialogs/alert-dialog.png" alt="Alert dialog: discard" width=50%>
-1. <img src="assets/dialogs/simple-dialog.png" alt="Simple dialog: selection" width=50%>
-1. <img src="assets/dialogs/confirmation-dialog.png" alt="Confirmation dialog: selection confirmation" width=50%>
-1. <img src="assets/dialogs/full-screen-dialog.png" alt="Full-screen dialog: event" width=50%>
+![Hero image of the 4 types of dialogs](assets/dialogs/dialogs_types.png)
 
 ## Contents
 
@@ -43,7 +33,7 @@ Dialogs are purposefully interruptive, so they should be used sparingly.
 
 Before you can use Material dialogss, you need to import the Material Components package for Flutter: `package:flutter/material.dart`.
 
-You need to be using a [`MaterialApp`](https://api.flutter.dev/flutter/material/MaterialApp-class.html).
+You need to use a [`MaterialApp`](https://api.flutter.dev/flutter/material/MaterialApp-class.html).
 
 For more information on getting started with the Material for Flutter, go to the Flutter [Material library](https://api.flutter.dev/flutter/material/material-library.html) page.
 
@@ -310,11 +300,11 @@ The full-screen dialog contains the following properties:
 
 ### Dialog theming example
 
-The following example shows regular, mini, and extended FABs with the [Material Shrine Theme](https://material.io/design/material-studies/shrine.html).
+The following example shows a simple dialog with the [Material Shrine Theme](https://material.io/design/material-studies/shrine.html).
 
 - [Dartpad Demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/dialogs/theme)
 
-![FABs with Shrine theming](assets/dialogs/dialog-theming.png)
+![Simple dialog with Shrine theming](assets/dialogs/dialog-theming.png)
 
 ```dart
 import 'package:flutter/material.dart';
