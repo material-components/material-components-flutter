@@ -1,0 +1,4 @@
+name: Material Full-screen Dialog Demonstration
+mode: flutter
+files:
+  - name: main.dart
