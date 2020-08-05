@@ -18,6 +18,7 @@ class App extends StatelessWidget {
         body: Center(
           child: Column(
             children: [
+              Divider(),
               LinearProgressIndicator(),
               CircularProgressIndicator(),
             ],

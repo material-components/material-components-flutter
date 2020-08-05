@@ -18,7 +18,6 @@ class App extends StatelessWidget {
           child: Column(
             children: [
               FilterChip(
-                avatar: Icon(Icons.check),
                 label: Text('Filter 1'),
                 selected: true,
                 onSelected: (bool value) {},
@@ -28,7 +27,6 @@ class App extends StatelessWidget {
                 onSelected: (bool value) {},
               ),
               FilterChip(
-                avatar: Icon(Icons.check),
                 label: Text('Filter 3'),
                 selected: true,
                 onSelected: (bool value) {},
