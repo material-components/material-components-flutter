@@ -13,11 +13,11 @@ path: /catalog/material-progress-indicators/
 
 ![Progress indicator hero](assets/progress_indicators/hero-1.gif)
 
-##Contents
+## Contents
 
 - [Progress indicators](#progress-indicators)
+  - [Contents](#contents)
   - [Using progress indicators](#using-progress-indicators)
-    - [Installing progress indicators](#installing-progress-indicators)
     - [Making progress indicators accessible](#making-progress-indicators-accessible)
   - [Types](#types)
   - [Linear progress indicators](#linear-progress-indicators)
@@ -34,8 +34,6 @@ path: /catalog/material-progress-indicators/
 Progress indicators inform users about the status of ongoing processes, such as loading an app, submitting a form, or saving updates. They communicate an app’s state and indicate available actions, such as whether users can navigate away from the current screen.
 
 **Note: When displaying progress for a sequence of processes, indicate overall progress rather than the progress of each activity.**
-
-### Installing progress indicators
 
 ### Making progress indicators accessible
 

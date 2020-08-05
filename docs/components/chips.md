@@ -3,7 +3,7 @@ title: "Material chips"
 layout: detail
 section: components
 excerpt: "Chips are compact elements that represent an input, attribute, or action."
-iconId: 
+iconId:
 path: /catalog/material-chips/
 -->
 
@@ -15,27 +15,10 @@ path: /catalog/material-chips/
 
 ## Contents
 
-- [Chips](#chips)
-  - [Using chips](#using-chips)
-    - [Installing chips](#installing-chips)
-    - [Importing chips](#importing-chips)
-    - [Making chips accessible](#making-chips-accessible)
-  - [Anatomy and key properties](#anatomy-and-key-properties)
-    - [Container](#container)
-    - [Thumbnail](#thumbnail)
-    - [Text](#text)
-    - [Remove icon](#remove-icon)
-  - [Types](#types)
-    - [Input chips](#input-chips)
-      - [Input chips example](#input-chips-example)
-    - [Choice chips](#choice-chips)
-      - [Choice chips example](#choice-chips-example)
-    - [Filter chips](#filter-chips)
-      - [Filter chips example](#filter-chips-example)
-    - [Action chips](#action-chips)
-      - [Action chips example](#action-chips-example)
-  - [Theming](#theming)
-    - [Theming example](#theming-example)
+- [Using chips](#using-chips)
+- [Anatomy and key properties](#anatomy-and-key-properties)
+- [Types](#types)
+- [Theming](#theming)
 
 ## Using chips
 
