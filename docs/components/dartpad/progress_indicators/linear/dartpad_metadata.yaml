@@ -1,0 +1,4 @@
+name: Material Linear Progress Indicator Demonstration
+mode: flutter
+files:
+  - name: main.dart

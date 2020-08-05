@@ -1,0 +1,4 @@
+name: Material Filter Chips Demonstration
+mode: flutter
+files:
+  - name: main.dart

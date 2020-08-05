@@ -1,0 +1,4 @@
+name: Material Input Chips Demonstration
+mode: flutter
+files:
+  - name: main.dart

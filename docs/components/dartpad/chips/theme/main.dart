@@ -1,57 +1,42 @@
 import 'package:flutter/material.dart';
 
-void main() => runApp(MyApp());
+void main() {
+  runApp(App());
+}
 
-class MyApp extends StatelessWidget {
+class App extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Checkboxes Demo',
       debugShowCheckedModeBanner: false,
-      home: SnackBarsDemo(),
       theme: _buildShrineTheme(),
-    );
-  }
-}
-
-class SnackBarsDemo extends StatelessWidget {
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text('Snackbars'),
-        actions: [SnackbarButton()],
-      ),
-      body: Container(
-        decoration: BoxDecoration(
-          image: DecorationImage(
-            image: NetworkImage(
-                'replace with url for snackbars-background.jpg after merge'),
-            fit: BoxFit.cover,
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text('Input Theme Chips Demo'),
+        ),
+        body: Center(
+          child: Column(
+            children: [
+              InputChip(
+                avatar: Icon(Icons.add_shopping_cart),
+                label: Text('Input 1'),
+                onSelected: (bool value) {},
+              ),
+              InputChip(
+                avatar: Icon(Icons.card_giftcard),
+                label: Text('Input 2'),
+                onSelected: (bool value) {},
+              ),
+              InputChip(
+                avatar: Icon(Icons.credit_card),
+                label: Text('Input 3'),
+                onSelected: (bool value) {},
+              ),
+            ],
           ),
         ),
       ),
-    );
-  }
-}
-
-class SnackbarButton extends StatelessWidget {
-  Widget build(BuildContext context) {
-    return RaisedButton(
-      onPressed: () {
-        final snackBar = SnackBar(
-          behavior: SnackBarBehavior.floating,
-          content: Text('Text label'),
-          action: SnackBarAction(
-            label: 'Action',
-            onPressed: () {},
-          ),
-        );
-
-        // Find the Scaffold in the widget tree and use
-        // it to show a SnackBar.
-        Scaffold.of(context).showSnackBar(snackBar);
-      },
-      child: Text('Show SnackBar'),
     );
   }
 }
@@ -60,6 +45,7 @@ ThemeData _buildShrineTheme() {
   final ThemeData base = ThemeData.light();
   return base.copyWith(
     colorScheme: _shrineColorScheme,
+    toggleableActiveColor: shrinePink400,
     accentColor: shrineBrown900,
     primaryColor: shrinePink100,
     buttonColor: shrinePink100,
@@ -67,10 +53,6 @@ ThemeData _buildShrineTheme() {
     cardColor: shrineBackgroundWhite,
     textSelectionColor: shrinePink100,
     errorColor: shrineErrorRed,
-    buttonTheme: const ButtonThemeData(
-      colorScheme: _shrineColorScheme,
-      textTheme: ButtonTextTheme.normal,
-    ),
     primaryIconTheme: _customIconTheme(base.iconTheme),
     textTheme: _buildShrineTextTheme(base.textTheme),
     primaryTextTheme: _buildShrineTextTheme(base.primaryTextTheme),
@@ -84,24 +66,11 @@ IconThemeData _customIconTheme(IconThemeData original) {
 }
 
 TextTheme _buildShrineTextTheme(TextTheme base) {
-  return base
-      .copyWith(
-        caption: base.caption.copyWith(
-          fontWeight: FontWeight.w400,
-          fontSize: 14,
-          letterSpacing: defaultLetterSpacing,
-        ),
-        button: base.button.copyWith(
-          fontWeight: FontWeight.w500,
-          fontSize: 14,
-          letterSpacing: defaultLetterSpacing,
-        ),
-      )
-      .apply(
-        fontFamily: 'Rubik',
-        displayColor: shrineBrown900,
-        bodyColor: shrineBrown900,
-      );
+  return base.apply(
+    fontFamily: 'Rubik',
+    displayColor: shrineBrown900,
+    bodyColor: shrineBrown900,
+  );
 }
 
 const ColorScheme _shrineColorScheme = ColorScheme(
@@ -132,5 +101,3 @@ const Color shrineErrorRed = Color(0xFFC5032B);
 
 const Color shrineSurfaceWhite = Color(0xFFFFFBFA);
 const Color shrineBackgroundWhite = Colors.white;
-
-const defaultLetterSpacing = 0.03;
