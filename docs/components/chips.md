@@ -24,13 +24,9 @@ path: /catalog/material-chips/
 
 Chips allow users to enter information, make selections, filter content, or trigger actions. While buttons are expected to appear consistently and with familiar calls to action, chips should appear dynamically as a group of multiple interactive elements.
 
-### Installing chips
-
-### Importing chips
-
 ### Making chips accessible
 
-**Note to developers: List/describe any accessibility settings or attributes associated with chips**
+Flutter's APIs support accessibility setting for large fonts, screen readers, and sufficient contrast. For more information, go to Flutter's [accessibility](https://flutter.dev/docs/development/accessibility-and-localization/accessibility) and [internationalization](https://flutter.dev/docs/development/accessibility-and-localization/internationalization) pages.
 
 ## Anatomy and key properties
 
@@ -87,7 +83,7 @@ Input chips represent a complex piece of information in compact form, such as an
 
 - [Class definition](https://api.flutter.dev/flutter/material/InputChip-class.html)
 - [GitHub source](https://github.com/flutter/flutter/blob/fabf4e3d0d311181178d2c601d29a2f739ea543a/packages/flutter/lib/src/material/chip.dart)
-- [Demo site](link to dartpad demo)
+- [Demo site](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/chips/input)
 
 **Note to developers** Create an input chips example with the following features:
 
@@ -109,7 +105,7 @@ Choice chips clearly delineate and display options in a compact area. They are a
 
 - [Class definition](https://api.flutter.dev/flutter/material/ChoiceChip-class.html)
 - [GitHub source](https://github.com/flutter/flutter/blob/fabf4e3d0d311181178d2c601d29a2f739ea543a/packages/flutter/lib/src/material/chip.dart)
-- [Demo site](link to dartpad demo)
+- [Demo site](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/chips/choice)
 
 **Note to developers** Create a choice chips example with the following features:
 
@@ -132,7 +128,7 @@ Filter chips clearly delineate and display options in a compact area. They are a
 
 - [Class definition](https://api.flutter.dev/flutter/material/FilterChip-class.html)
 - [GitHub source](https://github.com/flutter/flutter/blob/fabf4e3d0d311181178d2c601d29a2f739ea543a/packages/flutter/lib/src/material/chip.dart)
-- [Demo site](link to dartpad demo)
+- [Demo site](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/chips/filter)
 
 **Note to developers** Create a filter chips example with the following features:
 
@@ -147,11 +143,11 @@ An alternative to action chips are buttons, which should appear persistently and
 
 #### Action chips example
 
-`ChoiceChip`
+`ActionChip`
 
 - [Class definition](https://api.flutter.dev/flutter/material/ActionChip-class.html)
 - [GitHub source](https://github.com/flutter/flutter/blob/fabf4e3d0d311181178d2c601d29a2f739ea543a/packages/flutter/lib/src/material/chip.dart)
-- [Demo site](link to dartpad demo)
+- [Demo site](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/chips/action)
 
 **Note to developers** Create an action chips example with the following features:
 

@@ -33,9 +33,9 @@ path: /catalog/material-progress-indicators/
 
 Progress indicators inform users about the status of ongoing processes, such as loading an app, submitting a form, or saving updates. They communicate an app’s state and indicate available actions, such as whether users can navigate away from the current screen.
 
-**Note: When displaying progress for a sequence of processes, indicate overall progress rather than the progress of each activity.**
-
 ### Making progress indicators accessible
+
+Flutter's APIs support accessibility setting for large fonts, screen readers, and sufficient contrast. For more information, go to Flutter's [accessibility](https://flutter.dev/docs/development/accessibility-and-localization/accessibility) and [internationalization](https://flutter.dev/docs/development/accessibility-and-localization/internationalization) pages.
 
 ## Types
 
@@ -59,12 +59,17 @@ Linear progress indicators display progress by animating an indicator along the 
 
 - [Class definition](https://api.flutter.dev/flutter/material/LinearProgressIndicator-class.html)
 - [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/progress_indicator.dart)
+- [Demo site](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/progress_indicators/linear)
 
 The following example shows an indeterminate linear progress indicator:
 
-**Note to developers: Generate code/screenshot of the following**
+![Linear Progress Indicator](assets/progress_indicators/linear_progress_indicator.png)
 
-- Create an indeterminate linear progress indicator
+```dart
+body: Center(
+    child: LinearProgressIndicator(),
+),
+```
 
 ## Anatomy and key properties
 
@@ -83,7 +88,7 @@ The track is a fixed width rule, with set boundaries for the indicator to travel
 
 &nbsp;         | Property
 -------------- | ------------------------
- |
+**Color**| backgroundColor
 
 ### Linear indicator
 
@@ -91,7 +96,7 @@ The indicator animates along the length of the track.
 
 &nbsp;         | Property
 -------------- | ------------------------
- |
+**Color** | valueColor and use the class AlwaysStoppedAnimation<>()
 
 ## Circular progress indicators
 
@@ -109,12 +114,11 @@ Circular progress indicators display progress by animating an indicator along an
 
 - [Class definition](https://api.flutter.dev/flutter/material/CircularProgressIndicator-class.html)
 - [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/progress_indicator.dart)
+- [Demo site](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/progress_indicators/circular)
 
 The following shows a determinate circular progress indicator
 
-**Note to developers: Generate code/screenshot of the following**
-
-- A determinate circular progress indicator
+![Circular Progress Indicator](assets/progress_indicators/circular_progress_indicator.png)
 
 ## Theming progress indicators
 
@@ -122,15 +126,17 @@ The following shows a determinate circular progress indicator
 
 - [Class definition](https://api.flutter.dev/flutter/material/LinearProgressIndicator-class.html)
 - [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/progress_indicator.dart)
+- [Demo site](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/progress_indicators/theme)
 
 `CircularProgressIndicator`
 
 - [Class definition](https://api.flutter.dev/flutter/material/CircularProgressIndicator-class.html)
 - [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/progress_indicator.dart)
+- [Demo site](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/progress_indicators/theme)
 
 The following shows an indeterminate linear progress indicator and a determinate circular progress indicator with [Shrine theming](https://material.io/design/material-studies/shrine.html):
 
-**Note to developers: Generate example code and screenshots of the following using [Shrine theming](https://material.io/design/material-studies/shrine.html)**
+![Circular Progress Indicator](assets/progress_indicators/theme_progress_indicator.png)
 
 - Create an indeterminate linear progress indicator
 - A determinate circular progress indicator
