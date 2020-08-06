@@ -52,6 +52,7 @@ There are four types of buttons: 1. [Text button](#text-button), 2. [Outlined bu
 API and source code:
 
 `FlatButton`
+
 - [Class description](https://api.flutter.dev/flutter/material/FlatButton-class.html)
 - [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/flat_button.dart)
 - [Dartpad demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/buttons/flat)

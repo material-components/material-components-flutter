@@ -54,23 +54,22 @@ Banners consist of the following:
 3. Text
 4. Buttons
 
-
 #### Supporting illustration
 
 &nbsp;         | Property
--------------- | ------------------------ 
+-------------- | ------------------------
 **Illustration** | `leading`
 
 #### Container
 
 &nbsp; | Property
------- | --------- 
-**Color** | `backgroundColor` 
+------ | ---------
+**Color** | `backgroundColor`
 
 #### Text
 
 &nbsp;         | Property
--------------- | ------------------------ 
+-------------- | ------------------------
 **Text label** | `content`
 **Color**      | `style` on `content` when using a `Text`
 **Typography** | `style` on `content` when using a `Text`
@@ -78,13 +77,13 @@ Banners consist of the following:
 #### Buttons
 
 &nbsp;         | Property
--------------- | ------------------------ 
+-------------- | ------------------------
 **Buttons** | `actions`
-
 
 ## Banners example
 
 `MaterialBanner`
+
 - [Class definition](https://master-api.flutter.dev/flutter/material/MaterialBanner-class.html)
 - [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/banner.dart)
 - [Dartpad demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/banners/regular)
@@ -113,6 +112,7 @@ MaterialBanner(
 ## Theming banners
 
 `MaterialBanner`
+
 - [Class definition](https://master-api.flutter.dev/flutter/material/MaterialBanner-class.html)
 - [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/banner.dart)
 - [[Dartpad demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/banners/theme)
@@ -123,7 +123,6 @@ customized in terms of color and typography.
 The following example shows a banner with the [Material Shrine Theme](https://material.io/design/material-studies/shrine.html).
 
 !["Banner with Shrine theming."](assets/banners/banners-theming.png)
-
 
 ```dart
 import 'package:flutter/material.dart';
@@ -245,4 +244,3 @@ const Color shrineBackgroundWhite = Colors.white;
 
 const defaultLetterSpacing = 0.03;
 ```
-

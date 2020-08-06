@@ -3,7 +3,7 @@ title: "Material Snackbars"
 layout: detail
 section: components
 excerpt: "Snackbars provide brief messages about app processes at the bottom of the screen."
-iconId: 
+iconId:
 path: /catalog/Snackbars/
 -->
 
@@ -15,9 +15,9 @@ path: /catalog/Snackbars/
 
 ## Contents
 
-* [Using snackbars](#using-snackbars)
-* [Snackbars example](#snackbar-example)
-* [Theming snackbars](#theming-example)
+- [Using snackbars](#using-snackbars)
+- [Snackbars example](#snackbar-example)
+- [Theming snackbars](#theming-example)
 
 ## Using snackbars
 
@@ -48,7 +48,7 @@ The following is an anatomy diagram of a snackbar:
 #### Container properties
 
 &nbsp; | Property
------- | --------- 
+------ | ---------
 **Color** | `backgroundColor`
 **Elevation** | `elevation`
 **Shape border** | `shape`
@@ -56,18 +56,18 @@ The following is an anatomy diagram of a snackbar:
 #### Action properties
 
 &nbsp;         | Property
--------------- | ------------------------ 
+-------------- | ------------------------
 **Color** | `color` on `action`
 **Text label** | `label` on `action`
 **Text color** | `textColor` on `action`
 
-
 ## Snackbar example
 
 `SnackBar`
-* [Class definition](https://api.flutter.dev/flutter/material/SnackBar-class.html)
-* [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/snack_bar.dart)
-* [Dartpad Demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/snackbars/regular)
+
+- [Class definition](https://api.flutter.dev/flutter/material/SnackBar-class.html)
+- [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/snack_bar.dart)
+- [Dartpad Demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/snackbars/regular)
 
 The following is an example of a snackbar with an action button:
 
@@ -87,10 +87,10 @@ SnackBar(
 ## Theming example
 
 `SnackBar`
-* [Class definition](https://api.flutter.dev/flutter/material/SnackBar-class.html)
-* [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/snack_bar.dart)
-* [Dartpad Demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/snackbars/theme)
 
+- [Class definition](https://api.flutter.dev/flutter/material/SnackBar-class.html)
+- [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/snack_bar.dart)
+- [Dartpad Demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/snackbars/theme)
 
 The following is an example of a snackbar with an action button that uses the Material.io [Shrine](https://material.io/design/material-studies/shrine.html) color theming::
 

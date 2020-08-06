@@ -21,11 +21,15 @@ Use radio buttons to:
 
 ## Contents
 
-- [Using radio buttons](#using-radio-buttons)
-- [Import radio buttons](#import-radio-buttons)
-- [Making radio buttons accessible](#making-radio-buttons-accessible)
-- [Radio buttons example](#radio-buttons-example)
-- [Theming](#theming)
+- [Selection controls: radio buttons](#selection-controls-radio-buttons)
+  - [Contents](#contents)
+  - [Using radio buttons](#using-radio-buttons)
+    - [Import radio buttons](#import-radio-buttons)
+    - [Making radio buttons accessible](#making-radio-buttons-accessible)
+  - [Radio buttons](#radio-buttons)
+    - [Radio buttons example](#radio-buttons-example)
+    - [Radio button states](#radio-button-states)
+  - [Theming](#theming)
 
 ## Using radio buttons
 
@@ -54,6 +58,7 @@ For more guidance on writing labels, go to [our page on how to write a good acce
 ### Radio buttons example
 
 'Radio'
+
 - [Class definition](https://api.flutter.dev/flutter/material/Radio-class.html)
 - [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/radio.dart)
 - [Dartpad demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/radio_buttons/regular)
@@ -94,11 +99,9 @@ Radio buttons can be selected or unselected. Radio buttons have enabled, disable
 
 ## Theming
 
-
 - [Class definition](https://api.flutter.dev/flutter/material/Radio-class.html)
 - [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/radio.dart)
 - [Dartpad demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/radio_buttons/theme)
-
 
 Radio buttons support [Material Theming](https://material.io/components/buttons/#theming) and can be
 customized in terms of color.
