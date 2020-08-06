@@ -43,29 +43,29 @@ The following is an anatomy diagram of a chip:
 
 &nbsp; | Property
 ------ | ---------
-**Color** |
-**Height** |
-**Overlay window** |
+**Height** | padding
 
 ### Thumbnail
 
 &nbsp;         | Property
 -------------- | ------------------------
- |
+**avatar** | avatar
+**border** | avatarBorder
 
 ### Text
 
 &nbsp;         | Property
 -------------- | ------------------------
-**Text label** |
-**Color**      |
-**Typography** |
+**Text label** | label and use Text widget
+**Color**      | label and use Text widget within textWidget set style
+**Typography** | label and use Text widget within textWidget set style
+**padding** | labelPadding
 
 ### Remove icon
 
 &nbsp;         | Property
 -------------- | ------------------------
- |
+**color** | deleteIconColor
 
 ## Types
 
@@ -85,13 +85,43 @@ Input chips represent a complex piece of information in compact form, such as an
 - [GitHub source](https://github.com/flutter/flutter/blob/fabf4e3d0d311181178d2c601d29a2f739ea543a/packages/flutter/lib/src/material/chip.dart)
 - [Demo site](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/chips/input)
 
-**Note to developers** Create an input chips example with the following features:
+![Input Chips](assets/chips/input_chips.png)
 
-- Generate three chips; each chip has a "remove" icon and is labeled:
-  - "Input 1"
-  - "Input 2"
-  - "Input 3"
-- In the chips container, include an incomplete text entry for "Input 4"
+```dart
+@override
+Widget build(BuildContext context) {
+  return MaterialApp(
+    title: 'Input Chips Demo',
+    debugShowCheckedModeBanner: false,
+    home: Scaffold(
+      appBar: AppBar(
+        title: Text('Input Chips Demo'),
+      ),
+      body: Center(
+        child: Column(
+          children: [
+            InputChip(
+              avatar: Icon(Icons.remove),
+              label: Text('Input 1'),
+              onSelected: (bool value) {},
+            ),
+            InputChip(
+              avatar: Icon(Icons.remove),
+              label: Text('Input 2'),
+              onSelected: (bool value) {},
+            ),
+            InputChip(
+              avatar: Icon(Icons.remove),
+              label: Text('Input 3'),
+              onSelected: (bool value) {},
+            ),
+          ],
+        ),
+      ),
+    ),
+  );
+}
+```
 
 ### Choice chips
 
@@ -107,14 +137,44 @@ Choice chips clearly delineate and display options in a compact area. They are a
 - [GitHub source](https://github.com/flutter/flutter/blob/fabf4e3d0d311181178d2c601d29a2f739ea543a/packages/flutter/lib/src/material/chip.dart)
 - [Demo site](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/chips/choice)
 
-**Note to developers** Create a choice chips example with the following features:
+![Choice Chips](assets/chips/choice_chips.png)
 
-- Generate four choice chips labeled:
-  - "Choice 1"
-  - "Choice 2"
-  - "Choice 3"
-  - "Choice 4"
-- Show a screenshot of "Choice 1" as selected
+```dart
+@override
+Widget build(BuildContext context) {
+  return MaterialApp(
+    title: 'Choice Chips Demo',
+    debugShowCheckedModeBanner: false,
+    home: Scaffold(
+      appBar: AppBar(
+        title: Text('Choice Chips Demo'),
+      ),
+      body: Center(
+        child: Column(
+          children: [
+            ChoiceChip(
+              label: Text('Choice 1'),
+              selected: true,
+            ),
+            ChoiceChip(
+              label: Text('Choice 2'),
+              selected: false,
+            ),
+            ChoiceChip(
+              label: Text('Choice 3'),
+              selected: false,
+            ),
+            ChoiceChip(
+              label: Text('Choice 4'),
+              selected: false,
+            ),
+          ],
+        ),
+      ),
+    ),
+  );
+}
+```
 
 ### Filter chips
 
@@ -130,10 +190,54 @@ Filter chips clearly delineate and display options in a compact area. They are a
 - [GitHub source](https://github.com/flutter/flutter/blob/fabf4e3d0d311181178d2c601d29a2f739ea543a/packages/flutter/lib/src/material/chip.dart)
 - [Demo site](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/chips/filter)
 
-**Note to developers** Create a filter chips example with the following features:
+![Filter Chips](assets/chips/filter_chips.png)
 
-- Generate six filter chips, each labeled "Filter 1", "Filter 2" ... "Filter 6"
-- Show a screenshot of "Filter 1" and "Filter 3" as selected with a check icon
+```dart
+@override
+Widget build(BuildContext context) {
+  return MaterialApp(
+    title: 'Filter Chips Demo',
+    debugShowCheckedModeBanner: false,
+    home: Scaffold(
+      appBar: AppBar(
+        title: Text('Filter Chips Demo'),
+      ),
+      body: Center(
+        child: Column(
+          children: [
+            FilterChip(
+              label: Text('Filter 1'),
+              selected: true,
+              onSelected: (bool value) {},
+            ),
+            FilterChip(
+              label: Text('Filter 2'),
+              onSelected: (bool value) {},
+            ),
+            FilterChip(
+              label: Text('Filter 3'),
+              selected: true,
+              onSelected: (bool value) {},
+            ),
+            FilterChip(
+              label: Text('Filter 4'),
+              onSelected: (bool value) {},
+            ),
+            FilterChip(
+              label: Text('Filter 5'),
+              onSelected: (bool value) {},
+            ),
+            FilterChip(
+              label: Text('Filter 6'),
+              onSelected: (bool value) {},
+            ),
+          ],
+        ),
+      ),
+    ),
+  );
+}
+```
 
 ### Action chips
 
@@ -149,13 +253,48 @@ An alternative to action chips are buttons, which should appear persistently and
 - [GitHub source](https://github.com/flutter/flutter/blob/fabf4e3d0d311181178d2c601d29a2f739ea543a/packages/flutter/lib/src/material/chip.dart)
 - [Demo site](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/chips/action)
 
-**Note to developers** Create an action chips example with the following features:
+![Action Chips](assets/chips/action_chips.png)
 
-- Generate four actions chips, labeled:
-  - "Action 1" with a favorites icon
-  - "Action 2" with a trash icon
-  - "Action 3" with an alarm icon
-  - "Action 4" with a location icon
+```dart
+@override
+Widget build(BuildContext context) {
+  return MaterialApp(
+    title: 'Action Chip Demo',
+    debugShowCheckedModeBanner: false,
+    home: Scaffold(
+      appBar: AppBar(
+        title: Text('Action Chips Demo'),
+      ),
+      body: Center(
+        child: Column(
+          children: [
+            ActionChip(
+              avatar: Icon(Icons.favorite),
+              label: Text('Action 1'),
+              onPressed: () {},
+            ),
+            ActionChip(
+              avatar: Icon(Icons.delete),
+              label: Text('Action 2'),
+              onPressed: () {},
+            ),
+            ActionChip(
+              avatar: Icon(Icons.alarm),
+              label: Text('Action 3'),
+              onPressed: () {},
+            ),
+            ActionChip(
+              avatar: Icon(Icons.location_on),
+              label: Text('Action 4'),
+              onPressed: () {},
+            ),
+          ],
+        ),
+      ),
+    ),
+  );
+}
+```
 
 ## Theming
 
@@ -167,12 +306,113 @@ Chips support [Material Theming](https://material.io/components/chips/#theming) 
 
 - [Class definition](https://api.flutter.dev/flutter/material/InputChip-class.html)
 - [GitHub source](https://github.com/flutter/flutter/blob/fabf4e3d0d311181178d2c601d29a2f739ea543a/packages/flutter/lib/src/material/chip.dart)
-- [Demo site](link to dartpad demo)
+- [Demo site](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/chips/theme)
 
-**Note to developers** Create an input chips example with the following features using the [Shrine theme](https://material.io/design/material-studies/shrine.html):
+![Theme Chips](assets/chips/theme_chips.png)
 
-- Generate three chips; each chip has a "remove" icon and is labeled:
-  - "Input 1" with an "add\_shopping\_cart" icon
-  - "Input 2" with a "card\_giftcard" icon
-  - "Input 3" with a "credit\_card" icon
-- In the chips container, include an incomplete text entry for "Input 4"
+```dart
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(App());
+}
+
+class App extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Checkboxes Demo',
+      debugShowCheckedModeBanner: false,
+      theme: _buildShrineTheme(),
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text('Input Theme Chips Demo'),
+        ),
+        body: Center(
+          child: Column(
+            children: [
+              InputChip(
+                avatar: Icon(Icons.add_shopping_cart),
+                label: Text('Input 1'),
+                onSelected: (bool value) {},
+              ),
+              InputChip(
+                avatar: Icon(Icons.card_giftcard),
+                label: Text('Input 2'),
+                onSelected: (bool value) {},
+              ),
+              InputChip(
+                avatar: Icon(Icons.credit_card),
+                label: Text('Input 3'),
+                onSelected: (bool value) {},
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+ThemeData _buildShrineTheme() {
+  final ThemeData base = ThemeData.light();
+  return base.copyWith(
+    colorScheme: _shrineColorScheme,
+    toggleableActiveColor: shrinePink400,
+    accentColor: shrineBrown900,
+    primaryColor: shrinePink100,
+    buttonColor: shrinePink100,
+    scaffoldBackgroundColor: shrineBackgroundWhite,
+    cardColor: shrineBackgroundWhite,
+    textSelectionColor: shrinePink100,
+    errorColor: shrineErrorRed,
+    primaryIconTheme: _customIconTheme(base.iconTheme),
+    textTheme: _buildShrineTextTheme(base.textTheme),
+    primaryTextTheme: _buildShrineTextTheme(base.primaryTextTheme),
+    accentTextTheme: _buildShrineTextTheme(base.accentTextTheme),
+    iconTheme: _customIconTheme(base.iconTheme),
+  );
+}
+
+IconThemeData _customIconTheme(IconThemeData original) {
+  return original.copyWith(color: shrineBrown900);
+}
+
+TextTheme _buildShrineTextTheme(TextTheme base) {
+  return base.apply(
+    fontFamily: 'Rubik',
+    displayColor: shrineBrown900,
+    bodyColor: shrineBrown900,
+  );
+}
+
+const ColorScheme _shrineColorScheme = ColorScheme(
+  primary: shrinePink100,
+  primaryVariant: shrineBrown900,
+  secondary: shrinePink50,
+  secondaryVariant: shrineBrown900,
+  surface: shrineSurfaceWhite,
+  background: shrineBackgroundWhite,
+  error: shrineErrorRed,
+  onPrimary: shrineBrown900,
+  onSecondary: shrineBrown900,
+  onSurface: shrineBrown900,
+  onBackground: shrineBrown900,
+  onError: shrineSurfaceWhite,
+  brightness: Brightness.light,
+);
+
+const Color shrinePink50 = Color(0xFFFEEAE6);
+const Color shrinePink100 = Color(0xFFFEDBD0);
+const Color shrinePink300 = Color(0xFFFBB8AC);
+const Color shrinePink400 = Color(0xFFEAA4A4);
+
+const Color shrineBrown900 = Color(0xFF442B2D);
+const Color shrineBrown600 = Color(0xFF7D4F52);
+
+const Color shrineErrorRed = Color(0xFFC5032B);
+
+const Color shrineSurfaceWhite = Color(0xFFFFFBFA);
+const Color shrineBackgroundWhite = Colors.white;
+
+```
