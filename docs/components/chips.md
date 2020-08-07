@@ -82,7 +82,7 @@ Input chips represent a complex piece of information in compact form, such as an
 `InputChip`
 
 - [Class definition](https://api.flutter.dev/flutter/material/InputChip-class.html)
-- [GitHub source](https://github.com/flutter/flutter/blob/fabf4e3d0d311181178d2c601d29a2f739ea543a/packages/flutter/lib/src/material/chip.dart)
+- [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/chip.dart)
 - [Demo site](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/chips/input)
 
 ![Input Chips](assets/chips/input_chips.png)
@@ -134,7 +134,7 @@ Choice chips clearly delineate and display options in a compact area. They are a
 `ChoiceChip`
 
 - [Class definition](https://api.flutter.dev/flutter/material/ChoiceChip-class.html)
-- [GitHub source](https://github.com/flutter/flutter/blob/fabf4e3d0d311181178d2c601d29a2f739ea543a/packages/flutter/lib/src/material/chip.dart)
+- [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/chip.dart)
 - [Demo site](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/chips/choice)
 
 ![Choice Chips](assets/chips/choice_chips.png)
@@ -187,7 +187,7 @@ Filter chips clearly delineate and display options in a compact area. They are a
 `FilterChip`
 
 - [Class definition](https://api.flutter.dev/flutter/material/FilterChip-class.html)
-- [GitHub source](https://github.com/flutter/flutter/blob/fabf4e3d0d311181178d2c601d29a2f739ea543a/packages/flutter/lib/src/material/chip.dart)
+- [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/chip.dart)
 - [Demo site](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/chips/filter)
 
 ![Filter Chips](assets/chips/filter_chips.png)
@@ -250,7 +250,7 @@ An alternative to action chips are buttons, which should appear persistently and
 `ActionChip`
 
 - [Class definition](https://api.flutter.dev/flutter/material/ActionChip-class.html)
-- [GitHub source](https://github.com/flutter/flutter/blob/fabf4e3d0d311181178d2c601d29a2f739ea543a/packages/flutter/lib/src/material/chip.dart)
+- [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/chip.dart)
 - [Demo site](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/chips/action)
 
 ![Action Chips](assets/chips/action_chips.png)
@@ -305,7 +305,7 @@ Chips support [Material Theming](https://material.io/components/chips/#theming) 
 `InputChip`
 
 - [Class definition](https://api.flutter.dev/flutter/material/InputChip-class.html)
-- [GitHub source](https://github.com/flutter/flutter/blob/fabf4e3d0d311181178d2c601d29a2f739ea543a/packages/flutter/lib/src/material/chip.dart)
+- [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/chip.dart)
 - [Demo site](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/chips/theme)
 
 ![Theme Chips](assets/chips/theme_chips.png)

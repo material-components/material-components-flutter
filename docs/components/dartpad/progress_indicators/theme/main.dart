@@ -18,8 +18,8 @@ class App extends StatelessWidget {
         body: Center(
           child: Column(
             children: [
-              Divider(),
               LinearProgressIndicator(),
+              SizedBox(height: 100),
               CircularProgressIndicator(),
             ],
           ),
@@ -46,6 +46,7 @@ ThemeData _buildShrineTheme() {
     primaryTextTheme: _buildShrineTextTheme(base.primaryTextTheme),
     accentTextTheme: _buildShrineTextTheme(base.accentTextTheme),
     iconTheme: _customIconTheme(base.iconTheme),
+    backgroundColor: shrinePink100,
   );
 }
 

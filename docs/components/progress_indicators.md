@@ -15,11 +15,10 @@ path: /catalog/material-progress-indicators/
 
 ## Contents
 
-- [Contents](#contents)
 - [Using progress indicators](#using-progress-indicators)
 - [Types](#types)
-- [Linear progress indicators](#linear-progress-indicators)
 - [Anatomy and key properties](#anatomy-and-key-properties)
+- [Linear progress indicators](#linear-progress-indicators)
 - [Circular progress indicators](#circular-progress-indicators)
 - [Theming progress indicators](#theming-progress-indicators)
 
@@ -38,32 +37,6 @@ Material Design offers two visually distinct types of progress indicators:  1. [
 ![Composite image of progress indicator types](assets/progress_indicators/composite-1.gif)
 
 Flutter implements these as subtypes of the [`ProgressIndicator`](https://api.flutter.dev/flutter/material/ProgressIndicator-class.html) class.
-
-## Linear progress indicators
-
-Linear progress indicators display progress by animating an indicator along the length of a fixed, visible track. The behavior of the indicator is dependent on whether the progress of a process is known.
-
-- Linear progress indicators support both determinate and indeterminate operations.
-- Determinate operations display the indicator increasing in width from 0 to 100% of the track, in sync with the process’s progress.
-- Indeterminate operations display the indicator continually growing and shrinking along the track until the process is complete.
-
-### Linear progress indicator example
-
-`LinearProgressIndicator`
-
-- [Class definition](https://api.flutter.dev/flutter/material/LinearProgressIndicator-class.html)
-- [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/progress_indicator.dart)
-- [Demo site](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/progress_indicators/linear)
-
-The following example shows an indeterminate linear progress indicator:
-
-![Linear Progress Indicator](assets/progress_indicators/linear_progress_indicator.png)
-
-```dart
-body: Center(
-    child: LinearProgressIndicator(),
-),
-```
 
 ## Anatomy and key properties
 
@@ -92,6 +65,32 @@ The indicator animates along the length of the track.
 -------------- | ------------------------
 **Color** | valueColor and use the class AlwaysStoppedAnimation<>()
 
+## Linear progress indicators
+
+Linear progress indicators display progress by animating an indicator along the length of a fixed, visible track. The behavior of the indicator is dependent on whether the progress of a process is known.
+
+- Linear progress indicators support both determinate and indeterminate operations.
+- Determinate operations display the indicator increasing in width from 0 to 100% of the track, in sync with the process’s progress.
+- Indeterminate operations display the indicator continually growing and shrinking along the track until the process is complete.
+
+### Linear progress indicator example
+
+`LinearProgressIndicator`
+
+- [Class definition](https://api.flutter.dev/flutter/material/LinearProgressIndicator-class.html)
+- [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/progress_indicator.dart)
+- [Dartpad demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/progress_indicators/linear)
+
+The following example shows an indeterminate linear progress indicator:
+
+![Linear Progress Indicator](assets/progress_indicators/linear_progress_indicator.png)
+
+```dart
+body: Center(
+    child: LinearProgressIndicator(),
+),
+```
+
 ## Circular progress indicators
 
 Circular progress indicators display progress by animating an indicator along an invisible circular track in a clockwise direction. They can be applied directly to a surface, such as a button or card.
@@ -108,9 +107,9 @@ Circular progress indicators display progress by animating an indicator along an
 
 - [Class definition](https://api.flutter.dev/flutter/material/CircularProgressIndicator-class.html)
 - [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/progress_indicator.dart)
-- [Demo site](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/progress_indicators/circular)
+- [Dartpad demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/progress_indicators/circular)
 
-The following shows a determinate circular progress indicator
+The following shows an determinate circular progress indicator
 
 ```dart
 body: Center(
@@ -124,13 +123,13 @@ body: Center(
 
 - [Class definition](https://api.flutter.dev/flutter/material/LinearProgressIndicator-class.html)
 - [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/progress_indicator.dart)
-- [Demo site](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/progress_indicators/theme)
+- [Dartpad demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/progress_indicators/theme)
 
 `CircularProgressIndicator`
 
 - [Class definition](https://api.flutter.dev/flutter/material/CircularProgressIndicator-class.html)
 - [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/progress_indicator.dart)
-- [Demo site](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/progress_indicators/theme)
+- [Dartpad demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/progress_indicators/theme)
 
 The following shows an indeterminate linear progress indicator and a determinate circular progress indicator with [Shrine theming](https://material.io/design/material-studies/shrine.html):
 
