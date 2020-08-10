@@ -217,7 +217,7 @@ The following example shows a row of of scrollable tabs.
 
 ## Theming tabs
 
-`Tabs`
+`Types`
 
 The following is an example data table using the [Shrine theme](https://material.io/design/material-studies/shrine.html).
 

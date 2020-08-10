@@ -11,18 +11,23 @@ path: /catalog/dialog/
 
 [Dialogs](https://material.io/components/dialogs) inform users about a task and can contain critical information, require decisions, or involve multiple tasks.
 
-There are four types of dialogs: 1. [Alert](#alert-dialog), 2. [Simple](#simple-dialog), 3. [Confirmation](#confirmation-dialog), 4. [Full-screen](#full-screen-dialog)
-
-![Hero image of the 4 types of dialogs](assets/dialogs/dialogs_types.png)
+![Dialogs Hero](assets/dialogs/dialogs_hero.png)
 
 ## Contents
 
+- [Types](#types)
 - [Using banners](#using-dialogs)
 - [Alert](#alert-dialog)
 - [Simple](#simple-dialog)
 - [Confirmation](#confirmation-dialog)
 - [Full-screen](#full-screen-dialog)
 - [Dialog theming](#dialog-theming)
+
+## Types
+
+There are four types of dialogs: 1. [Alert](#alert-dialog), 2. [Simple](#simple-dialog), 3. [Confirmation](#confirmation-dialog), 4. [Full-screen](#full-screen-dialog)
+
+![Hero image of the 4 types of dialogs](assets/dialogs/dialogs_types.png)
 
 ## Using dialogs
 
