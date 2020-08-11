@@ -137,7 +137,7 @@ The following is an anatomy diagram for the bottom navigation bar:
 
 The following example shows a bottom navigation bar with the [Material Shrine Theme](https://material.io/design/material-studies/shrine.html).
 
-* [Dartpad Demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/bottom_navigation/theme)
+[Dartpad Demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/bottom_navigation/theme)
 
 ![Bottom Navigation bar with Shrine theming](assets/bottom_navigation/flutter-bottom-nav-themed.png)
 

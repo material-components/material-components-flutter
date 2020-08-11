@@ -3,27 +3,31 @@ title: "Dialogs"
 layout: detail
 section: components
 excerpt: "Dialogs are modal windows that require interaction."
-iconId: 
+iconId:
 path: /catalog/dialog/
 -->
-
 
 # Dialogs
 
 [Dialogs](https://material.io/components/dialogs) inform users about a task and can contain critical information, require decisions, or involve multiple tasks.
 
-There are four types of dialogs: 1. [Alert](#alert-dialog), 2. [Simple](#simple-dialog), 3. [Confirmation](#confirmation-dialog), 4. [Full-screen](#full-screen-dialog)
-
-![Hero image of the 4 types of dialogs](assets/dialogs/dialogs_types.png)
+![Dialogs Hero](assets/dialogs/dialogs_hero.png)
 
 ## Contents
 
+- [Types](#types)
 - [Using banners](#using-dialogs)
 - [Alert](#alert-dialog)
 - [Simple](#simple-dialog)
 - [Confirmation](#confirmation-dialog)
 - [Full-screen](#full-screen-dialog)
 - [Dialog theming](#dialog-theming)
+
+## Types
+
+There are four types of dialogs: 1. [Alert](#alert-dialog), 2. [Simple](#simple-dialog), 3. [Confirmation](#confirmation-dialog), 4. [Full-screen](#full-screen-dialog)
+
+![Hero image of the 4 types of dialogs](assets/dialogs/dialogs_types.png)
 
 ## Using dialogs
 
@@ -50,6 +54,7 @@ Alert dialogs interrupt users with urgent information, details, or actions.
 ### Alert dialog example
 
 `AlertDialog`
+
 - [Class description](https://api.flutter.dev/flutter/material/AlertDialog-class.html)
 - [Github source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/dialog.dart)
 - [Dartpad demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/dialogs/alert)
@@ -89,7 +94,7 @@ The alert dialog contains the following:
 1. Buttons
 1. Scrim
 
-**Container attributes**
+#### Container attributes
 
 | &nbsp; | **Properties** |
 | --- | --- |
@@ -97,29 +102,27 @@ The alert dialog contains the following:
 | **Shape** | `shape` |
 | **Elevation** | `elevation` |
 
-
-**Title attributes**
+#### Title attributes
 
 | &nbsp; | **Properties** |
 | --- | --- |
 | **Text label** | `title` |
-| **Color** | `style` on `title` when using a `Text` | 
+| **Color** | `style` on `title` when using a `Text` |
 | **Typography** | `style` on `title` when using a `Text` |
 
+#### Supporting text attributes
 
-**Supporting text attributes**
 | &nbsp; | **Properties** |
 | --- | --- |
 | **Text label** | `content` |
 | **Color** | `style` on `content` when using a `Text` |
 | **Typography** | `style` on `content` when using a `Text` |
 
+#### Buttons attributes
 
-**Buttons attributes**
 | &nbsp; | **Properties** |
 | --- | --- |
-| **Buttons**| `actions` | 
-
+| **Buttons**| `actions` |
 
 ## Simple dialog
 
@@ -130,6 +133,7 @@ As simple dialogs are interruptive, they should be used sparingly. Alternatively
 ### Simple dialog example
 
 `SimpleDialog`
+
 - [Class description](https://api.flutter.dev/flutter/material/SimpleDialog-class.html)
 - [Github source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/dialog.dart)
 - [Dartpad demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/dialogs/simple)
@@ -202,18 +206,15 @@ class SimpleDialogItem extends StatelessWidget {
 
 A simple dialog contains the following:
 
-
 ![simple dialog anatomy diagram](assets/dialogs/Dialogs_SimpleDialog_anatomy.png)
 
 1. Container
-1. Title 
+1. Title
 1. List item
     1. Supporting visual
     1. Primary text
 1. Button
 1. Scrim
-
-
 
 **Container attributes**
 
@@ -223,23 +224,19 @@ A simple dialog contains the following:
 | **Shape** | `shape` |
 | **Elevation** | `elevation` |
 
-
 **Title attributes**
 
 | &nbsp; | **Properties** |
 | --- | --- |
 | **Text label** | `title` |
-| **Color** | `style` on `title` when using a `Text` | 
+| **Color** | `style` on `title` when using a `Text` |
 | **Typography** | `style` on `title` when using a `Text` |
 
-
 **List item supporting visual attributes**
-
 
 | &nbsp; | **Properties** |
 | --- | --- |
 | **Options** | `children` (Use `SimpleDialogOption` and customize its `child` parameter as needed.) |
-
 
 ## Confirmation dialog
 
@@ -249,7 +246,6 @@ If the user confirms a choice, it’s carried out. Otherwise, the user can dismi
 
 _**NOTE: There is no explicit confirmation dialog in Flutter but this can be built using the `Dialog` widget as a blank slate and providing your own custom `child`.**_
 
-
 ## Full-screen dialog
 
 Full-screen dialogs group a series of tasks, such as creating a calendar entry with the event title, date, location, and time. Because they take up the entire screen, full-screen dialogs are the only dialogs over which other dialogs can appear.
@@ -257,6 +253,7 @@ Full-screen dialogs group a series of tasks, such as creating a calendar entry w
 ### Full-screen dialog example
 
 `MaterialPageRoute`
+
 - [Class description](https://api.flutter.dev/flutter/material/MaterialPageRoute-class.html)
 - [Github source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/page.dart)
 - [Dartpad demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/dialogs/fullscreen)
@@ -273,7 +270,6 @@ The full-screen dialog contains the following properties:
 1. Icon Button
 1. Buttons
 1. Scrim
-
 
 ## Dialog theming
 
