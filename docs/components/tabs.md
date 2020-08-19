@@ -15,11 +15,10 @@ path: /catalog/tabs
 
 ## Contents
 
-- [Using FABs](#using-fabs)
-- [Regular FABs](#regular-fabs)
-- [Mini FABs](#mini-fabs)
-- [Extended FABs](#extended-fabs)
-- [Theming FAB](#theming-fab)
+- [Using tabs](#using-tabs)
+- [Fixed tabs](#fixed-tabs)
+- [Scrollable tabs](#scrollable-tabs)
+- [Theming tabs](#theming-tabs)
 
 ## Using tabs
 
