@@ -1,0 +1,4 @@
+name: Material Theme Chips Demonstration
+mode: flutter
+files:
+  - name: main.dart

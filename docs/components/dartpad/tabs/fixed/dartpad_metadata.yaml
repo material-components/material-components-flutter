@@ -1,0 +1,4 @@
+name: Material Fixed Tabs Demonstration
+mode: flutter
+files:
+  - name: main.dart

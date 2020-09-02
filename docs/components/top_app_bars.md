@@ -11,13 +11,16 @@ path: /catalog/material-top-app-bar/
 
 The [top app bar](https://material.io/components/app-bars-top/#) displays information and actions relating to the current screen.
 
-There are two types of top app bar:
+![Top App Bar with Page Title](assets/top_app_Bars/../top_app_bars/Topappbars_hero.png)
 
-1. [Regular top app bar](#regular-top-app-bar)
-1. [Contextual action bar](#contextual-top-app-bar)
-<br>
+## Contents
 
-![Regular app bar: purple background, white text and icons and Contextual action bar: black background, white text and icons](assets/top_app_bars/Top-app-bars_types_side-by-side.png)
+- [Using the top app bar](#using-the-top-app-bar)
+- [Regular top app bar](#regular-top-app-bar)
+- [Contextual action bar](#contextual-action-bar)
+- [Theming a top app bar](#theming-a-top-app-bar)
+
+## Theming a top app bar(#theming-text-fields)
 
 ## Using the top app bar
 
@@ -25,7 +28,8 @@ The top app bar provides content and actions related to the current screen. Itâ€
 
 A regular top app bar can transform into a contextual action bar.
 
-Before you can use Material buttons, you need to import the Material Components package for Flutter: 
+Before you can use Material buttons, you need to import the Material Components package for Flutter:
+
 ```dart
 package:flutter/material.dart
 ```
@@ -34,12 +38,20 @@ You need to use [`MaterialApp`](https://api.flutter.dev/flutter/material/Materia
 
 For more information on getting started with the Material for Flutter, go to the Flutter [Material library](https://api.flutter.dev/flutter/material/material-library.html) page.
 
-
 ### Making the top app bar accessible
 
-_List any accessiblity setting or attributes (such as labels), describe how to use them and link to any guidelines on the m.io site (for example, [how to write a good accessibility label for your component](https://material.io/design/usability/accessibility.html#writing))_
+Flutter's APIs support accessibility setting for large fonts, screen readers, and sufficient contrast. For more information, go to Flutter's [accessibility](https://flutter.dev/docs/development/accessibility-and-localization/accessibility) and [internationalization](https://flutter.dev/docs/development/accessibility-and-localization/internationalization) pages.
 
+For more guidance on writing labels, go to [our page on how to write a good accessibility label](https://material.io/design/usability/accessibility.html#writing).
 
+### Types
+
+There are two types of top app bar:
+
+1. [Regular top app bar](#regular-top-app-bar)
+1. [Contextual action bar](#contextual-top-app-bar)
+
+![Regular app bar: purple background, white text and icons and Contextual action bar: black background, white text and icons](assets/top_app_bars/Top-app-bars_types_side-by-side.png)
 
 ## Regular top app bar
 
@@ -48,9 +60,10 @@ The top app bar provides content and actions related to the current screen. Itâ€
 ### Regular top app bar example
 
 `AppBar`
-* [Class definition](https://api.flutter.dev/flutter/material/AppBar-class.html)
-* [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/app_bar.dart)
-* [Dartpad Demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/top-app-bar/regular&gh_ref=develop)
+
+- [Class definition](https://api.flutter.dev/flutter/material/AppBar-class.html)
+- [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/app_bar.dart)
+- [Dartpad Demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/top-app-bar/regular)
 
 The following example shows a top app bar with a page title, a navigation icon, two action icons, and an overflow menu:
 
@@ -73,7 +86,7 @@ AppBar(
 
 ```
 
-### Anatomy and Key properties
+### Anatomy and Key properties for top app bar
 
 ![Regular app bar anatomy diagram](assets/top_app_bars/top_app_bar_anatomy.png)
 
@@ -83,7 +96,7 @@ AppBar(
 1. Action items (optional)
 1. Overflow menu (optional)
 
-<b>Container </b>
+#### Container for top app bar
 
 | &nbsp; | Property |
 | --- | --- |
@@ -92,7 +105,7 @@ AppBar(
 | **Shape** | `shape` parameter |
 | **Elevation** | `elevation` parameter|
 
-<b>Navigation icon (optional)</b>
+#### Navigation icon for top app bar (optional)
 
 | &nbsp; | Property |
 | --- | --- |
@@ -102,7 +115,7 @@ AppBar(
 | **Gravity** | `titleSpacing` parameter |
 | **Padding** | Wrap `Icon` wiget with `Padding` widget |
 
-<b>Title (optional)</b>
+#### Title for top app bar (optional)
 
 | &nbsp; | Property |
 | --- | --- |
@@ -110,7 +123,7 @@ AppBar(
 | **Color** | In `title` parameter, use `Text` Widget and and set parameter `style` |
 | **Typography** | In `title` parameter, use `Text` Widget and and set parameter `style` |
 
-<b>Action item (optional)</b>
+#### Action item for top app bar (optional)
 
 | &nbsp; | Property |
 | --- | --- |
@@ -119,7 +132,7 @@ AppBar(
 | **Size** | In `action` parameter, use `IconButton` widget and set parameter `iconSize` OR set `actionIconsTheme`|
 | **Padding** | Wrap `IconButton` widget with `Padding` widget |
 
-<b>Overflow menu (optional)</b>
+#### Overflow menu for top app bar (optional)
 
 | &nbsp; | Property |
 | --- | --- |
@@ -134,17 +147,19 @@ A top app bar can transform into a contextual action bar to provide contextual a
 
 When a top app bar transforms into a contextual action bar, the following changes occur:
 
-* The bar color changes
-* Navigation icon is replaced with a close icon
-* Top app bar title text converts to contextual action bar text
-* Top app bar actions are replaced with contextual actions
-* Upon closing, the contextual action bar transforms back into a top app bar.
+- The bar color changes
+- Navigation icon is replaced with a close icon
+- Top app bar title text converts to contextual action bar text
+- Top app bar actions are replaced with contextual actions
+- Upon closing, the contextual action bar transforms back into a top app bar.
 
 ### Contextual action bar example
+
 `AppBar`
-* [Class definition](https://api.flutter.dev/flutter/material/AppBar-class.html)
-* [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/app_bar.dart)
-* [Dartpad Demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/top-app-bar/contextual&gh_ref=develop)
+
+- [Class definition](https://api.flutter.dev/flutter/material/AppBar-class.html)
+- [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/app_bar.dart)
+- [Dartpad Demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/top-app-bar/contextual)
 
 The following example shows a contextual action bar with a contextual title, a close icon, two contextual action icons, and an overflow menu:
 
@@ -167,7 +182,7 @@ AppBar(
 
 ```
 
-### Anatomy and Key properties
+### Anatomy and Key properties for contextual action bar
 
 ![Contextual action bar anatomy diagram](assets/top_app_bars/contextual_action_bar_anatomy.png)
 
@@ -176,7 +191,7 @@ AppBar(
 1. Contextual action items (optional)
 1. Overflow menu (optional)
 
-<b>Close Button (optional)</b>
+#### Close Button for contextual action bar (optional)
 
 | &nbsp; | Property |
 | --- | --- |
@@ -186,7 +201,7 @@ AppBar(
 | **Gravity** | `titleSpacing` parameter |
 | **Padding** | Wrap `Icon` wiget with `Padding` widget |
 
-<b>Contextual title (optional)</b>
+#### Contextual title for contextual action bar (optional)
 
 | &nbsp; | Property |
 | --- | --- |
@@ -194,7 +209,7 @@ AppBar(
 | **Color** | In `title` parameter, use `Text` Widget and and set parameter `style` |
 | **Typography** | In `title` parameter, use `Text` Widget and and set parameter `style` |
 
-<b>Contextual action items (optional)</b>
+#### Contextual action items for contextual action bar (optional)
 
 | &nbsp; | Property |
 | --- | --- |
@@ -203,7 +218,7 @@ AppBar(
 | **Size** | In `action` parameter, use `IconButton` widget and set parameter `iconSize` OR set `actionIconsTheme`|
 | **Padding** | Wrap `IconButton` widget with `Padding` widget |
 
-<b>Overflow menu (optional)</b>
+#### Overflow menu for contextual action bar (optional)
 
 | &nbsp; | Property |
 | --- | --- |
@@ -217,8 +232,9 @@ AppBar(
 The top app bar supports [Material Theming](https://material.io/components/app-bars-top/#theming) and can be customized in terms of color, typography and shape.
 
 ### Top app bar theming example
-* [Regular Top App Bar with Theme Dartpad Demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/top-app-bar/theme&gh_ref=develop)
-* [Contextual Action Bar with Dartpad Demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/top-app-bar/contextual_theme&gh_ref=develop)
+
+- [Regular Top App Bar with Theme Dartpad Demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/top-app-bar/theme)
+- [Contextual Action Bar with Dartpad Demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/top-app-bar/contextual_theme)
 
 ![Top app bar with Shrine theming](assets/top_app_bars/shrine_theme.png)
 ![Contextual app bar with Shrine theming](assets/top_app_bars/contextual_theming.png)

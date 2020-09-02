@@ -7,23 +7,26 @@ iconId: materialbutton
 path: /catalog/material-card/
 -->
 
-
 # Cards
 
 [Cards](https://material.io/components/cards/) contain content and actions about a single subject.
 
-![Elevated card wtih a secondary title and two actions: Action 1 and Action 2 in purple](assets/cards/generic-card-type-elevated.png) 
+![Cards shaped in different ways](assets/cards/Cards_hero.png)
 
+## Contents
+
+- [Using cards](#using-cards)
+- [Card](#card)
+- [Theming a card](#theming-a-card)
 
 ## Using cards
-
 
 ### Making cards accessible
 
 Flutter's card component APIs support labeling for accessibility. For more guidance on writing labels, go to [our page on how to write a good accessibility label](https://material.io/design/usability/accessibility.html#writing).
 
 ## Card
- 
+
 On mobile, a [card’s](https://material.io/components/cards/#specs) default elevation is 1dp, with a raised dragged elevation of 8dp.
 
 ### Card example
@@ -31,13 +34,14 @@ On mobile, a [card’s](https://material.io/components/cards/#specs) default ele
 Source code API:
 
 `Card`
-  * [Class definition](https://api.flutter.dev/flutter/material/Card-class.html)
-  * [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/card.dart)
-  * [Dartpad demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/cards/elevated&gh_ref=develop)
+
+- [Class definition](https://api.flutter.dev/flutter/material/Card-class.html)
+- [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/card.dart)
+- [Dartpad demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/cards/elevated)
 
 The following example shows an elevated card. The card has a title, a secondary title, text, and two actions: Action 1 and Action 2 in purple (#6200EE).
 
-![Elevated card example for Flutter showing...](assets/cards/card-example.png) 
+![Elevated card example for Flutter showing...](assets/cards/card-example.png)
 
 The example code below generates the card:
 
@@ -87,154 +91,22 @@ The example code below generates the card:
           ),
 ```
 
-<!-- **Test code may eventually be replaced with dartpad link** 
-To test code copy and paste code into [dartpad.dev](https://dartpad.dev/).
-```dart
-import 'package:flutter/material.dart';
-
-void main() => runApp(MyApp());
-
-class MyApp extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Flutter Demo',
-      debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        buttonColor: Colors.blue,
-      ),
-      home: MyHomePage(title: 'Flutter Demo Card Page'),
-    );
-  }
-}
-
-class MyHomePage extends StatefulWidget {
-  MyHomePage({Key key, this.title}) : super(key: key);
-
-  final String title;
-
-  @override
-  _MyHomePageState createState() => _MyHomePageState();
-}
-
-class _MyHomePageState extends State<MyHomePage> {
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        automaticallyImplyLeading: false,
-        title: Text(widget.title),
-      ),
-      body: ListView(
-        children: [
-          Card(
-            clipBehavior: Clip.antiAlias,
-            child: Column(
-              children: [
-                ListTile(
-                  leading: Icon(Icons.arrow_drop_down_circle),
-                  title: const Text('Card title 1'),
-                  subtitle: Text(
-                    'Secondary Text',
-                    style: TextStyle(color: Colors.black.withOpacity(0.6)),
-                  ),
-                ),
-                Padding(
-                  padding: const EdgeInsets.all(16.0),
-                  child: Text(
-                    'Greyhound divisively hello coldly wonderfully marginally far upon excluding.',
-                    style: TextStyle(color: Colors.black.withOpacity(0.6)),
-                  ),
-                ),
-                ButtonBar(
-                  alignment: MainAxisAlignment.start,
-                  children: [
-                    FlatButton(
-                      textColor: const Color(0xFF6200EE),
-                      onPressed: () {
-                        // Perform some action
-                      },
-                      child: const Text('ACTION 1'),
-                    ),
-                    FlatButton(
-                      textColor: const Color(0xFF6200EE),
-                      onPressed: () {
-                        // Perform some action
-                      },
-                      child: const Text('ACTION 2'),
-                    ),
-                  ],
-                ),
-                Image.asset('assets/card-sample-image.jpg'),
-              ],
-            ),
-          ),
-          Card(
-            clipBehavior: Clip.antiAlias,
-            child: Column(
-              children: [
-                ListTile(
-                  leading: Icon(Icons.arrow_drop_down_circle),
-                  title: const Text('Card title 1'),
-                  subtitle: Text(
-                    'Secondary Text',
-                    style: TextStyle(color: Colors.black.withOpacity(0.6)),
-                  ),
-                ),
-                Padding(
-                  padding: const EdgeInsets.all(16.0),
-                  child: Text(
-                    'Greyhound divisively hello coldly wonderfully marginally far upon excluding.',
-                    style: TextStyle(color: Colors.black.withOpacity(0.6)),
-                  ),
-                ),
-                ButtonBar(
-                  alignment: MainAxisAlignment.start,
-                  children: [
-                    FlatButton(
-                      textColor: const Color(0xFF6200EE),
-                      onPressed: () {
-                        // Perform some action
-                      },
-                      child: const Text('ACTION 1'),
-                    ),
-                    FlatButton(
-                      textColor: const Color(0xFF6200EE),
-                      onPressed: () {
-                        // Perform some action
-                      },
-                      child: const Text('ACTION 2'),
-                    ),
-                  ],
-                ),
-                Image.asset('assets/card-sample-image-2.jpg'),
-              ],
-            ),
-          ),
-        ],
-      ),
-    );
-  }
-}
-
-```
--->
-
 ### Key properties
 
 ![Card anatomy diagram](assets/cards/card-anatomy.png)
 
-**1. Elevated card attributes**
+### Elevated card attributes
 
-1. **Container**
-2. **Thumbnail [optional]** 
-3. **Header text [optional]** 
-4. **Subhead [optional]**
-5. **Media [optional]** 
-6. **Supporting text [optional]**
-7. **Buttons [optional]** 
-8. **Icons [optional]** 
+1. Container
+1. Thumbnail [optional
+1. Header text [optional
+1. Subhead [optional
+1. Media [optional
+1. Supporting text [optional
+1. Buttons [optional
+1. Icons [optional
 
-<b>Container</b>
+#### Container
 
 | &nbsp; | Property |
 |---|---|
@@ -245,13 +117,13 @@ class _MyHomePageState extends State<MyHomePage> {
 |Container margin (top)|  Wrap `Card` widget with `Container` widget and use `margin` property with `EdgeInsets.only(top: 10)`|
 |Container elevation | `elevation` |
 
-<b>Thumbnail (optional)</b>
+#### Thumbnail (optional)
 
 | &nbsp; | Property |
 |---|---|
 |Desc. 1 | Not by default but can be made by using `ListTile()` and use property `leading` |
 
-<b>Header text (optional)</b>
+#### Header text (optional)
 
 | &nbsp; | Property |
 |---|---|
@@ -259,7 +131,7 @@ class _MyHomePageState extends State<MyHomePage> {
 | Text color | Within `title` property you can customize the Text color by using the `style` property. The `style` property uses a `TextStyle` property and within that class use the `color` property |
 | Typography | Within `title` property you can customize the typography by using the `style property`. The `style` property uses a `TextStyle` property and within that class use the `fontFamily` property |
 
-<b>Subhead (optional)</b>
+#### Subhead (optional)
 
 | &nbsp; | Property |
 |---|---|
@@ -267,13 +139,13 @@ class _MyHomePageState extends State<MyHomePage> {
 | Text color | Within `subtitle` property you can customize the Text color by using the `style` property. The `style` property uses a `TextStyle` property and within that class use the `color` property|
 | Typography | Within `subtitle` property you can customize the typography by using the `style` property. The `style` property uses a `TextStyle` property and within that class use the `fontFamily` property|
 
-<b>Media (optional)</b>
+#### Media (optional)
 
 | &nbsp; | Property |
 |---|---|
 |Desc. 1 | Can be made using `Image.asset()` within Card |
 
-<b>Supporting text (optional)</b>
+#### Supporting text (optional)
 
 | &nbsp; | Property |
 |---|---|
@@ -281,7 +153,7 @@ class _MyHomePageState extends State<MyHomePage> {
 | Text color | Within `text` property you can customize the Text color by using the `style` property. The `style` property uses a `TextStyle` property and within that class use the `color` property|
 | Typography | Within `text` property you can customize the typography by using the `style` property. The `style` property uses a `TextStyle` property and within that class use the `fontFamily` property|
 
-<b>Button (optional)</b>
+#### Button (optional)
 
 [Material button API:](https://api.flutter.dev/flutter/material/MaterialButton-class.html)
 
@@ -289,7 +161,7 @@ class _MyHomePageState extends State<MyHomePage> {
 |---|---|
 |Desc. 1 | Can be made using `ButtonBar`, within `ButtonBar` use `FlatButtons` |
 
-<b>Icon (optional)</b>
+#### Icon (optional)
 
 | &nbsp; | Property |
 |---|---|
@@ -301,14 +173,15 @@ A card supports [Material Theming](https://material.io/components/cards/#theming
 
 ### Card theming example
 
-
 Source code API:
-  * [Class definition](https://api.flutter.dev/flutter/material/Card-class.html)
-  * [Dartpad demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/cards/theme&gh_ref=develop)
 
-<img src="assets/cards/shrine_card.png" alt="Shrine Card for Flutter">
+- [Class definition](https://api.flutter.dev/flutter/material/Card-class.html)
+- [Dartpad demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/cards/theme)
+
+[Shrine Card for Flutter](assets/cards/shrine_card.png)
 
 To test code copy and paste code into [dartpad.dev](https://dartpad.dev/).
+
 ```dart
 import 'package:flutter/material.dart';
 

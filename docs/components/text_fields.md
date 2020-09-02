@@ -3,7 +3,7 @@ title: "Material Text Field"
 layout: detail
 section: components
 excerpt: "A customizable text field component with updated visual styles."
-iconId: 
+iconId:
 path: /catalog/material-text-field/
 -->
 
@@ -11,12 +11,14 @@ path: /catalog/material-text-field/
 
 [Text fields](https://material.io/components/text-fields) let users enter and edit text.
 
-The text field class consists of the following types:
+![Three text fiels: title, price, location](assets/text_fields/Textfields_hero.png)
 
-* [Filled text](#filled-text)
-* [Outlined text](#outlined-text)
+## Contents
 
-<img src="assets/text-field-generic.png" alt="Text field examples, filled and outlined types, showing both inactive and focused states.">
+- [Using text fields](#using-text-fields)
+- [Filled text](#filled-text)
+- [Outlined button](#outlined-button)
+- [Theming text fields](#theming-text-fields)
 
 ## Using text fields
 
@@ -24,10 +26,18 @@ Text fields allow users to enter text into a UI. They typically appear in forms 
 
 ### Making text fields accessible
 
-Flutter's text field component APIs supports both label text and helper text for accessibility. 
+Flutter's text field component APIs supports both label text and helper text for accessibility.
 
 For more guidance on writing labels, go to [our page on how to write a good accessibility label](https://material.io/design/usability/accessibility.html#writing).
 
+### Types
+
+The text field class consists of the following types:
+
+- [Filled text](#filled-text)
+- [Outlined text](#outlined-text)
+
+![Text field examples, filled and outlined types, showing both inactive and focused states.](assets/text_fields/text-field-generic.png)
 
 ## Filled text
 
@@ -37,14 +47,15 @@ For more guidance on writing labels, go to [our page on how to write a good acce
 
 Source code API:
 
-* `TextFormField` 
-  * [Class definition](https://api.flutter.dev/flutter/material/TextFormField-class.html)
-  * [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/text_form_field.dart)
-  * [Dartpad demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/text_fields/outlined&gh_ref=develop)
+`TextFormField`
+
+- [Class definition](https://api.flutter.dev/flutter/material/TextFormField-class.html)
+- [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/text_form_field.dart)
+- [Dartpad demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/text_fields/outlined)
 
 The following example shows a filled text field.
 
-<img src="assets/text_fields/filled_text_field_form.png" alt="filled text field with label, helper text, and check circle icon">
+![filled text field with label, helper text, and check circle icon](assets/text_fields/filled_text_field_form.png)
 
 ```dart
  TextFormField(
@@ -66,64 +77,10 @@ The following example shows a filled text field.
      ),
    ),
  ),
+
 ```
-<!-- **Test code may eventually be replaced with dartpad link**
-To test code copy and paste code into [dartpad.dev](https://dartpad.dev/).
 
-```dart
-import 'package:flutter/material.dart';
-
-void main() => runApp(MyApp());
-
-class MyApp extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Flutter Demo',
-      debugShowCheckedModeBanner: false,
-      home: MyHomePage(title: 'Flutter Demo Text Page'),
-    );
-  }
-}
-
-class MyHomePage extends StatefulWidget {
-  MyHomePage({Key key, this.title}) : super(key: key);
-
-  final String title;
-
-  @override
-  _MyHomePageState createState() => _MyHomePageState();
-}
-
-class _MyHomePageState extends State<MyHomePage> {
-  Widget build(BuildContext context) {
-    return Scaffold(
-      body: TextFormField(
-        cursorColor: Theme.of(context).cursorColor,
-        initialValue: 'Input text',
-        maxLength: 20,
-        decoration: InputDecoration(
-          icon: Icon(Icons.favorite),
-          labelText: 'Label text',
-          labelStyle: TextStyle(
-            color: Color(0xFF6200EE),
-          ),
-          helperText: 'Helper text',
-          suffixIcon: Icon(
-            Icons.check_circle,
-          ),
-          enabledBorder: UnderlineInputBorder(
-            borderSide: BorderSide(color: Color(0xFF6200EE)),
-          ),
-        ),
-      ),
-    );
-  }
-}
-```
--->
-
-### Anatomy and key properties
+### Anatomy and key properties for filled text
 
 ![Filled text field anatomy](assets/text_fields/textfields_filled_anatomy.png)
 
@@ -135,10 +92,10 @@ class _MyHomePageState extends State<MyHomePage> {
 1. Activation indicator
 1. Helper text (optional)
 
-<b>Container</b>
+#### Container for filled text
 
-| &nbsp; | Property | 
-| --- | --- | 
+| &nbsp; | Property |
+| --- | --- |
 | **Color** | style |
 | **Stroke color** | `decoration`, inside `decoration` set the parameter `border`: `disabledBorder`, `enabledBorder`, `errorBorder`, `focusedBorder`, `focusedErrorBorder`|
 | **Stroke width** | `decoration`, inside `decoration` set the parameter `border`: `disabledBorder`, `enabledBorder`, `errorBorder`, `focusedBorder`, `focusedErrorBorder`|
@@ -146,7 +103,7 @@ class _MyHomePageState extends State<MyHomePage> {
 | **Elevation** | N/A|
 | **Ripple color** | N/A|
 
-<b>Leading icon</b> (optional)</b>
+#### Leading icon (optional) for filled text
 
 | &nbsp; | Property |
 | --- | --- |
@@ -156,15 +113,15 @@ class _MyHomePageState extends State<MyHomePage> {
 | **Gravity** | N/A |
 | **Padding** | N/A |
 
-<b>Label text</b>
+#### Label text for filled text
 
 | &nbsp; | Property |
-| --- | --- | 
+| --- | --- |
 | **Label text** | Use `decoration`, within `decoration` set `labelText` property |
 | **Typography** | Use `decoration`, within `decoration` set `labelStyle` property |
 | **Color** | Use `decoration`, within `decoration` set `labelStyle` property |
 
-<b>Input text</b>
+#### Input text for filled text
 
 | &nbsp; | Property |
 | --- | --- |
@@ -172,7 +129,7 @@ class _MyHomePageState extends State<MyHomePage> {
 | **Typography** | `style` |
 | **Color** | `style` |
 
-<b>Trailing icon (optional)</b>
+#### Trailing icon (optional) for filled text
 
 | &nbsp; | Property |
 | --- | --- |
@@ -182,7 +139,7 @@ class _MyHomePageState extends State<MyHomePage> {
 | **Gravity** | N/A |
 | **Padding** | N/A |
 
-<b>Activation indicator</b>
+#### Activation indicator for filled text
 
 | &nbsp; | Property|
 | --- | --- |
@@ -190,7 +147,7 @@ class _MyHomePageState extends State<MyHomePage> {
 | **Stroke width** | Use `decoration`, within `decoration` set `FocusBorder`|
 | **Ripple color** | N/A|
 
-<b>Helper text (optional)</b> 
+#### Helper text (optional) for filled text
 
 | &nbsp; | Property|
 | --- | --- |
@@ -198,13 +155,12 @@ class _MyHomePageState extends State<MyHomePage> {
 | **Typography** | Use `decoration`, within `decoration` set `helperStyle` property |
 | **Color** | Use `decoration`, within `decoration` set `helperStyle` property |
 
-<b>Styles</b>
+#### Styles for filled text
 
 | &nbsp; | Property |
 | --- | --- |
 | **Default style** | `style` |
 | **Icon style** | Within `style` set `icon` |
-
 
 ## Outlined text
 
@@ -214,14 +170,15 @@ class _MyHomePageState extends State<MyHomePage> {
 
 Source code API:
 
-* `TextFormField` 
-  * [Class definition](https://api.flutter.dev/flutter/material/TextFormField-class.html)
-  * [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/text_form_field.dart)
-  * [Dartpad demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/text_fields/filled&gh_ref=develop)
+`TextFormField`
+
+- [Class definition](https://api.flutter.dev/flutter/material/TextFormField-class.html)
+- [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/text_form_field.dart)
+- [Dartpad demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/text_fields/filled)
 
 The following examples shows an outlined text field.
 
-<img src="assets/text_fields/outline_text_field_form.png" alt="Outlined text field with label, and error message and icon">
+![Outlined text field with label, and error message and icon](assets/text_fields/outline_text_field_form.png)
 
 ```dart
 TextFormField(
@@ -236,56 +193,8 @@ TextFormField(
   ),
 ),
 ```
-<!-- **Test code may eventually be replaced with dartpad link**
- To test code copy and paste code into [dartpad.dev](https://dartpad.dev/).
 
-
-```dart
-import 'package:flutter/material.dart';
-
-void main() => runApp(MyApp());
-
-class MyApp extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Flutter Demo',
-      debugShowCheckedModeBanner: false,
-      home: MyHomePage(title: 'Flutter Demo Text Page'),
-    );
-  }
-}
-
-class MyHomePage extends StatefulWidget {
-  MyHomePage({Key key, this.title}) : super(key: key);
-
-  final String title;
-
-  @override
-  _MyHomePageState createState() => _MyHomePageState();
-}
-
-class _MyHomePageState extends State<MyHomePage> {
-  Widget build(BuildContext context) {
-    return Scaffold(
-      body: TextFormField(
-        initialValue: 'Input text',
-        decoration: InputDecoration(
-          labelText: 'Label text',
-          errorText: 'Error message',
-          border: OutlineInputBorder(),
-          suffixIcon: Icon(
-            Icons.error,
-          ),
-        ),
-      ),
-    );
-  }
-}
-```
--->
-
-### Anatomy and key properties
+### Anatomy and key properties for outlined text
 
 ![Outlined text field anatomy](assets/text_fields/textfields_outlined_anatomy.png)
 
@@ -299,7 +208,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
 Note: If ThemeData has been declared in the MaterialApp widget it will override the theme that was manually input it like the activation indicator.
 
-<b>Container</b>
+#### Container for outlined text
 
 | &nbsp; | Property |
 | --- | --- |
@@ -310,7 +219,7 @@ Note: If ThemeData has been declared in the MaterialApp widget it will override 
 | **Elevation** | N/A|
 | **Ripple color** | N/A|
 
-<b>Leading icon (optional)</b>
+#### Leading icon (optional) for outlined text
 
 | &nbsp; | Property |
 | --- | --- |
@@ -320,7 +229,7 @@ Note: If ThemeData has been declared in the MaterialApp widget it will override 
 | **Gravity** | N/A |
 | **Padding** | N/A |
 
-<b>Label text</b>
+#### Label text for outlined text
 
 | &nbsp; | Property |
 | --- | --- |
@@ -328,7 +237,7 @@ Note: If ThemeData has been declared in the MaterialApp widget it will override 
 | **Typography** | Use `decoration`, within `decoration` set `labelStyle` property |
 | **Color** | Use `decoration`, within `decoration` set `labelStyle` property |
 
-<b>Input text</b>
+#### Input text for outlined text
 
 | &nbsp; | Property |
 | --- | --- |
@@ -336,7 +245,7 @@ Note: If ThemeData has been declared in the MaterialApp widget it will override 
 | **Typography** | `style` |
 | **Color** | `style` |
 
-<b>Trailing icon (optional)</b>
+#### Trailing icon (optional) for outlined text
 
 | &nbsp; | Property |
 | --- | --- |
@@ -346,7 +255,7 @@ Note: If ThemeData has been declared in the MaterialApp widget it will override 
 | **Gravity** | N/A |
 | **Padding** | N/A |
 
-<b>Activation indicator</b>
+#### Activation indicator for outlined text
 
 | &nbsp; | Property |
 | --- | --- |
@@ -354,7 +263,7 @@ Note: If ThemeData has been declared in the MaterialApp widget it will override 
 | **Stroke width** | Use `decoration`, within `decoration` set `FocusBorder`|
 | **Ripple color** | N/A|
 
-<b>Helper text (optional) </b>
+#### Helper text (optional) for outlined text
 
 | &nbsp; | Property |
 | --- | --- |
@@ -362,13 +271,12 @@ Note: If ThemeData has been declared in the MaterialApp widget it will override 
 | **Typography** | Use `decoration`, within `decoration` set `helperStyle` property |
 | **Color** | Use `decoration`, within `decoration` set `helperStyle` property |
 
-<b>Styles</b>
+#### Styles for outlined text
 
 | &nbsp; | Property |
 | --- | --- |
 | **Default style** | `style` |
 | **Icon style** | Within `style` set `icon` |
-
 
 ## Theming text fields
 
@@ -378,17 +286,18 @@ Text fields support [Material Theming](https://material.io/components/text-field
 
 API and source code:
 
-* `TextFormField` 
-  * [Class definition](https://api.flutter.dev/flutter/material/TextFormField-class.html)
-  * [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/text_form_field.dart)
-  * [Dartpad demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/text_fields/theme&gh_ref=develop)
-    
+`TextFormField`
+
+- [Class definition](https://api.flutter.dev/flutter/material/TextFormField-class.html)
+- [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/text_form_field.dart)
+- [Dartpad demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/text_fields/theme)
+
 The following example shows a filled text field with the [Material Shring Theme](ttps://material.io/design/material-studies/shrine.html).
 
-<img src="assets/text_fields/shrine_text_field_form.png" alt="Shrine filled text field for Flutter">
-
+![Shrine filled text field for Flutter](assets/text_fields/shrine_text_field_form.png)
 
 To test code copy and paste code into [dartpad.dev](https://dartpad.dev/)
+
 ```dart
 import 'package:flutter/material.dart';
 
