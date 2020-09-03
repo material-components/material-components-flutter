@@ -41,7 +41,7 @@ For more guidance using the bottom app bar, go to the [Material design page](htt
 
 - [Class description](https://api.flutter.dev/flutter/material/BottomAppBar-class.html)
 - [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/bottom_app_bar.dart)
-- [Dartpad demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/bottom_app_bars/regular)
+- [Dartpad demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/bottom_app_bars/regular&gh_ref=develop)
 
 ![Bottom app bar with with leading navigation drawer icon, overlapping FAB with '+' icon, and trailing 'search' and overflow menu control](assets/bottom_app_bars/bottom_app_bar_example.png)
 
@@ -101,7 +101,7 @@ Using an [`IconButton`](https://api.flutter.dev/flutter/material/IconButton-clas
 
 The following example shows a bottom app bar with the [Material Shrine Theme](https://material.io/design/material-studies/shrine.html).
 
-- [Dartpad demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/bottom_app_bars/theme)
+- [Dartpad demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/bottom_app_bars/theme&gh_ref=develop)
 
 ![Bottom app bar with Shrine theming](assets/bottom_app_bars/bottom_app_bar_example_themed.png)
 

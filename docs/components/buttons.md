@@ -55,7 +55,7 @@ API and source code:
 
 - [Class description](https://api.flutter.dev/flutter/material/FlatButton-class.html)
 - [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/flat_button.dart)
-- [Dartpad demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/buttons/flat)
+- [Dartpad demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/buttons/flat&gh_ref=develop)
 
 The following example shows a text button with a text label.
 
@@ -145,7 +145,7 @@ API and source code:
 
 - [Class definition](https://api.flutter.dev/flutter/material/OutlineButton-class.html)
 - [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/outline_button.dart)
-- [Dartpad demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/buttons/outline)
+- [Dartpad demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/buttons/outline&gh_ref=develop)
 
 !["Outlined button with purple text 'Outlined button' and grey border over a white background."](assets/buttons/outlined-button.svg)
 
@@ -233,7 +233,7 @@ API and source code:
 
 - [Class definition](https://api.flutter.dev/flutter/material/RaisedButton-class.html)
 - [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/raised_button.dart)
-- [Dartpad demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/buttons/raised)
+- [Dartpad demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/buttons/raised&gh_ref=develop)
 
 The following example shows a contained button with a text label and a filled container.
 
@@ -332,7 +332,7 @@ API and source code:
 
 - [Class definition](https://api.flutter.dev/flutter/material/ToggleButtons-class.html)
 - [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/toggle_buttons.dart)
-- [Dartpad demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/buttons/icon)
+- [Dartpad demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/buttons/icon&gh_ref=develop)
 
 The following example shows a toggle button with three buttons that have text labels.
 
@@ -443,7 +443,7 @@ API and source code:
 
 - [Class definition](https://api.flutter.dev/flutter/material/IconButton-class.html)
 - [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/icon_button.dart)
-- [Dartpad demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/buttons/theme)
+- [Dartpad demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/buttons/theme&gh_ref=develop)
 
 The following example shows an icon that can be used independently or in items of a `GridView`.
 

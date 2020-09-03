@@ -42,7 +42,7 @@ Flutter's APIs support accessibility setting for large fonts, screen readers, an
 
 - [Class description](https://api.flutter.dev/flutter/material/Checkbox-class.html)
 - [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/checkbox.dart)
-- [Demo site](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/checkboxes/regular)
+- [Dartpad demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/checkboxes/regular&gh_ref=develop)
 
 The following example should five checkboxes. The first one is enabled, the second one has tristate enabled, and the last one is disabled.
 
@@ -96,7 +96,7 @@ Checkboxes can be selected, unselected, or indeterminate. Checkboxes have enable
 
 - [Class description](https://api.flutter.dev/flutter/material/Checkbox-class.html)
 - [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/checkbox.dart)
-- [Demo site](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/checkboxes/theme)
+- [Dartpad demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/checkboxes/theme&gh_ref=develop)
 
 Checkboxes support [Material Theming](https://material.io/components/buttons/#theming) and can be customized in terms of color, typography and shape.
 

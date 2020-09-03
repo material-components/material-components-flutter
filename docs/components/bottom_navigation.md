@@ -39,7 +39,7 @@ Source code API:
 
 - [Class description](https://api.flutter.dev/flutter/material/BottomNavigationBar-class.html)
 - [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/bottom_navigation_bar.dart)
-- [Demo site](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/bottom_navigation/regular)
+- [Dartpad demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/bottom_navigation/regular&gh_ref=develop)
 
 The following example shows a bottom navigation bar with four icons:
 
@@ -137,7 +137,7 @@ The following is an anatomy diagram for the bottom navigation bar:
 
 The following example shows a bottom navigation bar with the [Material Shrine Theme](https://material.io/design/material-studies/shrine.html).
 
-[Dartpad Demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/bottom_navigation/theme)
+[Dartpad Demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/bottom_navigation/theme&gh_ref=develop)
 
 ![Bottom Navigation bar with Shrine theming](assets/bottom_navigation/flutter-bottom-nav-themed.png)
 

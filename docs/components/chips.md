@@ -83,7 +83,7 @@ Input chips represent a complex piece of information in compact form, such as an
 
 - [Class definition](https://api.flutter.dev/flutter/material/InputChip-class.html)
 - [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/chip.dart)
-- [Demo site](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/chips/input)
+- [Dartpad demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/chips/input&gh_ref=develop)
 
 ![Input Chips](assets/chips/input_chips.png)
 
@@ -135,7 +135,7 @@ Choice chips clearly delineate and display options in a compact area. They are a
 
 - [Class definition](https://api.flutter.dev/flutter/material/ChoiceChip-class.html)
 - [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/chip.dart)
-- [Demo site](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/chips/choice)
+- [Dartpad demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/chips/choice&gh_ref=develop)
 
 ![Choice Chips](assets/chips/choice_chips.png)
 

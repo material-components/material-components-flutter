@@ -67,7 +67,7 @@ The following is an anatomy diagram of a snackbar:
 
 - [Class definition](https://api.flutter.dev/flutter/material/SnackBar-class.html)
 - [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/snack_bar.dart)
-- [Dartpad Demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/snackbars/regular)
+- [Dartpad Demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/snackbars/regular&gh_ref=develop)
 
 The following is an example of a snackbar with an action button:
 
@@ -90,7 +90,7 @@ SnackBar(
 
 - [Class definition](https://api.flutter.dev/flutter/material/SnackBar-class.html)
 - [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/snack_bar.dart)
-- [Dartpad Demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/snackbars/theme)
+- [Dartpad Demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/snackbars/theme&gh_ref=develop)
 
 The following is an example of a snackbar with an action button that uses the Material.io [Shrine](https://material.io/design/material-studies/shrine.html) color theming::
 

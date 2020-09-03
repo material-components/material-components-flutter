@@ -66,7 +66,7 @@ Source code API:
 
 - [Class definition](https://api.flutter.dev/flutter/material/ListTile-class.html)
 - [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/list_tile.dart)
-- [Dartpad Demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/lists/single)
+- [Dartpad Demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/lists/single&gh_ref=develop)
 
 ![Single-line list example](assets/lists/single-line-list-example.png)
 
@@ -149,7 +149,7 @@ Source code API:
 
 - [Class definition](https://api.flutter.dev/flutter/material/ListTile-class.html)
 - [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/list_tile.dart)
-- [Dartpad Demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/lists/two-line)
+- [Dartpad Demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/lists/two-line&gh_ref=develop)
 
 ![Two-line list example](assets/lists/two-line-list-example.png)
 
@@ -234,7 +234,7 @@ Source code API:
 
 - [Class definition](https://api.flutter.dev/flutter/material/ListTile-class.html)
 - [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/list_tile.dart)
-- [Dartpad Demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/lists/three-line)
+- [Dartpad Demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/lists/three-line&gh_ref=develop)
 
 ![Three-line list example](assets/lists/three-line-list-example.png)
 
@@ -319,7 +319,7 @@ The following are tables of the list item contents:
 Lists support [Material Theming](https://material.io/components/lists/#theming) and can be
 customized in terms of color and typography.
 
-- [Dartpad Demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/lists/theme)
+- [Dartpad Demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/lists/theme&gh_ref=develop)
 
 ![Three-line list example with theming](assets/lists/three-line-list-with-theming-example.png)
 

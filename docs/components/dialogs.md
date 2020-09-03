@@ -57,7 +57,7 @@ Alert dialogs interrupt users with urgent information, details, or actions.
 
 - [Class description](https://api.flutter.dev/flutter/material/AlertDialog-class.html)
 - [Github source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/dialog.dart)
-- [Dartpad demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/dialogs/alert)
+- [Dartpad demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/dialogs/alert&gh_ref=develop)
 
 The following example shows an alert dialog.
 
@@ -136,7 +136,7 @@ As simple dialogs are interruptive, they should be used sparingly. Alternatively
 
 - [Class description](https://api.flutter.dev/flutter/material/SimpleDialog-class.html)
 - [Github source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/dialog.dart)
-- [Dartpad demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/dialogs/simple)
+- [Dartpad demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/dialogs/simple&gh_ref=develop)
 
 The following example shows a simple dialog.
 
@@ -256,7 +256,7 @@ Full-screen dialogs group a series of tasks, such as creating a calendar entry w
 
 - [Class description](https://api.flutter.dev/flutter/material/MaterialPageRoute-class.html)
 - [Github source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/page.dart)
-- [Dartpad demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/dialogs/fullscreen)
+- [Dartpad demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/dialogs/fullscreen&gh_ref=develop)
 
 To use a full-screen dialog, simply set the `fullscreenDialog` to true when pushing a new `MaterialPageRoute`.
 
@@ -277,7 +277,7 @@ The full-screen dialog contains the following properties:
 
 The following example shows a simple dialog with the [Material Shrine Theme](https://material.io/design/material-studies/shrine.html).
 
-- [Dartpad Demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/dialogs/theme)
+- [Dartpad Demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/dialogs/theme&gh_ref=develop)
 
 ![Simple dialog with Shrine theming](assets/dialogs/dialog-theming.png)
 
