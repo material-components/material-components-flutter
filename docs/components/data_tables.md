@@ -41,7 +41,7 @@ For more guidance on writing labels, go to [our page on how to write a good acce
 
 - [Class description](https://api.flutter.dev/flutter/material/DataTable-class.html)
 - [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/data_table.dart)
-- [Dartpad demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/data_tables/normal)
+- [Dartpad demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/data_tables/normal&gh_ref=develop)
 - [Demo site](https://gallery.flutter.dev/#/demo/data-table)
 
 ![Demo table without Theme](assets/data_tables/data_table_no_theme.png)
@@ -199,7 +199,7 @@ Data Table cells children are Widgets. This means that the Data table is depende
 
 The following is an example data table using the [Shrine theme](https://material.io/design/material-studies/shrine.html).
 
-[Dartpad demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/data_tables/normal)
+[Dartpad demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/data_tables/normal&gh_ref=develop)
 
 ![Demo table with Theme](assets/data_tables/data_table_theme.png)
 

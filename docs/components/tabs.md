@@ -118,7 +118,7 @@ Fixed tabs display all tabs on one screen, with each tab at a fixed width. The w
 
 - [Class definition](https://api.flutter.dev/flutter/material/TabBar-class.html)
 - [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/tabs.dart)
-- [Dartpad demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/tabs/fixed)
+- [Dartpad demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/tabs/fixed&gh_ref=develop)
 - [Demo site](https://gallery.flutter.dev/#/demo/tabs)
 
 The following example shows a row of of fixed tabs.
@@ -164,7 +164,7 @@ Scrollable tabs are displayed without fixed widths. They are scrollable, such th
 
 - [Class definition](https://api.flutter.dev/flutter/material/TabBar-class.html)
 - [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/tabs.dart)
-- [Dartpad demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/tabs/scrollable)
+- [Dartpad demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/tabs/scrollable&gh_ref=develop)
 - [Demo site](https://gallery.flutter.dev/#/demo/tabs)
 
 The following example shows a row of of scrollable tabs.
@@ -222,8 +222,8 @@ The following is an example data table using the [Shrine theme](https://material
 
 - [Class definition](https://api.flutter.dev/flutter/material/TabBar-class.html)
 - [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/tabs.dart)
-- [Dartpad demo for Scrollable Theme](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/tabs/scrollable_theme)
-- [Dartpad demo for Fixed Theme](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/tabs/theme)
+- [Dartpad demo for Scrollable Theme](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/tabs/scrollable_theme&gh_ref=develop)
+- [Dartpad demo for Fixed Theme](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/tabs/theme&gh_ref=develop)
 
 The following example shows a row of of scrollable tabs.
 

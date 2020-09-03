@@ -51,7 +51,7 @@ Source code API:
 
 - [Class definition](https://api.flutter.dev/flutter/material/TextFormField-class.html)
 - [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/text_form_field.dart)
-- [Dartpad demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/text_fields/outlined)
+- [Dartpad demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/text_fields/outlined&gh_ref=develop)
 
 The following example shows a filled text field.
 
@@ -174,7 +174,7 @@ Source code API:
 
 - [Class definition](https://api.flutter.dev/flutter/material/TextFormField-class.html)
 - [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/text_form_field.dart)
-- [Dartpad demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/text_fields/filled)
+- [Dartpad demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/text_fields/filled&gh_ref=develop)
 
 The following examples shows an outlined text field.
 
@@ -290,7 +290,7 @@ API and source code:
 
 - [Class definition](https://api.flutter.dev/flutter/material/TextFormField-class.html)
 - [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/text_form_field.dart)
-- [Dartpad demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/text_fields/theme)
+- [Dartpad demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/text_fields/theme&gh_ref=develop)
 
 The following example shows a filled text field with the [Material Shring Theme](ttps://material.io/design/material-studies/shrine.html).
 

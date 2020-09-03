@@ -79,7 +79,7 @@ Linear progress indicators display progress by animating an indicator along the 
 
 - [Class definition](https://api.flutter.dev/flutter/material/LinearProgressIndicator-class.html)
 - [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/progress_indicator.dart)
-- [Dartpad demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/progress_indicators/linear)
+- [Dartpad demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/progress_indicators/linear&gh_ref=develop)
 
 The following example shows an indeterminate linear progress indicator:
 
@@ -107,7 +107,7 @@ Circular progress indicators display progress by animating an indicator along an
 
 - [Class definition](https://api.flutter.dev/flutter/material/CircularProgressIndicator-class.html)
 - [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/progress_indicator.dart)
-- [Dartpad demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/progress_indicators/circular)
+- [Dartpad demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/progress_indicators/circular&gh_ref=develop)
 
 The following shows an determinate circular progress indicator
 
@@ -123,13 +123,13 @@ body: Center(
 
 - [Class definition](https://api.flutter.dev/flutter/material/LinearProgressIndicator-class.html)
 - [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/progress_indicator.dart)
-- [Dartpad demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/progress_indicators/theme)
+- [Dartpad demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/progress_indicators/theme&gh_ref=develop)
 
 `CircularProgressIndicator`
 
 - [Class definition](https://api.flutter.dev/flutter/material/CircularProgressIndicator-class.html)
 - [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/progress_indicator.dart)
-- [Dartpad demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/progress_indicators/theme)
+- [Dartpad demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/progress_indicators/theme&gh_ref=develop)
 
 The following shows an indeterminate linear progress indicator and a determinate circular progress indicator with [Shrine theming](https://material.io/design/material-studies/shrine.html):
 

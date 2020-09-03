@@ -63,7 +63,7 @@ The top app bar provides content and actions related to the current screen. Itâ€
 
 - [Class definition](https://api.flutter.dev/flutter/material/AppBar-class.html)
 - [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/app_bar.dart)
-- [Dartpad Demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/top-app-bar/regular)
+- [Dartpad Demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/top-app-bar/regular&gh_ref=develop)
 
 The following example shows a top app bar with a page title, a navigation icon, two action icons, and an overflow menu:
 
@@ -159,7 +159,7 @@ When a top app bar transforms into a contextual action bar, the following change
 
 - [Class definition](https://api.flutter.dev/flutter/material/AppBar-class.html)
 - [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/app_bar.dart)
-- [Dartpad Demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/top-app-bar/contextual)
+- [Dartpad Demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/top-app-bar/contextual&gh_ref=develop)
 
 The following example shows a contextual action bar with a contextual title, a close icon, two contextual action icons, and an overflow menu:
 
@@ -233,8 +233,8 @@ The top app bar supports [Material Theming](https://material.io/components/app-b
 
 ### Top app bar theming example
 
-- [Regular Top App Bar with Theme Dartpad Demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/top-app-bar/theme)
-- [Contextual Action Bar with Dartpad Demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/top-app-bar/contextual_theme)
+- [Regular Top App Bar with Theme Dartpad Demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/top-app-bar/theme&gh_ref=develop)
+- [Contextual Action Bar with Dartpad Demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/top-app-bar/contextual_theme&gh_ref=develop)
 
 ![Top app bar with Shrine theming](assets/top_app_bars/shrine_theme.png)
 ![Contextual app bar with Shrine theming](assets/top_app_bars/contextual_theming.png)
