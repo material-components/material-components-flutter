@@ -9,18 +9,17 @@ path: /catalog/sliders/
 
 # Slider
 
-
 [Sliders](https://material.io/components/sliders/) allow users to make
 selections from a range of values.
 
-!["Slider with sound icon buttons on each end."](assets/sliders_hero.png)
+!["Slider with sound icon buttons on each end."](assets/sliders/sliders_hero.png)
 
 ## Contents
 
-*   [Using sliders](#using-sliders)
-*   [Continuous slider](#continuous-slider)
-*   [Discrete slider](#discrete-slider)
-*   [Theming sliders](#theming-sliders)
+- [Using sliders](#using-sliders)
+- [Continuous slider](#continuous-slider)
+- [Discrete slider](#discrete-slider)
+- [Theming sliders](#theming-sliders)
 
 ## Using sliders
 
@@ -28,52 +27,77 @@ Sliders reflect a range of values along a bar, from which users may select a sin
 
 Sliders can have icons on both ends of the bar that reflect a range of values.
 
-### Installing sliders
-
 ### Making sliders accessible
 
-**Note to developers: Add platform-specific accessibility instructions**
+Flutter's APIs support accessibility setting for large fonts, screen readers, and sufficient contrast. For more information, go to Flutter's [accessibility](https://flutter.dev/docs/development/accessibility-and-localization/accessibility) and [internationalization](https://flutter.dev/docs/development/accessibility-and-localization/internationalization) pages.
 
+For more guidance on writing labels, go to [our page on how to write a good accessibility label](https://material.io/design/usability/accessibility.html#writing).
 
 ## Types
 
-There are two types of sliders: 1\. [Continuous slider](#continuous-slider) and 2\.
-[Discrete slider](#discrete-slider)
+There are two types of sliders:
 
-!["Slider examples of both continuous and discrete sliders."](assets/sliders_types.png)
+1. [Continuous slider](#continuous-slider)
+1. [Discrete slider](#discrete-slider)
+
+!["Slider examples of both continuous and discrete sliders."](assets/sliders/sliders_types.png)
 
 A slider with one thumb is called a single point slider, and a slider with two thumbs is called a range slider.
+
 ### Anatomy and key properties
 
-A slider has a track, one or two thumbs, and optional value label. A discrete
-slider also has tick marks.
+A slider has a track, one or two thumbs, and optional value label. A discrete slider also has tick marks.
 
-![Slider anatomy diagram](assets/sliders_anatomy.png)
+![Slider anatomy diagram](assets/sliders/sliders_anatomy.png)
 
-1.  Track
-2.  Thumb
-3.  Value label (optional)
-4.  Tick mark (discrete sliders)
+1. Track
+1. Thumb
+1. Value label (optional)
+1. Tick mark (discrete sliders)
 
 #### Track attributes
 
-&nbsp;                                  | Attribute                
---------------------------------------- | ------------------------
+| &nbsp; | Attribute |
+|---|---|
+| Track Shape | Wrap your `Slider` widget with a `SliderTheme` widget within the data parameter use the `SliderThemeData` widget. Within this widget set the `trackShape` parameter. |
+| Range Track Shape | Wrap your `RangeSlider` widget with a `SliderTheme` widget within the data parameter use the `SliderThemeData` widget. Within this widget set the `rangeTrackShape` parameter. |
+| Active Track Color | Wrap your `Slider` widget with a `SliderTheme` widget within the data parameter use the `SliderThemeData` widget. Within this widget set the `activeTrackColor` parameter. |
+| InActive Track Color | Wrap your `Slider` widget with a `SliderTheme` widget within the data parameter use the `SliderThemeData` widget. Within this widget set the `inactiveTrackColor` parameter. |
+| Track Height | Wrap your `Slider` widget with a `SliderTheme` widget within the data parameter use the `SliderThemeData` widget. Within this widget set the `trackHeight` parameter. |
+| Disabled Active Track Color | Wrap your `Slider` widget with a `SliderTheme` widget within the data parameter use the `SliderThemeData` widget. Within this widget set the `disabledActiveTrackColor` parameter. |
+| Disabled InActive Track Color | Wrap your `Slider` widget with a `SliderTheme` widget within the data parameter use the `SliderThemeData` widget. Within this widget set the `disabledInactiveTrackColor` parameter. |
 
 #### Thumb attributes
 
-&nbsp;          | Attribute            
---------------- | --------------------
+| &nbsp; | Attribute |
+|---|---|
+| Thumb Shape | Wrap your `Slider` widget with a `SliderTheme` widget within the data parameter use the `SliderThemeData` widget. Within this widget set the `thumbShape` parameter. |
+| Range Thumb Shape | Wrap your `RangeSlider` widget with a `SliderTheme` widget within the data parameter use the `SliderThemeData` widget. Within this widget set the `rangeThumbShape` parameter. |
+| Thumb Color | Wrap your `Slider` widget with a `SliderTheme` widget within the data parameter use the `SliderThemeData` widget. Within this widget set the `thumbColor` parameter. |
+| Disabled Thumb Color | Wrap your `Slider` widget with a `SliderTheme` widget within the data parameter use the `SliderThemeData` widget. Within this widget set the `disabledThumbColor` parameter. |
+| Minimum Thumb Separtation| Wrap your `Slider` widget with a `SliderTheme` widget within the data parameter use the `SliderThemeData` widget. Within this widget set the `minThumbSeparation` parameter. |
+| Thumb Selector | Wrap your `Slider` widget with a `SliderTheme` widget within the data parameter use the `SliderThemeData` widget. Within this widget set the `thumbSelector` parameter. |
 
 #### Value label attributes
 
-&nbsp;        | Attribute          
-------------- | -------------------
+| &nbsp; | Attribute |
+|---|---|
+| Value Indicator Shape | Wrap your `Slider` widget with a `SliderTheme` widget within the data parameter use the `SliderThemeData` widget. Within this widget set the `valueIndicatorShape` parameter. |
+| Range Value Indicator Color | Wrap your `RangeSlider` widget with a `SliderTheme` widget within the data parameter use the `SliderThemeData` widget. Within this widget set the `rangeValueIndicatorColor` parameter. |
+| Value Indicator Color | Wrap your `Slider` widget with a `SliderTheme` widget within the data parameter use the `SliderThemeData` widget. Within this widget set the `valueIndicatorColor` parameter. |
+| Value Indicator Text Style| Wrap your `Slider` widget with a `SliderTheme` widget within the data parameter use the `SliderThemeData` widget. Within this widget set the `valueIndicatorTextStyle` parameter. |
+| Show Value Indicator Shape | Wrap your `Slider` widget with a `SliderTheme` widget within the data parameter use the `SliderThemeData` widget. Within this widget set the `showValueIndicatorShape` parameter. |
 
 #### Tick mark attributes
 
-&nbsp;                              
------------------------------------
+| &nbsp; | Attribute |
+|---|---|
+| Tick Mark Shape | Wrap your `Slider` widget with a `SliderTheme` widget within the data parameter use the `SliderThemeData` widget. Within this widget set the `tickMarkShape` parameter. |
+| Range Tick Mark Shape | Wrap your `RangeSlider` widget with a `SliderTheme` widget within the data parameter use the `SliderThemeData` widget. Within this widget set the `rangeTickMarkShape` parameter. |
+| Active Tick Mark Color | Wrap your `Slider` widget with a `SliderTheme` widget within the data parameter use the `SliderThemeData` widget. Within this widget set the `activeTickMarkColor` parameter. |
+| Inactive Tick Mark Color | Wrap your `Slider` widget with a `SliderTheme` widget within the data parameter use the `SliderThemeData` widget. Within this widget set the `inactiveTickMarkColor` parameter. |
+| Disabled Active Tick Mark Color | Wrap your `Slider` widget with a `SliderTheme` widget within the data parameter use the `SliderThemeData` widget. Within this widget set the `mi` parameter. |
+| Thumb Selector | Wrap your `Slider` widget with a `SliderTheme` widget within the data parameter use the `SliderThemeData` widget. Within this widget set the `thumbSelector` parameter. |
 
 ### Continuous sliders
 
@@ -84,55 +108,123 @@ a specific value.
 
 API and source code:
 
-*   `Slider`
-    *   [Class definition](https://api.flutter.dev/flutter/material/Slider-class.html)
-    *   [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/slider.dart)
+- [Class definition](https://api.flutter.dev/flutter/material/Slider-class.html)
+- [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/slider.dart)
+- [Dartpad demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/sliders/continous_slider&gh_ref=develop)
 
-**Note to developers: Provide a continuous single point slider example with code and screenshot with the following:**
-* A track range from 0 to 100
-* A thumb set to 70
+!["Continous Slider"](assets/sliders/continous_slider.png)
+
+```dart
+double _sliderValue = 20;
+
+
+Slider(
+    value: _sliderValue,
+    min: 0,
+    max: 100,
+    label: _sliderValue.round().toString(),
+    onChanged: (value) {
+        setState(() {
+            _sliderValue = value;
+        });
+    },
+),
+```
+
+API and source code:
+
+- [Class definition](https://api.flutter.dev/flutter/material/Slider-class.html)
+- [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/range_slider.dart)
+- [Dartpad demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/sliders/continous_range_slider&gh_ref=develop)
 
 #### Continuous range slider example
 
 API and source code:
 
-**Note to developers: Provide a continuous range slider example with code and screenshot with the following:**
-* A track range from 0 to 100
-* A lower-bound thumb set to 20
-* An upper-bound thumb set to 70
+!["Range Sliders continuous example"](assets/sliders/continous_range_slider.png)
+
+```dart
+  RangeValues _rangeSliderDiscreteValues = const RangeValues(40, 80);
+
+RangeSlider(
+    values: _rangeSliderDiscreteValues,
+    min: 0,
+    max: 100,
+    labels: RangeLabels(
+        _rangeSliderDiscreteValues.start.round().toString(),
+        _rangeSliderDiscreteValues.end.round().toString(),
+    ),
+    onChanged: (values) {
+        setState(() {
+            _rangeSliderDiscreteValues = values;
+        });
+    },
+),
+
+```
 
 ### Discrete sliders
 
-Discrete sliders display a numeric value label upon pressing the thumb, which
-allows a user to input an exact value.
+Discrete sliders display a numeric value label upon pressing the thumb, which allows a user to input an exact value.
 
 #### Discrete single point slider example
 
 API and source code:
 
-*   `Slider`
-    *   [Class definition](https://api.flutter.dev/flutter/material/Slider-class.html)
-    *   [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/slider.dart)
+- [Class definition](https://api.flutter.dev/flutter/material/Slider-class.html)
+- [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/slider.dart)
+- [Dartpad demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/sliders/discrete_slider&gh_ref=develop)
 
-**Note to developers: Provide a discrete single point slider example with code and screenshot with the following:**
-* A track range from 0 to 100
-* A thumb set to 70
-* Tick marks set at 10
+!["Discrete Sliders example"](assets/sliders/discrete_slider.png)
+
+```dart
+double _sliderDiscreteValue = 20;
+
+Slider(
+    value: _sliderDiscreteValue,
+    min: 0,
+    max: 100,
+    divisions: 5,
+    label: _sliderDiscreteValue.round().toString(),
+    onChanged: (value) {
+        setState(() {
+           _sliderDiscreteValue = value;
+        });
+    },
+),
+```
 
 #### Discrete range slider example
 
 API and source code:
 
-*   `Slider`
-    *   [Class definition](https://api.flutter.dev/flutter/material/Slider-class.html)
-    *   [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/slider.dart)
+`Slider`
 
-**Note to developers: Provide a discrete range slider example with code and screenshot with the following:**
-* A track range from 0 to 100
-* A lower-bound thumb set to 20
-* An upper-bound thumb set to 70
-* Tick marks set at 10
+- [Class definition](https://api.flutter.dev/flutter/material/Slider-class.html)
+- [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/range_slider.dart)
+- [Dartpad demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/sliders/discrete_range_slider&gh_ref=develop)
 
+!["Discrete Range Sliders example"](assets/sliders/discrete_range_slider.png)
+
+```dart
+RangeValues _rangeSliderDiscreteValues = const RangeValues(40, 80);
+
+RangeSlider(
+    values: _rangeSliderDiscreteValues,
+    min: 0,
+    max: 100,
+    divisions: 5,
+    labels: RangeLabels(
+        _rangeSliderDiscreteValues.start.round().toString(),
+        _rangeSliderDiscreteValues.end.round().toString(),
+    ),
+    onChanged: (values) {
+        setState(() {
+            _rangeSliderDiscreteValues = values;
+        });
+    },
+),
+```
 
 ## Theming sliders
 
@@ -144,14 +236,165 @@ customized in terms of color and typography.
 
 API and source code:
 
-*   `Slider`
-    *   [Class definition](https://api.flutter.dev/flutter/material/Slider-class.html)
-    *   [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/slider.dart)
+`Slider`
+
+- [Class definition](https://api.flutter.dev/flutter/material/Slider-class.html)
+- [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/slider.dart)
+- [Dartpad demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/sliders/theme&gh_ref=develop)
 
 The following example shows a discrete range slider with Material's [Shrine](https://material.io/design/material-studies/shrine.html) theme.
 
-**Note to developers: Provide a discrete range slider example that uses Shrine theming with code and screenshot with the following:**
-* A track range from 0 to 100
-* A lower-bound thumb set to 20
-* An upper-bound thumb set to 70
-* Tick marks set at 10
+!["Shrine theme example for Slider"](assets/sliders/theme_slider.png)
+!["Shrine theme example for Range Slider"](assets/sliders/theme_range_sliders.png)
+
+```dart
+import 'package:flutter/material.dart';
+
+void main() => runApp(MyApp());
+
+class MyApp extends StatefulWidget {
+  @override
+  _MyAppState createState() => _MyAppState();
+}
+
+class _MyAppState extends State<MyApp> {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      theme: _buildShrineTheme(),
+      home: Scaffold(
+        body: SliderThemeDemo(),
+      ),
+    );
+  }
+}
+
+class SliderThemeDemo extends StatefulWidget {
+  @override
+  _SliderThemeDemoState createState() => _SliderThemeDemoState();
+}
+
+class _SliderThemeDemoState extends State<SliderThemeDemo> {
+  double _sliderDiscreteValue = 20;
+  RangeValues _rangeSliderDiscreteValues = const RangeValues(40, 80);
+
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      children: [
+        Expanded(
+          child: Slider(
+            value: _sliderDiscreteValue,
+            min: 0,
+            max: 100,
+            divisions: 5,
+            label: _sliderDiscreteValue.round().toString(),
+            onChanged: (value) {
+              setState(() {
+                _sliderDiscreteValue = value;
+              });
+            },
+          ),
+        ),
+        Expanded(
+          child: RangeSlider(
+            values: _rangeSliderDiscreteValues,
+            min: 0,
+            max: 100,
+            divisions: 5,
+            labels: RangeLabels(
+              _rangeSliderDiscreteValues.start.round().toString(),
+              _rangeSliderDiscreteValues.end.round().toString(),
+            ),
+            onChanged: (values) {
+              setState(() {
+                _rangeSliderDiscreteValues = values;
+              });
+            },
+          ),
+        )
+      ],
+    );
+  }
+}
+
+ThemeData _buildShrineTheme() {
+  final ThemeData base = ThemeData.light();
+  return base.copyWith(
+    colorScheme: _shrineColorScheme,
+    accentColor: shrineBrown900,
+    primaryColor: shrinePink100,
+    buttonColor: shrinePink100,
+    scaffoldBackgroundColor: shrineBackgroundWhite,
+    cardColor: shrineBackgroundWhite,
+    textSelectionColor: shrinePink100,
+    errorColor: shrineErrorRed,
+    buttonTheme: const ButtonThemeData(
+      colorScheme: _shrineColorScheme,
+      textTheme: ButtonTextTheme.normal,
+    ),
+    primaryIconTheme: _customIconTheme(base.iconTheme),
+    textTheme: _buildShrineTextTheme(base.textTheme),
+    primaryTextTheme: _buildShrineTextTheme(base.primaryTextTheme),
+    accentTextTheme: _buildShrineTextTheme(base.accentTextTheme),
+    iconTheme: _customIconTheme(base.iconTheme),
+  );
+}
+
+IconThemeData _customIconTheme(IconThemeData original) {
+  return original.copyWith(color: shrineBrown900);
+}
+
+TextTheme _buildShrineTextTheme(TextTheme base) {
+  return base
+      .copyWith(
+        caption: base.caption.copyWith(
+          fontWeight: FontWeight.w400,
+          fontSize: 14,
+          letterSpacing: defaultLetterSpacing,
+        ),
+        button: base.button.copyWith(
+          fontWeight: FontWeight.w500,
+          fontSize: 14,
+          letterSpacing: defaultLetterSpacing,
+        ),
+      )
+      .apply(
+        fontFamily: 'Rubik',
+        displayColor: shrineBrown900,
+        bodyColor: shrineBrown900,
+      );
+}
+
+const ColorScheme _shrineColorScheme = ColorScheme(
+  primary: shrinePink100,
+  primaryVariant: shrineBrown900,
+  secondary: shrinePink50,
+  secondaryVariant: shrineBrown900,
+  surface: shrineSurfaceWhite,
+  background: shrineBackgroundWhite,
+  error: shrineErrorRed,
+  onPrimary: shrineBrown900,
+  onSecondary: shrineBrown900,
+  onSurface: shrineBrown900,
+  onBackground: shrineBrown900,
+  onError: shrineSurfaceWhite,
+  brightness: Brightness.light,
+);
+
+const Color shrinePink50 = Color(0xFFFEEAE6);
+const Color shrinePink100 = Color(0xFFFEDBD0);
+const Color shrinePink300 = Color(0xFFFBB8AC);
+const Color shrinePink400 = Color(0xFFEAA4A4);
+
+const Color shrineBrown900 = Color(0xFF442B2D);
+const Color shrineBrown600 = Color(0xFF7D4F52);
+
+const Color shrineErrorRed = Color(0xFFC5032B);
+
+const Color shrineSurfaceWhite = Color(0xFFFFFBFA);
+const Color shrineBackgroundWhite = Colors.white;
+
+const defaultLetterSpacing = 0.03;
+
+```

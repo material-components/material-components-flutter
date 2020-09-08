@@ -21,18 +21,20 @@ class MyApp extends StatelessWidget {
 class MyHomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('Banners'),),
+      appBar: AppBar(
+        title: Text('Banners'),
+      ),
       body: MaterialBanner(
         content: const Text('Error message text'),
         leading: CircleAvatar(child: Icon(Icons.delete)),
         actions: [
           FlatButton(
             child: const Text('ACTION 1'),
-            onPressed: () { },
+            onPressed: () {},
           ),
           FlatButton(
             child: const Text('ACTION 2'),
-            onPressed: () { },
+            onPressed: () {},
           ),
         ],
       ),

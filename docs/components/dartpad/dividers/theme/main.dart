@@ -1,63 +1,48 @@
 import 'package:flutter/material.dart';
 
-void main() {
-  runApp(App());
+void main() => runApp(MyApp());
+
+class MyApp extends StatefulWidget {
+  @override
+  _MyAppState createState() => _MyAppState();
 }
 
-class App extends StatelessWidget {
+class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Checkboxes Demo',
-      debugShowCheckedModeBanner: false,
-      home: CheckboxesDemo(),
       theme: _buildShrineTheme(),
+      home: Scaffold(
+        body: DividerThemeDemo(),
+      ),
     );
   }
 }
 
-class CheckboxesDemo extends StatefulWidget {
-  @override
-  _CheckboxesDemoState createState() => _CheckboxesDemoState();
-}
-
-class _CheckboxesDemoState extends State<CheckboxesDemo> {
-  List<bool> checked = [true, true, false, false, true];
-
+class DividerThemeDemo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text('Checkboxes Demo'),
-      ),
-      body: Container(
-        margin: EdgeInsets.symmetric(vertical: 40),
-        child: Column(
-          children: [
-            for (var i = 0; i < 5; i += 1)
-              Row(
-                children: [
-                  Checkbox(
-                    onChanged: i == 4
-                        ? null
-                        : (bool value) {
-                            setState(() {
-                              checked[i] = value;
-                            });
-                          },
-                    tristate: i == 1,
-                    value: checked[i],
-                  ),
-                  Text(
-                    'Checkbox ${i + 1}',
-                    style: Theme.of(context).textTheme.subtitle1.copyWith(
-                        color: i == 4 ? Colors.black38 : Colors.black),
-                  ),
-                ],
-                mainAxisAlignment: MainAxisAlignment.center,
+    return Center(
+      child: Column(
+        children: <Widget>[
+          Expanded(
+            child: Container(
+              color: Colors.amber,
+              child: const Center(
+                child: Text('Start'),
               ),
-          ],
-        ),
+            ),
+          ),
+          const Divider(),
+          Expanded(
+            child: Container(
+              color: Colors.blue,
+              child: const Center(
+                child: Text('End'),
+              ),
+            ),
+          ),
+        ],
       ),
     );
   }
@@ -67,7 +52,6 @@ ThemeData _buildShrineTheme() {
   final ThemeData base = ThemeData.light();
   return base.copyWith(
     colorScheme: _shrineColorScheme,
-    toggleableActiveColor: shrinePink400,
     accentColor: shrineBrown900,
     primaryColor: shrinePink100,
     buttonColor: shrinePink100,
@@ -75,6 +59,10 @@ ThemeData _buildShrineTheme() {
     cardColor: shrineBackgroundWhite,
     textSelectionColor: shrinePink100,
     errorColor: shrineErrorRed,
+    buttonTheme: const ButtonThemeData(
+      colorScheme: _shrineColorScheme,
+      textTheme: ButtonTextTheme.normal,
+    ),
     primaryIconTheme: _customIconTheme(base.iconTheme),
     textTheme: _buildShrineTextTheme(base.textTheme),
     primaryTextTheme: _buildShrineTextTheme(base.primaryTextTheme),
@@ -88,11 +76,24 @@ IconThemeData _customIconTheme(IconThemeData original) {
 }
 
 TextTheme _buildShrineTextTheme(TextTheme base) {
-  return base.apply(
-    fontFamily: 'Rubik',
-    displayColor: shrineBrown900,
-    bodyColor: shrineBrown900,
-  );
+  return base
+      .copyWith(
+        caption: base.caption.copyWith(
+          fontWeight: FontWeight.w400,
+          fontSize: 14,
+          letterSpacing: defaultLetterSpacing,
+        ),
+        button: base.button.copyWith(
+          fontWeight: FontWeight.w500,
+          fontSize: 14,
+          letterSpacing: defaultLetterSpacing,
+        ),
+      )
+      .apply(
+        fontFamily: 'Rubik',
+        displayColor: shrineBrown900,
+        bodyColor: shrineBrown900,
+      );
 }
 
 const ColorScheme _shrineColorScheme = ColorScheme(
@@ -123,3 +124,5 @@ const Color shrineErrorRed = Color(0xFFC5032B);
 
 const Color shrineSurfaceWhite = Color(0xFFFFFBFA);
 const Color shrineBackgroundWhite = Colors.white;
+
+const defaultLetterSpacing = 0.03;

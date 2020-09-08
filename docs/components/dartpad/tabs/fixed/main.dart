@@ -25,9 +25,9 @@ class MyApp extends StatelessWidget {
           ),
           body: TabBarView(
             children: [
-                Center(child: Text('DOGS')),
-                Center(child: Text('CATS')),
-                Center(child: Text('BIRDS')),
+              Center(child: Text('DOGS')),
+              Center(child: Text('CATS')),
+              Center(child: Text('BIRDS')),
             ],
           ),
         ),

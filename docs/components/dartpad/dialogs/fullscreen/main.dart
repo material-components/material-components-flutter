@@ -22,10 +22,12 @@ class MyHomePage extends StatelessWidget {
           textColor: Color(0xFF6200EE),
           highlightColor: Colors.transparent,
           onPressed: () {
-            Navigator.push(context, MaterialPageRoute<void>(
-                builder: (BuildContext context) => FullScreenDialog(),
-                fullscreenDialog: true,
-              ));
+            Navigator.push(
+                context,
+                MaterialPageRoute<void>(
+                  builder: (BuildContext context) => FullScreenDialog(),
+                  fullscreenDialog: true,
+                ));
           },
           child: Text("SHOW DIALOG"),
         ),
@@ -39,9 +41,8 @@ class FullScreenDialog extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Color(0xFF6200EE),
-        title: Text('Full-screen Dialog')
-      ),
+          backgroundColor: Color(0xFF6200EE),
+          title: Text('Full-screen Dialog')),
       body: Center(
         child: Text("Full-screen dialog"),
       ),
