@@ -59,7 +59,7 @@ A slider has a track, one or two thumbs, and optional value label. A discrete sl
 
 | &nbsp; | Attribute |
 |---|---|
-| Track Shape | Wrap your `Slider` widget with a `SliderTheme` widget within the data parameter use the `SliderThemeData` widget. Within this widget set the `trackShape` parameter. |
+| Track Shape | Wrap your `Slider` widget with a `SliderTheme` widget. Use the `SliderThemeData` widget for the SliderTheme.data parameter with the `SliderThemeData.trackShape` parameter set. |
 | Range Track Shape | Wrap your `RangeSlider` widget with a `SliderTheme` widget within the data parameter use the `SliderThemeData` widget. Within this widget set the `rangeTrackShape` parameter. |
 | Active Track Color | Wrap your `Slider` widget with a `SliderTheme` widget within the data parameter use the `SliderThemeData` widget. Within this widget set the `activeTrackColor` parameter. |
 | InActive Track Color | Wrap your `Slider` widget with a `SliderTheme` widget within the data parameter use the `SliderThemeData` widget. Within this widget set the `inactiveTrackColor` parameter. |
