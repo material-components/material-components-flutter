@@ -27,7 +27,6 @@ class DividerThemeDemo extends StatelessWidget {
         children: <Widget>[
           Expanded(
             child: Container(
-              color: Colors.amber,
               child: const Center(
                 child: Text('Start'),
               ),
@@ -36,7 +35,6 @@ class DividerThemeDemo extends StatelessWidget {
           const Divider(),
           Expanded(
             child: Container(
-              color: Colors.blue,
               child: const Center(
                 child: Text('End'),
               ),

@@ -32,28 +32,6 @@ class _MyAppState extends State<MyApp> {
                 },
               ),
             ),
-            Expanded(
-              child: SliderTheme(
-                data: SliderThemeData(
-                  rangeValueIndicatorShape:
-                      PaddleRangeSliderValueIndicatorShape(),
-                ),
-                child: RangeSlider(
-                  values: _rangeSliderDiscreteValues,
-                  min: 0,
-                  max: 100,
-                  labels: RangeLabels(
-                    _rangeSliderDiscreteValues.start.round().toString(),
-                    _rangeSliderDiscreteValues.end.round().toString(),
-                  ),
-                  onChanged: (values) {
-                    setState(() {
-                      _rangeSliderDiscreteValues = values;
-                    });
-                  },
-                ),
-              ),
-            ),
           ],
         ),
       ),

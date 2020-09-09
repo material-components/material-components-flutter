@@ -15,7 +15,6 @@ A [divider](https://material.io/components/dividers) is a thin line that groups 
 
 ## Contents
 
-- [Contents](#contents)
 - [Making dividers accessible](#making-dividers-accessible)
 - [Anatomy and key properties](#anatomy-and-key-properties)
 - [Types](#types)

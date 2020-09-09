@@ -23,7 +23,6 @@ class MyStatelessWidget extends StatelessWidget {
         children: <Widget>[
           Expanded(
             child: Container(
-              color: Colors.amber,
               child: const Center(
                 child: Text('Start'),
               ),
@@ -32,7 +31,6 @@ class MyStatelessWidget extends StatelessWidget {
           const VerticalDivider(),
           Expanded(
             child: Container(
-              color: Colors.blue,
               child: const Center(
                 child: Text('End'),
               ),

@@ -131,13 +131,13 @@ Slider(
 ),
 ```
 
+#### Continuous range slider example
+
 API and source code:
 
 - [Class definition](https://api.flutter.dev/flutter/material/Slider-class.html)
 - [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/range_slider.dart)
 - [Dartpad demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/sliders/continous_range_slider&gh_ref=develop)
-
-#### Continuous range slider example
 
 API and source code:
 
@@ -145,7 +145,6 @@ API and source code:
 
 ```dart
   RangeValues _rangeSliderDiscreteValues = const RangeValues(40, 80);
-
 RangeSlider(
     values: _rangeSliderDiscreteValues,
     min: 0,
@@ -179,7 +178,6 @@ API and source code:
 
 ```dart
 double _sliderDiscreteValue = 20;
-
 Slider(
     value: _sliderDiscreteValue,
     min: 0,
@@ -198,8 +196,6 @@ Slider(
 
 API and source code:
 
-`Slider`
-
 - [Class definition](https://api.flutter.dev/flutter/material/Slider-class.html)
 - [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/range_slider.dart)
 - [Dartpad demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/sliders/discrete_range_slider&gh_ref=develop)
@@ -208,7 +204,6 @@ API and source code:
 
 ```dart
 RangeValues _rangeSliderDiscreteValues = const RangeValues(40, 80);
-
 RangeSlider(
     values: _rangeSliderDiscreteValues,
     min: 0,
@@ -235,8 +230,6 @@ customized in terms of color and typography.
 ### Slider theming example
 
 API and source code:
-
-`Slider`
 
 - [Class definition](https://api.flutter.dev/flutter/material/Slider-class.html)
 - [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/slider.dart)

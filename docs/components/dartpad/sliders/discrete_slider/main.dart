@@ -30,25 +30,6 @@ class _MyAppState extends State<MyApp> {
                 },
               ),
             ),
-            Expanded(
-              child: SliderTheme(
-                data: SliderThemeData(
-                  valueIndicatorShape: PaddleSliderValueIndicatorShape(),
-                ),
-                child: Slider(
-                  value: _sliderDiscreteValue,
-                  min: 0,
-                  max: 100,
-                  divisions: 5,
-                  label: _sliderDiscreteValue.round().toString(),
-                  onChanged: (value) {
-                    setState(() {
-                      _sliderDiscreteValue = value;
-                    });
-                  },
-                ),
-              ),
-            ),
           ],
         ),
       ),
