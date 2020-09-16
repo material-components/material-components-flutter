@@ -76,17 +76,20 @@ Column(
     for (int i = 0; i <= count; i++)
       ListTile(
         title: Text(
-          'Switch ${i+1}',
-          style: Theme.of(context).textTheme.subtitle1.copyWith(color: i == count ? Colors.black38 : Colors.black),
+          'Switch ${i + 1}',
+          style: Theme.of(context).textTheme.subtitle1.copyWith(
+              color: i == count ? Colors.black38 : Colors.black),
         ),
         leading: Switch(
           value: _values[i],
           activeColor: Color(0xFF6200EE),
-          onChanged: i == count ? null : (bool value) {
-            setState(() {
-              _values[i] = value;
-            });
-          },
+          onChanged: i == count
+              ? null
+              : (bool value) {
+                  setState(() {
+                    _values[i] = value;
+                  });
+                },
         ),
       ),
   ],
@@ -153,16 +156,19 @@ class _MyHomePageState extends State<MyHomePage> {
           for (int i = 0; i <= count; i++)
             ListTile(
               title: Text(
-                'Switch ${i+1}',
-                style: Theme.of(context).textTheme.subtitle1.copyWith(color: i == count ? Colors.black38 : Colors.black),
+                'Switch ${i + 1}',
+                style: Theme.of(context).textTheme.subtitle1.copyWith(
+                    color: i == count ? Colors.black38 : Colors.black),
               ),
               leading: Switch(
                 value: _values[i],
-                onChanged: i == count ? null : (bool value) {
-                  setState(() {
-                    _values[i] = value;
-                  });
-                },
+                onChanged: i == count
+                    ? null
+                    : (bool value) {
+                        setState(() {
+                          _values[i] = value;
+                        });
+                      },
               ),
             ),
         ],
