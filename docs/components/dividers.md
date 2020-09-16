@@ -46,28 +46,83 @@ The following shows the anatomy of a divider:
 
 There are 3 types of dividers:
 
-1. [horizontal divider](#horizontal-divider)
-2. [vertical divider](#vertical-divider)
+1. [Full Bleed divider](#full-bleed-dividers)
+2. [Inset divider](#inset-dividers)
+3. [Middle divider](#middle-dividers)
 
-### Horizontal Divider
+### Full-bleed dividers
 
 Full-bleed dividers separate content into sections and span the entire length of a layout.
 
-`Divider`
+#### Full-bleed dividers example
 
 - [Class definition](https://api.flutter.dev/flutter/material/Divider-class.html)
 - [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/divider.dart)
-- [Dartpad demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/dividers/divider&gh_ref=develop)
+- [Dartpad demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/dividers/full_bleed_divider&gh_ref=develop)
 
-![Horizontal divider](assets/dividers/divider.png)
+The following example shows a list with full-bleed dividers:
+
+![Full bleed divider](assets/dividers/full_bleed_divider.png)
 
 ```dart
-Divider()
+Divider(),
 ```
 
-### Vertical Divider
+### Inset dividers
 
 Inset dividers separate related content, anchored by elements that align with the app bar title.
+
+#### Inset divider example
+
+- [Class definition](https://api.flutter.dev/flutter/material/Divider-class.html)
+- [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/divider.dart)
+- [Dartpad demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/dividers/inset_divider&gh_ref=develop)
+
+The following example shows two lists separated by an inset divider and a subheader
+
+![Inset divider](assets/dividers/inset_divider.png)
+
+```dart
+Divider(indent: 16),
+Container(
+  padding: EdgeInsets.only(left: 16),
+  child: Align(
+    alignment: Alignment.centerLeft,
+    child: Text(
+      'Subheader',
+      style: Theme.of(context).textTheme.bodyText2.copyWith(
+          fontSize: 12.0,
+          color: Theme.of(context).textTheme.caption.color),
+      textAlign: TextAlign.start,
+    ),
+  ),
+),
+```
+
+### Middle dividers
+
+Middle dividers space related content and are centered in a layout or list.
+
+#### Middle divider example
+
+- [Class definition](https://api.flutter.dev/flutter/material/Divider-class.html)
+- [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/divider.dart)
+- [Dartpad demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/dividers/middle_divider&gh_ref=develop)
+
+The following example shows a middle divider separating a list of items and their prices and the total cost:
+
+![Middle divider](assets/dividers/middle_divider.png)
+
+```dart
+Divider(
+  indent: 16,
+  endIndent: 16,
+),
+```
+
+### Flutter Vertical Divider
+
+Vertical divider offers the same parameters as the regular divider but instead the divider is vertical.
 
 `VerticalDivider`
 

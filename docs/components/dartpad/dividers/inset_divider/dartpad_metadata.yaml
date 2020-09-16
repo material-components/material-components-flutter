@@ -1,0 +1,4 @@
+name: Material Inset Divider Demonstration
+mode: flutter
+files:
+  - name: main.dart
