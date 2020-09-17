@@ -30,16 +30,21 @@ class _MyHomePageState extends State<MyHomePage> {
             ListTile(
               title: Text(
                 'Radio $i',
-                style: Theme.of(context).textTheme.subtitle1.copyWith(color: i == 5 ? Colors.black38 : shrineBrown900),
+                style: Theme.of(context)
+                    .textTheme
+                    .subtitle1
+                    .copyWith(color: i == 5 ? Colors.black38 : shrineBrown900),
               ),
               leading: Radio(
                 value: i,
                 groupValue: _value,
-                onChanged: i == 5 ? null : (int value) {
-                  setState(() {
-                    _value = value;
-                  });
-                },
+                onChanged: i == 5
+                    ? null
+                    : (int value) {
+                        setState(() {
+                          _value = value;
+                        });
+                      },
               ),
             ),
         ],

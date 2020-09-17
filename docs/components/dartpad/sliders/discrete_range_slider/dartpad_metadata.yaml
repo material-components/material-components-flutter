@@ -1,0 +1,4 @@
+name: Material Discrete Range Sliders Demonstration
+mode: flutter
+files:
+  - name: main.dart

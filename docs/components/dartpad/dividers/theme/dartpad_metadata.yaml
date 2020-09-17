@@ -1,0 +1,4 @@
+name: Material Divider Theme Demonstration
+mode: flutter
+files:
+  - name: main.dart

@@ -42,11 +42,11 @@ class DataTableDemo extends StatelessWidget {
 
 class _Row {
   _Row(
-      this.valueA,
-      this.valueB,
-      this.valueC,
-      this.valueD,
-      );
+    this.valueA,
+    this.valueB,
+    this.valueC,
+    this.valueD,
+  );
 
   final String valueA;
   final String valueB;
@@ -136,22 +136,22 @@ IconThemeData _customIconTheme(IconThemeData original) {
 TextTheme _buildShrineTextTheme(TextTheme base) {
   return base
       .copyWith(
-    caption: base.caption.copyWith(
-      fontWeight: FontWeight.w400,
-      fontSize: 14,
-      letterSpacing: defaultLetterSpacing,
-    ),
-    button: base.button.copyWith(
-      fontWeight: FontWeight.w500,
-      fontSize: 14,
-      letterSpacing: defaultLetterSpacing,
-    ),
-  )
+        caption: base.caption.copyWith(
+          fontWeight: FontWeight.w400,
+          fontSize: 14,
+          letterSpacing: defaultLetterSpacing,
+        ),
+        button: base.button.copyWith(
+          fontWeight: FontWeight.w500,
+          fontSize: 14,
+          letterSpacing: defaultLetterSpacing,
+        ),
+      )
       .apply(
-    fontFamily: 'Rubik',
-    displayColor: shrineBrown900,
-    bodyColor: shrineBrown900,
-  );
+        fontFamily: 'Rubik',
+        displayColor: shrineBrown900,
+        bodyColor: shrineBrown900,
+      );
 }
 
 const ColorScheme _shrineColorScheme = ColorScheme(
