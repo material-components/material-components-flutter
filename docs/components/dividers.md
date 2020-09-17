@@ -44,11 +44,12 @@ The following shows the anatomy of a divider:
 
 ## Types
 
-There are 3 types of dividers:
+There are 4 types of dividers:
 
 1. [Full Bleed divider](#full-bleed-dividers)
 2. [Inset divider](#inset-dividers)
 3. [Middle divider](#middle-dividers)
+4. [Vertical divider](#flutter-vertical-dividers)
 
 ### Full-bleed dividers
 
@@ -120,7 +121,7 @@ Divider(
 ),
 ```
 
-### Flutter Vertical Divider
+### Flutter Vertical Dividers
 
 Vertical divider offers the same parameters as the regular divider but instead the divider is vertical.
 
@@ -144,7 +145,7 @@ VerticalDivider()
 - [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/divider.dart)
 - [Dartpad demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/dividers/theme&gh_ref=develop)
 
-The following shows an inset divider with [Shrine theming](https://material.io/design/material-studies/shrine.html):0
+The following shows an inset divider with [Shrine theming](https://material.io/design/material-studies/shrine.html)
 
 ```dart
 import 'package:flutter/material.dart';
