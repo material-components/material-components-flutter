@@ -2,35 +2,43 @@ import 'package:flutter/material.dart';
 
 void main() => runApp(MyApp());
 
-class MyApp extends StatelessWidget {
+class MyApp extends StatefulWidget {
+  @override
+  _MyAppState createState() => _MyAppState();
+}
+
+class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
-      debugShowCheckedModeBanner: false,
-      home: MyHomePage(),
       theme: _buildShrineTheme(),
+      home: Scaffold(
+        body: DividerThemeDemo(),
+      ),
     );
   }
 }
 
-class MyHomePage extends StatelessWidget {
+class DividerThemeDemo extends StatelessWidget {
+  @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text('Banners'),
-      ),
-      body: MaterialBanner(
-        content: const Text('Error message text'),
-        leading: CircleAvatar(child: Icon(Icons.delete)),
-        actions: [
-          FlatButton(
-            child: const Text('ACTION 1'),
-            onPressed: () {},
+    return Center(
+      child: Column(
+        children: <Widget>[
+          Expanded(
+            child: Container(
+              child: const Center(
+                child: Text('Start'),
+              ),
+            ),
           ),
-          FlatButton(
-            child: const Text('ACTION 2'),
-            onPressed: () {},
+          const Divider(),
+          Expanded(
+            child: Container(
+              child: const Center(
+                child: Text('End'),
+              ),
+            ),
           ),
         ],
       ),
@@ -42,17 +50,15 @@ ThemeData _buildShrineTheme() {
   final ThemeData base = ThemeData.light();
   return base.copyWith(
     colorScheme: _shrineColorScheme,
-    toggleableActiveColor: shrinePink400,
     accentColor: shrineBrown900,
     primaryColor: shrinePink100,
-    primaryColorLight: shrinePink100,
     buttonColor: shrinePink100,
     scaffoldBackgroundColor: shrineBackgroundWhite,
     cardColor: shrineBackgroundWhite,
     textSelectionColor: shrinePink100,
     errorColor: shrineErrorRed,
-    buttonTheme: ButtonThemeData(
-      colorScheme: _shrineColorScheme.copyWith(primary: shrinePink400),
+    buttonTheme: const ButtonThemeData(
+      colorScheme: _shrineColorScheme,
       textTheme: ButtonTextTheme.normal,
     ),
     primaryIconTheme: _customIconTheme(base.iconTheme),

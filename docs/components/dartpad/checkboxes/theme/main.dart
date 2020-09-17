@@ -41,16 +41,18 @@ class _CheckboxesDemoState extends State<CheckboxesDemo> {
                     onChanged: i == 4
                         ? null
                         : (bool value) {
-                      setState(() {
-                        checked[i] = value;
-                      });
-                    },
+                            setState(() {
+                              checked[i] = value;
+                            });
+                          },
                     tristate: i == 1,
                     value: checked[i],
                   ),
                   Text(
                     'Checkbox ${i + 1}',
-                    style: Theme.of(context).textTheme.subtitle1.copyWith(color: i == 4 ? Colors.black38 : Colors.black),
+                    style: Theme.of(context).textTheme.subtitle1.copyWith(
+                          color: i == 4 ? Colors.black38 : Colors.black,
+                        ),
                   ),
                 ],
                 mainAxisAlignment: MainAxisAlignment.center,
