@@ -35,7 +35,7 @@ A dialog is a type of modal window that appears in front of app content to provi
 
 Dialogs are purposefully interruptive, so they should be used sparingly.
 
-Before you can use Material dialogss, you need to import the Material Components package for Flutter: `package:flutter/material.dart`.
+Before you can use Material dialogs, you need to import the Material Components package for Flutter: `package:flutter/material.dart`.
 
 You need to use a [`MaterialApp`](https://api.flutter.dev/flutter/material/MaterialApp-class.html).
 
