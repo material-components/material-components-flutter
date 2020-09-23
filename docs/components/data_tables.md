@@ -161,7 +161,7 @@ A data table consists of the following properties:
 | &nbsp; | Property |
 | --- | --- |
 | **Color** | style |
-| **Stroke color** | while setting `ThemeData` fill out `divideColor` parameter |
+| **Stroke color** | while setting `ThemeData` fill out `dividerColor` parameter |
 
 #### Column header names
 
