@@ -80,7 +80,7 @@ Linear progress indicators display progress by animating an indicator along the 
 - [Class definition](https://api.flutter.dev/flutter/material/LinearProgressIndicator-class.html)
 - [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/progress_indicator.dart)
 - [Dartpad demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/progress_indicators/linear&gh_ref=develop)
-- [Youtube video](https://www.youtube.com/watch?v=O-rhXZLtpv0&list=PLjxrf2q8roU23XGwz3Km7sQZFTdB996iG&index=75&ab_channel=Flutter)
+- [YouTube video](https://www.youtube.com/watch?v=O-rhXZLtpv0&list=PLjxrf2q8roU23XGwz3Km7sQZFTdB996iG&index=75&ab_channel=Flutter)
 The following example shows an indeterminate linear progress indicator:
 
 ![Linear Progress Indicator](assets/progress_indicators/linear_progress_indicator.png)

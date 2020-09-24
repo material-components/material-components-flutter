@@ -119,7 +119,7 @@ Fixed tabs display all tabs on one screen, with each tab at a fixed width. The w
 - [Class definition](https://api.flutter.dev/flutter/material/TabBar-class.html)
 - [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/tabs.dart)
 - [Dartpad demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/tabs/fixed&gh_ref=develop)
-- [Youtube video](https://www.youtube.com/watch?v=POtoEH-5l40&list=PLjxrf2q8roU23XGwz3Km7sQZFTdB996iG&index=67&ab_channel=Flutter)
+- [YouTube video](https://www.youtube.com/watch?v=POtoEH-5l40&list=PLjxrf2q8roU23XGwz3Km7sQZFTdB996iG&index=67&ab_channel=Flutter)
 - [Demo site](https://gallery.flutter.dev/#/demo/tabs)
 
 The following example shows a row of of fixed tabs.

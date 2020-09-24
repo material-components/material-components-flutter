@@ -60,7 +60,7 @@ Full-bleed dividers separate content into sections and span the entire length of
 - [Class definition](https://api.flutter.dev/flutter/material/Divider-class.html)
 - [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/divider.dart)
 - [Dartpad demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/dividers/full_bleed_divider&gh_ref=develop)
-
+- [YouTube video](https://www.youtube.com/watch?v=_liUC641Nmk&vl=en&ab_channel=Flutter)
 The following example shows a list with full-bleed dividers:
 
 ![Full bleed divider](assets/dividers/full_bleed_divider.png)

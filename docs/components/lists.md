@@ -67,8 +67,8 @@ Source code API:
 - [Class definition](https://api.flutter.dev/flutter/material/ListTile-class.html)
 - [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/list_tile.dart)
 - [Dartpad Demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/lists/single&gh_ref=develop)
-- [ListView Youtube video](https://www.youtube.com/watch?v=KJpkjHGiI5A&list=PLjxrf2q8roU23XGwz3Km7sQZFTdB996iG&index=53&ab_channel=Flutter)
-- [ListTile Youtube video](https://www.youtube.com/watch?v=l8dj0yPBvgQ&list=PLjxrf2q8roU23XGwz3Km7sQZFTdB996iG&index=54&ab_channel=Flutter)
+- [ListView YouTube video](https://www.youtube.com/watch?v=KJpkjHGiI5A&list=PLjxrf2q8roU23XGwz3Km7sQZFTdB996iG&index=53&ab_channel=Flutter)
+- [ListTile YouTube video](https://www.youtube.com/watch?v=l8dj0yPBvgQ&list=PLjxrf2q8roU23XGwz3Km7sQZFTdB996iG&index=54&ab_channel=Flutter)
 
 ![Single-line list example](assets/lists/single-line-list-example.png)
 
