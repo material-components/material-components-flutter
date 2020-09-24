@@ -333,6 +333,7 @@ API and source code:
 - [Class definition](https://api.flutter.dev/flutter/material/ToggleButtons-class.html)
 - [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/toggle_buttons.dart)
 - [Dartpad demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/buttons/icon&gh_ref=develop)
+- [Youtube video](https://www.youtube.com/watch?v=kVEguaQWGAY&list=PLjxrf2q8roU23XGwz3Km7sQZFTdB996iG&index=63&ab_channel=Flutter)
 
 The following example shows a toggle button with three buttons that have text labels.
 

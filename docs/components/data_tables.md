@@ -42,6 +42,7 @@ For more guidance on writing labels, go to [our page on how to write a good acce
 - [Class description](https://api.flutter.dev/flutter/material/DataTable-class.html)
 - [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/data_table.dart)
 - [Dartpad demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/data_tables/normal&gh_ref=develop)
+- [Youtube video](https://www.youtube.com/watch?v=ktTajqbhIcY&list=PLjxrf2q8roU23XGwz3Km7sQZFTdB996iG&index=57&ab_channel=Flutter)
 - [Demo site](https://gallery.flutter.dev/#/demo/data-table)
 
 ![Demo table without Theme](assets/data_tables/data_table_no_theme.png)

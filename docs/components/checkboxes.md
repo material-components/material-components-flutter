@@ -43,6 +43,7 @@ Flutter's APIs support accessibility setting for large fonts, screen readers, an
 - [Class description](https://api.flutter.dev/flutter/material/Checkbox-class.html)
 - [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/checkbox.dart)
 - [Dartpad demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/checkboxes/regular&gh_ref=develop)
+- [Youtube video](https://www.youtube.com/watch?v=RkSqPAn9szs&list=PLjxrf2q8roU23XGwz3Km7sQZFTdB996iG&index=82&t=35s&ab_channel=Flutter)
 
 The following example should five checkboxes. The first one is enabled, the second one has tristate enabled, and the last one is disabled.
 
