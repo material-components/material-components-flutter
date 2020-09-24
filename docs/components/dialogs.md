@@ -58,6 +58,7 @@ Alert dialogs interrupt users with urgent information, details, or actions.
 - [Class description](https://api.flutter.dev/flutter/material/AlertDialog-class.html)
 - [Github source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/dialog.dart)
 - [Dartpad demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/dialogs/alert&gh_ref=develop)
+- [YouTube video](https://www.youtube.com/watch?v=75CsnyRXf5I&list=PLjxrf2q8roU23XGwz3Km7sQZFTdB996iG&index=59&ab_channel=Flutter)
 
 The following example shows an alert dialog.
 

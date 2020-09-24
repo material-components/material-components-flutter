@@ -68,6 +68,7 @@ The following is an anatomy diagram of a snackbar:
 - [Class definition](https://api.flutter.dev/flutter/material/SnackBar-class.html)
 - [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/snack_bar.dart)
 - [Dartpad Demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/snackbars/regular&gh_ref=develop)
+- [YouTube video](https://www.youtube.com/watch?v=zpO6n_oZWw0&list=PLjxrf2q8roU23XGwz3Km7sQZFTdB996iG&index=69&ab_channel=Flutter)
 
 The following is an example of a snackbar with an action button:
 

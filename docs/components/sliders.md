@@ -111,6 +111,7 @@ API and source code:
 - [Class definition](https://api.flutter.dev/flutter/material/Slider-class.html)
 - [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/slider.dart)
 - [Dartpad demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/sliders/continous_slider&gh_ref=develop)
+- [YouTube video](https://www.youtube.com/watch?v=ufb4gIPDmEs&list=PLjxrf2q8roU23XGwz3Km7sQZFTdB996iG&index=58&ab_channel=Flutter)
 
 !["Continous Slider"](assets/sliders/continous_slider.png)
 

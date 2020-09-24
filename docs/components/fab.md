@@ -54,7 +54,8 @@ Regular FABs are FABs that are not expanded and are a regular size.
 
 - [Class description](https://api.flutter.dev/flutter/material/FloatingActionButton-class.html)
 - [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/floating_action_button.dart)
-- [Dartpad Demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/fabs/regular&gh_ref=develop)
+- [Dartpad demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/fabs/regular&gh_ref=develop)
+- [YouTube video](https://www.youtube.com/watch?v=2uaoEDOgk_I&list=PLjxrf2q8roU23XGwz3Km7sQZFTdB996iG&index=9&ab_channel=GoogleDevelopers)
 
 The following example shows a regular FAB.
 
