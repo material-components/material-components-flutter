@@ -77,7 +77,6 @@ For more guidance on writing labels, go to our page on how to write a good acces
 ------ | ---------
 **Color** | `color` on the `child` of the `Drawer` when using a `Container`
 **Height** | `height` on the `child` of the `Drawer` when using a `Container`
-**Overlay window** |
 
 ### Header attributes
 
