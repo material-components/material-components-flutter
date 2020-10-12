@@ -42,7 +42,7 @@ class _MyHomePageState extends State<MyHomePage> {
         child: ListView(
           // Important: Remove any padding from the ListView.
           padding: EdgeInsets.zero,
-          children: <Widget>[
+          children: [
             Padding(
               padding: const EdgeInsets.all(16.0),
               child: Text(

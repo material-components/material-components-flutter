@@ -1,5 +1,5 @@
 <!--docs:
-title: "Material <component>"
+title: "Material Navigation Drawer"
 layout: detail
 section: components
 excerpt: "Navigation drawers provide access to destinations in your app."
@@ -16,7 +16,6 @@ A [navigation drawer](https://material.io/components/navigation-drawer) provides
 ## Contents
 
 - [Using a navigation drawer](#using-a-navigation-drawer)
-- [Making navigation drawers accessible](#making-navigation-drawers-accessible)
 - [Anatomy](#anatomy)
 - [Types](#types)
 - [Standard navigation drawer](#standard-navigation-drawer)
