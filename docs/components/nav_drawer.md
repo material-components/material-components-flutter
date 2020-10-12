@@ -15,8 +15,6 @@ A [navigation drawer](https://material.io/components/navigation-drawer) provides
 
 ## Contents
 
-**Note to developers: review the TOC contents to ensure that all rel links apply to your platform dev doc**
-
 * [Using a navigation drawer](#using-a-navigation-drawer)
 * [Making navigation drawers accessible](#making-navigation-drawers-accessible)
 * [Anatomy](#anatomy)
