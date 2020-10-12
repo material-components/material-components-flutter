@@ -15,14 +15,14 @@ A [navigation drawer](https://material.io/components/navigation-drawer) provides
 
 ## Contents
 
-* [Using a navigation drawer](#using-a-navigation-drawer)
-* [Making navigation drawers accessible](#making-navigation-drawers-accessible)
-* [Anatomy](#anatomy)
-* [Types](#types)
-* [Standard navigation drawer](#standard-navigation-drawer)
-* [Modal navigation drawer](#modal-navigation-drawer)
-* [Bottom navigation drawer](#bottom-navigation-drawer)
-* [Theming a navigation drawer](#theming-a-navigation-drawer)
+- [Using a navigation drawer](#using-a-navigation-drawer)
+- [Making navigation drawers accessible](#making-navigation-drawers-accessible)
+- [Anatomy](#anatomy)
+- [Types](#types)
+- [Standard navigation drawer](#standard-navigation-drawer)
+- [Modal navigation drawer](#modal-navigation-drawer)
+- [Bottom navigation drawer](#bottom-navigation-drawer)
+- [Theming a navigation drawer](#theming-a-navigation-drawer)
 
 ## Using a navigation drawer
 
@@ -30,9 +30,9 @@ A navigation drawer provides access to destinations and app functionality, such 
 
 A navigation drawer is recommended for:
 
-* Apps with five or more top-level destinations
-* Apps with two or more levels of navigation hierarchy
-* Quick navigation between unrelated destinations
+- Apps with five or more top-level destinations
+- Apps with two or more levels of navigation hierarchy
+- Quick navigation between unrelated destinations
 
 Before you can use a Material navigation rail, you need to import the Material Components package for Flutter: `package:flutter/material.dart`.
 
@@ -151,9 +151,9 @@ _**NOTE: There is no explicit standard drawer in Flutter but it can be built usi
 ## Modal navigation drawer
 
 `Drawer`
-* [Class definition](https://api.flutter.dev/flutter/material/Drawer-class.html)
-* [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/drawer.dart)
-* [Dartpad demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/nav_drawer/modal&gh_ref=develop)
+- [Class definition](https://api.flutter.dev/flutter/material/Drawer-class.html)
+- [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/drawer.dart)
+- [Dartpad demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/nav_drawer/modal&gh_ref=develop)
 
 [Modal navigation drawers](https://material.io/components/navigation-drawer#modal-drawer) block interaction with the rest of an app’s content with a scrim. They are elevated above most of the app’s UI and don’t affect the screen’s layout grid.
 
