@@ -17,7 +17,6 @@ A [navigation drawer](https://material.io/components/navigation-drawer) provides
 
 - [Using a navigation drawer](#using-a-navigation-drawer)
 - [Anatomy](#anatomy)
-- [Types](#types)
 - [Standard navigation drawer](#standard-navigation-drawer)
 - [Modal navigation drawer](#modal-navigation-drawer)
 - [Bottom navigation drawer](#bottom-navigation-drawer)
@@ -41,13 +40,7 @@ To create a modal drawer in Flutter, create a `Drawer` and set it to the `Scaffo
 
 The `child` of the drawer can be a `ListView` or a `Container` wrapping a `ListView`. The children of the `ListView` can consist of a `DrawerHeader` and `ListTile`s.
 
-There is no explicit bottom drawer in Flutter.
-
-To create a bottom drawer in Flutter, `showModalBottomSheet` can be used with a menu icon within a `BottomAppBar` in the `bottomNavigationBar` slot in the `Scaffold`.
-
-There is no explicit standard drawer in Flutter.
-
-To create a standard drawer in Flutter, create a `Row` with 2 children: a `Container` and a `Scaffold`, with the `Container` acting as the drawer.
+There are no explicit bottom or standard drawers in Flutter. See the [Types]((#types) section for instructions to generate these drawer types specified in the [Material navigation drawer spec](https://material.io/components/navigation-drawer)
 
 ### Making navigation drawers accessible
 
@@ -56,6 +49,8 @@ Flutter's drawer component APIs support labeling for accessibility via the `sema
 For more guidance on writing labels, go to our page on how to write a good accessibility label.
 
 ## Anatomy
+
+The following is a navigation drawer anatomy diagram:
 
 ![Navigation drawer anatomy](assets/nav_drawer/NavDrawer-anatomy.png)
 
@@ -319,5 +314,8 @@ _**NOTE: There is no explicit bottom drawer in Flutter but it can be created by 
 ## Theming a navigation drawer
 
 Theming for a navigation drawer can be done by theming the widgets that are inside the `Drawer`.
+
+- The widget used for a drawer destination is commonly a `ListTile`, and can be themed with [`ListTileTheme`](https://api.flutter.dev/flutter/material/ListTileTheme-class.html).
+- Other `Text`s and `Icon`s can be themed with [`TextTheme`](https://api.flutter.dev/flutter/material/TextTheme-class.html) and [`IconTheme`](https://api.flutter.dev/flutter/widgets/IconTheme-class.html).
 
 In the [Modal navigation drawer](#modal-navigation-drawer) above, the colors of the active destinations are based off the `ThemeData.primaryColor`.
