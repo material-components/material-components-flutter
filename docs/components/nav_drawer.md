@@ -389,7 +389,11 @@ Bottom navigation drawers are modal drawers that are anchored to the bottom of t
 
 ### Bottom navigation drawer example
 
-_**NOTE: There is no bottom drawer in Flutter, but it can be created by creating custom `Widget` composed of `ListTile`, `Divider`, and `Text` widgets. A `PositionedTransition` can be used to animate the visibility of the drawer. The opening and closing of the drawer should be triggered by the tap of a menu icon within a `BottomAppBar` in the `bottomNavigationBar` slot in the `Scaffold`.**_
+_**  
+NOTE: There is no bottom drawer in Flutter, but it can be created by creating custom `Widget` composed of `ListTile`, `Divider`, and `Text` widgets.
+A [`PositionedTransition`](https://api.flutter.dev/flutter/widgets/PositionedTransition-class.html) can be used to animate the visibility of the drawer.
+The opening and closing of the drawer should be triggered by the tap of a menu icon within a `BottomAppBar` in the `bottomNavigationBar` slot in the `Scaffold`.  
+**_
 
 ```dart
   bottomNavigationBar: BottomAppBar(
