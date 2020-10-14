@@ -144,12 +144,14 @@ _**NOTE: There is no explicit standard drawer in Flutter but it can be built usi
 
 ## Modal navigation drawer
 
+[Modal navigation drawers](https://material.io/components/navigation-drawer#modal-drawer) block interaction with the rest of an app’s content with a scrim. They are elevated above most of the app’s UI and don’t affect the screen’s layout grid.
+
 `Drawer`
 - [Class definition](https://api.flutter.dev/flutter/material/Drawer-class.html)
 - [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/drawer.dart)
 - [Dartpad demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/nav_drawer/modal&gh_ref=develop)
 
-[Modal navigation drawers](https://material.io/components/navigation-drawer#modal-drawer) block interaction with the rest of an app’s content with a scrim. They are elevated above most of the app’s UI and don’t affect the screen’s layout grid.
+### Modal navigation drawer example
 
 ```dart
 import 'package:flutter/material.dart';
@@ -185,7 +187,8 @@ class _MyHomePageState extends State<MyHomePage> {
 
   @override
   Widget build(BuildContext context) {
-    final textTheme = Theme.of(context).textTheme;
+    final theme = Theme.of(context);
+    final textTheme = theme.textTheme;
 
     return Scaffold(
       appBar: AppBar(
@@ -207,21 +210,21 @@ class _MyHomePageState extends State<MyHomePage> {
               height: 1,
               thickness: 1,
             ),
-            _NavDrawerDestination(
-              iconData: Icons.favorite,
-              title: 'Item 1',
+            ListTile(
+              leading: Icon(Icons.favorite),
+              title: Text('Item 1'),
               selected: _selectedDestination == 0,
               onTap: () => selectDestination(0),
             ),
-            _NavDrawerDestination(
-              iconData: Icons.delete,
-              title: 'Item 2',
+            ListTile(
+              leading: Icon(Icons.delete),
+              title: Text('Item 2'),
               selected: _selectedDestination == 1,
               onTap: () => selectDestination(1),
             ),
-            _NavDrawerDestination(
-              iconData: Icons.label,
-              title: 'Item 3',
+            ListTile(
+              leading: Icon(Icons.label),
+              title: Text('Item 3'),
               selected: _selectedDestination == 2,
               onTap: () => selectDestination(2),
             ),
@@ -235,9 +238,9 @@ class _MyHomePageState extends State<MyHomePage> {
                 'Label',
               ),
             ),
-            _NavDrawerDestination(
-              iconData: Icons.bookmark,
-              title: 'Item A',
+            ListTile(
+              leading: Icon(Icons.bookmark),
+              title: Text('Item A'),
               selected: _selectedDestination == 3,
               onTap: () => selectDestination(3),
             ),
@@ -264,43 +267,6 @@ class _MyHomePageState extends State<MyHomePage> {
     setState(() {
       _selectedDestination = index;
     });
-  }
-}
-
-class _NavDrawerDestination extends StatelessWidget {
-  _NavDrawerDestination({
-    this.iconData,
-    this.title,
-    this.selected,
-    this.onTap,
-  });
-
-  final IconData iconData;
-  final String title;
-  final bool selected;
-  final VoidCallback onTap;
-
-  @override
-  Widget build(BuildContext context) {
-    final theme = Theme.of(context);
-    final textTheme = theme.textTheme;
-    final primaryColor = theme.primaryColor;
-
-    return ListTile(
-      leading: Icon(
-        iconData,
-        color: selected ? primaryColor : null,
-      ),
-      title: Text(
-        title,
-        style: textTheme.subtitle2.copyWith(
-          color: selected ? primaryColor : null,
-        ),
-      ),
-      selectedTileColor: primaryColor.withOpacity(0.12),
-      selected: selected,
-      onTap: onTap,
-    );
   }
 }
 ```

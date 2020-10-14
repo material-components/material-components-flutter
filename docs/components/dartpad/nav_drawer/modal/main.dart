@@ -8,7 +8,6 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: false,
       title: appTitle,
       home: MyHomePage(title: appTitle),
       theme: ThemeData(
@@ -32,7 +31,8 @@ class _MyHomePageState extends State<MyHomePage> {
 
   @override
   Widget build(BuildContext context) {
-    final textTheme = Theme.of(context).textTheme;
+    final theme = Theme.of(context);
+    final textTheme = theme.textTheme;
 
     return Scaffold(
       appBar: AppBar(
@@ -42,7 +42,7 @@ class _MyHomePageState extends State<MyHomePage> {
         child: ListView(
           // Important: Remove any padding from the ListView.
           padding: EdgeInsets.zero,
-          children: [
+          children: <Widget>[
             Padding(
               padding: const EdgeInsets.all(16.0),
               child: Text(
@@ -54,21 +54,21 @@ class _MyHomePageState extends State<MyHomePage> {
               height: 1,
               thickness: 1,
             ),
-            _NavDrawerDestination(
-              iconData: Icons.favorite,
-              title: 'Item 1',
+            ListTile(
+              leading: Icon(Icons.favorite),
+              title: Text('Item 1'),
               selected: _selectedDestination == 0,
               onTap: () => selectDestination(0),
             ),
-            _NavDrawerDestination(
-              iconData: Icons.delete,
-              title: 'Item 2',
+            ListTile(
+              leading: Icon(Icons.delete),
+              title: Text('Item 2'),
               selected: _selectedDestination == 1,
               onTap: () => selectDestination(1),
             ),
-            _NavDrawerDestination(
-              iconData: Icons.label,
-              title: 'Item 3',
+            ListTile(
+              leading: Icon(Icons.label),
+              title: Text('Item 3'),
               selected: _selectedDestination == 2,
               onTap: () => selectDestination(2),
             ),
@@ -82,9 +82,9 @@ class _MyHomePageState extends State<MyHomePage> {
                 'Label',
               ),
             ),
-            _NavDrawerDestination(
-              iconData: Icons.bookmark,
-              title: 'Item A',
+            ListTile(
+              leading: Icon(Icons.bookmark),
+              title: Text('Item A'),
               selected: _selectedDestination == 3,
               onTap: () => selectDestination(3),
             ),
@@ -111,42 +111,5 @@ class _MyHomePageState extends State<MyHomePage> {
     setState(() {
       _selectedDestination = index;
     });
-  }
-}
-
-class _NavDrawerDestination extends StatelessWidget {
-  _NavDrawerDestination({
-    this.iconData,
-    this.title,
-    this.selected,
-    this.onTap,
-  });
-
-  final IconData iconData;
-  final String title;
-  final bool selected;
-  final VoidCallback onTap;
-
-  @override
-  Widget build(BuildContext context) {
-    final theme = Theme.of(context);
-    final textTheme = theme.textTheme;
-    final primaryColor = theme.primaryColor;
-
-    return ListTile(
-      leading: Icon(
-        iconData,
-        color: selected ? primaryColor : null,
-      ),
-      title: Text(
-        title,
-        style: textTheme.subtitle2.copyWith(
-          color: selected ? primaryColor : null,
-        ),
-      ),
-      selectedTileColor: primaryColor.withOpacity(0.12),
-      selected: selected,
-      onTap: onTap,
-    );
   }
 }
