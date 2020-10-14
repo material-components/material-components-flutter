@@ -138,9 +138,116 @@ There are three types of navigation drawer, which include 1. [standard](#standar
 
 ### Standard navigation drawer example
 
-Standard navigation drawers allow interaction with both screen content and the drawer at the same time. They can be used on tablet and desktop, but they aren’t suitable for mobile due to limited screen size.
-
 _**NOTE: There is no explicit standard drawer in Flutter but it can be built using a `Row` that contains a `Container` and a `Scaffold`, with the `Container` acting as a drawer.**_
+
+```dart
+class MyHomePage extends StatefulWidget {
+  final String title;
+
+  MyHomePage({Key key, this.title}) : super(key: key);
+
+  @override
+  _MyHomePageState createState() => _MyHomePageState();
+}
+
+class _MyHomePageState extends State<MyHomePage> {
+  int _selectedDestination = 0;
+
+  @override
+  Widget build(BuildContext context) {
+    final theme = Theme.of(context);
+    final textTheme = theme.textTheme;
+
+    return Row(
+      children: [
+        Drawer(
+          child: ListView(
+            // Important: Remove any padding from the ListView.
+            padding: EdgeInsets.zero,
+            children: <Widget>[
+              Padding(
+                padding: const EdgeInsets.all(16.0),
+                child: Text(
+                  'Header',
+                  style: textTheme.headline6,
+                ),
+              ),
+              Divider(
+                height: 1,
+                thickness: 1,
+              ),
+              ListTile(
+                leading: Icon(Icons.favorite),
+                title: Text('Item 1'),
+                selected: _selectedDestination == 0,
+                onTap: () => selectDestination(0),
+              ),
+              ListTile(
+                leading: Icon(Icons.delete),
+                title: Text('Item 2'),
+                selected: _selectedDestination == 1,
+                onTap: () => selectDestination(1),
+              ),
+              ListTile(
+                leading: Icon(Icons.label),
+                title: Text('Item 3'),
+                selected: _selectedDestination == 2,
+                onTap: () => selectDestination(2),
+              ),
+              Divider(
+                height: 1,
+                thickness: 1,
+              ),
+              Padding(
+                padding: const EdgeInsets.all(16.0),
+                child: Text(
+                  'Label',
+                ),
+              ),
+              ListTile(
+                leading: Icon(Icons.bookmark),
+                title: Text('Item A'),
+                selected: _selectedDestination == 3,
+                onTap: () => selectDestination(3),
+              ),
+            ],
+          ),
+        ),
+        VerticalDivider(
+          width: 1,
+          thickness: 1,
+        ),
+        Expanded(
+          child: Scaffold(
+            appBar: AppBar(
+              title: Text(widget.title),
+            ),
+            body: GridView.count(
+              crossAxisCount: 2,
+              crossAxisSpacing: 20,
+              mainAxisSpacing: 20,
+              padding: EdgeInsets.all(20),
+              childAspectRatio: 3 / 2,
+              children: [
+                Image.asset('assets/nav-drawer-1.jpg'),
+                Image.asset('assets/nav-drawer-2.jpg'),
+                Image.asset('assets/nav-drawer-3.jpg'),
+                Image.asset('assets/nav-drawer-4.jpg'),
+              ],
+            ),
+          ),
+        ),
+      ],
+    );
+  }
+
+  void selectDestination(int index) {
+    setState(() {
+      _selectedDestination = index;
+    });
+  }
+}
+```
 
 ## Modal navigation drawer
 
@@ -275,7 +382,27 @@ class _MyHomePageState extends State<MyHomePage> {
 
 Bottom navigation drawers are modal drawers that are anchored to the bottom of the screen instead of the left or right edge. They are only used with bottom app bars.
 
-_**NOTE: There is no explicit bottom drawer in Flutter but it can be created by calling `showModalBottomSheet` from a menu icon within a `BottomAppBar` in the `bottomNavigationBar` slot in the `Scaffold`.**_
+### Bottom navigation drawer example
+
+_**NOTE: There is no bottom drawer in Flutter, but it can be created by creating custom `Widget` composed of `ListTile`, `Divider`, and `Text` widgets. A `PositionedTransition` can be used to animate the visibility of the drawer. The opening and closing of the drawer should be triggered by the tap of a menu icon within a `BottomAppBar` in the `bottomNavigationBar` slot in the `Scaffold`.**_
+
+```dart
+  bottomNavigationBar: BottomAppBar(
+    child: Row(
+      children: [
+        IconButton(
+          icon: Icon(Icons.menu),
+          onPressed: () {
+            // Animate a bottom drawer
+          },
+        ),
+        Spacer(),
+        IconButton(icon: Icon(Icons.search), onPressed: () {}),
+        IconButton(icon: Icon(Icons.more_vert), onPressed: () {}),
+      ],
+    ),
+  ),
+```
 
 ## Theming a navigation drawer
 
