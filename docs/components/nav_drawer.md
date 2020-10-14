@@ -136,6 +136,11 @@ There are three types of navigation drawer, which include 1. [standard](#standar
 
 [Standard navigation drawers](https://material.io/components/navigation-drawer#standard-drawer) allow interaction with both screen content and the drawer at the same time. They can be used on tablet and desktop, but they aren’t suitable for mobile due to limited screen size.
 
+`Drawer`
+- [Class definition](https://api.flutter.dev/flutter/material/Drawer-class.html)
+- [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/drawer.dart)
+- [Dartpad demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/nav_drawer/standard&gh_ref=develop)
+
 ### Standard navigation drawer example
 
 _**NOTE: There is no explicit standard drawer in Flutter but it can be built using a `Row` that contains a `Container` and a `Scaffold`, with the `Container` acting as a drawer.**_
