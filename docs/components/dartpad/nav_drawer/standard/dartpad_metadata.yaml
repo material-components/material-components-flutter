@@ -1,0 +1,4 @@
+name: Material Standard Navigation Drawer Demonstration
+mode: flutter
+files:
+  - name: main.dart
