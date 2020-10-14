@@ -413,6 +413,8 @@ The opening and closing of the drawer should be triggered by the tap of a menu i
   ),
 ```
 
+For a more complete bottom drawer implementation, see this [example from the Flutter Gallery](https://github.com/flutter/gallery/blob/master/lib/studies/reply/adaptive_nav.dart).
+
 ## Theming a navigation drawer
 
 Theming for a navigation drawer can be done by theming the widgets that are inside the `Drawer`.
