@@ -17,17 +17,13 @@ api_doc_root: true
 # Contents
 
 - [Using menus](#using-menus)
-- [Installing menus](#installing-menus)
-- [Making menus accessible](#making-menus-accessible)
-- [Dropdown menus](#dropdown-menus)
-- [Exposed dropdown menus](#exposed-dropdown-menus)
+- [Anatomy](#anatomy)
+- [Types](#types)
 - [Theming](#theming)
 
 ## Using menus
 
 A menu displays a list of choices on a temporary surface. They appear when users interact with a button, action, or other control.
-
-### Installing menus
 
 ### Making menus accessible
 
@@ -53,7 +49,6 @@ The following are menu anatomy diagrams showing all possible elements:
 ------ | ---------
 **Color** | Use the `PopupMenuButton` widget. Within this widget use the `Colors` property
 **Height** | Use the `PopupMenuButton` widget. Within this widget use the `padding` property.
-**Overlay window** | Use the `PopupMenuButton` widget. Within this widget use `itemBuilder` property. Each item added to this list will add an additional window.
 
 ### Leading icon attributes
 
@@ -91,7 +86,7 @@ Adding cascading menu | Not currently supported.
 
 &nbsp;         | Property
 -------------- | ------------------------
- | Use the `PopupMenuButton` widget. Within this widget use `itemBuilder`. Within the list of itemBuilder add a `CheckedPopupMenuItem`.
+Adding selection state attributes | Use the `PopupMenuButton` widget. Within this widget use `itemBuilder`. Within the list of itemBuilder add a `CheckedPopupMenuItem`.
 
 ## Types
 
@@ -111,7 +106,7 @@ The following is an example of a dropdown menu:
 
 - [Class definition](https://api.flutter.dev/flutter/material/PopupMenuButton-class.html)
 - [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/popup_menu.dart)
-- [Dartpad Demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/menus/dropdown&gh_ref=develop)
+- [Dartpad demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/menus/dropdown&gh_ref=develop)
 
 ![Dropdown menu example](assets/menus/dropdown_menu_example.png)
 
@@ -154,7 +149,7 @@ The following is an example of a dropdown menu:
 
 - [Class definition](https://api.flutter.dev/flutter/material/DropdownButton-class.html)
 - [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/dropdown.dart)
-- [Dartpad Demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/menus/exposed_dropdown&gh_ref=develop)
+- [Dartpad demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/menus/exposed_dropdown&gh_ref=develop)
 
 ![Exposed Dropdown menu example](assets/menus/exposed_dropdown_menu_example.png)
 
@@ -197,13 +192,13 @@ DropdownButton(
 
 ## Theming
 
-Menus support [Material Theming](https://material.io/components/chips/#theming) and can be customized in terms of color, typography and shape.
+Menus support [Material Theming](https://material.io/components/menus#theming) and can be customized in terms of color, typography and shape.
 
 ### Theming example
 
 The following is an example of a dropdown menu:
 
-- [Dartpad Demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/menus/theme&gh_ref=develop)
+- [Dartpad demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/menus/theme&gh_ref=develop)
 
 ![Dropdown menu themed example](assets/menus/dropdown_menu_themed_example.png)
 
@@ -224,14 +219,7 @@ class MyApp extends StatelessWidget {
   }
 }
 
-class DropdownMenuDemo extends StatefulWidget {
-  @override
-  _DropdownMenuDemoState createState() => _DropdownMenuDemoState();
-}
-
-class _DropdownMenuDemoState extends State<DropdownMenuDemo> {
-  Map<int, bool> countToValue = <int, bool>{};
-
+class DropdownMenuDemo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(

@@ -14,14 +14,7 @@ class MyApp extends StatelessWidget {
   }
 }
 
-class DropdownMenuDemo extends StatefulWidget {
-  @override
-  _DropdownMenuDemoState createState() => _DropdownMenuDemoState();
-}
-
-class _DropdownMenuDemoState extends State<DropdownMenuDemo> {
-  Map<int, bool> countToValue = <int, bool>{};
-
+class DropdownMenuDemo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
