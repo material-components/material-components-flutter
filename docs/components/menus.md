@@ -151,7 +151,7 @@ The following is an example of a dropdown menu:
 - [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/dropdown.dart)
 - [Dartpad demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/menus/exposed_dropdown&gh_ref=develop)
 
-![Exposed Dropdown menu example](assets/menus/exposed_dropdown_menu_example.png)
+![Exposed Dropdown menu example listing 6 options](assets/menus/exposed_dropdown_menu_example.png)
 
 ```dart
 DropdownButton(
@@ -200,7 +200,7 @@ The following is an example of a dropdown menu:
 
 - [Dartpad demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/menus/theme&gh_ref=develop)
 
-![Dropdown menu themed example](assets/menus/dropdown_menu_themed_example.png)
+![Dropdown menu with dark brown text and gray icons](assets/menus/dropdown_menu_themed_example.png)
 
 ```dart
 import 'package:flutter/material.dart';
