@@ -32,11 +32,9 @@ Common use cases include:
 
 Mobile time pickers are displayed in dialogs and can be used to select hours, minutes, and a period of time
 
-
 ## Making time pickers accessible 
 
 Flutter's APIs support accessibility setting for large fonts, screen readers, and sufficient contrast. For more information, go to Flutter's [accessibility](https://flutter.dev/docs/development/accessibility-and-localization/accessibility) and [internationalization](https://flutter.dev/docs/development/accessibility-and-localization/internationalization) pages.
-
 
 ## Types
 
@@ -51,7 +49,6 @@ There are two types of time pickers: 1\. [mobile time pickers](#mobile-time-pick
 Mobile time pickers can be used to specify time down to hours and minutes in a time period. They are displayed in a dialog.  
 
 Mobile time pickers allow selection of hours and minutes. They aren’t ideal for selecting granular amounts of time, such as milliseconds for a stopwatch application.
-
 
 #### Mobile time pickers example
 
@@ -111,7 +108,6 @@ final TimeOfDay newTime = await showTimePicker(
 **Color** | `dayPeriodColor` property in `TimePickerThemeData`
 **Text Color** | `dayPeriodTextColor` property in `TimePickerThemeData`
 **Text Style** | `dayPeriodTextStyle` property in `TimePickerThemeData`
-
 
 ### Mobile time input pickers
 
@@ -173,7 +169,6 @@ final TimeOfDay newTime = await showTimePicker(
 **Color** | `dayPeriodColor` property in `TimePickerThemeData`
 **Text Color** | `dayPeriodTextColor` property in `TimePickerThemeData`
 **Text Style** | `dayPeriodTextStyle` property in `TimePickerThemeData`
-
 
 ## Theming time pickers
 
