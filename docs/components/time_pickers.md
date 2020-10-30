@@ -59,7 +59,7 @@ Mobile time pickers allow selection of hours and minutes. They aren’t ideal fo
 
 The following example shows a time picker.
 
-![Time picker](assets/time_pickers/time_picker_example.png)
+![Time picker with dial set to 7 and input showing 7:15AM](assets/time_pickers/time_picker_example.png)
 
 ```dart
 final TimeOfDay newTime = await showTimePicker(
@@ -122,7 +122,7 @@ Mobile time input pickers allow users to specify time using the numbers on a key
 
 The following example shows a time input picker.
 
-![Time input picker](assets/time_pickers/time_input_picker_example.png)
+![Time picker input set to 7:15AM](assets/time_pickers/time_input_picker_example.png)
 
 ```dart
 final TimeOfDay newTime = await showTimePicker(
@@ -176,7 +176,7 @@ The following example shows a mobile time picker that uses the [Shrine theme](ht
 
 - [Dartpad demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/time_pickers/theme&gh_ref=develop)
 
-![Time Picker with Shrine theme](assets/time_pickers/time_picker_theme_example.png)
+![Time picker set to 7:15AM, selected hour in pink and other text in brown](assets/time_pickers/time_picker_theme_example.png)
 
 ```dart
 import 'package:flutter/material.dart';
