@@ -17,7 +17,7 @@ class MyHomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceAround,
-      children: const <Widget>[
+      children: const [
         Icon(
           Icons.masks_rounded,
           color: Colors.pink,
