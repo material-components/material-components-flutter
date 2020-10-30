@@ -16,20 +16,19 @@ path: /catalog/time-pickers/
 
 ## Contents
 
-**Note to developers: review the TOC contents to ensure that all rel links apply to your platform dev doc**
-
-* [Using time pickers](#using-time-pickers)
-* [Making time pickers accessible](#making-time-pickers-accessible)
-* [Mobile time pickers](#mobile-time-pickers)
-* [Mobile time input pickers](#mobile-time-input-pickers)
-* [Theming time pickers](#theming-time-pickers)
+- [Using time pickers](#using-time-pickers)
+- [Making time pickers accessible](#making-time-pickers-accessible)
+- [Mobile time pickers](#mobile-time-pickers)
+- [Mobile time input pickers](#mobile-time-input-pickers)
+- [Theming time pickers](#theming-time-pickers)
 
 ## Using time pickers
 
-Time pickers allow users to enter a specific time value. They can be used for a wide range of scenarios.  
+Time pickers allow users to enter a specific time value. They can be used for a wide range of scenarios.
+
 Common use cases include:
-* Setting an alarm
-* Scheduling a meeting
+- Setting an alarm
+- Scheduling a meeting
 
 Mobile time pickers are displayed in dialogs and can be used to select hours, minutes, and a period of time
 
@@ -51,19 +50,14 @@ There are two types of time pickers: 1\. [mobile time pickers](#mobile-time-pick
 
 Mobile time pickers can be used to specify time down to hours and minutes in a time period. They are displayed in a dialog.  
 
-* Common use cases include: 
-* Setting an alarm
-* Scheduling a meeting
-
 Mobile time pickers allow selection of hours and minutes. They aren’t ideal for selecting granular amounts of time, such as milliseconds for a stopwatch application.
 
 
 #### Mobile time pickers example
 
-
 `showTimePicker`
-* [Class definition](https://api.flutter.dev/flutter/material/showTimePicker.html)
-* [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/time_picker.dart)
+- [Class definition](https://api.flutter.dev/flutter/material/showTimePicker.html)
+- [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/time_picker.dart)
 - [Dartpad demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/time_pickers/regular&gh_ref=develop)
 
 The following example shows a time picker.
