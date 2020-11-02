@@ -17,26 +17,78 @@ class MyHomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
-        child: Row(
+        child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceAround,
-          children: const [
-            Icon(
-              Icons.masks_rounded,
-              color: Colors.pink,
-              size: 24.0,
-              semanticLabel: 'Wear a mask',
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              children: const [
+                Icon(
+                  Icons.wash_rounded,
+                  color: Colors.pink,
+                  size: 48.0,
+                  semanticLabel: 'Wash your hands',
+                ),
+                Icon(
+                  Icons.wash_sharp,
+                  color: Colors.green,
+                  size: 48.0,
+                  semanticLabel: 'Wash your hands',
+                ),
+                Icon(
+                  Icons.wash_outlined,
+                  color: Colors.black,
+                  size: 48.0,
+                  semanticLabel: 'Wash your hands',
+                ),
+              ],
             ),
-            Icon(
-              Icons.wash_rounded,
-              color: Colors.green,
-              size: 30.0,
-              semanticLabel: 'Wash your hands',
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              children: const [
+                Icon(
+                  Icons.chat_rounded,
+                  color: Colors.blue,
+                  size: 48.0,
+                  semanticLabel: 'Compose a message',
+                ),
+                Icon(
+                  Icons.chat_sharp,
+                  color: Colors.green,
+                  size: 48.0,
+                  semanticLabel: 'Compose a message',
+                ),
+                Icon(
+                  Icons.chat_outlined,
+                  color: Colors.purple,
+                  size: 48.0,
+                  semanticLabel: 'Compose a message',
+                ),
+              ],
             ),
-            Icon(
-              Icons.six_ft_apart_rounded,
-              color: Colors.blue,
-              size: 36.0,
-              semanticLabel: 'Socially distance',
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              children: const [
+                Icon(
+                  Icons.shopping_cart_rounded,
+                  color: Colors.green,
+                  size: 48.0,
+                  semanticLabel: 'View my shopping cart',
+                ),
+                Icon(
+                  Icons.shopping_cart_sharp,
+                  color: Colors.orange,
+                  size: 48.0,
+                  semanticLabel: 'View my shopping cart',
+                ),
+                Icon(
+                  Icons.shopping_cart_outlined,
+                  color: Colors.purple,
+                  size: 48.0,
+                  semanticLabel: 'View my shopping cart',
+                ),
+              ],
             ),
           ],
         ),
