@@ -15,6 +15,12 @@ class MyApp extends StatelessWidget {
 class MyHomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    const washSemanticLabel = 'Wash your hands';
+    const chatSemanticLabel = 'Compose a message';
+    const shoppingCartSemanticLabel = 'View my shopping cart';
+
+    const iconSize = 48.0;
+
     return Scaffold(
       body: Center(
         child: Column(
@@ -27,20 +33,20 @@ class MyHomePage extends StatelessWidget {
                 Icon(
                   Icons.wash_rounded,
                   color: Colors.pink,
-                  size: 48.0,
-                  semanticLabel: 'Wash your hands',
+                  size: iconSize,
+                  semanticLabel: washSemanticLabel,
                 ),
                 Icon(
                   Icons.wash_sharp,
                   color: Colors.green,
-                  size: 48.0,
-                  semanticLabel: 'Wash your hands',
+                  size: iconSize,
+                  semanticLabel: washSemanticLabel,
                 ),
                 Icon(
                   Icons.wash_outlined,
                   color: Colors.black,
-                  size: 48.0,
-                  semanticLabel: 'Wash your hands',
+                  size: iconSize,
+                  semanticLabel: washSemanticLabel,
                 ),
               ],
             ),
@@ -50,20 +56,20 @@ class MyHomePage extends StatelessWidget {
                 Icon(
                   Icons.chat_rounded,
                   color: Colors.blue,
-                  size: 48.0,
-                  semanticLabel: 'Compose a message',
+                  size: iconSize,
+                  semanticLabel: chatSemanticLabel,
                 ),
                 Icon(
                   Icons.chat_sharp,
                   color: Colors.green,
-                  size: 48.0,
-                  semanticLabel: 'Compose a message',
+                  size: iconSize,
+                  semanticLabel: chatSemanticLabel,
                 ),
                 Icon(
                   Icons.chat_outlined,
                   color: Colors.purple,
-                  size: 48.0,
-                  semanticLabel: 'Compose a message',
+                  size: iconSize,
+                  semanticLabel: chatSemanticLabel,
                 ),
               ],
             ),
@@ -73,20 +79,20 @@ class MyHomePage extends StatelessWidget {
                 Icon(
                   Icons.shopping_cart_rounded,
                   color: Colors.green,
-                  size: 48.0,
-                  semanticLabel: 'View my shopping cart',
+                  size: iconSize,
+                  semanticLabel: shoppingCartSemanticLabel,
                 ),
                 Icon(
                   Icons.shopping_cart_sharp,
                   color: Colors.orange,
-                  size: 48.0,
-                  semanticLabel: 'View my shopping cart',
+                  size: iconSize,
+                  semanticLabel: shoppingCartSemanticLabel,
                 ),
                 Icon(
                   Icons.shopping_cart_outlined,
                   color: Colors.purple,
-                  size: 48.0,
-                  semanticLabel: 'View my shopping cart',
+                  size: iconSize,
+                  semanticLabel: shoppingCartSemanticLabel,
                 ),
               ],
             ),
