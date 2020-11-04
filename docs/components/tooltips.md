@@ -15,9 +15,11 @@ path: /catalog/Tooltips/
 
 ## Contents
 
-[Using tooltips](#using-tooltips)
-[Tooltips example](#tooltips-example)
-[Theming tooltips](#theming-tooltips)
+- [Using tooltips](#using-tooltips)
+  - [Making tooltips accessible](#making-tooltips-accessible)
+  - [Key properties for tooltips](#key-properties-for-tooltips)
+- [Tooltips example](#tooltips-example)
+- [Theming tooltips](#theming-tooltips)
 
 ## Using tooltips
 
@@ -26,6 +28,28 @@ When activated, tooltips display a text label identifying an element, such as a 
 ### Making tooltips accessible
 
 Screen readers will read the `message` property of the `Tooltip`. Adding tooltips is also a good way to make other `Widget`s in your app more accessible.
+
+### Key properties for tooltips
+
+A tooltip has text label and a container.
+
+1. Text label
+1. Container
+
+#### Text label for tooltip
+
+| &nbsp; | Property |
+| --- | --- |
+| **Text label** | `message` of `Tooltip` |
+| **Color** | `color` of `textStyle` of `Tooltip` |
+| **Typography** | `textStyle` of `Tooltip` |
+
+#### Container for tooltip
+
+| &nbsp; | Property |
+| --- | --- |
+| **Color** | `color`  of `decoration` of `Tooltip`|
+| **Shape** | `shape` of `decoration` of `Tooltip` |
 
 ## Tooltips example
 
@@ -86,15 +110,19 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Tooltip Demo',
       debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+        tooltipTheme: TooltipThemeData(
+          decoration: ShapeDecoration(
+            color: Color(0xFF232F34),
+            shape: StadiumBorder(),
+          ),
+          textStyle: TextStyle(color: Colors.white),
+        ),
+      ),
       home: Scaffold(
         body: Center(
           child: Tooltip(
-            message: 'play',
-            decoration: ShapeDecoration(
-              color: Color(0xFF232F34),
-              shape: StadiumBorder(),
-            ),
-            textStyle: TextStyle(color: Colors.white),
+            message: 'Play',
             child: Icon(Icons.play_arrow),
           ),
         ),

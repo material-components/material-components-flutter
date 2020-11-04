@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         body: Center(
           child: Tooltip(
-            message: 'play',
+            message: 'Play',
             child: Icon(Icons.play_arrow),
           ),
         ),
