@@ -16,8 +16,6 @@ path: /catalog/Tooltips/
 ## Contents
 
 - [Using tooltips](#using-tooltips)
-  - [Making tooltips accessible](#making-tooltips-accessible)
-  - [Key properties for tooltips](#key-properties-for-tooltips)
 - [Tooltips example](#tooltips-example)
 - [Theming tooltips](#theming-tooltips)
 
