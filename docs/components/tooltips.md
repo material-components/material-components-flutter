@@ -11,7 +11,7 @@ path: /catalog/Tooltips/
 
 [Tooltips](https://material.io/components/tooltips) display informative text when users hover over, focus on, or tap an element.
 
-![Tooltip example in a text editor app](assets/tooltips/Tooltips_hero.png)
+![Tooltip for "Bold" in a text editor menu](assets/tooltips/Tooltips_hero.png)
 
 ## Contents
 
