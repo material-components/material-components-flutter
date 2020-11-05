@@ -56,7 +56,7 @@ A tooltip has text label and a container.
 - [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/tooltip.dart)
 - [Dartpad demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/tooltips/regular&gh_ref=develop)
 
-![Tooltip example](assets/tooltips/tooltip_demo.png)
+![Tooltip for 'Play' icon with rounded corner shape, white text, and dark gray background](assets/tooltips/tooltip_demo.png)
 
 ```dart
 import 'package:flutter/material.dart';
@@ -95,7 +95,7 @@ To change the background color and shape, use the `decoration` property. To chan
 
 The following example shows a play icon and tooltip using Material's [Reply](https://material.io/design/material-studies/reply.html) theme.
 
-![Tooltip example](assets/tooltips/tooltip_demo_theme.png)
+![Tooltip for 'Play' icon with pill shape, white text and blue-gray background](assets/tooltips/tooltip_demo_theme.png)
 
 ```dart
 import 'package:flutter/material.dart';
