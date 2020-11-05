@@ -1,0 +1,4 @@
+name: Material Regular Time Pickers Demonstration
+mode: flutter
+files:
+  - name: main.dart
