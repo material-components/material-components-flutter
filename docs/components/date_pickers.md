@@ -54,9 +54,9 @@ Mobile date pickers allow selection of a single date and year.
 - [GitHub souce](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/pickers/date_picker_dialog.dart)
 - [Dartpad demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/date_pickers/regular&gh_ref=develop)
 
-The following example shows a date picker.
+The following example shows a date picker with a selected date of November 17, 2020 and a current date of November 13, 2020.
 
-![Date picker with date set to November 17, 2020](assets/date_pickers/date_picker_example.png)
+![Date picker with selected date of November 17, 2020 and current date of November 13, 2020](assets/date_pickers/date_picker_example.png)
 
 ```dart
 final DateTime newDate = await showDatePicker(
@@ -118,7 +118,7 @@ Common use cases include:
 
 The following example shows a date range picker.
 
-![Date range picker with dates set from November 17, 2020 to November 24, 2020](assets/date_pickers/date_range_picker_example.png)
+![Date range picker selecting November 17, 2020 to November 24, 2020, current date of November 13, 2020.](assets/date_pickers/date_range_picker_example.png)
 
 ```dart
 final DateTimeRange newDateRange = await showDateRangePicker(
