@@ -20,7 +20,7 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  DateTime _date = DateTime(2020, 10, 17);
+  DateTime _date = DateTime(2020, 11, 17);
 
   void _selectDate() async {
     final DateTime newDate = await showDatePicker(
@@ -37,6 +37,7 @@ class _MyHomePageState extends State<MyHomePage> {
     }
   }
 
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(

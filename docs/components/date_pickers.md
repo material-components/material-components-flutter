@@ -75,12 +75,12 @@ The following diagram shows the elements of a date picker:
 ![Date pickers anatomy diagram](assets/date_pickers/pickers_anatomy.png)
 
 1. Title
-2. Selected date
-3. Switch-to-keyboard input icon
-4. Year selection menu
-5. Month pagination
-6. Current date
-7. Selected date
+1. Selected date
+1. Switch-to-keyboard input icon
+1. Year selection menu
+1. Month pagination
+1. Current date
+1. Selected date
 
 #### Title
 
@@ -140,13 +140,13 @@ The following diagram shows the elements of a date range picker:
 ![Date pickers anatomy diagram](assets/date_pickers/range_pickers_anatomy.png)
 
 1. Title
-2. Selected date range
-3. Switch to keyboard input icon
-4. Month and year label
-5. Current date
-6. Start date
-7. Selected range
-8. End date
+1. Selected date range
+1. Switch to keyboard input icon
+1. Month and year label
+1. Current date
+1. Start date
+1. Selected range
+1. End date
 
 #### Title
 
@@ -215,6 +215,7 @@ class _MyHomePageState extends State<MyHomePage> {
     }
   }
 
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
