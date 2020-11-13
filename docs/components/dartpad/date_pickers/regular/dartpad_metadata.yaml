@@ -1,0 +1,4 @@
+name: Material Regular Date Pickers Demonstration
+mode: flutter
+files:
+  - name: main.dart
