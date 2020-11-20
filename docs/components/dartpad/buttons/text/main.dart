@@ -28,6 +28,7 @@ class MyHomePage extends StatelessWidget {
               },
               child: Text("TEXT BUTTON"),
             ),
+            SizedBox(height: 8.0),
             TextButton.icon(
               onPressed: () {
                 // Respond to button press

@@ -27,6 +27,7 @@ class MyHomePage extends StatelessWidget {
               },
               child: Text('CONTAINED BUTTON'),
             ),
+            SizedBox(height: 8.0),
             ElevatedButton.icon(
               onPressed: () {
                 // Respond to button press

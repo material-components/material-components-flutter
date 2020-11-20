@@ -27,6 +27,7 @@ class MyHomePage extends StatelessWidget {
               },
               child: Text("OUTLINED BUTTON"),
             ),
+            SizedBox(height: 8.0),
             OutlinedButton.icon(
               onPressed: () {
                 // Respond to button press

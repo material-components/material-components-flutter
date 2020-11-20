@@ -41,7 +41,7 @@ For more guidance on writing labels, go to [our page on how to write a good acce
 
 There are four types of buttons: 1. [Text button](#text-button), 2. [Outlined button](#outlined-button), 3. [Contained button](#contained-button), 4. [Toggle button](#toggle-button)
 
-![Four button types shown](assets/buttons/button-types.svg)
+![Four button types shown](assets/buttons/buttons_types.png)
 
 ## Text button
 
@@ -57,9 +57,9 @@ API and source code:
 - [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/text_button.dart)
 - [Dartpad demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/buttons/text&gh_ref=develop)
 
-The following example shows a text button with a text label.
+!["Text button examples with purple text 'Text button' and '+' icon over a white background."](assets/buttons/text-button.png)
 
-!["Text button example for Flutter with purple text 'Text button' over a white background."](assets/buttons/text-button.svg)
+The following example shows a text button with a text label.
 
 ```dart
 TextButton(
@@ -71,8 +71,6 @@ TextButton(
 ```
 
 The following example shows a text button with an icon.
-
-!["Text button with purple text 'Text button' and '+' icon over a white background."](assets/buttons/text-button-icon.svg)
 
 ```dart
 TextButton.icon(
@@ -141,7 +139,7 @@ API and source code:
 - [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/outlined_button.dart)
 - [Dartpad demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/buttons/outlined&gh_ref=develop)
 
-!["Outlined button with purple text 'Outlined button' and grey border over a white background."](assets/buttons/outlined-button.svg)
+!["Outlined button examples with purple text 'Text button' and '+' icon and grey border over a white background."](assets/buttons/outlined-button.png)
 
 ```dart
 OutlinedButton(
@@ -153,8 +151,6 @@ OutlinedButton(
 ```
 
 The following example shows an outlined button with an icon.
-
-!["Outlined button with purple text 'Outlined button', grey border and '+' icon over a white background."](assets/buttons/outlined-button-icon.svg)
 
 ```dart
 OutlinedButton.icon(
@@ -224,9 +220,9 @@ API and source code:
 - [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/elevated_button.dart)
 - [Dartpad demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/buttons/contained&gh_ref=develop)
 
-The following example shows a contained button with a text label and a filled container.
+!["Contained button examples with white text 'Contained button' and '+' icon over a purple background."](assets/buttons/contained-button.png)
 
-!["Contained button with white text 'Contained button' and purple container over a white background."](assets/buttons/contained-button.svg)
+The following example shows a contained button with a text label and a filled container.
 
 ```dart
 ElevatedButton(
@@ -238,8 +234,6 @@ ElevatedButton(
 ```
 
 The following example shows a contained button with an icon.
-
-!["Contained button with white text 'Contained button', purple container and '+' icon over a white background."](assets/buttons/contained-button-icon.svg)
 
 ```dart
 ElevatedButton.icon(
@@ -319,7 +313,7 @@ API and source code:
 
 The following example shows a toggle button with three buttons that have text labels.
 
-!["Toggle button example with text labels - 'Button 1', 'Button 2' and 'Button 3' - and grey/purple borders over a white background."](assets/buttons/toggle-button-text.svg)
+!["Toggle button example with text labels - 'Button 1', 'Button 2' and 'Button 3' - and grey/purple borders over a white background."](assets/buttons/toggle-button-text.png)
 
 In the state:
 
@@ -367,7 +361,7 @@ ToggleButtons(
 
 The following example shows a toggle button with three buttons that have icons.
 
-!["Toggle button example for Flutter with icons - heart, eye and bell - and grey/purple borders over a white background."](assets/buttons/toggle-button.svg)
+!["Toggle button example for Flutter with icons - heart, eye and bell - and grey/purple borders over a white background."](assets/buttons/toggle-button.png)
 
 ```dart
 ToggleButtons(
