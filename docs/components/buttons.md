@@ -41,7 +41,7 @@ For more guidance on writing labels, go to [our page on how to write a good acce
 
 There are four types of buttons: 1. [Text button](#text-button), 2. [Outlined button](#outlined-button), 3. [Contained button](#contained-button), 4. [Toggle button](#toggle-button)
 
-![Four button types shown](assets/buttons/button-types.svg)
+![Four button types shown](assets/buttons/buttons_types.png)
 
 ## Text button
 
@@ -51,42 +51,38 @@ There are four types of buttons: 1. [Text button](#text-button), 2. [Outlined bu
 
 API and source code:
 
-`FlatButton`
+`TextButton`
 
-- [Class description](https://api.flutter.dev/flutter/material/FlatButton-class.html)
-- [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/flat_button.dart)
-- [Dartpad demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/buttons/flat&gh_ref=develop)
+- [Class description](https://api.flutter.dev/flutter/material/TextButton-class.html)
+- [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/text_button.dart)
+- [Dartpad demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/buttons/text&gh_ref=develop)
+
+!["Text button examples with purple text 'Text button' and '+' icon over a white background."](assets/buttons/text-button.png)
 
 The following example shows a text button with a text label.
 
-!["Text button example for Flutter with purple text 'Text button' over a white background."](assets/buttons/text-button.svg)
-
 ```dart
-FlatButton(
-    textColor: Color(0xFF6200EE),
-    onPressed: () {
-        // Respond to button press
-    },
-    child: Text("TEXT BUTTON"),
+TextButton(
+  onPressed: () {
+      // Respond to button press
+  },
+  child: Text("TEXT BUTTON"),
 )
 ```
 
 The following example shows a text button with an icon.
 
-!["Text button with purple text 'Text button' and '+' icon over a white background."](assets/buttons/text-button-icon.svg)
-
 ```dart
-FlatButton.icon(
-    textColor: Color(0xFF6200EE),
-    onPressed: () {
-        // Respond to button press
-    },
-    icon: Icon(Icons.add, size: 18),
-    label: Text("TEXT BUTTON"),
+TextButton.icon(
+  onPressed: () {
+      // Respond to button press
+  },
+  icon: Icon(Icons.add, size: 18),
+  label: Text("TEXT BUTTON"),
 )
 ```
 
-### Anatomy and key properties for flat button
+### Anatomy and key properties for text button
 
 A text button has a text label, a transparent container and an optional icon.
 
@@ -96,29 +92,25 @@ A text button has a text label, a transparent container and an optional icon.
 1. Container
 1. Icon
 
-#### Text label for flat button
+#### Text label for text button
 
 | &nbsp; | Property |
 | --- | --- |
-| **Text label** | `child` (`label` on `FlatButton.icon`) |
-| **Color** | `textColor` |
-| **Disabled Text Color** | `disabledTextColor` |
+| **Text label** | `child` (`label` on `TextButton.icon`) |
+| **Color** | `foregroundColor` on `TextButton.style` |
+| **Disabled Text Color** | `foregroundColor` on `TextButton.style` |
 | **Typography** | `style` on `child` or `label` |
 
-#### Container for flat button
+#### Container for text button
 
 | &nbsp; | Property |
 | --- | --- |
-| **Color** | `color` |
-| **Stroke color** | N/A |
-| **Stroke width** | N/A |
-| **Shape** | `shape` |
-| **Elevation** | `elevation` |
-| **Ripple color** | `splashColor` |
-| **Disabled color** | `disabledColor` |
-| **Disabled elevation** | `disabledElevation` |
+| **Color** | `backgroundColor` on `TextButton.style` |
+| **Shape** | `shape` on `TextButton.style` |
+| **Elevation** | `elevation` on `TextButton.style` |
+| **Ripple color** | `overlayColor` on `TextButton.style` |
 
-#### Icon for flat button
+#### Icon for text button
 
 | &nbsp; | Property |
 | --- | --- |
@@ -126,12 +118,12 @@ A text button has a text label, a transparent container and an optional icon.
 | **Color** | `color` on `icon` |
 | **Size** | `size` on `icon` |
 
-#### Constructors for flat button
+#### Constructors for text button
 
 | &nbsp; | Constructor |
 | --- | --- |
-| **Default constructor** | `FlatButton()` |
-| **Icon constructor** | `FlatButton.icon()` |
+| **Default constructor** | `TextButton()` |
+| **Icon constructor** | `TextButton.icon()` |
 
 ## Outlined button
 
@@ -141,42 +133,36 @@ A text button has a text label, a transparent container and an optional icon.
 
 API and source code:
 
-`OutlineButton`
+`OutlinedButton`
 
-- [Class definition](https://api.flutter.dev/flutter/material/OutlineButton-class.html)
-- [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/outline_button.dart)
-- [Dartpad demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/buttons/outline&gh_ref=develop)
+- [Class definition](https://api.flutter.dev/flutter/material/OutlinedButton-class.html)
+- [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/outlined_button.dart)
+- [Dartpad demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/buttons/outlined&gh_ref=develop)
 
-!["Outlined button with purple text 'Outlined button' and grey border over a white background."](assets/buttons/outlined-button.svg)
+!["Outlined button examples with purple text 'Text button' and '+' icon and grey border over a white background."](assets/buttons/outlined-button.png)
 
 ```dart
-OutlineButton(
-    textColor: Color(0xFF6200EE),
-    highlightedBorderColor: Colors.black.withOpacity(0.12),
-    onPressed: () {
-        // Respond to button press
-    },
-    child: Text("OUTLINED BUTTON"),
+OutlinedButton(
+  onPressed: () {
+      // Respond to button press
+  },
+  child: Text("OUTLINED BUTTON"),
 )
 ```
 
 The following example shows an outlined button with an icon.
 
-!["Outlined button with purple text 'Outlined button', grey border and '+' icon over a white background."](assets/buttons/outlined-button-icon.svg)
-
 ```dart
-OutlineButton.icon(
-    textColor: Color(0xFF6200EE),
-    highlightedBorderColor: Colors.black.withOpacity(0.12),
-    onPressed: () {
-        // Respond to button press
-    },
-    icon: Icon(Icons.add, size: 18),
-    label: Text("OUTLINED BUTTON"),
+OutlinedButton.icon(
+  onPressed: () {
+      // Respond to button press
+  },
+  icon: Icon(Icons.add, size: 18),
+  label: Text("OUTLINED BUTTON"),
 )
 ```
 
-### Anatomy and key properties for outline button
+### Anatomy and key properties for outlined button
 
 An outlined button has a text label, a stroked container and an optional icon.
 
@@ -186,27 +172,26 @@ An outlined button has a text label, a stroked container and an optional icon.
 1. Container
 1. Icon
 
-#### Text label for outline button
+#### Text label for outlined button
 
 | &nbsp; | Property |
 | --- | --- |
-| **Text label** | `child` (`label` on `OutlineButton.icon`) |
-| **Color** | `textColor` |
-| **Disabled Text Color** | `disabledTextColor` |
+| **Text label** | `child` (`label` on `OutlinedButton.icon`) |
+| **Color** | `foregroundColor` on `OutlinedButton.style` |
 | **Typography** | `style` on `child` or `label` |
 
-#### Container for outline button
+#### Container for outlined button
 
 | &nbsp; | Property |
 | --- | --- |
-| **Color** | `color` |
-| **Stroke color** | `borderSide` and `disabledBorderColor` and `highlightedBorderColor` |
-| **Stroke width** | `borderSide` |
-| **Shape** | `shape` |
-| **Elevation** | `elevation` |
-| **Ripple color** | `splashColor` |
+| **Color** | `backgroundColor` on `OutlinedButton.style` |
+| **Stroke color** | `side.color` on `OutlinedButton.style` |
+| **Stroke width** | `side.width` on `OutlinedButton.style` |
+| **Shape** | `shape` on `OutlinedButton.style` |
+| **Elevation** | `elevation` on `OutlinedButton.style` |
+| **Ripple color** | `overlayColor` on `OutlinedButton.style` |
 
-#### Icon for outline button
+#### Icon for outlined button
 
 | &nbsp; | Property |
 | --- | --- |
@@ -214,12 +199,12 @@ An outlined button has a text label, a stroked container and an optional icon.
 | **Color** | `color` on `icon` |
 | **Size** | `size` on `icon` |
 
-#### Constructors for outline button
+#### Constructors for outlined button
 
 | &nbsp; | Constructor |
 | --- | --- |
-| **Default constructor** | `OutlineButton` |
-| **Icon constructor** | `OutlineButton.icon` |
+| **Default constructor** | `OutlinedButton` |
+| **Icon constructor** | `OutlinedButton.icon` |
 
 ## Contained button
 
@@ -229,44 +214,38 @@ An outlined button has a text label, a stroked container and an optional icon.
 
 API and source code:
 
-`RaisedButton`
+`ElevatedButton`
 
-- [Class definition](https://api.flutter.dev/flutter/material/RaisedButton-class.html)
-- [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/raised_button.dart)
-- [Dartpad demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/buttons/raised&gh_ref=develop)
+- [Class definition](https://api.flutter.dev/flutter/material/ElevatedButton-class.html)
+- [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/elevated_button.dart)
+- [Dartpad demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/buttons/contained&gh_ref=develop)
+
+!["Contained button examples with white text 'Contained button' and '+' icon over a purple background."](assets/buttons/contained-button.png)
 
 The following example shows a contained button with a text label and a filled container.
 
-!["Contained button with white text 'Contained button' and purple container over a white background."](assets/buttons/contained-button.svg)
-
 ```dart
-RaisedButton(
-    textColor: Colors.white,
-    color: Color(0xFF6200EE),
-    onPressed: () {
-        // Respond to button press
-    },
-    child: Text('CONTAINED BUTTON'),
+ElevatedButton(
+  onPressed: () {
+      // Respond to button press
+  },
+  child: Text('CONTAINED BUTTON'),
 )
 ```
 
 The following example shows a contained button with an icon.
 
-!["Contained button with white text 'Contained button', purple container and '+' icon over a white background."](assets/buttons/contained-button-icon.svg)
-
 ```dart
-RaisedButton.icon(
-    textColor: Colors.white,
-    color: Color(0xFF6200EE),
-    onPressed: () {
-        // Respond to button press
-    },
-    icon: Icon(Icons.add, size: 18),
-    label: Text("CONTAINED BUTTON"),
+ElevatedButton.icon(
+  onPressed: () {
+      // Respond to button press
+  },
+  icon: Icon(Icons.add, size: 18),
+  label: Text("CONTAINED BUTTON"),
 )
 ```
 
-### Anatomy and key properties for raised button
+### Anatomy and key properties for elevated button
 
 A contained button has a text label, a filled container and an optional icon.
 
@@ -276,27 +255,24 @@ A contained button has a text label, a filled container and an optional icon.
 1. Container
 1. Icon
 
-#### Text label for raised button
+#### Text label for elevated button
 
 | &nbsp; | Property |
 | --- | --- |
-| **Text label** | `child` (`label` on `RaisedButton.icon`) |
-| **Color** | `textColor` |
-| **Disabled Text Color** | `disabledTextColor` |
+| **Text label** | `child` (`label` on `ElevatedButton.icon`) |
+| **Color** | `foregroundColor` on `ElevatedButton.style` |
 | **Typography** | `style` on `child` or `label` |
 
-#### Container for raised button
+#### Container for elevated button
 
 | &nbsp; | Property |
 | --- | --- |
-| **Color** | `color` |
-| **Stroke color** | N/A |
-| **Stroke width** | N/A |
-| **Shape** | `shape` |
-| **Elevation** | `elevation` |
-| **Ripple color** | `splashColor` |
+| **Color** | `backgroundColor` on `ElevatedButton.style` |
+| **Shape** | `shape` on `ElevatedButton.style` |
+| **Elevation** | `elevation` on `ElevatedButton.style` |
+| **Ripple color** | `overlayColor` on `ElevatedButton.style` |
 
-#### Icon for raised button
+#### Icon for elevated button
 
 | &nbsp; | Property |
 | --- | --- |
@@ -304,12 +280,12 @@ A contained button has a text label, a filled container and an optional icon.
 | **Color** | `color` on `icon` |
 | **Size** | `size` on `icon` |
 
-#### Constructors for raised button
+#### Constructors for elevated button
 
 | &nbsp; | Constructor |
 | --- | --- |
-| **Default constructor** | `RaisedButton` |
-| **Icon constructor** | `RaisedButton.icon` |
+| **Default constructor** | `ElevatedButton` |
+| **Icon constructor** | `ElevatedButton.icon` |
 
 ## Toggle button
 
@@ -337,7 +313,7 @@ API and source code:
 
 The following example shows a toggle button with three buttons that have text labels.
 
-!["Toggle button example with text labels - 'Button 1', 'Button 2' and 'Button 3' - and grey/purple borders over a white background."](assets/buttons/toggle-button-text.svg)
+!["Toggle button example with text labels - 'Button 1', 'Button 2' and 'Button 3' - and grey/purple borders over a white background."](assets/buttons/toggle-button-text.png)
 
 In the state:
 
@@ -385,7 +361,7 @@ ToggleButtons(
 
 The following example shows a toggle button with three buttons that have icons.
 
-!["Toggle button example for Flutter with icons - heart, eye and bell - and grey/purple borders over a white background."](assets/buttons/toggle-button.svg)
+!["Toggle button example for Flutter with icons - heart, eye and bell - and grey/purple borders over a white background."](assets/buttons/toggle-button.png)
 
 ```dart
 ToggleButtons(
@@ -481,13 +457,122 @@ Buttons support [Material Theming](https://material.io/components/buttons/#themi
 
 The following example shows text, outlined and contained button types with the [Material Shrine Theme](https://material.io/design/material-studies/shrine.html).
 
+- [Dartpad demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/buttons/theme&gh_ref=develop)
+
 ![Example of buttons with Shrine theme](assets/buttons/button_theming_screenshot.png)
 
-#### Implementing button theming
-
-The Material Shrine theme uses the following colors:
-
 ```dart
+import 'package:flutter/material.dart';
+
+void main() => runApp(MyApp());
+
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Flutter Demo',
+      debugShowCheckedModeBanner: false,
+      theme: _buildShrineTheme(),
+      home: MyHomePage(),
+    );
+  }
+}
+
+class MyHomePage extends StatelessWidget {
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            TextButton(
+              onPressed: () {
+                // Respond to button press
+              },
+              child: Text('TEXT BUTTON'),
+            ),
+            SizedBox(height: 8.0),
+            OutlinedButton(
+              onPressed: () {
+                // Respond to button press
+              },
+              child: Text("OUTLINED BUTTON"),
+            ),
+            SizedBox(height: 8.0),
+            ElevatedButton(
+              onPressed: () {
+                // Respond to button press
+              },
+              child: Text("CONTAINED BUTTON"),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+ThemeData _buildShrineTheme() {
+  final ThemeData base = ThemeData.light();
+  return base.copyWith(
+    colorScheme: _shrineColorScheme,
+    toggleableActiveColor: shrinePink400,
+    accentColor: shrineBrown900,
+    primaryColor: shrinePink100,
+    buttonColor: shrinePink100,
+    scaffoldBackgroundColor: shrineBackgroundWhite,
+    cardColor: shrineBackgroundWhite,
+    textSelectionColor: shrinePink100,
+    errorColor: shrineErrorRed,
+    primaryIconTheme: _customIconTheme(base.iconTheme),
+    textTheme: _buildShrineTextTheme(base.textTheme),
+    primaryTextTheme: _buildShrineTextTheme(base.primaryTextTheme),
+    accentTextTheme: _buildShrineTextTheme(base.accentTextTheme),
+    iconTheme: _customIconTheme(base.iconTheme),
+  );
+}
+
+IconThemeData _customIconTheme(IconThemeData original) {
+  return original.copyWith(color: shrineBrown900);
+}
+
+TextTheme _buildShrineTextTheme(TextTheme base) {
+  return base
+      .copyWith(
+        caption: base.caption.copyWith(
+          fontWeight: FontWeight.w400,
+          fontSize: 14,
+          letterSpacing: defaultLetterSpacing,
+        ),
+        button: base.button.copyWith(
+          fontWeight: FontWeight.w500,
+          fontSize: 14,
+          letterSpacing: defaultLetterSpacing,
+        ),
+      )
+      .apply(
+        fontFamily: 'Rubik',
+        displayColor: shrineBrown900,
+        bodyColor: shrineBrown900,
+      );
+}
+
+const ColorScheme _shrineColorScheme = ColorScheme(
+  primary: shrinePink400,
+  primaryVariant: shrineBrown900,
+  secondary: shrinePink50,
+  secondaryVariant: shrineBrown900,
+  surface: shrineSurfaceWhite,
+  background: shrineBackgroundWhite,
+  error: shrineErrorRed,
+  onPrimary: shrineBrown900,
+  onSecondary: shrineBrown900,
+  onSurface: shrineBrown900,
+  onBackground: shrineBrown900,
+  onError: shrineSurfaceWhite,
+  brightness: Brightness.light,
+);
+
 const Color shrinePink50 = Color(0xFFFEEAE6);
 const Color shrinePink100 = Color(0xFFFEDBD0);
 const Color shrinePink300 = Color(0xFFFBB8AC);
@@ -500,30 +585,6 @@ const Color shrineErrorRed = Color(0xFFC5032B);
 
 const Color shrineSurfaceWhite = Color(0xFFFFFBFA);
 const Color shrineBackgroundWhite = Colors.white;
-```
 
-In the theme category within the `MaterialApp` class:
-
-```dart
-theme: ThemeData(
-  buttonColor: shrinePink100,
-  buttonTheme: const ButtonThemeData(
-    colorScheme: ColorScheme(
-      primary: shrinePink100,
-      primaryVariant: shrineBrown900,
-      secondary: shrinePink50,
-      secondaryVariant: shrineBrown900,
-      surface: shrineSurfaceWhite,
-      background: shrineBackgroundWhite,
-      error: shrineErrorRed,
-      onPrimary: shrineBrown900,
-      onSecondary: shrineBrown900,
-      onSurface: shrineBrown900,
-      onBackground: shrineBrown900,
-      onError: shrineSurfaceWhite,
-      brightness: Brightness.light,
-     ),
-    textTheme: ButtonTextTheme.normal,
-  ),
-),
+const defaultLetterSpacing = 0.03;
 ```
