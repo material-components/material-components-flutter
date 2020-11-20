@@ -8,6 +8,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
+      theme: ThemeData(colorScheme: ColorScheme.light()),
       home: MyHomePage(),
     );
   }
@@ -20,24 +21,18 @@ class MyHomePage extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            RaisedButton(
-              textColor: Colors.white,
-              color: Color(0xFF6200EE),
-              highlightColor: Colors.transparent,
+            OutlinedButton(
               onPressed: () {
                 // Respond to button press
               },
-              child: Text('CONTAINED BUTTON'),
+              child: Text("OUTLINED BUTTON"),
             ),
-            RaisedButton.icon(
-              textColor: Colors.white,
-              color: Color(0xFF6200EE),
-              highlightColor: Colors.transparent,
+            OutlinedButton.icon(
               onPressed: () {
                 // Respond to button press
               },
               icon: Icon(Icons.add, size: 18),
-              label: Text("CONTAINED BUTTON"),
+              label: Text("OUTLINED BUTTON"),
             ),
           ],
         ),
