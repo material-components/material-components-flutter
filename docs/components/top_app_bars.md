@@ -13,7 +13,7 @@ The [top app bar](https://material.io/components/app-bars-top/#) displays inform
 
 ![Top App Bar with Page Title](assets/top_app_Bars/../top_app_bars/Topappbars_hero.png)
 
-## Contents
+**Contents**
 
 - [Using the top app bar](#using-the-top-app-bar)
 - [Regular top app bar](#regular-top-app-bar)

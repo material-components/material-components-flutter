@@ -13,7 +13,7 @@ path: /catalog/material-button/
 
 ![Example Button with text learn more](assets/buttons/Buttons_hero.png)
 
-## Contents
+**Contents**
 
 - [Using buttons](#using-buttons)
 - [Text button](#text-button)

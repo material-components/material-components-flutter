@@ -13,7 +13,7 @@ path: /catalog/material-text-field/
 
 ![Three text fiels: title, price, location](assets/text_fields/Textfields_hero.png)
 
-## Contents
+**Contents**
 
 - [Using text fields](#using-text-fields)
 - [Filled text](#filled-text)

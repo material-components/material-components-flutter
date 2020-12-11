@@ -12,7 +12,7 @@ path: /catalog/floating-action-button/
 A floating action button (FAB) represents the primary action of a screen.
 ![List with Regular FAB application](assets/fabs/FABs_hero.png)
 
-## Contents
+**Contents**
 
 - [Using FABs](#using-fabs)
 - [Regular FABs](#regular-fabs)

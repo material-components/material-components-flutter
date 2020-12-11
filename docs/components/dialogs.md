@@ -13,7 +13,7 @@ path: /catalog/dialog/
 
 ![Dialogs Hero](assets/dialogs/dialogs_hero.png)
 
-## Contents
+**Contents**
 
 - [Types](#types)
 - [Using banners](#using-dialogs)
