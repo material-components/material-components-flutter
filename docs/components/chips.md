@@ -13,7 +13,7 @@ path: /catalog/material-chips/
 
 ![Hero image of an input chip](assets/chips/chips-hero.png)
 
-## Contents
+**Contents**
 
 - [Using chips](#using-chips)
 - [Anatomy and key properties](#anatomy-and-key-properties)

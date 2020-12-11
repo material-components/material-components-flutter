@@ -13,7 +13,7 @@ path: /catalog/material-bottom-app-bar/
 
 ![Example bottom app bar with inset floating action button](assets/bottom_app_bars/bottom-app-bar-hero.png)
 
-## Contents
+**Contents**
 
 - [Using the bottom app bar](#using-the-bottom-app-bar)
 - [Bottom app bar example](#bottom-app-bar-example)

@@ -13,7 +13,7 @@ path: /catalog/tabs
 
 ![fixed tab example](assets/tabs/tabs_hero.png)
 
-## Contents
+**Contents**
 
 - [Using tabs](#using-tabs)
 - [Fixed tabs](#fixed-tabs)

@@ -13,7 +13,7 @@ path: /catalog/date-pickers/
 
 ![Mobile date picker for November 2018 with "17" selected.](assets/date_pickers/pickers_hero.png)
 
-## Contents
+**Contents**
 
 - [Using date pickers](#using-pickers)
 - [Making date pickers accessible](#making-pickers-accessible)

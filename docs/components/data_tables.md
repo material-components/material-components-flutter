@@ -14,7 +14,7 @@ api_doc_root: true
 
 ![Data table with 5 rows: 1 header row, 4 rows, one column of checkboxes](assets/data_tables/data-table-hero.png)
 
-## Contents
+**Contents**
 
 - [Using data tables](#using-data-tables)
 - [Theming data tables](#theming-data-tables)

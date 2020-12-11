@@ -13,8 +13,7 @@ path: /catalog/time-pickers/
 
 ![Time picker with input and dial set to 7PM](assets/time_pickers/TimePicker_hero.png)
 
-
-## Contents
+**Contents**
 
 - [Using time pickers](#using-time-pickers)
 - [Making time pickers accessible](#making-time-pickers-accessible)

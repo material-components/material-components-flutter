@@ -14,7 +14,7 @@ api_doc_root: true
 
 ![Menu hero example showing two cascading menus](assets/menus/menus-hero.png)
 
-# Contents
+**Contents**
 
 - [Using menus](#using-menus)
 - [Anatomy](#anatomy)
