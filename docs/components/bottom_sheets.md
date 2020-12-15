@@ -13,7 +13,7 @@ path: /catalog/material-sheets-bottom/
 
 ![Example bottom sheet: modal bottom sheet](assets/bottom_sheets/SheetsBottom_hero.png)
 
-## Contents
+**Contents**
 
 - [Using bottom sheets](#using-bottom-sheets)
 - [Making bottom sheets accessible](#making-bottom-sheets-accessible)
@@ -58,16 +58,88 @@ Standard bottom sheets co-exist with the screen’s main UI region and allow for
 ### Standard bottom sheet example
 
 `BottomSheet`
-* [Class definition](https://api.flutter.dev/flutter/material/BottomSheet-class.html)
-* [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/bottom_sheet.dart)
-* [Demo site](link here)
+- [Class definition](https://api.flutter.dev/flutter/material/BottomSheet-class.html)
+- [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/bottom_sheet.dart)
+- [Dartpad demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/bottom_sheets/standard&gh_ref=develop)
 
-**Note to developers: Generate code and screenshots (expanded and collapsed) for a standard bottom sheet showing the following:**
-* An app screen showing an [example image](assets/bottom_sheets/SheetsBottom_standard_image)
-* A standard bottom sheet (collapsed) that shows:
-    * A header "Header"
-* A standard bottom sheet (expanded) of an app that shows:
-    * "Title 1", "Title 2" ... "Title 5"
+
+The following is an example expanded standard bottom sheet:
+![An expanded standard bottom sheet with header and list items](assets/bottom_sheets/SheetsBottom_standard_screenshot.jpg)
+
+```dart
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Standard Bottom Sheet Demo',
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+        colorScheme: Theme.of(context).colorScheme.copyWith(
+          primary: Color(0xFF6200EE),
+        ),
+      ),
+      home: Scaffold(
+        // Use a Builder to get a context within the Scaffold.
+        body: Builder(
+          builder: (context) {
+            return Center(
+              child: FlatButton(
+                child: Text('Show Bottom Sheet'),
+                onPressed: () {
+                  showBottomSheet(
+                    context: context,
+                    builder: (context) {
+                      final theme = Theme.of(context);
+                      // Using Wrap makes the bottom sheet height the height of the content.
+                      // Otherwise, the height will be half the height of the screen.
+                      return Wrap(
+                        children: [
+                          ListTile(
+                            title: Text(
+                              'Header',
+                              style: theme.textTheme.subtitle1
+                                  .copyWith(color: theme.colorScheme.onPrimary),
+                            ),
+                            tileColor: theme.colorScheme.primary,
+                          ),
+                          ListTile(
+                            title: Text('Title 1'),
+                          ),
+                          ListTile(
+                            title: Text('Title 2'),
+                          ),
+                          ListTile(
+                            title: Text('Title 3'),
+                          ),
+                          ListTile(
+                            title: Text('Title 4'),
+                          ),
+                          ListTile(
+                            title: Text('Title 5'),
+                          ),
+                        ],
+                      );
+                    },
+                  );
+                },
+              ),
+            );
+          },
+        ),
+      ),
+    );
+  }
+}
+```
+
+The persistent bottom sheet can be used for a standard bottom sheet.
+Use a [DraggableScrollableSheet](https://api.flutter.dev/flutter/widgets/DraggableScrollableSheet-class.html) for more custom dragging and snap points.
 
 ### Anatomy and key properties
 
@@ -82,13 +154,13 @@ The following shows the anatomy of a standard bottom sheet:
 
 &nbsp;         | Property
 -------------- | ------------------------
- |
+| **Color** | `backgroundColor` |
+| **Elevation** | `elevation` |
+| **Shape** | `shape` |
 
 #### Contents properties
 
-&nbsp;         | Property
--------------- | ------------------------
- |
+There are no specific properties for content because the content can be any composition of widgets.
 
 ## Modal bottom sheet
 
@@ -99,18 +171,70 @@ Modal bottom sheets are used in mobile apps only.
 ### Modal bottom sheet example
 
 `BottomSheet`
-* [Class definition](https://api.flutter.dev/flutter/material/BottomSheet-class.html)
-* [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/bottom_sheet.dart)
-* [Demo site](link here)
+- [Class definition](https://api.flutter.dev/flutter/material/BottomSheet-class.html)
+- [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/bottom_sheet.dart)
+- [Dartpad demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/bottom_sheets/modal&gh_ref=develop)
 
+The following is an example modal bottom sheet:
+![A modal bottom sheet with share, link, edit, and delete list items](assets/bottom_sheets/SheetsBottom_modal_screenshot.jpg)
 
-**Note to developers: Generate code and a screenshot (expanded) for a modal bottom sheet showing the following:**
-* An image display app that shows an [example image](assets/bottom_sheets/SheetsBottom_modal_image.jpg) overlayed with a scrim
-* A modal bottom sheet with 4 user options:
-    * A "share" icon followed by "Share" text
-    * A "link" icon followed by "Get link" text
-    * An "edit" icon" followed by "Edit name" text
-    * A "delete" icon followed by "Delete collection" text
+```
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Standard Bottom Sheet Demo',
+      home: Scaffold(
+        // Use a Builder to get a context within the Scaffold.
+        body: Builder(
+          builder: (context) {
+            return Center(
+              child: FlatButton(
+                child: Text('Show Bottom Sheet'),
+                onPressed: () {
+                  showModalBottomSheet(
+                    context: context,
+                    builder: (context) {
+                      // Using Wrap makes the bottom sheet height the height of the content.
+                      // Otherwise, the height will be half the height of the screen.
+                      return Wrap(
+                        children: [
+                          ListTile(
+                            leading: Icon(Icons.share),
+                            title: Text('Share'),
+                          ),
+                          ListTile(
+                            leading: Icon(Icons.link),
+                            title: Text('Get link'),
+                          ),
+                          ListTile(
+                            leading: Icon(Icons.edit),
+                            title: Text('Edit name'),
+                          ),
+                          ListTile(
+                            leading: Icon(Icons.delete),
+                            title: Text('Delete collection'),
+                          ),
+                        ],
+                      );
+                    },
+                  );
+                },
+              ),
+            );
+          },
+        ),
+      ),
+    );
+  }
+}
+```
 
 ## Anatomy and key properties
 
@@ -127,127 +251,30 @@ The following shows the anatomy of a modal bottom sheet:
 
 &nbsp;         | Property
 -------------- | ------------------------
- |
+| **Color** | `backgroundColor` |
+| **Elevation** | `elevation` |
+| **Shape** | `shape` |
 
 #### Contents properties
 
-&nbsp;         | Property
--------------- | ------------------------
- |
+There are no specific properties for content because the content can be any composition of widgets.
 
 #### Scrim properties
 
 &nbsp;         | Property
 -------------- | ------------------------
- |
-
-
+| **Color** | `barrierColor` |
 
 
 ## Expanding bottom sheet
 
-An expanding bottom sheet is a surface anchored to the bottom of the screen that users can expand to access a feature or task. It can be used for:
-
-* **Persistently displaying a cross-app feature**, such as a shopping cart
-* **Collecting and acting on user selections** from a set of items, such as photos in a gallery
-* **Supporting tasks**, such as chat and comments
-* **Indirect navigation between items**, such as videos in a playlist
-
-Expanding bottom sheets are recommended for use on mobile and tablet.
-
-### Expanding bottom sheet example
-
-`BottomSheet`
-* [Class definition](https://api.flutter.dev/flutter/material/BottomSheet-class.html)
-* [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/bottom_sheet.dart)
-* [Demo site](link here)
-
-
-**Note to developers: Generate code and screenshots (collapsed and expanded) for an expanding bottom sheet showing the following:**
-* Collapsed:
-    * An image of [pasta](assets/bottom_sheets/SheetsBottom_expanding_1.jpg)
-    * A collapsed expanding bottom sheet container with a "cart" icon and a label that reads "Cart"
-* Expanded:
-    * A header
-    * A "close action" icon
-    * A label "Cart"
-    * Content showing a title "Pasta", and a "delete" icon
-
-### Anatomy and key properties
-
-The following shows the anatomy of an expanding bottom sheet:
-
-![Expanding bottom sheet anatomy](assets/bottom_sheets/expanding-anatomy.png)
-
-**Collapsed state**</br>
-1.Container</br>
-2.Icon</br>
-3.Label (Optional)
-
-**Expanded state**</br>
-4.Header</br>
-5.Close action</br>
-6.Label</br>
-7.Content</br>
-
-#### Container properties
-
-&nbsp;         | Property
--------------- | ------------------------
- |
-
-
-#### Icon properties
-
-&nbsp;         | Property
--------------- | ------------------------
- |
-
-#### Label properties
-
-&nbsp;         | Property
--------------- | ------------------------
- |
-
-#### Header properties
-
-&nbsp;         | Property
--------------- | ------------------------
- |
-
-#### Close action properties
-
-&nbsp;         | Property
--------------- | ------------------------
- |
-
-#### Label properties
-
-&nbsp;         | Property
--------------- | ------------------------
- |
-
-#### Content properties
-
-&nbsp;         | Property
--------------- | ------------------------
- |
+Expanding bottom sheets require creating a custom widget. See [Expanding bottom sheet](link) for more info.
+TODO: link https://github.com/material-components/material-components-flutter/blob/develop/docs/components/expanding-bottom-sheet.md on material.io
 
 ## Theming bottom sheets
 
+Theming for bottom sheets can be done by theming the widgets that are inside the `widget` returned by the `builder` of `showBottomSheet` or `showModalBottomSheet`.
 
-`\<API name\>`
-* [Class definition](link here)
-* [GitHub source](link here)
-* [Demo site](link here)
+- The widget used for list items is commonly a `ListTile`, and can be themed with [`ListTileTheme`](https://api.flutter.dev/flutter/material/ListTileTheme-class.html).
+- Other `Text`s and `Icon`s can be themed with [`TextTheme`](https://api.flutter.dev/flutter/material/TextTheme-class.html) and [`IconTheme`](https://api.flutter.dev/flutter/widgets/IconTheme-class.html).
 
-
-The following shows a modal bottom sheet  with [Shrine theming](https://material.io/design/material-studies/shrine.html):
-
-**Note to developers: Generate code and a screenshot (expanded) for a modal bottom sheet showing the following using [Shrine theming](https://material.io/design/material-studies/shrine.html):**
-* An image display app that shows an [example image](assets/bottom_sheets/SheetsBottom_modal_image.jpg) overlayed with a scrim
-* A modal bottom sheet with 4 user options:
-    * A "share" icon followed by "Share" text
-    * A "link" icon followed by "Get link" text
-    * An "edit" icon" followed by "Edit name" text
-    * A "delete" icon followed by "Delete collection" text
