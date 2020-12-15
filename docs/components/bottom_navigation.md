@@ -13,7 +13,7 @@ path: /components/bottom-navigation/
 
 ![Example bottom navigation bar with four icons along the bottom: favorites, music, places, and news. The music icon is selected](assets/bottom_navigation/Bottomnavigation_hero.png)
 
-## Contents
+**Contents**
 
 - [Using bottom navigation](#using-bottom-navigation)
 - [Bottom navigation example](#bottom-navigation-example)

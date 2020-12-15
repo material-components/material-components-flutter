@@ -13,7 +13,7 @@ path: /catalog/Snackbars/
 
 ![Snackbars hero image](assets/snackbars/snackbars-hero.png)
 
-## Contents
+**Contents**
 
 - [Using snackbars](#using-snackbars)
 - [Snackbars example](#snackbar-example)

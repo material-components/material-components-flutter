@@ -8,36 +8,33 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
+      theme: ThemeData(colorScheme: ColorScheme.light()),
       home: MyHomePage(),
     );
   }
 }
 
 class MyHomePage extends StatelessWidget {
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            RaisedButton(
-              textColor: Colors.white,
-              color: Color(0xFF6200EE),
-              highlightColor: Colors.transparent,
+            TextButton(
               onPressed: () {
                 // Respond to button press
               },
-              child: Text('CONTAINED BUTTON'),
+              child: Text("TEXT BUTTON"),
             ),
-            RaisedButton.icon(
-              textColor: Colors.white,
-              color: Color(0xFF6200EE),
-              highlightColor: Colors.transparent,
+            SizedBox(height: 8.0),
+            TextButton.icon(
               onPressed: () {
                 // Respond to button press
               },
               icon: Icon(Icons.add, size: 18),
-              label: Text("CONTAINED BUTTON"),
+              label: Text("TEXT BUTTON"),
             ),
           ],
         ),

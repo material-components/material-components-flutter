@@ -13,7 +13,7 @@ A [navigation drawer](https://material.io/components/navigation-drawer) provides
 
 ![Hero navigation drawer image](assets/nav_drawer/NavDrawer-hero.png)
 
-## Contents
+**Contents**
 
 - [Using a navigation drawer](#using-a-navigation-drawer)
 - [Anatomy](#anatomy)

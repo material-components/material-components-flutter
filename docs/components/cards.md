@@ -13,7 +13,7 @@ path: /catalog/material-card/
 
 ![Cards shaped in different ways](assets/cards/Cards_hero.png)
 
-## Contents
+**Contents**
 
 - [Using cards](#using-cards)
 - [Card](#card)

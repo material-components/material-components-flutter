@@ -13,7 +13,7 @@ path: /catalog/material-progress-indicators/
 
 ![Progress indicator hero](assets/progress_indicators/hero-1.gif)
 
-## Contents
+**Contents**
 
 - [Using progress indicators](#using-progress-indicators)
 - [Types](#types)

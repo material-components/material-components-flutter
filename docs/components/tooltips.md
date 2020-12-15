@@ -13,7 +13,7 @@ path: /catalog/Tooltips/
 
 ![Tooltip for "Bold" in a text editor menu](assets/tooltips/Tooltips_hero.png)
 
-## Contents
+**Contents**
 
 - [Using tooltips](#using-tooltips)
 - [Tooltips example](#tooltips-example)
