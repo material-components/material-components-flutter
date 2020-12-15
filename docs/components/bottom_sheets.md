@@ -11,7 +11,7 @@ path: /catalog/material-sheets-bottom/
 
 [Bottom sheets](https://material.io/components/sheets-bottom) are surfaces containing supplementary content that are anchored to the bottom of the screen.
 
-![Example bottom sheet: modal bottom sheet](assets/bottom_sheets/SheetsBottom_hero.png)
+![Bottom sheet with 4 items, with scrim covering the remaining screen.](assets/bottom_sheets/SheetsBottom_hero.png)
 
 **Contents**
 
@@ -44,10 +44,7 @@ For more guidance on writing labels, go to [our page on how to write a good acce
 
 ## Types
 
-There are three types suitable for different use cases:
-1. [Standard bottom sheets](#standard-bottom-sheet) display content that complements the screen’s primary content and remain visible while users interact with the primary content.
-1. [Modal bottom sheets](#modal-bottom-sheet) are an alternative to inline menus or simple dialogs on mobile and provide room for additional items, longer descriptions, and iconography, and must be dismissed in order to interact with the underlying content.
-1. [Expanding bottom sheets](#expanding-bottom-sheet) provide a small, collapsed surface that can be expanded by the user to access a key feature or task to offer the persistent access of a standard sheet with the space and focus of a modal sheet.
+There are three types of bottom sheets: 1. [Standard bottom sheets](#standard-bottom-sheet) 2. [Modal bottom sheets](#modal-bottom-sheet) 3. [Expanding bottom sheets](#expanding-bottom-sheet)
 
 ![Composite image of bottom sheet types](assets/bottom_sheets/bottom-sheet_types_composite.png)
 
@@ -65,7 +62,7 @@ Standard bottom sheets co-exist with the screen’s main UI region and allow for
 
 
 The following is an example expanded standard bottom sheet:
-![An expanded standard bottom sheet with header and list items](assets/bottom_sheets/SheetsBottom_standard_screenshot.jpg)
+![Bottom sheet with "Header" and 5 items partially covering image of paper stacks.](assets/bottom_sheets/SheetsBottom_standard_screenshot.jpg)
 
 ```dart
 import 'package:flutter/material.dart';
@@ -177,7 +174,7 @@ Modal bottom sheets are used in mobile apps only.
 - [Dartpad demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/bottom_sheets/modal&gh_ref=develop)
 
 The following is an example modal bottom sheet:
-![A modal bottom sheet with share, link, edit, and delete list items](assets/bottom_sheets/SheetsBottom_modal_screenshot.jpg)
+![Bottom sheet with share, link, edit, and delete items partially covering screen image with scrim of dogs drinking water.](assets/bottom_sheets/SheetsBottom_modal_screenshot.jpg)
 
 ```dart
 import 'package:flutter/material.dart';
@@ -268,6 +265,8 @@ There are no specific properties for content because the content can be any comp
 
 
 ## Expanding bottom sheet
+
+Expanding bottom sheets provide a small, collapsed surface that can be expanded by the user to access a key feature or task to offer the persistent access of a standard sheet with the space and focus of a modal sheet.
 
 Expanding bottom sheets require creating a custom widget. See [Expanding bottom sheet](https://github.com/material-components/material-components-flutter/blob/develop/docs/components/expanding-bottom-sheet.md) for more info.
 
