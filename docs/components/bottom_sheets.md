@@ -46,8 +46,8 @@ For more guidance on writing labels, go to [our page on how to write a good acce
 
 There are three types suitable for different use cases:
 1. [Standard bottom sheets](#standard-bottom-sheet) display content that complements the screen’s primary content and remain visible while users interact with the primary content.
-2. [Modal bottom sheets](#modal-bottom-sheet) are an alternative to inline menus or simple dialogs on mobile and provide room for additional items, longer descriptions, and iconography, and must be dismissed in order to interact with the underlying content.
-3. [Expanding bottom sheets](#expanding-bottom-sheet) provide a small, collapsed surface that can be expanded by the user to access a key feature or task to offer the persistent access of a standard sheet with the space and focus of a modal sheet.
+1. [Modal bottom sheets](#modal-bottom-sheet) are an alternative to inline menus or simple dialogs on mobile and provide room for additional items, longer descriptions, and iconography, and must be dismissed in order to interact with the underlying content.
+1. [Expanding bottom sheets](#expanding-bottom-sheet) provide a small, collapsed surface that can be expanded by the user to access a key feature or task to offer the persistent access of a standard sheet with the space and focus of a modal sheet.
 
 ![Composite image of bottom sheet types](assets/bottom_sheets/bottom-sheet_types_composite.png)
 
@@ -58,7 +58,8 @@ Standard bottom sheets co-exist with the screen’s main UI region and allow for
 ### Standard bottom sheet example
 
 `BottomSheet`
-- [Class definition](https://api.flutter.dev/flutter/material/BottomSheet-class.html)
+
+- [Class definition](https://api.flutter.dev/flutter/material/ScaffoldState/showBottomSheet.html)
 - [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/bottom_sheet.dart)
 - [Dartpad demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/bottom_sheets/standard&gh_ref=develop)
 
@@ -89,8 +90,8 @@ class MyApp extends StatelessWidget {
         body: Builder(
           builder: (context) {
             return Center(
-              child: FlatButton(
-                child: Text('Show Bottom Sheet'),
+              child: TextButton(
+                child: Text('SHOW BOTTOM SHEET'),
                 onPressed: () {
                   showBottomSheet(
                     context: context,
@@ -171,7 +172,7 @@ Modal bottom sheets are used in mobile apps only.
 ### Modal bottom sheet example
 
 `BottomSheet`
-- [Class definition](https://api.flutter.dev/flutter/material/BottomSheet-class.html)
+- [Class definition](https://api.flutter.dev/flutter/material/showModalBottomSheet.html)
 - [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/bottom_sheet.dart)
 - [Dartpad demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/bottom_sheets/modal&gh_ref=develop)
 
@@ -195,8 +196,8 @@ class MyApp extends StatelessWidget {
         body: Builder(
           builder: (context) {
             return Center(
-              child: FlatButton(
-                child: Text('Show Bottom Sheet'),
+              child: TextButton(
+                child: Text('SHOW BOTTOM SHEET'),
                 onPressed: () {
                   showModalBottomSheet(
                     context: context,
@@ -243,8 +244,8 @@ The following shows the anatomy of a modal bottom sheet:
 ![Modal bottom sheet anatomy](assets/bottom_sheets/modal-anatomy.png)
 
 1. Sheet
-2. Contents
-3. Scrim
+1. Contents
+1. Scrim
 
 
 #### Sheets properties
@@ -277,4 +278,3 @@ Theming for bottom sheets can be done by theming the widgets that are inside the
 
 - The widget used for list items is commonly a `ListTile`, and can be themed with [`ListTileTheme`](https://api.flutter.dev/flutter/material/ListTileTheme-class.html).
 - Other `Text`s and `Icon`s can be themed with [`TextTheme`](https://api.flutter.dev/flutter/material/TextTheme-class.html) and [`IconTheme`](https://api.flutter.dev/flutter/widgets/IconTheme-class.html).
-

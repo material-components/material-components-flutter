@@ -14,8 +14,8 @@ class MyApp extends StatelessWidget {
         body: Builder(
           builder: (context) {
             return Center(
-              child: FlatButton(
-                child: Text('Show Bottom Sheet'),
+              child: TextButton(
+                child: Text('SHOW BOTTOM SHEET'),
                 onPressed: () {
                   showModalBottomSheet(
                     context: context,
