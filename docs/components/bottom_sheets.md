@@ -178,7 +178,7 @@ Modal bottom sheets are used in mobile apps only.
 The following is an example modal bottom sheet:
 ![A modal bottom sheet with share, link, edit, and delete list items](assets/bottom_sheets/SheetsBottom_modal_screenshot.jpg)
 
-```
+```dart
 import 'package:flutter/material.dart';
 
 void main() {
