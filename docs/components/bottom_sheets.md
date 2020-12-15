@@ -274,7 +274,13 @@ TODO: link https://github.com/material-components/material-components-flutter/bl
 
 ## Theming bottom sheets
 
-Theming for bottom sheets can be done by theming the widgets that are inside the `widget` returned by the `builder` of `showBottomSheet` or `showModalBottomSheet`.
+Bottom Sheets support [Material Theming](https://material.io/components/sheets-bottom#theming) and can be customized in terms of color, elevation and shape.
+
+Source code API:
+
+- [Class definition](https://api.flutter.dev/flutter/material/BottomSheetThemeData-class.html)
+
+Theming for bottom sheet content can be done by theming the widgets that are inside the `widget` returned by the `builder` of `showBottomSheet` or `showModalBottomSheet`.
 
 - The widget used for list items is commonly a `ListTile`, and can be themed with [`ListTileTheme`](https://api.flutter.dev/flutter/material/ListTileTheme-class.html).
 - Other `Text`s and `Icon`s can be themed with [`TextTheme`](https://api.flutter.dev/flutter/material/TextTheme-class.html) and [`IconTheme`](https://api.flutter.dev/flutter/widgets/IconTheme-class.html).
