@@ -269,8 +269,7 @@ There are no specific properties for content because the content can be any comp
 
 ## Expanding bottom sheet
 
-Expanding bottom sheets require creating a custom widget. See [Expanding bottom sheet](link) for more info.
-TODO: link https://github.com/material-components/material-components-flutter/blob/develop/docs/components/expanding-bottom-sheet.md on material.io
+Expanding bottom sheets require creating a custom widget. See [Expanding bottom sheet](https://github.com/material-components/material-components-flutter/blob/develop/docs/components/expanding-bottom-sheet.md) for more info.
 
 ## Theming bottom sheets
 
