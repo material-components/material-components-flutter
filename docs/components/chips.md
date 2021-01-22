@@ -17,7 +17,6 @@ path: /catalog/material-chips/
 
 - [Using chips](#using-chips)
 - [Anatomy and key properties](#anatomy-and-key-properties)
-- [Types](#types)
 - [Theming](#theming)
 
 ## Using chips

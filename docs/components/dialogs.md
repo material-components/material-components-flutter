@@ -15,7 +15,6 @@ path: /catalog/dialog/
 
 **Contents**
 
-- [Types](#types)
 - [Using banners](#using-dialogs)
 - [Alert](#alert-dialog)
 - [Simple](#simple-dialog)
