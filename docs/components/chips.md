@@ -28,7 +28,7 @@ Chips allow users to enter information, make selections, filter content, or trig
 
 Flutter's APIs support accessibility setting for large fonts, screen readers, and sufficient contrast. For more information, go to Flutter's [accessibility](https://flutter.dev/docs/development/accessibility-and-localization/accessibility) and [internationalization](https://flutter.dev/docs/development/accessibility-and-localization/internationalization) pages.
 
-## Anatomy and key properties
+### Anatomy and key properties
 
 The following is an anatomy diagram of a chip:
 
@@ -67,17 +67,17 @@ The following is an anatomy diagram of a chip:
 -------------- | ------------------------
 **color** | deleteIconColor
 
-## Types
+**Types**
 
 There are four different types of chips that are subclasses of [`Chip`](https://api.flutter.dev/flutter/material/Chip-class.html), including 1.[input](#input-chips), 2.[choice](#choice-chips), 3.[filter](#filter-chips), and 4.[action](#action-chips).
 
 ![Examples of the four different chip types](assets/chips/Chips_composite.png)
 
-### Input chips
+## Input chips
 
 Input chips represent a complex piece of information in compact form, such as an entity (person, place, or thing) or text. They enable user input and verify that input by converting text into chips.
 
-#### Input chips example
+### Input chips example
 
 `InputChip`
 
@@ -123,13 +123,13 @@ Widget build(BuildContext context) {
 }
 ```
 
-### Choice chips
+## Choice chips
 
 Choice chips allow selection of a single chip from a set of options.
 
 Choice chips clearly delineate and display options in a compact area. They are a good alternative to toggle buttons, radio buttons, and single select menus.
 
-#### Choice chips example
+### Choice chips example
 
 `ChoiceChip`
 
@@ -176,13 +176,13 @@ Widget build(BuildContext context) {
 }
 ```
 
-### Filter chips
+## Filter chips
 
 Filter chips use tags or descriptive words to filter content.
 
 Filter chips clearly delineate and display options in a compact area. They are a good alternative to toggle buttons or checkboxes.
 
-#### Filter chips example
+### Filter chips example
 
 `FilterChip`
 
@@ -239,13 +239,13 @@ Widget build(BuildContext context) {
 }
 ```
 
-### Action chips
+## Action chips
 
 Action chips offer actions related to primary content. They should appear dynamically and contextually in a UI.
 
 An alternative to action chips are buttons, which should appear persistently and consistently.
 
-#### Action chips example
+### Action chips example
 
 `ActionChip`
 
