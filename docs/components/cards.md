@@ -91,67 +91,67 @@ The example code below generates the card:
           ),
 ```
 
-### Key properties
+### Anatomy and key properties
 
 ![Card anatomy diagram](assets/cards/card-anatomy.png)
 
 ### Elevated card attributes
 
 1. Container
-1. Thumbnail [optional
-1. Header text [optional
-1. Subhead [optional
-1. Media [optional
-1. Supporting text [optional
-1. Buttons [optional
-1. Icons [optional
+1. Thumbnail (optional)
+1. Header text (optional)
+1. Subhead (optional)
+1. Media (optional)
+1. Supporting text (optional)
+1. Buttons (optional)
+1. Icons (optional)
 
 #### Container
 
 | &nbsp; | Property |
 |---|---|
-|Container width |  Wrap `Card` widget with `Container` widget and use `width` property |
-|Container heigh|  Wrap `Card` widget with `Container` widget and use `height` property|
-|Container margin (left)|  Wrap `Card` widget with `Container` widget and use `margin` property with `EdgeInsets.only(left: 10)`|
-|Container margin (right)|  Wrap `Card` widget with `Container` widget and use `margin` property with `EdgeInsets.only(right: 10)`|
-|Container margin (top)|  Wrap `Card` widget with `Container` widget and use `margin` property with `EdgeInsets.only(top: 10)`|
-|Container elevation | `elevation` |
+| **Container width** |  Wrap `Card` widget with `Container` widget and use `width` property |
+| **Container height** |  Wrap `Card` widget with `Container` widget and use `height` property|
+| **Container margin (left)** |  Wrap `Card` widget with `Container` widget and use `margin` property with `EdgeInsets.only(left: 10)`|
+| **Container margin (right)** |  Wrap `Card` widget with `Container` widget and use `margin` property with `EdgeInsets.only(right: 10)`|
+| **Container margin (top)** |  Wrap `Card` widget with `Container` widget and use `margin` property with `EdgeInsets.only(top: 10)`|
+| **Container elevation** | `elevation` |
 
 #### Thumbnail (optional)
 
 | &nbsp; | Property |
 |---|---|
-|Desc. 1 | Not by default but can be made by using `ListTile()` and use property `leading` |
+| **Desc. 1** | Not by default but can be made by using `ListTile()` and use property `leading` |
 
 #### Header text (optional)
 
 | &nbsp; | Property |
 |---|---|
-| Text label | Not by default but can be made by using `ListTile()` and use property `title` |
-| Text color | Within `title` property you can customize the Text color by using the `style` property. The `style` property uses a `TextStyle` property and within that class use the `color` property |
-| Typography | Within `title` property you can customize the typography by using the `style property`. The `style` property uses a `TextStyle` property and within that class use the `fontFamily` property |
+| **Text label** | Not by default but can be made by using `ListTile()` and use property `title` |
+| **Text color** | Within `title` property you can customize the Text color by using the `style` property. The `style` property uses a `TextStyle` property and within that class use the `color` property |
+| **Typography** | Within `title` property you can customize the typography by using the `style property`. The `style` property uses a `TextStyle` property and within that class use the `fontFamily` property |
 
 #### Subhead (optional)
 
 | &nbsp; | Property |
 |---|---|
-| Text label | Not by default but can be made by using `ListTile()` and use property `subtitle` |
-| Text color | Within `subtitle` property you can customize the Text color by using the `style` property. The `style` property uses a `TextStyle` property and within that class use the `color` property|
-| Typography | Within `subtitle` property you can customize the typography by using the `style` property. The `style` property uses a `TextStyle` property and within that class use the `fontFamily` property|
+| **Text label** | Not by default but can be made by using `ListTile()` and use property `subtitle` |
+| **Text color** | Within `subtitle` property you can customize the Text color by using the `style` property. The `style` property uses a `TextStyle` property and within that class use the `color` property|
+| **Typography** | Within `subtitle` property you can customize the typography by using the `style` property. The `style` property uses a `TextStyle` property and within that class use the `fontFamily` property|
 
 #### Media (optional)
 
 | &nbsp; | Property |
 |---|---|
-|Desc. 1 | Can be made using `Image.asset()` within Card |
+| **Desc. 1** | Can be made using `Image.asset()` within Card |
 
 #### Supporting text (optional)
 
 | &nbsp; | Property |
 |---|---|
-| Text label | Can be made using `text` property |
-| Text color | Within `text` property you can customize the Text color by using the `style` property. The `style` property uses a `TextStyle` property and within that class use the `color` property|
-| Typography | Within `text` property you can customize the typography by using the `style` property. The `style` property uses a `TextStyle` property and within that class use the `fontFamily` property|
+| **Text label** | Can be made using `text` property |
+| **Text color** | Within `text` property you can customize the Text color by using the `style` property. The `style` property uses a `TextStyle` property and within that class use the `color` property|
+| **Typography** | Within `text` property you can customize the typography by using the `style` property. The `style` property uses a `TextStyle` property and within that class use the `fontFamily` property|
 
 #### Button (optional)
 
@@ -159,13 +159,13 @@ The example code below generates the card:
 
 | &nbsp; | Property |
 |---|---|
-|Desc. 1 | Can be made using `ButtonBar`, within `ButtonBar` use `FlatButtons` |
+| **Desc. 1** | Can be made using `ButtonBar`, within `ButtonBar` use `FlatButtons` |
 
 #### Icon (optional)
 
 | &nbsp; | Property |
 |---|---|
-|Desc. 1 | Can be made using `ButtonBar`, within `ButtonBar` use `IconButton` or `Icon`|
+| **Desc. 1** | Can be made using `ButtonBar`, within `ButtonBar` use `IconButton` or `Icon`|
 
 ## Theming a card
 
@@ -178,7 +178,7 @@ Source code API:
 - [Class definition](https://api.flutter.dev/flutter/material/Card-class.html)
 - [Dartpad demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/cards/theme&gh_ref=develop)
 
-[Shrine Card for Flutter](assets/cards/shrine_card.png)
+!["Shrine Card with 'action 1', 'action 2', and an image of orange flowers"](assets/cards/shrine_card.png)
 
 To test code copy and paste code into [dartpad.dev](https://dartpad.dev/).
 

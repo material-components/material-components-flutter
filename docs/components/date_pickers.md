@@ -30,7 +30,7 @@ Date pickers can be embedded into:
 - Dialogs on mobile
 - Text field dropdowns on desktop
 
-## Making date pickers accessible 
+### Making date pickers accessible 
 
 Flutter's APIs support accessibility setting for large fonts, screen readers, and sufficient contrast. For more information, go to Flutter's [accessibility](https://flutter.dev/docs/development/accessibility-and-localization/accessibility) and [internationalization](https://flutter.dev/docs/development/accessibility-and-localization/internationalization) pages.
 

@@ -15,19 +15,12 @@ path: /catalog/dialog/
 
 **Contents**
 
-- [Types](#types)
 - [Using banners](#using-dialogs)
 - [Alert](#alert-dialog)
 - [Simple](#simple-dialog)
 - [Confirmation](#confirmation-dialog)
 - [Full-screen](#full-screen-dialog)
 - [Dialog theming](#dialog-theming)
-
-## Types
-
-There are four types of dialogs: 1. [Alert](#alert-dialog), 2. [Simple](#simple-dialog), 3. [Confirmation](#confirmation-dialog), 4. [Full-screen](#full-screen-dialog)
-
-![Hero image of the 4 types of dialogs](assets/dialogs/dialogs_types.png)
 
 ## Using dialogs
 
@@ -40,6 +33,12 @@ Before you can use Material dialogs, you need to import the Material Components 
 You need to use a [`MaterialApp`](https://api.flutter.dev/flutter/material/MaterialApp-class.html).
 
 For more information on getting started with the Material for Flutter, go to the Flutter [Material library](https://api.flutter.dev/flutter/material/material-library.html) page.
+
+**Types**
+
+There are four types of dialogs: 1. [Alert](#alert-dialog), 2. [Simple](#simple-dialog), 3. [Confirmation](#confirmation-dialog), 4. [Full-screen](#full-screen-dialog)
+
+![Hero image of the 4 types of dialogs](assets/dialogs/dialogs_types.png)
 
 ### Making dialogs accessible
 
