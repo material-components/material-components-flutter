@@ -42,12 +42,9 @@ Flutter's APIs support accessibility setting for large fonts, screen readers, an
 
 For more guidance on writing labels, go to [our page on how to write a good accessibility label](https://material.io/design/usability/accessibility.html#writing).
 
-### Types
+**Types**
 
-There are two types of top app bar:
-
-1. [Regular top app bar](#regular-top-app-bar)
-1. [Contextual action bar](#contextual-top-app-bar)
+There are two types of top app bar: 1\. [regular top app bar](#regular-top-app-bar) 2\. [contextual action bar](#contextual-action-bar)
 
 ![Regular app bar: purple background, white text and icons and Contextual action bar: black background, white text and icons](assets/top_app_bars/Top-app-bars_types_side-by-side.png)
 
