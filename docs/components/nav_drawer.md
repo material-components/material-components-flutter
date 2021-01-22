@@ -17,6 +17,7 @@ A [navigation drawer](https://material.io/components/navigation-drawer) provides
 
 - [Using a navigation drawer](#using-a-navigation-drawer)
 - [Anatomy](#anatomy)
+- [Types](#types)
 - [Standard navigation drawer](#standard-navigation-drawer)
 - [Modal navigation drawer](#modal-navigation-drawer)
 - [Bottom navigation drawer](#bottom-navigation-drawer)
@@ -40,7 +41,7 @@ To create a modal drawer in Flutter, create a `Drawer` and set it to the `Scaffo
 
 The `child` of the drawer can be a `ListView` or a `Container` wrapping a `ListView`. The children of the `ListView` can consist of a `DrawerHeader` and `ListTile`s.
 
-There are no explicit bottom or standard drawers in Flutter. See the [Types]((#types) section for instructions to generate these drawer types specified in the [Material navigation drawer spec](https://material.io/components/navigation-drawer)
+There are no explicit bottom or standard drawers in Flutter. See the [Types](#types) section for instructions to generate these drawer types specified in the [Material navigation drawer spec](https://material.io/components/navigation-drawer)
 
 ### Making navigation drawers accessible
 
