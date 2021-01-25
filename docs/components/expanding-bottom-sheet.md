@@ -16,17 +16,17 @@ The presentation (open and close) of a full screen modal.
 
 You probably want to start with a StatefulWidget that manages the content in the sheet. You can chain animations in Flutter to accomplish a complex look by using the same AnimationController. 
 
-Handle the expansion and contraction of the collapsed view (based on its content) separately from the full open/close. Take a look at the [AnimatedSize widget](https://docs.flutter.io/flutter/widgets/AnimatedSize-class.html) for a simple implicit animation for that. If the content inside the bottom sheet is a group of similar items, like thumbnails, [AnimatedList](https://docs.flutter.io/flutter/widgets/AnimatedList-class.html) could handle the insertion and removal of them for you.
+Handle the expansion and contraction of the collapsed view (based on its content) separately from the full open/close. Take a look at the [AnimatedSize widget](https://docs.flutter.dev/flutter/widgets/AnimatedSize-class.html) for a simple implicit animation for that. If the content inside the bottom sheet is a group of similar items, like thumbnails, [AnimatedList](https://docs.flutter.dev/flutter/widgets/AnimatedList-class.html) could handle the insertion and removal of them for you.
 
 If your app includes a backdrop, you may also need a third animation for the removal of the bottom sheet when the backdrop is revealed. See the [Navigation Transitions section](https://material.io/design/material-studies/shrine.html#product-architecture) of the Material Study Shrine for a video showing how the expanding bottom sheet moves off-screen when the backdrop's back layer is exposed.
 
 ### Example code
 Example code for building a custom expanding bottom sheet can be found in the [Flutter Samples repository on GitHub](https://github.com/flutter/gallery/tree/master/lib/studies/shrine). Feel free to use this code as a starting point for your own expanding bottom sheet.
 
-The example uses existing animation widgets like [AnimatedSize](https://docs.flutter.io/flutter/widgets/AnimatedSize-class.html), [AnimatedList](https://docs.flutter.io/flutter/widgets/AnimatedList-class.html), [FadeTransition](https://docs.flutter.io/flutter/widgets/FadeTransition-class.html), and [ScaleTransition](https://docs.flutter.io/flutter/widgets/ScaleTransition-class.html).
+The example uses existing animation widgets like [AnimatedSize](https://docs.flutter.dev/flutter/widgets/AnimatedSize-class.html), [AnimatedList](https://docs.flutter.dev/flutter/widgets/AnimatedList-class.html), [FadeTransition](https://docs.flutter.dev/flutter/widgets/FadeTransition-class.html), and [ScaleTransition](https://docs.flutter.dev/flutter/widgets/ScaleTransition-class.html).
 
 ### Related Documentation
-To learn more about animations in Flutter, see [flutter.io/animations](flutter.io/animations).
+To learn more about animations in Flutter, see [flutter.dev/animations](flutter.dev/animations).
 
 ### From a designer’s point of view
 The expanding bottom sheet is an opportunity to give users easy access to an important, but not high-frequency, element of the app.

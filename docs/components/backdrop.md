@@ -14,18 +14,18 @@ When you break it down, backdrops are composed of 2 pieces:
 1. The front layer, a view that displays the user’s main content whose height can change to reveal information behind it on certain events.
 1. The back layer, that contains context and actionable items that can change the information shown on the front layer.
 
-You probably want to start with a [StatefulWidget](https://material.io/design/components/backdrop.html#) that ties the two pieces together. This widget will contain the back layer and other widgets such as the [AppBar](https://flutter.io/catalog/samples/basic-app-bar). You will have a separate widget to build out the front layer. To produce the open/close motion of the front layer, build an animation in the back layer’s parent widget and manage it with an [AnimationController](https://docs.flutter.io/flutter/animation/AnimationController-class.html). Then implement a button on the AppBar to trigger the animation.
+You probably want to start with a [StatefulWidget](https://material.io/design/components/backdrop.html#) that ties the two pieces together. This widget will contain the back layer and other widgets such as the [AppBar](https://flutter.dev/catalog/samples/basic-app-bar). You will have a separate widget to build out the front layer. To produce the open/close motion of the front layer, build an animation in the back layer’s parent widget and manage it with an [AnimationController](https://docs.flutter.dev/flutter/animation/AnimationController-class.html). Then implement a button on the AppBar to trigger the animation.
 
 ### Example code
 Example code for building a simple backdrop can be found in the [MDC-Flutter codelabs repo](https://github.com/material-components/material-components-flutter-codelabs/blob/104-complete/mdc_100_series/lib/backdrop.dart).
 
-The example uses existing widgets such as [PositionedTransition](https://docs.flutter.io/flutter/widgets/PositionedTransition-class.html) in tandem with the [AnimationController](https://docs.flutter.io/flutter/animation/AnimationController-class.html). It also uses some custom widgets to establish the desired look.
+The example uses existing widgets such as [PositionedTransition](https://docs.flutter.dev/flutter/widgets/PositionedTransition-class.html) in tandem with the [AnimationController](https://docs.flutter.dev/flutter/animation/AnimationController-class.html). It also uses some custom widgets to establish the desired look.
 
 ### Codelab
 See [MDC-103 for Flutter](http://codelabs.developers.google.com/codelabs/mdc-103-flutter) for a codelab on building this example.
 
 ### Related Documentation
-To learn more about animations in Flutter, see [flutter.io/animations](https://flutter.io/animations).
+To learn more about animations in Flutter, see [flutter.dev/animations](https://flutter.dev/animations).
 
 ### From a designer’s point of view
 The backdrop is an opportunity to give users easy access to an important element of the app that is secondary to another element. The backdrop’s back layer is persistent yet unobtrusive. Users have immediate access to the actions and content relevant to the front layer.
