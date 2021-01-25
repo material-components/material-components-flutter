@@ -1,0 +1,4 @@
+name: Material Tabs with Shrine Theme Demonstration
+mode: flutter
+files:
+  - name: main.dart

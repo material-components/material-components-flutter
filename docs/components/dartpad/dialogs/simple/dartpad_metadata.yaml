@@ -1,0 +1,4 @@
+name: Material Simple Dialog Demonstration
+mode: flutter
+files:
+  - name: main.dart
