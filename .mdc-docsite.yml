@@ -1,7 +1,7 @@
 # Doc site configuration.
 basepath: /flutter
-components_url: https://flutter.io/widgets/material/
-documentation_url: https://docs.flutter.io/flutter/material/material-library.html
+components_url: https://flutter.dev/widgets/material/
+documentation_url: https://docs.flutter.dev/flutter/material/material-library.html
 site_platform: flutter
 site_title: Material Components for Flutter
 site_short_title: Flutter
