@@ -20,8 +20,6 @@ The [top app bar](https://material.io/components/app-bars-top/#) displays inform
 - [Contextual action bar](#contextual-action-bar)
 - [Theming a top app bar](#theming-a-top-app-bar)
 
-## Theming a top app bar(#theming-text-fields)
-
 ## Using the top app bar
 
 The top app bar provides content and actions related to the current screen. It’s used for branding, screen titles, navigation, and actions.
