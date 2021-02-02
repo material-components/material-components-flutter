@@ -32,7 +32,7 @@ For more guidance on writing labels, go to [our page on how to write a good acce
 
 ### Types
 
-The text field class consists of the following types: 1\. [filled text](#filled-text) 2\. [outlined text](#outlined-text)
+There are two types of text fields: 1\. [filled text](#filled-text) 2\. [outlined text](#outlined-text)
 
 ![Text field examples, filled and outlined types, showing both inactive and focused states.](assets/text_fields/text-field-generic.png)
 
