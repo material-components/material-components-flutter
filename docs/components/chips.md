@@ -16,7 +16,10 @@ path: /catalog/material-chips/
 **Contents**
 
 - [Using chips](#using-chips)
-- [Anatomy and key properties](#anatomy-and-key-properties)
+- [Input chips](#input-chips)
+- [Choice chips](#choice-chips)
+- [Filter chips](#filter-chips)
+- [Action chips](#action-chips)
 - [Theming](#theming)
 
 ## Using chips
@@ -26,6 +29,12 @@ Chips allow users to enter information, make selections, filter content, or trig
 ### Making chips accessible
 
 Flutter's APIs support accessibility setting for large fonts, screen readers, and sufficient contrast. For more information, go to Flutter's [accessibility](https://flutter.dev/docs/development/accessibility-and-localization/accessibility) and [internationalization](https://flutter.dev/docs/development/accessibility-and-localization/internationalization) pages.
+
+### Types
+
+There are four different types of chips that are subclasses of [`Chip`](https://api.flutter.dev/flutter/material/Chip-class.html), including 1.[input](#input-chips), 2.[choice](#choice-chips), 3.[filter](#filter-chips), and 4.[action](#action-chips).
+
+![Examples of the four different chip types](assets/chips/Chips_composite.png)
 
 ### Anatomy and key properties
 
@@ -65,12 +74,6 @@ The following is an anatomy diagram of a chip:
 &nbsp;         | Property
 -------------- | ------------------------
 **color** | deleteIconColor
-
-**Types**
-
-There are four different types of chips that are subclasses of [`Chip`](https://api.flutter.dev/flutter/material/Chip-class.html), including 1.[input](#input-chips), 2.[choice](#choice-chips), 3.[filter](#filter-chips), and 4.[action](#action-chips).
-
-![Examples of the four different chip types](assets/chips/Chips_composite.png)
 
 ## Input chips
 

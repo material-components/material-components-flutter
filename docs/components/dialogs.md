@@ -34,7 +34,7 @@ You need to use a [`MaterialApp`](https://api.flutter.dev/flutter/material/Mater
 
 For more information on getting started with the Material for Flutter, go to the Flutter [Material library](https://api.flutter.dev/flutter/material/material-library.html) page.
 
-**Types**
+### Types
 
 There are four types of dialogs: 1. [Alert](#alert-dialog), 2. [Simple](#simple-dialog), 3. [Confirmation](#confirmation-dialog), 4. [Full-screen](#full-screen-dialog)
 

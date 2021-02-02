@@ -40,7 +40,7 @@ Flutter's APIs support accessibility setting for large fonts, screen readers, an
 
 For more guidance on writing labels, go to [our page on how to write a good accessibility label](https://material.io/design/usability/accessibility.html#writing).
 
-**Types**
+### Types
 
 There are three types of FABS: 1. [Regular FABs](#regular-fabs), 2. [Mini FABs](#mini-fabs), 3. [Extended FABs](#extended-fabs)
 
