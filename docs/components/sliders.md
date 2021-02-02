@@ -33,12 +33,9 @@ Flutter's APIs support accessibility setting for large fonts, screen readers, an
 
 For more guidance on writing labels, go to [our page on how to write a good accessibility label](https://material.io/design/usability/accessibility.html#writing).
 
-## Types
+### Types
 
-There are two types of sliders:
-
-1. [Continuous slider](#continuous-slider)
-1. [Discrete slider](#discrete-slider)
+There are two types of sliders: 1\. [Continuous](#continuous-sliders) 2\. [Discrete](#discrete-sliders)
 
 !["Slider examples of both continuous and discrete sliders."](assets/sliders/sliders_types.png)
 
@@ -99,12 +96,12 @@ A slider has a track, one or two thumbs, and optional value label. A discrete sl
 | Disabled Active Tick Mark Color | Wrap your `Slider` widget with a `SliderTheme` widget within the data parameter use the `SliderThemeData` widget. Within this widget set the `mi` parameter. |
 | Thumb Selector | Wrap your `Slider` widget with a `SliderTheme` widget within the data parameter use the `SliderThemeData` widget. Within this widget set the `thumbSelector` parameter. |
 
-### Continuous sliders
+## Continuous sliders
 
 Continuous sliders allow users to make meaningful selections that don’t require
 a specific value.
 
-#### Continuous single point slider example
+### Continuous single point slider example
 
 API and source code:
 
@@ -132,7 +129,7 @@ Slider(
 ),
 ```
 
-#### Continuous range slider example
+### Continuous range slider example
 
 API and source code:
 
@@ -163,11 +160,11 @@ RangeSlider(
 
 ```
 
-### Discrete sliders
+## Discrete sliders
 
 Discrete sliders display a numeric value label upon pressing the thumb, which allows a user to input an exact value.
 
-#### Discrete single point slider example
+### Discrete single point slider example
 
 API and source code:
 
@@ -193,7 +190,7 @@ Slider(
 ),
 ```
 
-#### Discrete range slider example
+### Discrete range slider example
 
 API and source code:
 
