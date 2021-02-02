@@ -16,7 +16,6 @@ path: /catalog/date-pickers/
 **Contents**
 
 - [Using date pickers](#using-pickers)
-- [Making date pickers accessible](#making-pickers-accessible)
 - [Date pickers](#date-pickers)
 - [Date range pickers](#date-range-pickers)
 - [Theming date pickers](#theming-pickers)
@@ -33,6 +32,10 @@ Date pickers can be embedded into:
 ### Making date pickers accessible 
 
 Flutter's APIs support accessibility setting for large fonts, screen readers, and sufficient contrast. For more information, go to Flutter's [accessibility](https://flutter.dev/docs/development/accessibility-and-localization/accessibility) and [internationalization](https://flutter.dev/docs/development/accessibility-and-localization/internationalization) pages.
+
+### Types
+
+There are two types of date pickers: 1\. [date pickers](#date-pickers) 2\. [date range pickers](#date-range-pickers)
 
 ## Date pickers
 

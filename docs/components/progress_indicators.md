@@ -16,7 +16,6 @@ path: /catalog/material-progress-indicators/
 **Contents**
 
 - [Using progress indicators](#using-progress-indicators)
-- [Types](#types)
 - [Anatomy and key properties](#anatomy-and-key-properties)
 - [Linear progress indicators](#linear-progress-indicators)
 - [Circular progress indicators](#circular-progress-indicators)
@@ -30,7 +29,7 @@ Progress indicators inform users about the status of ongoing processes, such as 
 
 Flutter's APIs support accessibility setting for large fonts, screen readers, and sufficient contrast. For more information, go to Flutter's [accessibility](https://flutter.dev/docs/development/accessibility-and-localization/accessibility) and [internationalization](https://flutter.dev/docs/development/accessibility-and-localization/internationalization) pages.
 
-## Types
+### Types
 
 Material Design offers two visually distinct types of progress indicators:  1. [linear](#linear-progress-indicators) 2. [circular](#circular-progress-indicators) progress indicators. Only one type should represent each kind of activity in an app. For example, if a refresh action displays a circular indicator on one screen, that same action shouldn’t use a linear indicator elsewhere in the app.
 

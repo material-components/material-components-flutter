@@ -37,10 +37,7 @@ For more guidance on writing labels, go to [our page on how to write a good acce
 
 ### Types
 
-There are two types of tabs:
-
-1. [Fixed tabs](#fixed-tabs)
-1. [Scrollable tabs](#scrollable-tabs)
+There are two types of tabs: 1\. [fixed tabs](#fixed-tabs) 2\. [scrollable tabs](#scrollable-tabs)
 
 ![scrollabe tab example](assets/tabs/tabs-scrollable-hero.png)
 

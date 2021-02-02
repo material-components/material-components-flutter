@@ -57,7 +57,7 @@ For more guidance on writing labels, go to [our page on how to write a good acce
 
 ### Radio buttons example
 
-'Radio'
+`Radio`
 
 - [Class definition](https://api.flutter.dev/flutter/material/Radio-class.html)
 - [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/radio.dart)
