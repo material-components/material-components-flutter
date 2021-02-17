@@ -11,7 +11,7 @@ path: /catalog/Snackbars/
 
 [Snackbars](https://material.io/components/snackbars) provide brief messages about app processes at the bottom of the screen.
 
-![Snackbars hero image](assets/snackbars/snackbars-hero.png)
+![Black snack bar w/ purple "RETRY" text button over image list](assets/snackbars/snackbars-hero.png)
 
 **Contents**
 
@@ -72,7 +72,7 @@ The following is an anatomy diagram of a snackbar:
 
 The following is an example of a snackbar with an action button:
 
-![Snackbar example](assets/snackbars/snackbars-regular.png)
+![Black snackbar w/ white "Text label" and purple "Action" text button over image of coconuts](assets/snackbars/snackbars-regular.png)
 
 ```dart
 SnackBar(
@@ -95,7 +95,7 @@ SnackBar(
 
 The following is an example of a snackbar with an action button that uses the Material.io [Shrine](https://material.io/design/material-studies/shrine.html) color theming::
 
-![Snackbar with Shrine theme example](assets/snackbars/snackbars-themed.png)
+![Brown snackbar w/ pink "Text label" and white "Action" text button over image of coconuts](assets/snackbars/snackbars-themed.png)
 
 ```dart
 import 'package:flutter/material.dart';
