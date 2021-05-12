@@ -34,7 +34,7 @@ For more information on getting started with the Material for Flutter, go to the
 
 ### Making navigation rail accessible
 
-Flutter's navigation component APIs support labeling for accessibility via the `semanticLabel` property. The content within `child` can have additional accessibility labeling.
+Flutter's navigation rail API supports labeling for accessibility via `NavigationRailDestination.label`. This label is often a `Text`, which automatically includes semantics. In the rare case where the label is not a `Text`, it can be wrapped in `Semantics` with a custom label string.
 
 For more guidance on writing labels, go to [our page on how to write a good accessibility label](https://material.io/design/usability/accessibility.html#writing).
 
