@@ -34,7 +34,7 @@ For more information on getting started with the Material for Flutter, go to the
 
 ### Making navigation rail accessible
 
-Flutter's drawer component APIs support labeling for accessibility via the `semanticLabel` property. The content within `child` can have additional accessibility labeling.
+Flutter's navigation component APIs support labeling for accessibility via the `semanticLabel` property. The content within `child` can have additional accessibility labeling.
 
 For more guidance on writing labels, go to [our page on how to write a good accessibility label](https://material.io/design/usability/accessibility.html#writing).
 
@@ -54,8 +54,8 @@ The following is an anatomy diagram for the navigation rail:
 
 1.  Container
 2.  Header (eg. Floating action button) (optional)
-3.  A destination
-4.  Text label
+3.  Destination icon
+4.  Destination text label
 5.  Divider (optional)
 
 #### Container attributes
@@ -79,7 +79,7 @@ for customizing the FAB.
 **Label** | `label`
 **Padding** | `padding`
 
-#### Icon attributes
+#### Destination icon attributes
 
 | &nbsp; | Property |
 | --- | --- |
@@ -87,7 +87,7 @@ for customizing the FAB.
 **Color** | `selectedIconTheme` or `unselectedIconTheme`
 **Size** | `selectedIconTheme` or `unselectedIconTheme`
 
-#### Text label attributes
+#### Destination text label attributes
 
 | &nbsp; | Property |
 | --- | --- |
