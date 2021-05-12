@@ -108,7 +108,7 @@ AppBar(
 | **Color** | In `leading` parameter, use `IconButton` Widget and set parameter `color` |
 | **Size** | In `leading` parameter, use `IconButton` Widget and set parameter `iconSize` |
 | **Gravity** | `titleSpacing` parameter |
-| **Padding** | Wrap `Icon` wiget with `Padding` widget |
+| **Padding** | Wrap `Icon` widget with `Padding` widget |
 
 #### Title for top app bar (optional)
 
