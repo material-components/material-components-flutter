@@ -200,7 +200,7 @@ Data Table cells children are Widgets. This means that the Data table is depende
 
 The following is an example data table using the [Shrine theme](https://material.io/design/material-studies/shrine.html).
 
-[Dartpad demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/data_tables/normal&gh_ref=develop)
+[Dartpad demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/data_tables/theme&gh_ref=develop)
 
 ![Demo table with Theme](assets/data_tables/data_table_theme.png)
 
