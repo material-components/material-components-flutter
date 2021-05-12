@@ -25,7 +25,7 @@ movement between primary destinations in an app.
 Before you can a navigation rail, you need to import the Material Components package for Flutter:
 
 ```dart
-package:flutter/material.dart.
+package:flutter/material.dart
 ```
 
 You need to be using a [`MaterialApp`](https://api.flutter.dev/flutter/material/MaterialApp-class.html).
