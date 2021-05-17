@@ -68,7 +68,7 @@ The following is an anatomy diagram that shows a switch thumb and a switch track
 
 The following example shows switches being used in a list with the last row disabled.
 
-!["Regular switches example for Flutter."](assets/switches/switch-regular.png)
+!["Setting" switches with 4 options: 2 selected w/ purple thumbs and tracks, 2 unselected w/ grey thumbs track](assets/switches/switch-regular.png)
 
 ```dart
 Column(
@@ -120,7 +120,7 @@ customized in terms of color.
 
 The following example shows switches with the [Material Shrine Theme](https://material.io/design/material-studies/shrine.html).
 
-!["Switches with Shrine theming."](assets/switches/switch-theming.png)
+![5 switches: 2 active w/ pink thumbs and tracks, 2 inactive w/ white thumb and grey track, 1 inactive w/ grey thumb and track](assets/switches/switch-theming.png)
 
 ```dart
 import 'package:flutter/material.dart';

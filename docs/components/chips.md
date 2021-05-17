@@ -11,7 +11,7 @@ path: /catalog/material-chips/
 
 [Chips](https://material.io/components/chips) are compact elements that represent an input, attribute, or action.
 
-![Hero image of an input chip](assets/chips/chips-hero.png)
+![Chip in email application in the "To" field: profile thumbnail and name in a rounded grey container](assets/chips/chips-hero.png)
 
 **Contents**
 
@@ -87,7 +87,7 @@ Input chips represent a complex piece of information in compact form, such as an
 - [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/chip.dart)
 - [Dartpad demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/chips/input&gh_ref=develop)
 
-![Input Chips](assets/chips/input_chips.png)
+![List of 3 input chips with "-" icons and text in black, and grey containers.](assets/chips/input_chips.png)
 
 ```dart
 @override
@@ -139,7 +139,7 @@ Choice chips clearly delineate and display options in a compact area. They are a
 - [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/chip.dart)
 - [Dartpad demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/chips/choice&gh_ref=develop)
 
-![Choice Chips](assets/chips/choice_chips.png)
+![List of 4 choice chips: choice 1 selected w/ blue container and text, choices 2-4 w/ grey container and black text](assets/chips/choice_chips.png)
 
 ```dart
 @override
@@ -192,7 +192,7 @@ Filter chips clearly delineate and display options in a compact area. They are a
 - [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/chip.dart)
 - [Demo site](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/chips/filter)
 
-![Filter Chips](assets/chips/filter_chips.png)
+![Filter chips: 4 unselected w/ grey containers and black text, 2 selected w/ dark grey containers and black text & checkmarks](assets/chips/filter_chips.png)
 
 ```dart
 @override
@@ -255,7 +255,7 @@ An alternative to action chips are buttons, which should appear persistently and
 - [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/chip.dart)
 - [Demo site](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/chips/action)
 
-![Action Chips](assets/chips/action_chips.png)
+![4 action chips w/ grey containers, black text and icons: favorite, trash, alarm, location](assets/chips/action_chips.png)
 
 ```dart
 @override
@@ -310,7 +310,7 @@ Chips support [Material Theming](https://material.io/components/chips/#theming) 
 - [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/chip.dart)
 - [Demo site](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/chips/theme)
 
-![Theme Chips](assets/chips/theme_chips.png)
+![3 input chips w/ black text, grey containers, and brown icons: cart, redeem, and payment](assets/chips/theme_chips.png)
 
 ```dart
 import 'package:flutter/material.dart';

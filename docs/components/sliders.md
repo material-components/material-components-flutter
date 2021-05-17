@@ -12,7 +12,7 @@ path: /catalog/sliders/
 [Sliders](https://material.io/components/sliders/) allow users to make
 selections from a range of values.
 
-!["Slider with sound icon buttons on each end."](assets/sliders/sliders_hero.png)
+![Purple slider with mute icon on one end and volume up icon on the other end.](assets/sliders/sliders_hero.png)
 
 **Contents**
 
@@ -37,7 +37,7 @@ For more guidance on writing labels, go to [our page on how to write a good acce
 
 There are two types of sliders: 1\. [Continuous](#continuous-sliders) 2\. [Discrete](#discrete-sliders)
 
-!["Slider examples of both continuous and discrete sliders."](assets/sliders/sliders_types.png)
+![Slider examples of both continuous and discrete sliders.](assets/sliders/sliders_types.png)
 
 A slider with one thumb is called a single point slider, and a slider with two thumbs is called a range slider.
 
@@ -110,7 +110,7 @@ API and source code:
 - [Dartpad demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/sliders/continous_slider&gh_ref=develop)
 - [YouTube video](https://www.youtube.com/watch?v=ufb4gIPDmEs&list=PLjxrf2q8roU23XGwz3Km7sQZFTdB996iG&index=58&ab_channel=Flutter)
 
-!["Continous Slider"](assets/sliders/continous_slider.png)
+![Blue slider with blue thumb and light blue track](assets/sliders/continous_slider.png)
 
 ```dart
 double _sliderValue = 20;
@@ -139,7 +139,7 @@ API and source code:
 
 API and source code:
 
-!["Range Sliders continuous example"](assets/sliders/continous_range_slider.png)
+![Blue slider with two blue thumbs and light blue track](assets/sliders/continous_range_slider.png)
 
 ```dart
   RangeValues _rangeSliderDiscreteValues = const RangeValues(40, 80);
@@ -172,7 +172,7 @@ API and source code:
 - [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/slider.dart)
 - [Dartpad demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/sliders/discrete_slider&gh_ref=develop)
 
-!["Discrete Sliders example"](assets/sliders/discrete_slider.png)
+![Blue slider with blue thumb on light blue track. A dark grey popup and white "40" points to the thumb](assets/sliders/discrete_slider.png)
 
 ```dart
 double _sliderDiscreteValue = 20;
@@ -198,7 +198,7 @@ API and source code:
 - [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/range_slider.dart)
 - [Dartpad demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/sliders/discrete_range_slider&gh_ref=develop)
 
-!["Discrete Range Sliders example"](assets/sliders/discrete_range_slider.png)
+![2 blue thumbs on light blue slider track. 2 dark grey popups w/ white text point to the thumbs; "20" and "80", respectively](assets/sliders/discrete_range_slider.png)
 
 ```dart
 RangeValues _rangeSliderDiscreteValues = const RangeValues(40, 80);
@@ -235,8 +235,8 @@ API and source code:
 
 The following example shows a discrete range slider with Material's [Shrine](https://material.io/design/material-studies/shrine.html) theme.
 
-!["Shrine theme example for Slider"](assets/sliders/theme_slider.png)
-!["Shrine theme example for Range Slider"](assets/sliders/theme_range_sliders.png)
+![Pink thumb on a light pink slider track](assets/sliders/theme_slider.png)
+![2 pink thumbs on a light pink slider track](assets/sliders/theme_range_sliders.png)
 
 ```dart
 import 'package:flutter/material.dart';

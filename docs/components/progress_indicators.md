@@ -11,7 +11,7 @@ path: /catalog/material-progress-indicators/
 
 [Progress indicators](https://material.io/components/progress-indicators) express an unspecified wait time or display the length of a process.
 
-![Progress indicator hero](assets/progress_indicators/hero-1.gif)
+![Progress indicator animation: Purple bar travelling along a light purple line](assets/progress_indicators/hero-1.gif)
 
 **Contents**
 
@@ -83,7 +83,7 @@ Linear progress indicators display progress by animating an indicator along the 
 
 The following example shows an indeterminate linear progress indicator:
 
-![Linear Progress Indicator](assets/progress_indicators/linear_progress_indicator.png)
+![Blue linear progress indicator bar on a light blue linear track](assets/progress_indicators/linear_progress_indicator.png)
 
 ```dart
 body: Center(
@@ -99,7 +99,7 @@ Circular progress indicators display progress by animating an indicator along an
 - Determinate circular indicators fill the invisible, circular track with color, as the indicator moves from 0 to 360 degrees.
 - Indeterminate circular indicators grow and shrink in size while moving along the invisible track.
 
-![Circular Progress Indicator](assets/progress_indicators/circular_progress_indicator.png)
+![Circular progress indicator: a blue semi-circle](assets/progress_indicators/circular_progress_indicator.png)
 
 ### Circular progress indicator example
 
@@ -134,7 +134,7 @@ body: Center(
 
 The following shows an indeterminate linear progress indicator and a determinate circular progress indicator with [Shrine theming](https://material.io/design/material-studies/shrine.html):
 
-![Circular Progress Indicator](assets/progress_indicators/theme_progress_indicator.png)
+![Top: Pink linear track with brown indicator. Bottom: invisible circular track with brown indicator](assets/progress_indicators/theme_progress_indicator.png)
 
 ```dart
 import 'package:flutter/material.dart';

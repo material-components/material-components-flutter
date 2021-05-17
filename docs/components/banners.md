@@ -11,7 +11,7 @@ path: /catalog/material-banners/
 
 A [banner](https://material.io/components/banners) displays a prominent message and related optional actions.
 
-![Hero image of a banner showing a transaction error message](assets/banners/banners_hero.png)
+![White banner showing a transaction error message in black and purple "Learn more" and "Fix it" text buttons](assets/banners/banners_hero.png)
 
 **Contents**
 
@@ -90,7 +90,7 @@ Banners consist of the following:
 
 The following example shows a banner being used with an icon and two actions.
 
-!["Regular banner example for Flutter."](assets/banners/banners-regular.png)
+![White banner w/ white trash icon in purple circle and black error message above two purple action text buttons](assets/banners/banners-regular.png)
 
 ```dart
 MaterialBanner(
@@ -122,7 +122,7 @@ customized in terms of color and typography.
 
 The following example shows a banner with the [Material Shrine Theme](https://material.io/design/material-studies/shrine.html).
 
-!["Banner with Shrine theming."](assets/banners/banners-theming.png)
+![Light pink banner w/ brown trash icon in pink circle and brown error message above two pink action text buttons](assets/banners/banners-theming.png)
 
 ```dart
 import 'package:flutter/material.dart';
