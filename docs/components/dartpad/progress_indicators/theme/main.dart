@@ -39,7 +39,7 @@ ThemeData _buildShrineTheme() {
     buttonColor: shrinePink100,
     scaffoldBackgroundColor: shrineBackgroundWhite,
     cardColor: shrineBackgroundWhite,
-    textSelectionColor: shrinePink100,
+    textSelectionTheme: TextSelectionThemeData(selectionColor: shrinePink100),
     errorColor: shrineErrorRed,
     primaryIconTheme: _customIconTheme(base.iconTheme),
     textTheme: _buildShrineTextTheme(base.textTheme),

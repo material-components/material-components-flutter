@@ -69,7 +69,7 @@ ThemeData _buildShrineTheme() {
     buttonColor: shrinePink100,
     scaffoldBackgroundColor: shrineBackgroundWhite,
     cardColor: shrineBackgroundWhite,
-    textSelectionColor: shrinePink100,
+    textSelectionTheme: TextSelectionThemeData(selectionColor: shrinePink100),
     errorColor: shrineErrorRed,
     buttonTheme: const ButtonThemeData(
       colorScheme: _shrineColorScheme,
@@ -138,4 +138,3 @@ const Color shrineSurfaceWhite = Color(0xFFFFFBFA);
 const Color shrineBackgroundWhite = Colors.white;
 
 const defaultLetterSpacing = 0.03;
-

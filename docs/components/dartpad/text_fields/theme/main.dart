@@ -20,7 +20,6 @@ class MyHomePage extends StatelessWidget {
       body: Column(
         children: [
           TextFormField(
-            cursorColor: Theme.of(context).cursorColor,
             initialValue: 'Input text',
             maxLength: 20,
             decoration: InputDecoration(
@@ -33,7 +32,6 @@ class MyHomePage extends StatelessWidget {
             ),
           ),
           TextFormField(
-            cursorColor: Theme.of(context).cursorColor,
             initialValue: 'Input text',
             maxLength: 20,
             decoration: InputDecoration(
@@ -65,7 +63,7 @@ ThemeData _buildShrineTheme() {
     buttonColor: shrinePink100,
     scaffoldBackgroundColor: shrineBackgroundWhite,
     cardColor: shrineBackgroundWhite,
-    textSelectionColor: shrinePink100,
+    textSelectionTheme: TextSelectionThemeData(selectionColor: shrinePink100),
     errorColor: shrineErrorRed,
     buttonTheme: const ButtonThemeData(
       colorScheme: _shrineColorScheme,

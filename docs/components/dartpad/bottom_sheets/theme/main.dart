@@ -76,7 +76,7 @@ ThemeData _buildShrineTheme() {
     buttonColor: shrinePink100,
     scaffoldBackgroundColor: shrineBackgroundWhite,
     cardColor: shrineBackgroundWhite,
-    textSelectionColor: shrinePink100,
+    textSelectionTheme: TextSelectionThemeData(selectionColor: shrinePink100),
     errorColor: shrineErrorRed,
     buttonTheme: const ButtonThemeData(
       colorScheme: _shrineColorScheme,
@@ -93,44 +93,44 @@ ThemeData _buildShrineTheme() {
 TextTheme _buildShrineTextTheme(TextTheme base) {
   return base
       .copyWith(
-    headline: base.headline.copyWith(
-      fontWeight: FontWeight.w500,
-      letterSpacing: defaultLetterSpacing,
-    ),
-    title: base.title.copyWith(
-      fontSize: 18,
-      letterSpacing: defaultLetterSpacing,
-    ),
-    caption: base.caption.copyWith(
-      fontWeight: FontWeight.w400,
-      fontSize: 14,
-      letterSpacing: defaultLetterSpacing,
-    ),
-    body2: base.body2.copyWith(
-      fontWeight: FontWeight.w500,
-      fontSize: 16,
-      letterSpacing: defaultLetterSpacing,
-    ),
-    body1: base.body1.copyWith(
-      letterSpacing: defaultLetterSpacing,
-    ),
-    subhead: base.subhead.copyWith(
-      letterSpacing: defaultLetterSpacing,
-    ),
-    display1: base.display1.copyWith(
-      letterSpacing: defaultLetterSpacing,
-    ),
-    button: base.button.copyWith(
-      fontWeight: FontWeight.w500,
-      fontSize: 14,
-      letterSpacing: defaultLetterSpacing,
-    ),
-  )
+        headline5: base.headline5.copyWith(
+          fontWeight: FontWeight.w500,
+          letterSpacing: defaultLetterSpacing,
+        ),
+        headline6: base.headline6.copyWith(
+          fontSize: 18,
+          letterSpacing: defaultLetterSpacing,
+        ),
+        caption: base.caption.copyWith(
+          fontWeight: FontWeight.w400,
+          fontSize: 14,
+          letterSpacing: defaultLetterSpacing,
+        ),
+        bodyText1: base.bodyText1.copyWith(
+          fontWeight: FontWeight.w500,
+          fontSize: 16,
+          letterSpacing: defaultLetterSpacing,
+        ),
+        bodyText2: base.bodyText2.copyWith(
+          letterSpacing: defaultLetterSpacing,
+        ),
+        subtitle1: base.subtitle1.copyWith(
+          letterSpacing: defaultLetterSpacing,
+        ),
+        headline4: base.headline4.copyWith(
+          letterSpacing: defaultLetterSpacing,
+        ),
+        button: base.button.copyWith(
+          fontWeight: FontWeight.w500,
+          fontSize: 14,
+          letterSpacing: defaultLetterSpacing,
+        ),
+      )
       .apply(
-    fontFamily: 'Rubik',
-    displayColor: shrineBrown900,
-    bodyColor: shrineBrown900,
-  );
+        fontFamily: 'Rubik',
+        displayColor: shrineBrown900,
+        bodyColor: shrineBrown900,
+      );
 }
 
 const ColorScheme _shrineColorScheme = ColorScheme(
