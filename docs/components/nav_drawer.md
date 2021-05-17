@@ -47,7 +47,7 @@ There are no explicit bottom or standard drawers in Flutter. See the [Types](#ty
 
 Flutter's drawer component APIs support labeling for accessibility via the `semanticLabel` property. The content within `child` can have additional accessibility labeling.
 
-For more guidance on writing labels, go to our page on how to write a good accessibility label.
+For more guidance on writing labels, go to [our page on how to write a good accessibility label](https://material.io/design/usability/accessibility.html#writing).
 
 ## Anatomy
 
