@@ -48,7 +48,7 @@ class SnackbarButton extends StatelessWidget {
 
         // Find the Scaffold in the widget tree and use
         // it to show a SnackBar.
-        Scaffold.of(context).showSnackBar(snackBar);
+        ScaffoldMessenger.of(context).showSnackBar(snackBar);
       },
       child: Text('Show SnackBar'),
     );

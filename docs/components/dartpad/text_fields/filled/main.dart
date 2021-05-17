@@ -17,7 +17,6 @@ class MyHomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: TextFormField(
-        cursorColor: Theme.of(context).cursorColor,
         initialValue: 'Input text',
         maxLength: 20,
         decoration: InputDecoration(

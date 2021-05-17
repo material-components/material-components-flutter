@@ -1,0 +1,10 @@
+# This file enables Dart Analysis
+name: material_components_flutter
+publish_to: none
+
+environment:
+  sdk: '>=2.10.0 <3.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter

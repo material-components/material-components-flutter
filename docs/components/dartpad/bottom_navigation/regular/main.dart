@@ -36,19 +36,19 @@ class _MyHomePageState extends State<MyHomePage> {
         },
         items: [
           BottomNavigationBarItem(
-            title: Text('Favorites'),
+            label: 'Favorites',
             icon: Icon(Icons.favorite),
           ),
           BottomNavigationBarItem(
-            title: Text('Music'),
+            label: 'Music',
             icon: Icon(Icons.music_note),
           ),
           BottomNavigationBarItem(
-            title: Text('Places'),
+            label: 'Places',
             icon: Icon(Icons.location_on),
           ),
           BottomNavigationBarItem(
-            title: Text('News'),
+            label: 'News',
             icon: Icon(Icons.library_books),
           ),
         ],

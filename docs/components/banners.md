@@ -174,7 +174,7 @@ ThemeData _buildShrineTheme() {
     buttonColor: shrinePink100,
     scaffoldBackgroundColor: shrineBackgroundWhite,
     cardColor: shrineBackgroundWhite,
-    textSelectionColor: shrinePink100,
+    textSelectionTheme: TextSelectionThemeData(selectionColor: shrinePink100),
     errorColor: shrineErrorRed,
     buttonTheme: ButtonThemeData(
       colorScheme: _shrineColorScheme.copyWith(primary: shrinePink400),
