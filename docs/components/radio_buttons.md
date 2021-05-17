@@ -17,7 +17,7 @@ Use radio buttons to:
 - Expose all available options
 - If available options can be collapsed, consider using a dropdown menu instead, as it uses less space.
 
-![Radio button hero example for menu options](assets/radio_buttons/RadioButton-hero.png)
+!["Settings" radio buttons: 4 radio buttons, one selected with purple outline and purple circle.](assets/radio_buttons/RadioButton-hero.png)
 
 **Contents**
 
@@ -57,15 +57,15 @@ For more guidance on writing labels, go to [our page on how to write a good acce
 
 ### Radio buttons example
 
-'Radio'
+`Radio`
 
 - [Class definition](https://api.flutter.dev/flutter/material/Radio-class.html)
 - [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/radio.dart)
 - [Dartpad demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/radio_buttons/regular&gh_ref=develop)
 
-The following example shows radio buttons being used in a list with the last row disabled.
+The following example shows radio buttons in a list, with the first row selected and the last row disabled.
 
-!["Regular radio button example for Flutter."](assets/radio_buttons/radio-button-regular.png)
+![Radio buttons: 1 w/ black text and purple outline/fill, 3 w/ black text and grey outline, 1 w/ light-grey text and outline](assets/radio_buttons/radio-button-regular.png)
 
 ```dart
 Column(
@@ -106,9 +106,9 @@ Radio buttons can be selected or unselected. Radio buttons have enabled, disable
 Radio buttons support [Material Theming](https://material.io/components/buttons/#theming) and can be
 customized in terms of color.
 
-The following example shows radio buttons with the [Material Shrine Theme](https://material.io/design/material-studies/shrine.html).
+The following example shows radio buttons with the [Material Shrine Theme](https://material.io/design/material-studies/shrine.html). The first row is selected, the last row is disabled.
 
-!["Radio buttons with Shrine theming."](assets/radio_buttons/radio-button-theming.png)
+![Radio buttons: 1 w/ brown text and  pink outline/fill, 3 w/ brown text and grey outline, 1 w/ light-grey text and outline](assets/radio_buttons/radio-button-theming.png)
 
 ```dart
 import 'package:flutter/material.dart';

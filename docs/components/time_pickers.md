@@ -16,7 +16,6 @@ path: /catalog/time-pickers/
 **Contents**
 
 - [Using time pickers](#using-time-pickers)
-- [Making time pickers accessible](#making-time-pickers-accessible)
 - [Mobile time pickers](#mobile-time-pickers)
 - [Mobile time input pickers](#mobile-time-input-pickers)
 - [Theming time pickers](#theming-time-pickers)
@@ -31,11 +30,11 @@ Common use cases include:
 
 Mobile time pickers are displayed in dialogs and can be used to select hours, minutes, and a period of time
 
-## Making time pickers accessible 
+### Making time pickers accessible 
 
 Flutter's APIs support accessibility setting for large fonts, screen readers, and sufficient contrast. For more information, go to Flutter's [accessibility](https://flutter.dev/docs/development/accessibility-and-localization/accessibility) and [internationalization](https://flutter.dev/docs/development/accessibility-and-localization/internationalization) pages.
 
-## Types
+### Types
 
 _**The following types are for non-iOS platforms**_
 
@@ -43,13 +42,13 @@ There are two types of time pickers: 1\. [mobile time pickers](#mobile-time-pick
 
 ![Time picker composite. Image 1 shows a digital input over a 12 hour dial input. Image 2 shows a digital input](assets/time_pickers/TimePicker_types.png)
 
-### Mobile time pickers
+## Mobile time pickers
 
 Mobile time pickers can be used to specify time down to hours and minutes in a time period. They are displayed in a dialog.  
 
 Mobile time pickers allow selection of hours and minutes. They aren’t ideal for selecting granular amounts of time, such as milliseconds for a stopwatch application.
 
-#### Mobile time pickers example
+### Mobile time pickers example
 
 `showTimePicker`
 - [Class definition](https://api.flutter.dev/flutter/material/showTimePicker.html)
@@ -67,7 +66,7 @@ final TimeOfDay newTime = await showTimePicker(
 );
 ```
 
-#### Anatomy and key properties
+### Anatomy and key properties
 
 ![Mobile time picker anatomy diagram](assets/time_pickers/dial_anatomy.png)
 
@@ -77,14 +76,14 @@ final TimeOfDay newTime = await showTimePicker(
 1. Icon button to switch to time input
 1. AM/PM selector
 
-##### Title
+#### Title
 
 &nbsp;         | Property
 -------------- | ------------------------ 
 **Text** | `helpText` property in `showTimePicker`
 **Text Style** | `helpTextStyle` property in `TimePickerThemeData`
 
-##### Clock dial
+#### Clock dial
 
 &nbsp;         | Property
 -------------- | ------------------------ 
@@ -92,13 +91,13 @@ final TimeOfDay newTime = await showTimePicker(
 **Hand Color** | `dialHandColor` property in `TimePickerThemeData`
 **Text Color** | `dialTextColor` property in `TimePickerThemeData`
 
-##### Input type toggle
+#### Input type toggle
 
 &nbsp;         | Property
 -------------- | ------------------------ 
 **Color** | `entryModeIconColor` property in `TimePickerThemeData`
 
-##### AM/PM selector
+#### AM/PM selector
 
 &nbsp;         | Property
 -------------- | ------------------------ 
@@ -108,11 +107,11 @@ final TimeOfDay newTime = await showTimePicker(
 **Text Color** | `dayPeriodTextColor` property in `TimePickerThemeData`
 **Text Style** | `dayPeriodTextStyle` property in `TimePickerThemeData`
 
-### Mobile time input pickers
+## Mobile time input pickers
 
 Mobile time input pickers allow users to specify time using the numbers on a keyboard. The mobile time input picker can be accessed from any other mobile time picker interface by tapping the keyboard icon
 
-#### Mobile time input picker example
+### Mobile time input picker example
 
 `showTimePicker`
 - [Class definition](https://api.flutter.dev/flutter/material/showTimePicker.html)
@@ -131,7 +130,7 @@ final TimeOfDay newTime = await showTimePicker(
 );
 ```
 
-#### Anatomy and key properties
+### Anatomy and key properties
 
 ![Mobile time input picker anatomy diagram](assets/time_pickers/input_anatomy.png)
 
@@ -140,26 +139,26 @@ final TimeOfDay newTime = await showTimePicker(
 1. Icon button to switch to dial entry
 1. AM/PM selector
 
-##### Title
+#### Title
 
 &nbsp;         | Property
 -------------- | ------------------------ 
 **Text** | `helpText` property in `showTimePicker`
 **Text Style** | `helpTextStyle` property in `TimePickerThemeData`
 
-##### Hour and minute input
+#### Hour and minute input
 
 &nbsp;         | Property
 -------------- | ------------------------ 
 **Style** | `inputDecorationTheme` property in `TimePickerThemeData`
 
-##### Input type toggle
+#### Input type toggle
 
 &nbsp;         | Property
 -------------- | ------------------------ 
 **Color** | `entryModeIconColor` property in `TimePickerThemeData`
 
-##### AM/PM selector
+#### AM/PM selector
 
 &nbsp;         | Property
 -------------- | ------------------------ 

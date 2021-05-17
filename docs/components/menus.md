@@ -18,7 +18,8 @@ api_doc_root: true
 
 - [Using menus](#using-menus)
 - [Anatomy](#anatomy)
-- [Types](#types)
+- [Dropdown menus](#dropdown-menus)
+- [Exposed dropdown menus](#exposed-dropdown-menus)
 - [Theming](#theming)
 
 ## Using menus
@@ -28,6 +29,14 @@ A menu displays a list of choices on a temporary surface. They appear when users
 ### Making menus accessible
 
 Flutter's list component APIs support labeling for accessibility. For more guidance on writing labels, go to [our page on how to write a good accessibility label](https://material.io/design/usability/accessibility.html#writing).
+
+### Types
+
+Menus allow users to make a selection from multiple options. They are less prominent and take up less space than selection controls, such as a set of radio buttons.
+
+There are two types of menus: 1\. [dropdown menus](#dropdown-menus), 2\. [exposed dropdown menus](#exposed-dropdown-menus).
+
+![Composite image of example dropdown and exposed dropdown menu types](assets/menus/menu_types_composite.png)
 
 ## Anatomy
 
@@ -54,7 +63,7 @@ The following are menu anatomy diagrams showing all possible elements:
 
 &nbsp;         | Property
 -------------- | ------------------------
-Adding Icon | Use the `PopupMenuButton` widget. Within this widget use `itemBuilder`. Within the list of itemBuilder add a `PopupMenuItem`. Within the child parameter add a `ListTile` widget and set the `leading` parameter to an `Icon`.
+**Adding Icon** | Use the `PopupMenuButton` widget. Within this widget use `itemBuilder`. Within the list of itemBuilder add a `PopupMenuItem`. Within the child parameter add a `ListTile` widget and set the `leading` parameter to an `Icon`.
 
 ### Text attributes
 
@@ -68,39 +77,31 @@ Adding Icon | Use the `PopupMenuButton` widget. Within this widget use `itemBuil
 
 &nbsp;         | Property
 -------------- | ------------------------
-Add Divider | Use the `PopupMenuButton` widget. Within this widget use `itemBuilder`. Within the list of itemBuilder add a `PopupMenuDivider`.
+**Add Divider** | Use the `PopupMenuButton` widget. Within this widget use `itemBuilder`. Within the list of itemBuilder add a `PopupMenuDivider`.
 
 ### Command attributes
 
 &nbsp;         | Property
 -------------- | ------------------------
-Adding Icon | Use the `PopupMenuButton` widget. Within this widget use `itemBuilder`. Within the list of itemBuilder add a `PopupMenuItem`. Within the child parameter add a `ListTile` widget and set the `trailing` parameter to an `Icon`.
+**Adding Icon** | Use the `PopupMenuButton` widget. Within this widget use `itemBuilder`. Within the list of itemBuilder add a `PopupMenuItem`. Within the child parameter add a `ListTile` widget and set the `trailing` parameter to an `Icon`.
 
 ### Cascading menu indicator attributes
 
 &nbsp;         | Property
 -------------- | ------------------------
-Adding cascading menu | Not currently supported.
+**Adding cascading menu** | Not currently supported.
 
 ### Selection state attributes
 
 &nbsp;         | Property
 -------------- | ------------------------
-Adding selection state attributes | Use the `PopupMenuButton` widget. Within this widget use `itemBuilder`. Within the list of itemBuilder add a `CheckedPopupMenuItem`.
+**Adding selection state attributes** | Use the `PopupMenuButton` widget. Within this widget use `itemBuilder`. Within the list of itemBuilder add a `CheckedPopupMenuItem`.
 
-## Types
-
-Menus allow users to make a selection from multiple options. They are less prominent and take up less space than selection controls, such as a set of radio buttons.
-
-There are two types of menus: 1\. [dropdown menus](#dropdown-menus), 2\. [exposed dropdown menus](#exposed-dropdown-menus).
-
-![Composite image of example dropdown and exposed dropdown menu types](assets/menus/menu_types_composite.png)
-
-### Dropdown menus
+## Dropdown menus
 
 Dropdown menus display a list of options, triggered by an icon, button, or action. Their placement varies based on the element that opens them.
 
-#### Dropdown menu example
+### Dropdown menu example
 
 The following is an example of a dropdown menu:
 
@@ -139,11 +140,11 @@ PopupMenuButton(
 ),
 ```
 
-### Exposed dropdown menus
+## Exposed dropdown menus
 
 Exposed dropdown menus display the currently selected menu item above the list of options. Some variations can accept user-entered input.
 
-#### Exposed dropdown menu example
+### Exposed dropdown menu example
 
 The following is an example of a dropdown menu:
 

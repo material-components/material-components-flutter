@@ -11,7 +11,7 @@ path: /catalog/material-dividers/
 
 A [divider](https://material.io/components/dividers) is a thin line that groups content in lists and layouts.
 
-![Example divider: full-bleed dividers](assets/dividers/Dividers_hero.png)
+![Grey inset dividers separating emails](assets/dividers/Dividers_hero.png)
 
 **Contents**
 
@@ -64,7 +64,7 @@ Full-bleed dividers separate content into sections and span the entire length of
 
 The following example shows a list with full-bleed dividers:
 
-![Full bleed divider](assets/dividers/full_bleed_divider.png)
+![2 grey dividers span the screen width, divided by text "Item 4"](assets/dividers/full_bleed_divider.png)
 
 ```dart
 Divider(),
@@ -82,7 +82,7 @@ Inset dividers separate related content, anchored by elements that align with th
 
 The following example shows two lists separated by an inset divider and a subheader
 
-![Inset divider](assets/dividers/inset_divider.png)
+![Grey line spanning screen with margin between left-hand screen and divider edge. "Subheader" in grey beneath divider](assets/dividers/inset_divider.png)
 
 ```dart
 Divider(indent: 16),
@@ -113,7 +113,7 @@ Middle dividers space related content and are centered in a layout or list.
 
 The following example shows a middle divider separating a list of items and their prices and the total cost:
 
-![Middle divider](assets/dividers/middle_divider.png)
+![Grey line spanning screen with margins on either side of line](assets/dividers/middle_divider.png)
 
 ```dart
 Divider(
@@ -132,7 +132,7 @@ Vertical divider offers the same parameters as the regular divider but instead t
 - [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/divider.dart)
 - [Dartpad demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/dividers/vertical_divider&gh_ref=develop)
 
-![Vertical divider](assets/dividers/vertical_divider.png)
+![Grey line spanning screen height](assets/dividers/vertical_divider.png)
 
 ```dart
 VerticalDivider()
