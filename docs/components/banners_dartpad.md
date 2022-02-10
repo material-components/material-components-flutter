@@ -30,7 +30,7 @@ Add the following to the page's html for this to work:
 <script type="text/javascript" src="https://dartpad.dev/inject_embed.dart.js" defer></script>
 
 
-```run-dartpad:theme-dark:mode-flutter:run-true
+```dart run-dartpad:theme-dark:mode-flutter:run-true
 import 'package:flutter/material.dart';
 
 void main() => runApp(MyApp());
@@ -183,7 +183,7 @@ class MyHomePage extends StatelessWidget {
 
 
 
-
+---
 
 
 A banner displays an important, succinct message, and provides actions for users to address (or dismiss the banner). It requires a user action to be dismissed.
