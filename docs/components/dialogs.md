@@ -15,7 +15,7 @@ path: /catalog/dialog/
 
 **Contents**
 
-- [Using banners](#using-dialogs)
+- [Using dialogs](#using-dialogs)
 - [Alert](#alert-dialog)
 - [Simple](#simple-dialog)
 - [Confirmation](#confirmation-dialog)
