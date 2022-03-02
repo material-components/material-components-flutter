@@ -20,18 +20,18 @@ class ExposedDropdownMenuDemo extends StatefulWidget {
 }
 
 class _ExposedDropdownMenuDemoState extends State<ExposedDropdownMenuDemo> {
-  String dropdownValue = 'Option 1';
+  String dropdownValue = 'Option 2';
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Exposed Menu Demo'),
+        title: const Text('Exposed Menu Demo'),
       ),
       body: Center(
-        child: DropdownButton(
+        child: DropdownButton<String>(
           value: dropdownValue,
-          items: <DropdownMenuItem>[
+          items: const <DropdownMenuItem<String>>[
             DropdownMenuItem(
               value: 'Option 1',
               child: Text('Option 1'),
@@ -59,7 +59,7 @@ class _ExposedDropdownMenuDemoState extends State<ExposedDropdownMenuDemo> {
           ],
           onChanged: (value) {
             setState(() {
-              dropdownValue = value;
+              dropdownValue = value as String;
             });
           },
         ),
@@ -67,3 +67,5 @@ class _ExposedDropdownMenuDemoState extends State<ExposedDropdownMenuDemo> {
     );
   }
 }
+
+
