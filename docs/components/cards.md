@@ -68,19 +68,19 @@ The example code below generates the card:
                 ButtonBar(
                   alignment: MainAxisAlignment.start,
                   children: [
-                    FlatButton(
-                      textColor: const Color(0xFF6200EE),
+                    TextButton(
+                 
                       onPressed: () {
                         // Perform some action
                       },
-                      child: const Text('ACTION 1'),
+                      child: const Text('ACTION 1',style:TextStyle(color:const Color(0xFF6200EE),),),
                     ),
-                    FlatButton(
-                      textColor: const Color(0xFF6200EE),
+                    TextButton(
+                     
                       onPressed: () {
                         // Perform some action
                       },
-                      child: const Text('ACTION 2'),
+                      child: const Text('ACTION 2',style:TextStyle(color:const Color(0xFF6200EE),),),
                     ),
                   ],
                 ),
@@ -159,7 +159,7 @@ The example code below generates the card:
 
 | &nbsp; | Property |
 |---|---|
-| **Desc. 1** | Can be made using `ButtonBar`, within `ButtonBar` use `FlatButtons` |
+| **Desc. 1** | Can be made using `ButtonBar`, within `ButtonBar` use `TextButtons` |
 
 #### Icon (optional)
 
@@ -235,13 +235,13 @@ class _MyHomePageState extends State<MyHomePage> {
                   ButtonBar(
                     alignment: MainAxisAlignment.start,
                     children: [
-                      FlatButton(
+                      TextButton(
                         onPressed: () {
                           // Perform some action
                         },
                         child: const Text('ACTION 1'),
                       ),
-                      FlatButton(
+                      TextButton(
                         onPressed: () {
                           // Perform some action
                         },
@@ -275,13 +275,13 @@ class _MyHomePageState extends State<MyHomePage> {
                   ButtonBar(
                     alignment: MainAxisAlignment.start,
                     children: [
-                      FlatButton(
+                      TextButton(
                         onPressed: () {
                           // Perform some action
                         },
                         child: const Text('ACTION 1'),
                       ),
-                      FlatButton(
+                      TextButton(
                         onPressed: () {
                           // Perform some action
                         },
