@@ -108,11 +108,11 @@ class MyHomePage extends StatelessWidget {
         content: const Text('Error message text'),
         leading: CircleAvatar(child: Icon(Icons.delete)),
         actions: [
-          FlatButton(
+          TextButton(
             child: const Text('ACTION 1'),
             onPressed: () {},
           ),
-          FlatButton(
+          TextButton(
             child: const Text('ACTION 2'),
             onPressed: () {},
           ),
@@ -155,11 +155,11 @@ class MyHomePage extends StatelessWidget {
         content: const Text('Error message text'),
         leading: CircleAvatar(child: Icon(Icons.delete)),
         actions: [
-          FlatButton(
+          TextButton(
             child: const Text('ACTION 1'),
             onPressed: () {},
           ),
-          FlatButton(
+          TextButton(
             child: const Text('ACTION 2'),
             onPressed: () {},
           ),
@@ -262,11 +262,11 @@ MaterialBanner(
   content: const Text('Error message text'),
   leading: CircleAvatar(child: Icon(Icons.delete)),
   actions: [
-    FlatButton(
+    TextButton(
       child: const Text('ACTION 1'),
       onPressed: () { },
     ),
-    FlatButton(
+    TextButton(
       child: const Text('ACTION 2'),
       onPressed: () { },
     ),
@@ -309,16 +309,16 @@ class MyApp extends StatelessWidget {
 class MyHomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('Banners'),),
+      appBar: AppBar(title: const Text('Banners'),),
       body: MaterialBanner(
         content: const Text('Error message text'),
         leading: CircleAvatar(child: Icon(Icons.delete)),
         actions: [
-          FlatButton(
+          TextButton(
             child: const Text('ACTION 1'),
             onPressed: () { },
           ),
-          FlatButton(
+          TextButton(
             child: const Text('ACTION 2'),
             onPressed: () { },
           ),
@@ -333,7 +333,7 @@ ThemeData _buildShrineTheme() {
   return base.copyWith(
     colorScheme: _shrineColorScheme,
     toggleableActiveColor: shrinePink400,
-    accentColor: shrineBrown900,
+    accentColor: shrineBrown900,// this is now deprecated you may use colorSchema
     primaryColor: shrinePink100,
     primaryColorLight: shrinePink100,
     buttonColor: shrinePink100,
