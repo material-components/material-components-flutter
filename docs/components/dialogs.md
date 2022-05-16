@@ -68,15 +68,18 @@ AlertDialog(
   title: Text('Reset settings?'),
   content: Text('This will reset your device to its default factory settings.'),
   actions: [
-    FlatButton(
-      textColor: Color(0xFF6200EE),
+    TextButton(
+   
       onPressed: () {},
-      child: Text('CANCEL'),
+      child: Text(
+              'CANCEL',
+              style:const TextStyle(color:Color(0xFF6200EE),
+            ),
+          ),
     ),
-    FlatButton(
-      textColor: Color(0xFF6200EE),
+    TextButton(
       onPressed: () {},
-      child: Text('ACCEPT'),
+      child: Text('ACCEPT',style:const TextStyle(color:Color(0xFF6200EE),),),
     ),
   ],
 )
@@ -325,26 +328,24 @@ class MyHomePage extends StatelessWidget {
         ],
       ),
       actions: [
-        FlatButton(
-          textColor: shrineBrown900,
+        TextButton(
           onPressed: () => Navigator.pop(context),
-          child: Text('ACTION 1'),
+          child: Text('ACTION 1',style:TextStyle(color:shrineBrown900,),),
         ),
-        FlatButton(
-          textColor: shrineBrown900,
+        TextButton(
           onPressed: () => Navigator.pop(context),
-          child: Text('ACTION 2'),
+          child: Text('ACTION 2',style:TextStyle(color:shrineBrown900),),
         ),
       ],
     );
 
     return Scaffold(
       body: Center(
-        child: FlatButton(
+        child: TextButton(
           onPressed: () {
             showDialog<void>(context: context, builder: (context) => dialog);
           },
-          child: Text("SHOW DIALOG"),
+          child:const Text("SHOW DIALOG"),
         ),
       ),
     );
