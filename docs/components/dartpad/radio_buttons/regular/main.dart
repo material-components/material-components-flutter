@@ -1,11 +1,13 @@
 import 'package:flutter/material.dart';
 
-void main() => runApp(MyApp());
+void main() => runApp(const MyApp());
 
 class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
       home: MyHomePage(),
@@ -14,13 +16,16 @@ class MyApp extends StatelessWidget {
 }
 
 class MyHomePage extends StatefulWidget {
+  const MyHomePage({super.key});
+
   @override
-  _MyHomePageState createState() => _MyHomePageState();
+  State<MyHomePage> createState() => _MyHomePageState();
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  int _value = 1;
+  int? _value = 1;
 
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: Column(
@@ -32,15 +37,15 @@ class _MyHomePageState extends State<MyHomePage> {
                 style: Theme.of(context)
                     .textTheme
                     .subtitle1
-                    .copyWith(color: i == 5 ? Colors.black38 : Colors.black),
+                    ?.copyWith(color: i == 5 ? Colors.black38 : Colors.black),
               ),
               leading: Radio(
                 value: i,
                 groupValue: _value,
-                activeColor: Color(0xFF6200EE),
+                activeColor: const Color(0xFF6200EE),
                 onChanged: i == 5
                     ? null
-                    : (int value) {
+                    : (int? value) {
                         setState(() {
                           _value = value;
                         });
