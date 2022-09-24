@@ -1,27 +1,32 @@
 import 'package:flutter/material.dart';
 
-void main() => runApp(MyApp());
+void main() => runApp(const MyApp());
 
 class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
-      home: MyHomePage(),
+      home: const MyHomePage(),
       theme: _buildShrineTheme(),
     );
   }
 }
 
 class MyHomePage extends StatefulWidget {
+  const MyHomePage({super.key});
+
   @override
-  _MyHomePageState createState() => _MyHomePageState();
+  State<MyHomePage> createState() => _MyHomePageState();
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  int _value = 1;
+  int? _value = 1;
 
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: Column(
@@ -33,14 +38,14 @@ class _MyHomePageState extends State<MyHomePage> {
                 style: Theme.of(context)
                     .textTheme
                     .subtitle1
-                    .copyWith(color: i == 5 ? Colors.black38 : shrineBrown900),
+                    ?.copyWith(color: i == 5 ? Colors.black38 : shrineBrown900),
               ),
               leading: Radio(
                 value: i,
                 groupValue: _value,
                 onChanged: i == 5
                     ? null
-                    : (int value) {
+                    : (int? value) {
                         setState(() {
                           _value = value;
                         });
@@ -56,14 +61,12 @@ class _MyHomePageState extends State<MyHomePage> {
 ThemeData _buildShrineTheme() {
   final ThemeData base = ThemeData.light();
   return base.copyWith(
-    colorScheme: _shrineColorScheme,
     toggleableActiveColor: shrinePink400,
-    accentColor: shrineBrown900,
     primaryColor: shrinePink100,
-    buttonColor: shrinePink100,
     scaffoldBackgroundColor: shrineBackgroundWhite,
     cardColor: shrineBackgroundWhite,
-    textSelectionTheme: TextSelectionThemeData(selectionColor: shrinePink100),
+    textSelectionTheme:
+        const TextSelectionThemeData(selectionColor: shrinePink100),
     errorColor: shrineErrorRed,
     buttonTheme: const ButtonThemeData(
       colorScheme: _shrineColorScheme,
@@ -72,8 +75,8 @@ ThemeData _buildShrineTheme() {
     primaryIconTheme: _customIconTheme(base.iconTheme),
     textTheme: _buildShrineTextTheme(base.textTheme),
     primaryTextTheme: _buildShrineTextTheme(base.primaryTextTheme),
-    accentTextTheme: _buildShrineTextTheme(base.accentTextTheme),
     iconTheme: _customIconTheme(base.iconTheme),
+    colorScheme: _shrineColorScheme.copyWith(secondary: shrineBrown900),
   );
 }
 
@@ -84,12 +87,12 @@ IconThemeData _customIconTheme(IconThemeData original) {
 TextTheme _buildShrineTextTheme(TextTheme base) {
   return base
       .copyWith(
-        caption: base.caption.copyWith(
+        caption: base.caption?.copyWith(
           fontWeight: FontWeight.w400,
           fontSize: 14,
           letterSpacing: defaultLetterSpacing,
         ),
-        button: base.button.copyWith(
+        button: base.button?.copyWith(
           fontWeight: FontWeight.w500,
           fontSize: 14,
           letterSpacing: defaultLetterSpacing,
@@ -104,9 +107,7 @@ TextTheme _buildShrineTextTheme(TextTheme base) {
 
 const ColorScheme _shrineColorScheme = ColorScheme(
   primary: shrinePink100,
-  primaryVariant: shrineBrown900,
   secondary: shrinePink50,
-  secondaryVariant: shrineBrown900,
   surface: shrineSurfaceWhite,
   background: shrineBackgroundWhite,
   error: shrineErrorRed,
